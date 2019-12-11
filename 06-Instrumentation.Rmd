@@ -1,0 +1,65 @@
+# Instruments
+
+Guidance on instrumentation in the OMG is not intended to replace the instruction manual
+
+## STRs
+
+All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual's for specific programming guidance.
+
+**STR - RBR Solo V3 Temperature Sensor**
+
+Find the user manual in "Reference" section of OCC files at sea.
+
+**Physical Preparation for Deployment**
+
+- Use brand new Tadiran Lithium Thionyl Chloride 3.6v batteries
+
+- Wrap instrument housing with "PVC floor marking tape", leaving the serial number exposed
+
+**Programming**
+
+1. Open Ruskin
+
+2. Connect to the instrument with the supplies USB C cable, it should appear in the "Navigator" view after a few seconds
+
+3. Ensure that your computer is connected to the internet so that the program can get the correct time from your computer.
+
+4. Click UTC to set the instrument's time to UTC
+
+5. Click on the "Information" tab and confirm that the battery has 3.6v
+
+6. After programming each instrument, disconnect the USB cable, install a fresh desiccant and close the instrument in a short period of time so that the desiccant does not absorb ambient moisture in the air
+
+7. Parameters
+
+a. Sampling Interval: 1 sample every 5 minutes
+
+b. Sampling mode: Continuous
+
+- "Ruskin_instrument.log" keeps a text file that includes the parameters of each instrument programmed
+
+- .rsk files are sqlight data files which are open source and non-proprietary
+
+**Downloading Data from Solo 3**
+
+1. Connect to the instrument
+
+2. Select the dataset and download it
+
+**Processing RBR Solo 3 Data Files**
+
+see [Data Processing with the OCC Package](#data_processing)
+
+**Factory Recalibration of the Solo 3**
+
+- Call RBR to arrange the re-calibration of each Solo 3, which will cost approx. $120
+
+- Instrument drift over 3 years should be less than .006 C, thus there is no need to re-calibrate the data set with post-cruise calibration coefficients
+
+- In Ruskin, by default, the name of a data file is composed of the following information:
+  - The first six digits represent the logger serial number.
+  - The next eight digits represent the current year, month, and day.
+  - The next four digits represent the current time to the minute.
+  - The file extension indicates the file format and should not be changed.  If you change it, the file extension that you specify becomes part of the name, and the required extension is appended. For example, the file named 911936_20090522_1613.rsk contains data for a logger with a serial number of 911936 whose data was downloaded in 2009 on May 22 at 4:13 pm.
+  
+

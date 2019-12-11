@@ -1,0 +1,22 @@
+
+# Data Processing and the Occ Package {#data_processing}
+The *occ* package is uploaded to GitHub and can be downloaded directly in R. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, warning = FALSE, message = FALSE, strip.white = TRUE, cache = TRUE)
+```
+
+1. Open the *devtools* library.
+```{r load_devtools, eval = FALSE}
+library(devtools)
+```
+
+2. To download the *occ* package, use the `install_github` command. The repository name is in the form "username/repo". For the *occ* package, the username is "hannahbarkley" and the repo is "occ". This install only need to occur once; however, the *occ* package will need to be reinstalled if there are updates to the package (which is likely).
+```{r install_occ, eval = FALSE}
+install_github("hannahbarkley/occ")
+```
+
+3. Once installed, load the *occ* package.
+```{r load_occ}
+library(occ)
+```

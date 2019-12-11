@@ -1,0 +1,59 @@
+---
+title: "Minimal OKB Build Test 1"
+date: "`r Sys.Date()`"
+author: "Noah Pomeroy"
+site: bookdown::bookdown_site
+documentclass: book
+output:
+  bookdown::gitbook:
+    config:
+      toc:
+        before: |
+          <li><a href="./">The OCC Knowledge Base</a></li>
+      edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+      download: ["pdf"]
+      collapse: section
+  bookdown::pdf_book:
+    includes:
+      in_header: preamble.tex
+    latex_engine: xelatex
+    citation_package: natbib
+    keep_tex: yes
+
+    #split_by: none
+    #config:
+      #toc:
+        #collapse: subsection
+        #scroll_highlight: yes
+    #toolbar:
+      #position: fixed
+    #edit: https://github.com/npomeroy
+    #download: ["pdf"]
+    #search: yes
+    #fontsettings:
+      #theme: white
+      #family: sans
+      #size: 5
+    #highlight: zenburn
+  #bookdown::pdf_book: default
+---
+
+# Preface {-}
+
+`r knitr::include_graphics(rep("images/d_suite_deploy.jpg"))`
+
+## Why Bookdown for the OKB? {-}
+
+### Version Control {-}
+
+we can maintain version control via github
+
+> "You've gotta get the end member."
+>
+> --- Chip Young
+
+### Multiple Output Formats {-}
+
+We can export an agile HTML version locally, a .pdf, or publish the book to R Studio Connect to be accessed via the internet.
+
+<!-- If you need PDF output, uncomment bookdown::pdf_book above in YAML. You will need a LaTeX installation, e.g., https://yihui.name/tinytex/ -->
