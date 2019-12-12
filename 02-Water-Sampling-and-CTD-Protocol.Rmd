@@ -15,7 +15,7 @@ Use the OCC provided GPS unit to collect a waypoint when the CTD downcast begins
 5. After 1 minute soak, ask the coxswain for the current depth so you know how far you can lower the CTD without it hitting the bottom (5-10 feet less line than the bottom depth).  Un-cleat the CTD line if it was cleated and begin the CTD cast by pulling the CTD frame up until the top ring of the frame emerges from the water, then begin gradually lowering at a consistent rate, hand over hand, until the CTD gets to the target depth (using the markings on the line to estimate depth). Once the target depth is reached, pull the CTD back on board.
 6. Once the CTD is back on board, lower the switch to &quot;OFF&quot;, and loudly say &quot;OFF!&quot;
 
-## water sample collection
+## Water Sample Collection
 
 1. Prime the Niskin Bottle, ensuring the petcock and the air bleed valve are closed.
 2. Clip off the boat side of the niskin line to the boat.
