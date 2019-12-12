@@ -4,6 +4,10 @@ Guidance on instrumentation in the OMG is not intended to replace the instructio
 
 ## STRs
 
+```{r, echo=FALSE}
+knitr::include_url("https://www.youtube.com/embed/C-7tl6Ddl_U")
+```
+
 All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual's for specific programming guidance.
 
 **STR - RBR Solo V3 Temperature Sensor**

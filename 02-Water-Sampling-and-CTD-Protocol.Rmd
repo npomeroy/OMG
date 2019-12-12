@@ -1,4 +1,4 @@
-# CTD and DIC Water Sampling
+# CTD and DIC Water Sampling Field Guide {#water}
 
 If available hands on deck and conditions allow, please conduct the CTD downcast and the water sample collection simultaneously.
 
