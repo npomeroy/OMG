@@ -13,7 +13,7 @@ output:
           <li><a href="./">OMG</a></li>
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
-      collapse: subsection
+      collapse: section
       delete_merged_file: FALSE
   bookdown::pdf_book:
     includes:
@@ -26,14 +26,13 @@ output:
 
 `r knitr::include_graphics(rep("images/d_suite_deploy_small.jpg"))`
 
-The OMG is the online knowledge base of the OCC Team.  It started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/) and published via [GitHub Pages](https://pages.github.com/).  The current live version of the book is [here](https://npomeroy.github.io/OMG/) All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from [Noah via GitHub](https://github.com/npomeroy/OMG), pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.  
+Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from [Noah via GitHub](https://github.com/npomeroy/OMG), pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.  
 
-
-The HTML version of the OMG may be accessed from your local machine or a network drive without internet access by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
+Once you have forked the repo onto your local machine, the HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
 
 ## How to Edit this Book {-}
 
 1. Fork the repo from [Noah via GitHub](https://github.com/npomeroy/OMG).
-2. Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder.
+2. Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder. Build the book to see your edits in the form of the built book. 
 3. Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
 4. In GitHub, open a Pull Request to have your edits considered for integration into the master branch. 
