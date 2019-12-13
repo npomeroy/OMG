@@ -157,7 +157,24 @@
 
 The OMG is the online knowledge base of the OCC Team. It started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with \href{https://bookdown.org/yihui/bookdown/}{bookdown} and published via \href{https://pages.github.com/}{GitHub Pages}. The current live version of the book is \href{https://npomeroy.github.io/OMG/}{here} All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from \href{https://github.com/npomeroy/OMG}{Noah via GitHub}, pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.
 
-The HTML version of the OMG may be accessed from your local machine or a network drive
+The HTML version of the OMG may be accessed from your local machine or a network drive without internet access by simply opening the index.html file in the folder ``OMG/docs'' A .PDF file of the book is also generated every time the book is built, that also ends up in the ``OMG/docs'' folder.
+
+\hypertarget{how-to-edit-this-book}{%
+\section*{How to Edit this Book}\label{how-to-edit-this-book}}
+\addcontentsline{toc}{section}{How to Edit this Book}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Fork the repo from \href{https://github.com/npomeroy/OMG}{Noah via GitHub}.
+\item
+  Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder.
+\item
+  Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
+\item
+  In GitHub, open a Pull Request to have your edits considered for integration into the master branch.
+\end{enumerate}
 
 \hypertarget{cruise_prep}{%
 \chapter{Preparing for a Research Cruise}\label{cruise_prep}}
@@ -1153,6 +1170,19 @@ see \protect\hyperlink{data_processing}{Data Processing with the OCC Package}
 \section{Where to Save Data}\label{where-to-save-data}}
 
 \href{https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw}{Checkout this Excel file on Google Drive for details on where to save data}
+
+\hypertarget{data_how_to}{%
+\chapter{Data How To}\label{data_how_to}}
+
+\hypertarget{how-to-gain-access-to-the-occ-database}{%
+\section{How to Gain Access to the OCC Database}\label{how-to-gain-access-to-the-occ-database}}
+
+As of January 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an \href{https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true\&os_destination=\%2Fbrowse\%2FPICITS-181121\%3Ffilter\%3D-2\&page_caps=\&user_role=}{ITS support ticket} to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup.
+
+\hypertarget{how-to-archive-data}{%
+\chapter{How to Archive Data}\label{how-to-archive-data}}
+
+After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
 
 
 \end{document}
