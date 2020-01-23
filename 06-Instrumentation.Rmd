@@ -2,17 +2,17 @@
 
 Guidance on instrumentation in the OMG is not intended to replace the instruction manual
 
-## STRs
+## STR
 
 ```{r, echo=FALSE}
 knitr::include_url("https://www.youtube.com/embed/C-7tl6Ddl_U")
 ```
 
-All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual's for specific programming guidance.
+As of 2020, the OCC team uses two models of temperature sensor, the [SBE56](#sbe56) and the RBR Solo v3.  All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual's for specific programming guidance.
 
-**STR - RBR Solo V3 Temperature Sensor**
+### RBR Solo V3 STR
 
-Find the user manual in "Reference" section of OCC files at sea.
+Find the user manual in "Reference" section of OCC files at sea or at [this google drive link](https://drive.google.com/drive/folders/1U-g1gTLOArcf7o5yXx-76z2HU-ha1qCJ)
 
 **Physical Preparation for Deployment**
 
@@ -66,4 +66,122 @@ see [Data Processing with the OCC Package](#data_processing)
   - The next four digits represent the current time to the minute.
   - The file extension indicates the file format and should not be changed.  If you change it, the file extension that you specify becomes part of the name, and the required extension is appended. For example, the file named 911936_20090522_1613.rsk contains data for a logger with a serial number of 911936 whose data was downloaded in 2009 on May 22 at 4:13 pm.
   
+### Seabird Electronics SBE56 STR {#sbe56}
 
+As of 2020, the OCC team is not buying anymore SBE56 sensors due to history of inadequate endurance we’ve experienced with them. We have determined that units within a certain range of serial number are high risk for low endurance (Ari knows the bad ones!)
+
+Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for 30S. The user mnual for the SBE56 can be found [here](https://drive.google.com/drive/folders/1ujFmH1pJ704ikrsc11Ji2eNeuIBQ5JMa).
+
+[tasks](#tasks)
+
+
+
+
+## CTD
+
+### RBR CTD in Profiling Mode
+
+### SBE19 in Profiling Mode
+
+While the SBE 19 is the oldest CTD in the OCC team inventory, it is used as a dedicated shipboard CTD on occaision
+
+* Input commands in upper or lower case letters and register commands by pressing the Enter key. 
+* If the system does not return an S> prompt after executing a command, press the Enter key to get the S> prompt. 
+* The SEACAT sends ‘#’ if an invalid command is entered. 
+* If a new command is not received within 3 minutes after the completion of a command, the SEACAT returns to the quiescent state and the command/data echo area indicates time out. You must reconnect to the instrument before sending any commands. 
+* For RS-232 communication: If the instrument is transmitting data and you want to stop it, type ^C or press the Esc key or Stop on the Toolbar. Press the Enter key to get the S> prompt. 
+* Commands marked with * (* is not part of the command) alter the SEACAT’s memory and require verification before executing, to prevent accidental modifications.
+After the command entry, SEATERM responds:
+‘message’ Y/N Type Y and press the Enter key.
+SEATERM then responds:
+are you sure ^Y/N Hold down the Ctrl key and type Y (any other response aborts command). 
+* Braces [ ] indicate optional parameters of the command. Items enclosed in braces need not be entered. 
+
+Find a list of commands for the SBE19 [HERE](https://docs.google.com/document/d/1WkYxlEDpUm_A1JY6Fx7Kq8Fi2c_drbbzcXDoJRtYLZk/edit)
+
+**example status output of an SBE19 ready to profile after typing "ds" and hitting enter**
+
+SEACAT PROFILER V3.1c SN 3029   06/05/18  20:08:52.998
+strain gauge pressure sensor: S/N = 2657401406,  range = 1000 psia,  tc = 194
+
+clk = 32767.852   iop = 148   vmain = 12.2   vlith = 5.1
+
+mode = PROFILE  ncasts = 0
+
+sample rate = 1 scan every 0.5 seconds
+
+minimum raw conductivity frequency for pump turn on = 3257 hertz
+
+pump delay = 40 seconds
+
+samples = 0   free = 174128   lwait = 0 msec
+
+SW1 = C8   battery cutoff = 7.3 volts
+
+number of voltages sampled = 0
+
+logdata = NO
+
+S>ST
+
+date (MMDDYY) = 060518
+
+time (HHMMSS) = 200930
+
+
+
+
+### SBE19Plus in Profiling Mode
+
+1.  Remove the dummy plug from the SBE 19plus’ Data I/O 4 pin connector and install the Sea-Bird I/O cable connector, aligning the raised bump on the side of the connector with the large pin (pin 1 - ground) on the SBE 19plus.  Plug the serial connector into a serial to usb (Keyspan) converter and plug the USB cable into the computer.
+2.	Open SeaTerm.exe. The display shows the main screen.
+3.	Click Connect on the Toolbar to begin communications with the SBE 19plus. A "S>" should be shown on the display if the connection is successful. If it does not show:
+    +Click Connect again.
+    +Check cabling between the computer and the SBE 19plus.
+    +Verify the correct instrument was selected and the COM settings were entered correctly in the Configure menu.
+4.	Display SBE 19plus status information by clicking Status on the Toolbar.  The display looks like this:
+    + SeacatPlus V 1.3 SERIAL NO. 4289 16 July 2005 14:02:13
+    + vbatt = 9.6, vlith = 0.0, ioper = 61.2 ma, ipump = 25.5 ma, iext01 = 76.2 ma,
+    + status = not logging
+    + number of scans to average = 1
+    + samples = 5000, free = 376300, casts = 1
+    + mode = profile, minimum cond freq = 3000, pump delay = 60 sec
+    + autorun = no, ignore magnetic switch = no
+    + battery type = ALKALINE, battery cutoff = 7.5 volts
+    + pressure sensor = strain gauge, range = 1000.0
+    + SBE 38 = no, Gas Tension Device = no
+    + Ext Volt 0 = yes, Ext Volt 1 = no, Ext Volt 2 = no, Ext Volt 3 = no
+    + echo commands = yes
+    + output format = converted decimal
+    + output salinity = no, output sound velocity = no
+* Make sure in the above information it does not say BATTERY LOW.  Batteries should be replaced prior to each cruise; however, it is always good to double check.  Ensure UTC time is set correctly.  The correct time can be taken from the ship clock or a properly calibrated GPS unit.
+5.  When you have confirmed that all data has been obtained from the instrument and you are ready to clear its memmory, send the SAMPLENUMBER=0 or INITLOGGING (e.g. S>samplenumber = 0 or S>initlogging) command to remove unnecessary data files. If one of these commands is not sent, new data will be stored after the last recorded sample, preventing use of the entire memory capacity and make file management more difficult during the next upload.
+6.	Disconnect the Sea-Bird I/O cable connector and screw on the dummy plug.  The CTD can be properly stowed until redeployment.  
+
+
+
+
+
+### SBE19Plus in Moored Mode Mode
+1.	Connect instrument and check status: Status > Display status and configuration parameters
+2.	Set date and time under General Setup > Set Date and Time. Date and time are in mmddyyyyhhmmss format (i.e. 6/12/2018 06:15:00 is 06122018061500).
+3.	Clear all past data General Setup > Initialize Logging.
+4.	Set CTD to moored mode under Moored Mode Setup > Set sampling Mode to Moored. Execute command twice to switch to moored mode.
+5.	Set sample interval under Moored Mode Setup > Set Interval (sec) between Samples. For a short deployment (2-4 days), use a sample interval of 10 seconds. For a longer deployment (> 1 week), use a sample interval of 1 min or 5 min.
+6.	Set number of measurements to average under Moored Mode Setup > Set number of measurements to average. Set to 4.
+7.	Set pump mode under Moored Mode Setup > Set Pump Mode to “pump for 0.5 sec before sampling”.
+8.	Set start date and time under Logging > Set delayed start date and time.
+9.	Start logging under Logging > Start logging when specified by StartDateTime.
+]
+
+### Downloading the SBE19Plus
+
+1.	Connect to the 19P with the interface cable.  
+2.	Open SeaTerm.exe.  From the main screen, select the Configure menu.  From this menu, select SBE 19plus. Click on the Upload Settings tab.  Make sure the Upload Baud Rate reads 9600.  In the same menu, click All separated by cast.  This allows a separate file to be written for each cast.
+3.	Click Connect on the Toolbar to begin communications with the SBE 19plus. You should see "S>" when it connects.
+If the system does not respond as shown above:
+ * Click Connect again.
+ * Check cabling between the computer and the SBE 19plus.
+ * Verify the correct instrument was selected and the COM settings were entered correctly in the Configure menu.
+5.	Click the Upload button on the Toolbar to upload stored data
+ * In the Open dialog box, save the file to the designated location as specified [in this Google Drive document](https://drive.google.com/drive/folders/1WcZclgRCLHNOXykYigSZviiwFEH02lKx)

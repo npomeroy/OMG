@@ -1,4 +1,4 @@
-# Field Checklists {#fc}
+# Tasks at Sea {#tasks}
 
 ## Daily Tasks for the Team
 
@@ -70,6 +70,11 @@
 **Other**
 
 * gauge tanks
+
+**Team Lead**
+
+* Plan tomorrow's objectives
+* Plan and communicate tank needs to team members
 
 ## Where to Save Data
 
