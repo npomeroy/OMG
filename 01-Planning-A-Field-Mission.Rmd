@@ -1,5 +1,8 @@
 # Preparing for a Research Cruise {#cruise_prep}
 
+`r knitr::include_graphics(rep("images/Sette_Big_Island_2010_Pomeroy.jpg"))`
+
+
 ## Determine Goals
 
 Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.

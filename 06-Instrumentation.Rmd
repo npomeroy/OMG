@@ -1,8 +1,5 @@
-# Instruments
-
-Guidance on instrumentation in the OMG is not intended to replace the instruction manual
-
-## STR
+# (PART\*) Instruments {-}
+# STR
 
 ```{r, echo=FALSE}
 knitr::include_url("https://www.youtube.com/embed/C-7tl6Ddl_U")
@@ -10,11 +7,13 @@ knitr::include_url("https://www.youtube.com/embed/C-7tl6Ddl_U")
 
 As of 2020, the OCC team uses two models of temperature sensor, the [SBE56](#sbe56) and the RBR Solo v3.  All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual's for specific programming guidance.
 
-### RBR Solo V3 STR
+## RBR Solo V3 STR
 
 Find the user manual in "Reference" section of OCC files at sea or at [this google drive link](https://drive.google.com/drive/folders/1U-g1gTLOArcf7o5yXx-76z2HU-ha1qCJ)
 
 **Physical Preparation for Deployment**
+
+`r knitr::include_graphics(rep("images/STR_party_2019.jpg"))`
 
 - Use brand new Tadiran Lithium Thionyl Chloride 3.6v batteries
 
@@ -66,7 +65,7 @@ see [Data Processing with the OCC Package](#data_processing)
   - The next four digits represent the current time to the minute.
   - The file extension indicates the file format and should not be changed.  If you change it, the file extension that you specify becomes part of the name, and the required extension is appended. For example, the file named 911936_20090522_1613.rsk contains data for a logger with a serial number of 911936 whose data was downloaded in 2009 on May 22 at 4:13 pm.
   
-### Seabird Electronics SBE56 STR {#sbe56}
+## Seabird Electronics SBE56 STR {#sbe56}
 
 As of 2020, the OCC team is not buying anymore SBE56 sensors due to history of inadequate endurance we’ve experienced with them. We have determined that units within a certain range of serial number are high risk for low endurance (Ari knows the bad ones!)
 
@@ -77,11 +76,11 @@ Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for
 
 
 
-## CTD
+# CTD
 
-### RBR CTD in Profiling Mode
+## RBR CTD in Profiling Mode
 
-### SBE19 in Profiling Mode
+## SBE19 in Profiling Mode
 
 While the SBE 19 is the oldest CTD in the OCC team inventory, it is used as a dedicated shipboard CTD on occaision
 
@@ -131,7 +130,7 @@ time (HHMMSS) = 200930
 
 
 
-### SBE19Plus in Profiling Mode
+## SBE19Plus in Profiling Mode
 
 1.  Remove the dummy plug from the SBE 19plus’ Data I/O 4 pin connector and install the Sea-Bird I/O cable connector, aligning the raised bump on the side of the connector with the large pin (pin 1 - ground) on the SBE 19plus.  Plug the serial connector into a serial to usb (Keyspan) converter and plug the USB cable into the computer.
 2.	Open SeaTerm.exe. The display shows the main screen.
@@ -162,7 +161,7 @@ time (HHMMSS) = 200930
 
 
 
-### SBE19Plus in Moored Mode Mode
+## SBE19Plus in Moored Mode Mode
 1.	Connect instrument and check status: Status > Display status and configuration parameters
 2.	Set date and time under General Setup > Set Date and Time. Date and time are in mmddyyyyhhmmss format (i.e. 6/12/2018 06:15:00 is 06122018061500).
 3.	Clear all past data General Setup > Initialize Logging.
@@ -174,7 +173,7 @@ time (HHMMSS) = 200930
 9.	Start logging under Logging > Start logging when specified by StartDateTime.
 ]
 
-### Downloading the SBE19Plus
+## Downloading the SBE19Plus
 
 1.	Connect to the 19P with the interface cable.  
 2.	Open SeaTerm.exe.  From the main screen, select the Configure menu.  From this menu, select SBE 19plus. Click on the Upload Settings tab.  Make sure the Upload Baud Rate reads 9600.  In the same menu, click All separated by cast.  This allows a separate file to be written for each cast.
@@ -185,3 +184,429 @@ If the system does not respond as shown above:
  * Verify the correct instrument was selected and the COM settings were entered correctly in the Configure menu.
 5.	Click the Upload button on the Toolbar to upload stored data
  * In the Open dialog box, save the file to the designated location as specified [in this Google Drive document](https://drive.google.com/drive/folders/1WcZclgRCLHNOXykYigSZviiwFEH02lKx)
+
+# SeaFet pH Sensor
+
+The OCC team uses the SeaBird SeaFet pH sensor as part of the [Diel Suite](#dielsuite) to capture pH information around the clock over a typical deployment interval of 1 to 2 days.
+
+## Conditioning the SeaFet in seawater at least 24 hours prior to deployment
+
+At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment.  We call this &quot;conditioning time&quot;.  Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.
+
+##How to Set the SeaFet to polled mode**
+
+1. If needed, install new batteries in the SeaFet (12 Ds)
+2. Remove dummy plug from endcap of SeaFet and connect SeaFet to computer with USB cable
+3. Open SeaFetCom software
+4. Swipe magnet over magnetic switch to &quot;activate&quot; batteries (indicator light by magnetic switch will blink green)
+5. Press &quot;connect&quot;
+6. Open settings and confirm operational mode is &quot;polled mode&quot;
+7. Click &quot;upload&quot; to make sure
+8. Click &quot;disconnect&quot;
+
+## Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)
+
+**In the dry lab prior to deployment**
+
+At least **24 hours** prior to deployment: install and activate internal batteries. To activate internal batteries, swipe the magnet to the target until the indicator LED starts flashing green (this may take a few attempts). Alternatively, connect the instrument to the computer and place in **periodic mode** following instructions below.
+
+1. Remove the dummy plug and connect data logger cable.
+
+2. Open SeaFETCom and select &quot;Connect to SeaFET&quot; to begin communications with instrument.
+
+3. Sync instrument clock with computer clock: Sensor -\&gt; Set Clock, &quot;Sync Time&quot; . Instrument time should be in UTC.
+
+4. To access SeaFET deployment settings, select the &quot;SeaFET Settings&quot; button in the dashboard window or Sensor -\&gt; &quot;SeaFET Settings&quot;.  Use the following settings:
+
+**General**
+
+**Operational Mode:** Periodic
+
+**Sample Interval** : 1 min
+
+**Offset** : 0 sec
+
+**Number of samples in average:** 30
+
+**Number of frames in burst:** 1
+
+**Enable Sampling Window** : If using, check box and set appropriate start and end dates
+
+\*We haven&#39;t been able to make this work well, so don&#39;t use sampling interval for now\*
+
+**Internal Device Logging**
+
+**        Logging level:** INFO
+
+**Maximum log file size:** 9999 KB
+
+
+
+**Telemetry**
+
+**Serial Baud Rate:** 57600
+
+**Transmitted Frame Format:** FULL\_ASCII
+
+**Instrument Logging Frame Format:** FULL\_ASCII
+
+**Log File Creation Method** : By file size
+
+**Maximum Size:** 9999 KB
+
+**Uncheck**&quot;legacy format&quot;
+
+**Processing**
+
+**Salinity** : 35 psu
+
+**External Pump**  - no external pump in use
+
+**CTD** – no CTD in use
+
+Note: For RAMP deployments, the SeaFET will be deployed in **periodic mode** , in which it will sample at a specified interval and burst size and go to sleep in between measurements.  The instrument can be put in **polled mode,** in which it remains in a low power sleep state until woken by an external command, for long-term storage or shipping. **Continuous mode** should only be used when the instrument is powered by an external power source.
+
+**Activiate the instrument prior to getting on the small boat**
+
+1. Start deployment by selecting the &quot;Start&quot; button in the SeaFETCom dashboard or Sensor -\&gt; &quot;Start&quot;.
+2. Disconnect from SeaFET, remove data logger cable, and replace dummy plug.
+
+**On the small boat**
+
+1. Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32&quot; hex driver or Allen key, remove the three 10-32 x 5/8&quot; socket head cap screws from the wet cap. Remove the wet cap.
+2. Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8&quot; socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.
+
+**Retrieving the SeaFet**
+
+1. Upon recovery of the instrument, stick the wetcap end into a bucket of seawater for return to the ship or remove foul guard and replace wet cap. Ensure wet cap is filled with sterilized, artificial seawater or filtered seawater. Keep the sensor end wet at all times (it can be without water no more than an hour).
+
+## Downloading Data from the SeaFet**
+
+2. Remove dummy plug, attach data logger cable, and connect to SeaFETCOM software.
+
+3. Select &quot;Transfer Files&quot; from the SeaFETCom Dashboard.
+
+4. In the &quot;Local Filesystem&quot; pane, press &quot;Browse&quot; to select the local folder on the computer that will receive downloaded files.
+
+5. In the &quot;Instrument Filesystem&quot; pane, select the files to be downloaded from the SeaFET and press the &quot;\&lt;-&quot; button to transfer selected files.
+  + A Seafet deployment creates 2 file types: a log file that contains metadata about the deployment and the data file (may be more than one data file)
+
+6. If the instrument will be used in the near future, place in **polled mode** following deployment steps above. This low-power stand-by mode will maintain a continuous current flow to the sensing element and eliminate the need for a 24-hour warmup. If the instrument will not be used in the near future, deactivate internal batteries by swiping the magnet over the target until the LED flashes red.
+
+## Properly Store the SeaFet
+
+It is crucial to store the SeaFET sensors with clean seawater in the wet cap. If seawater is not available, artificial seawater will suffice. The internal KCl reference gel in the DuraFET will become dry if left out of water, resulting in calibration drift and potentially causing irreversible damage.  **Do not store**  the SeaFET with freshwater in the wet cap, as this will change the chemistry of the external reference electrode.
+
+If storing or shipping the SeaFET, disconnect the batteries in SeaFETCOM:
+
+- Connect the SeaFET to SeaFETCom
+- Navigate to Sensor \&gt; Advanced \&gt; Disconnect for Storage.
+
+This will disconnect the isolated battery pack from the external reference sensor to retain battery life.
+
+## Email Exchanges about Seafet for reference
+
+**Notes on SeaFet soaking and response time**
+
+| February 12, 2018 Hi Noah,
+
+**Yes indeed, if you are concerned about the time it takes to stabilize, you could combat this by immersing in some seawater that is close to the sites parameters ahead of time.**
+
+**Know however, that having the SeaFET running in the small volume of water within the wetcap, it will quickly become altered from normal regarding the small volume and ionic exchange.**
+
+**(This might be the reason why you mentioned the pH value of 6 in the wetcap currently.)**
+
+**Ideally one would want to have a larger water** volume however this might require some creativity to accomplish !
+
+Proposed settings look fine !
+
+Regarding a specific start time:
+
+Within SeaFETCom - SeaFET Settings - In the SeaFET General Settings Tab you can select the desired Start date, but I not Believe you can specify the time of day.
+
+But looking into the firmware commands it appears the SeaFET can be programmed with a start time as well.
+
+At the SeaFET&#39;s command prompt, enter the following commands as an example: &quot;set --samplwin true&quot; and then &quot;set --samstart yyyy/mm/dd.hh:mm:ss
+
+Note these commands can be sent using the &quot;Command Terminal&quot; found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.
+
+I believe programming in periodic mode, with a delayed start up time would achieve the same effect.
+
+Please let me know if you have any questions or comments.
+
+Kind Regards,
+Darrell
+
+| February 9, 2018 Email from Darrel at Seabird Tech Support: |
+| --- |
+
+  |
+| --- |
+
+Hello Noah,
+
+Thank You for your email !
+
+- Is 24hrs adequate for the instrument to &quot;warm up&quot; in polled mode (I believe you&#39;ve called this &quot;conditioning mode&quot; before) prior to deployment or are multiple days necessary?
+
+**The time of **** SeaFET ****&#39;s sensors adjusting to the in-situ environment can vary. Really it depends on how different the water is from the storage solution.
+When we perform calibration it can take anywhere for a day, to several days - but we are looking for high level of stability.
+When deploying the  **** SeaFET **** the pH values may take a couple of days for the readings to stabilize to the environment.**
+
+- How long can the sensor be exposed to air before damage to the sensor occurs? (We are wondering about best practices for taking the instrument from the small boat into the water. For instance, the wetcap remains on the instrument until we get to the dive site. We get to the dive site and prepare our SCUB gear, then remove the wetcap and affix the protective copper endcap over the sensor - at this point, 1 to several minutes my pass before it is actually submerged in the ocean when we roll in the water.)
+
+**I do not see a problem here. For damage to occur to the ISFET it will have to become dry. I would say best practice would be no more than 1 hour. But a couple of hours will not cause damage, just likely additional time to reach stability in the new environment. The external reference can become dry without damage - but some further conditioning time would be expected.**
+
+- Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to &quot;polled mode&quot;
+
+Yes I believe this would achieve the same, however you would need to ensure to switch to polled mode if this is method use during deployment.
+If you have an external controller, polled is likely the better option for use. If you were using periodic mode and an external device collecting the SeaFET&#39;s data - this would rely on the two systems have no change in the their clocks. Polled mode would be better as the external controller would be able to collect data whenever it chooses.
+
+I hope this helps !
+
+Please let me know if you have any questions or comments.
+
+Kind Regards,
+Darrell
+
+**Greg Ikeda** Thu, Oct 1, 2015 at 10:44 AM
+
+Hi Noah,
+
+You&#39;ve brought up some good questions about the SeaFET- I went ahead and consulted our engineer responsible for this instrument to obtain some more concrete answers.
+
+SeaFET soak time:
+
+Craig is correct- the SeaFET requires a &quot;conditioning time&quot; that allows the sensors to stabilize before achieving full accuracy. I&#39;ve attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:
+
+Upon first contact with seawater, pH sensor voltages relative to both reference electrodes exhibit an asymptotic
+drift. This conditioning period arises from several sources:
+
+1) Achieving a stable flow of ions across the liquid junction of the internal reference electrode (nominally hours),
+
+2) replacement of Cl – with Br ? in the solid solution of AgCl of the Cl-ISE (nominally days),
+
+3) an ISFET conditioning component, related to the initial power-up of the chip, the exact basis of which is not fully understood (nominally 1 day), and
+
+4) a pressure effect on the ISFET and internal reference electrode through changes in the liquid junction potential that may become important if the sensor is deployed more than 20 m below the surface (nominally 1 h).
+
+Factors 1–3 can be addressed by operating the pH sensor continuously in seawater (never powering off the ISFET) for one week prior to deployment and taking care to keep the sensor wetted in natural seawater during transport.
+
+SeaFET response time:
+
+It very much depends on the system at hand. After initial conditioning (as described above):
+
+a) With continuous water flow, either naturally occurring or forced, the response is practically instantaneous.
+
+b) If the sensor has to re-condition to a new volume of water for every measurement, it could take up to 30sec to converge to the right number. For the SeapHox we added a configuration parameter to delay the measurement for this reason.
+
+These reasons certainly make the SeaFET a poor match for use on a moving platform. I hope this clarifies your questions about the SeaFET. Please review the attached paper and let us know if you have additional questions.
+
+Regards,
+
+Greg
+
+
+Greg Ikeda
+Technical Support
+Sea-Bird Electronics
+13431 NE 20th Street
+Bellevue, Washington 98005
+Telephone: [(+1) 425-643-9866](nulltel:%28%2B1%29%20425-643-9866)
+Fax: [(+1) 425-643-9954](nulltel:%28%2B1%29%20425-643-9954)
+E-mail: [gikeda@seabird.com](nullmailto:gikeda@seabird.com)
+Web: [http://www.seabird.com](http://www.seabird.com/) ![](data:image/*;base64,R0lGODdhAQABAHcAACH5BAEAAAEALAAAAAABAAEAgAAAAAAAAAICTAEAOw==)
+
+# PUC - Portable Underwater Collector {#puc}
+
+Part of the [diel suite](#dielsuite), the Programmable Underwater Collector (PUC) is a moored instrument used to collect water samples autonomously at pre-determined times. The OCC team uses the PUC to analyze the diel carbonate cycle at study sites.
+
+## General Notes
+
+* Decide on sampling interval for deployment period
+* There are 3 versions of PUCS with different O rings
+* See PUC fill time table below to program each PUC with a specific pump time to achieve the desired 800 mL in each tedlar sample bag
+* Batteries: use one change of 12 AA alkaline batteries for two deployments
+
+* Red ON/OFF switch mounted on motherboard
+  + turn to ON when PUC in to be used.
+  + when ON, access Basic stamp Editor using magnet+PUC comm cable.
+  + when ON, flush tubing prior to deployment using magnet.
+  + turn to OFF when PUC in storage. No need to remove AA batteries.
+
+## Preparation the Day Before Deployment
+
+Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC deployment underwater checklist at this Google Drive link](https://drive.google.com/drive/folders/1X6fAG4OIDs66Ji5xzYsX8JySqhkSs5k-)
+
+**Preparing 1L tedlar sample bags with mercuric chloride**
+
+1. Label the bags with a large chisel tip sharpie with the hour they will sample in 24hr time format
+2. Open bag valve 1 full turn
+3. Evac air out of bag with plastic syringe
+4. Close bag valve while syringe is attached and vacuum is apparent
+5. Load up glass syringe with 200 ul HGCL2, draw it carefully, tap to remove air
+6. Insert syringe needle through septum and inject HGCL2
+
+### Programming PUCS with firmware version 2018-JAN-7
+
+**Note: This should take place the night before the planned deployment**
+
+1. If necessary, install 12 new AA alkaline batteries into the PUC (one set of batteries is used for 2 deployments)
+
+2. Open the PUC carefully with the PUC opener tool
+
+3. Connect the PUC to your PC with the RS232 (serial) cable and a Keyspan USB to serial adapter. NOTE: It may be necessary to plug the USB cable into a &quot;high-power&quot; USB port on your PC. If using the instrument computer PICSC26, this is the USB port that has a lighting bolt symbol over it
+
+4. Turn on the red power on/off switch on the PUC motherboard
+
+**Open the Basic Stamp Editor program**
+
+1. Select Run then Debug then New to open a programming terminal
+
+2. If the PUC does not connect, try selecting a different com port
+
+3. Individual PUC d1eployment status is displayed
+
+4. Check the date, time, pump time and programmed time (the PUC pump will run for 10 seconds while you review this information, at the end of the 10 sec period, you will have 30 sec waiting period to input commands into the terminal before the pump runs again and re-displays current settings.  If you do not enter commands within the 30s window, the program will time out and you must swipe the magnet over the magnetic switch (red dot on endcap) to start a new 30s programming window)
+
+5. Set parameters for the deployment keying and pressing enter for numbers 1-4 that correspond to the following:
+    + set Date/Time: MM/DD/YY, HH/MM
+    + Display Date/Time: to display the date time programmer has entered.
+    + set sample Date and Time: MM/DD/YY, HH/MM (we set PUCs to UTC time, use [the PUC deployment planning and data sheet at this Google Drive link](https://drive.google.com/drive/folders/1aprNsz_a0cfscmCBz0DjbCuvCFerOfaw)  to determine the proper UTC time according to the local solar time), and Pump Time (the amount of time in minutes that the pump runs to collect the water sample.
+
+6. If the PUC time reads more than 60 seconds, run the script in the basic stamp editor to correct this: PUC Clock Fix\_DS1302\_Demo.bs2 found **where is this file, when found we need to put it in the PUC google drive folder?**
+* Then open the latest firmware from basic stamp from the [PUC Google Drive Folder](https://drive.google.com/drive/folders/1X6fAG4OIDs66Ji5xzYsX8JySqhkSs5k-): PUC firmware upgrade 07Jan18.bs2
+* note: You may need to change the comp port number in the top line of code
+
+7. Start Sample Program, results in the PUC displaying &quot;Entering sample Mode&quot; + Sample Time + Pump Time + current Date/Time
+
+8. NOTE: all PUCs do not pump at the same rate.  We aim to have 800mL of water in each 1L bag. The time it takes for a pump to fill a bag to 800mL varies from 27-36 minutes; see the chart below of PUC times in the next and program each PUC accordingly.
+
+9. The final program step is ALWAYS press #4 to get &quot;Entering sampling Mode&quot; prompt. Confirm sample date/time and pump time.
+
+10. Pre-fill a Diurnal Suite Datasheet Spreadsheet with relevant information for the deployment
+  
+11. After programming is complete and all parameters are verified, seal the PUC
+  + clean/lubricate o-ring.
+  + Install one large or several small desiccants inside the PUC, ideally rubber banded to the motherboard or battery packs somehow
+  + hand tighten PUC cap to PUC body using PUC opener tool
+
+## PUC Rates and Fill Times (As of June 2018)
+
+| **PUC  SN** | **Time to 800mL (minutes)** | **March 2018 Tested Rate (mL/min)** |
+| --- | --- | --- |
+| 1 | 39 | 20.6 |
+| 2 | 30 | 26.4 |
+| 3 | 31 | 25.5 |
+| 4 | 32 | 24.7 |
+| 5 | 33 | 23.9 |
+| 6 | 39 | 20.6 |
+| 7 | 32 | 25.2 |
+| 8 | 29 | 27.4 |
+| 9 | 37 | 21.8 |
+
+**Don't Overfill Those PUC Bags!**
+
+`r knitr::include_graphics(rep("images/PUC_bag_pop.png"))`
+
+Don't oeve
+
+## PUC Deployment
+
+1. Ensure PUCs are fastened securely to the milk crate (maximum 4 PUCs per crate)
+2. With tubing connected to &quot;water out&quot; valve tip but NOT YET to the tedlar bag, swipe the magnetic switch (red dot) on PUC endcap to run the pump once to pump ambient seawater through the tubing.
+3. Connect the other end of the tubing to the &quot;water in&quot; valve tip of the tedlar bag
+4. Open tedlar bags by turning valve one full turn
+
+## PUC Recovery
+
+Print out the [PUC retreival underwater checklist at this Google Drive link](https://drive.google.com/drive/folders/1X6fAG4OIDs66Ji5xzYsX8JySqhkSs5k-)
+
+1. Gather tools needed
+    + Zip tie snips
+    + Goody bag for collecting filled Tedlar bags
+    + 50lb open bottom lift bag and carabiner to lift milk crates
+    + A few extra large (at least 2ft cable ties)
+2. Close valves on all sample bags
+3. Remove tubing from sample bag valves
+4. Use snips Carefully collect tedlar bags and snow in a goody bag dedicated solely to them for safe ascent; be careful when handing them up out of the water to whoever receives them on the small boat
+5. Secure the two milk crates together with zip ties if not already fastened together for easier lifting
+6. Affix 50lb lift bag with carabiner to milk crates in a secure fashion and make a safe ascent
+7. Upon surfacing, instruct whomever is grabbing the tedlar bag samples from you to carefully place them into a CAU bucket filled with water to reduce pressure on the bags
+
+**Transfer of Samples from Tedlar Bags to Glass Bod Bottles in Wetlab**
+
+### Notes from Chris Langdon about PUCs
+
+Notes from Chris Langdon:
+
+- 9/14/15 email:   The new boards have a voltage regulator that can be set to 11.0 volts if only one pump is used and to 13.0 volts if two pumps are used (this gives the motor more torque needed to drive two pumps).
+- O-rings you need for the two styles of PUCs.  Order from McMaster Carr. The o-rings should easily last a year.  I would suggest replacing them annually.
+
+Old style cap ---- dash#   2-153.    McM. 9452K174
+
+New style cap---- dash#  2-236     McM  9452K165
+
+-
+- 1/6/2018 email about new firmware:  It gives you 30 sec to hit a key about the pump starts running.  I also reduced the pump run time to 10 seconds.  You can now specify the month, day, hour and minute that the PUC will sample so you can set it up days in advance.  You will need the Basic Stamp editor application downloaded from Paralax.
+
+
+
+# Aquadopp: Nortek ADCP
+
+- 2MHZ aquadopps have a shorter range (20m I think)
+
+## Programming the Aquadopp
+
+1. Connect to the Aqudopp with the interface cable
+2. Open Nortek software
+3. From the Communication menu, select the correct com port for the instrument&#39;s interface cable (look this up in the device manager)
+4. Communications -\&gt; connect (if it does not connect, the instrument&#39;s batteries may be dead; use the AC power adapter)
+5. &quot;Erase Recorder&quot;
+6. Set clock to UTC time: On-line -\&gt; set clock
+7. Deploy-\&gt;planning-\&gt; load from file then chose&quot;PUC\_24HR\_1Mhz&quot; con file
+8. If you can&#39;t find the file, use these settings:
+  1. Frequency: 1 Mhz
+  2. Profile interval: 300 seconds
+  3. Number of cells: 20
+  4. Cell size: 1 m
+9. Start logging under Deployment \&gt; Start Recorder Deployment. File name and comments should include island code and cruise year.
+10. Prep instrument for deployment
+  1. Clean O-rings, replace battery (if needed)
+    1. When opening the end cap, make sure to unscrew the screws a bit at a time, alternating screws, so that the end cap comes off evenly
+  2. Plug in battery and end cap, add dessicant to battery case, close cap
+    1. Make sure battery fabric doesn&#39;t get pinched in end cap
+    2. Screw on cap a little at a time, alternating screws, to not bend or damage screws/cap
+11. Note: Nortek recommends a 10V minimum cutoff voltage.
+
+## Deploying the Aquadopp
+
+- Orient the aquadopp so that the length of it&#39;s body is flat in relation to the surface of the ocean and that the head is also rotationally flat relative to the surface of the ocean
+- Upon deployment shoot a bearing on positive X, take a picture of compass upon deployment
+- Deploy instrument
+  - Make sure it is pointing up, relatively flat, and solidly attached to something (NO WIGGLING)
+  - The ADCP head should not be closer than 10 instrument diameters to any structure that is taller than the instrument head
+    - Otherwise the beams will bounce off of the tall object, giving bad readings
+  - Take a compass heading on deployment and record it if instrument is recording in xyz coordinates
+
+## Retrieve the Aquadopp
+
+1. Recover instrument
+2. Download and process data
+  1. Download data using Aquadopp software; Deployment \&gt; Recorder Data Retrieval. Saves as .prf file.
+  2. Process using R package occ &#39;processADCP&#39; function.
+
+# Shipboard Operations
+
+Note: since the Hiialakai was decommissioned in 2019, no plans have been made to re-install the PCO2 or TA system on another vessel
+
+## PCO2 System
+
+- Perform simple check of system daily (see to-be-developed checklist)
+- [See detailed documentation in this Google Drive Folder Link](https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy)
+
+## TA System
+
+Perform simple check of system daily (see to-be-developed checklist)
+
+- [See detailed documentation in this Google Drive Folder Link](https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy)

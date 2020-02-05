@@ -1,4 +1,7 @@
-# Diel Suite
+# Diel Suite {#dielsuite}
+
+`r knitr::include_graphics(rep("images/d_suite_deploy_small.jpg"))`
+
 
 ## Diel Suite Underwater Checklist
 

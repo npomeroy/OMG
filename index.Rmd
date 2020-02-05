@@ -24,7 +24,7 @@ output:
 ---
 # Preface {-}
 
-`r knitr::include_graphics(rep("images/d_suite_deploy_small.jpg"))`
+`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
 Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from [Noah via GitHub](https://github.com/npomeroy/OMG), pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.  
 
