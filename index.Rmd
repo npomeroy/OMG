@@ -36,3 +36,7 @@ Once you have forked the repo onto your local machine, the HTML version of the O
 2. Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder. Build the book to see your edits in the form of the built book. 
 3. Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
 4. In GitHub, open a Pull Request to have your edits considered for integration into the master branch. 
+
+**The Best How to Guide for Authoring Books with R Markdown** is written by Yihui Xie and is found right [here](https://bookdown.org/yihui/bookdown/)
+
+If you need some tips for your R Markdown formatting, [this cheat sheet is great.](https://rmarkdown.rstudio.com/lesson-15.html)

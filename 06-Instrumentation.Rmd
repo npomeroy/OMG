@@ -509,8 +509,6 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 
 `r knitr::include_graphics(rep("images/PUC_bag_pop.png"))`
 
-Don't oeve
-
 ## PUC Deployment
 
 1. Ensure PUCs are fastened securely to the milk crate (maximum 4 PUCs per crate)
