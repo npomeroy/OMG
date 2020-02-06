@@ -925,7 +925,11 @@ Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQg
 
 Ari this section is for you!!!!!
 
+<<<<<<< HEAD
 What NVP means by this is, **BECCA**, this is for youuuuuuuu!!!
+=======
+(White Blizzard!!!)
+>>>>>>> 4fa75eebb7606aff93a776da6e71eb3a018e4035
 
 <!--chapter:end:12-CAU-Processing.Rmd-->
 
