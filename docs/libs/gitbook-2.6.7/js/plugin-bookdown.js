@@ -84,7 +84,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     if (config.search !== false) info.push('f: Toggle search input ' +
       '(use <up>/<down>/Enter in the search input to navigate through search matches; ' +
       'press Esc to cancel search)');
-    if (config.info !== false) gitbook.toolbar.createButton({
+    gitbook.toolbar.createButton({
       icon: 'fa fa-info',
       label: 'Information about the toolbar',
       position: 'left',
