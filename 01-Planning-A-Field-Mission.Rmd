@@ -20,7 +20,7 @@ Determine the team's goals in the region the research cruise is scheduled to vis
 
 ## Datasheet Preparation
 
-* We should make some new field datasheets before MARAMP2020 given the NEW FANCY Oracle DB!!!
+* We should make some new field datasheets before MARAMP2020 given the NEW FANCY Oracle DB!!!!!!!!
 
 * Prepare Field Data Binders
   + Print enough data sheets for all activities, including mooring, CAU, CTD/H2O for the OCC team in addition to enough CTD/H20 data sheets for any other team on CTD/H20 Ops.
