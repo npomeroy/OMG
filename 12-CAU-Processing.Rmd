@@ -1,7 +1,43 @@
 # CAU Processing {#cau}
 
-Ari this section is for you!!!!!
+Summary: This web application was created using Oracle Application Express (APEX) 5.0 in order facilitate the process of recording the Calcification Accretion Unit (CAU) weights into a database. In order to request access to the application, please contact ITS or the Data Management department for assistance. 
 
-What NVP means by this is, **BECCA**, this is for youuuuuuuu!!!
+Interface: The web application is segregated in to four main sections: 
 
-Today we had fun trying to sync our edits via GitHub.  It was **so** much fun.
+**•	Home**
+**•	Data Entry**
+**•	Data Summary**
+**•	Audit**
+
+**A. Home**
+
+This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The **Valid Plate, Valid Filter, and Filter Subplate** fields are explained in another section.
+
+INSERT PHOTO
+
+**B. Data Entry** 
+The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the **Data Entry** page. 
+
+INSERT PHOTO
+
+1.	**Breadcrumb Bar** – use this to navigate through the different levels of the application.
+
+2.	**Finder Drop Down** – use this to select the column you wish to search by
+
+3.	**Search Field** – enter search criteria here
+
+4.	**Search Button** – click this button to execute your search criteria or hit ‘Enter’
+
+5.	**Row Selector** – choose the number of rows you wish to display on the page
+
+6.	**Action** – Allows you to download the table, and perform more advanced functions
+
+7.	**Edit Plate Weights** - Navigates to a new page where data for the CAU plates are entered
+
+8.	**Edit Filter Weights** - Navigates to a new page where data for the CAU filters are entered
+
+
+
+## Edit Plate Weights Page
+
+The **Edit Plate** and Edit Filter pages are identical; however, we are going to work with the Edit Plate page below. Click on the Edit Plate Weights button (shown in figure 2) to navigate to the screen below:
