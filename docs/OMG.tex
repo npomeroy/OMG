@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-03-04}
+    \date{2020-03-11}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -1846,6 +1846,35 @@ As of January 2020, the OCC team is in the process of working with the data mana
 
 After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
 
+\hypertarget{how-to-connect-to-the-oracle-database}{%
+\section{How to Connect to the Oracle Database}\label{how-to-connect-to-the-oracle-database}}
+
+\href{https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit\#}{Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database}
+
+\hypertarget{how-to-connect-to-the-occ-oracle-databse-viea-oracle-sql-developer}{%
+\section{How to Connect to the OCC Oracle Databse Viea Oracle SQL Developer}\label{how-to-connect-to-the-occ-oracle-databse-viea-oracle-sql-developer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open Oracle SQL Developer
+\item
+  On the ``Welcome Page'' tab, under the ``Databases Detected'' tab, find the ``GIS'' database and click it.
+  \includegraphics{images/SQL_Dev_Screenshot_1.jpg}
+\item
+  When prompted, enter your Oracle username and password
+  \includegraphics{images/SQL_Dev_Screenshot_2.jpg}
+\item
+  In the ``Connections'' pane, expand the ``GIS'' database and navigate down to ``Other Users''
+  \includegraphics{images/SQL_Dev_Screenshot_3.jpg}
+\item
+  Expand ``Other Users'' and navigate down to ``GISDAT''
+  \includegraphics{images/SQL_Dev_Screenshot_4.jpg}
+\item
+  Within ``GISDAT'' find OCC tables begining with ``OCN'' (note as of March 2020, this is soon to be changed to ``OCC'' prefix when the data team updates the new tables)
+\end{enumerate}
+
 \hypertarget{various-underway-resources}{%
 \chapter{Various Underway resources}\label{various-underway-resources}}
 
@@ -1908,6 +1937,14 @@ The \textbf{Edit Plate} and Edit Filter pages are identical; however, we are goi
 
 \hypertarget{instrument-refurbishment}{%
 \section{Instrument Refurbishment}\label{instrument-refurbishment}}
+
+\hypertarget{this-is-an-example-blank-chapter}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+\includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
 
 
 \end{document}
