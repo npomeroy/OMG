@@ -17,7 +17,7 @@ Find the user manual in "Reference" section of OCC files at sea or at [this goog
 
 - Use brand new Tadiran Lithium Thionyl Chloride 3.6v batteries
 
-- Wrap instrument housing with "PVC floor marking tape", leaving the serial number exposed
+- Wrap instrument housing with yellow "PVC floor marking tape", leaving the serial number exposed
 
 **Programming**
 
@@ -91,13 +91,13 @@ Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for
   `r knitr::include_graphics(rep("images/SBE56_program_step_4.jpg"))`
 5.  At this point, you can disconnect the SBE56, install a new dessicant in its endcap, examine its o-rings for any hairs and re-seal the housing. It is now ready for taping and installation in the deployment bracket. 
 
-  
+**Downloading Data from the SBE56**
 
+1. Connect to the instrument
 
+**Processing SBE56 Data Files**
 
-
-
-
+see [Data Processing with the OCC Package](#data_processing)
 
 # CTD
 
@@ -151,8 +151,6 @@ date (MMDDYY) = 060518
 time (HHMMSS) = 200930
 
 
-
-
 ## SBE19Plus in Profiling Mode
 
 1.  Remove the dummy plug from the SBE 19plus’ Data I/O 4 pin connector and install the Sea-Bird I/O cable connector, aligning the raised bump on the side of the connector with the large pin (pin 1 - ground) on the SBE 19plus.  Plug the serial connector into a serial to usb (Keyspan) converter and plug the USB cable into the computer.
@@ -179,9 +177,6 @@ time (HHMMSS) = 200930
 * Make sure in the above information it does not say BATTERY LOW.  Batteries should be replaced prior to each cruise; however, it is always good to double check.  Ensure UTC time is set correctly.  The correct time can be taken from the ship clock or a properly calibrated GPS unit.
 5.  When you have confirmed that all data has been obtained from the instrument and you are ready to clear its memmory, send the SAMPLENUMBER=0 or INITLOGGING (e.g. S>samplenumber = 0 or S>initlogging) command to remove unnecessary data files. If one of these commands is not sent, new data will be stored after the last recorded sample, preventing use of the entire memory capacity and make file management more difficult during the next upload.
 6.	Disconnect the Sea-Bird I/O cable connector and screw on the dummy plug.  The CTD can be properly stowed until redeployment.  
-
-
-
 
 
 ## SBE19Plus in Moored Mode Mode
