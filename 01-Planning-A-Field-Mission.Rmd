@@ -11,9 +11,9 @@ library(leaflet)
 
 sites <- read.csv("data/OCC_LIST_OF_SITES_21-FEB-2020.csv", stringsAsFactors=FALSE)
 
-m <- leaflet(sites) %>% addTiles %>%
+m <- leaflet(sites) %>% addProviderTiles("Esri.WorldImagery") %>%
   addMarkers(~LONGITUDE, ~LATITUDE, popup=sites$OCC_SITEID)
-             
+
 m
 ```
 
