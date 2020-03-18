@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-02-05}
+    \date{2020-03-17}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -772,7 +772,41 @@ As of 2020, the OCC team is not buying anymore SBE56 sensors due to history of i
 
 Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for 30S. The user mnual for the SBE56 can be found \href{https://drive.google.com/drive/folders/1ujFmH1pJ704ikrsc11Ji2eNeuIBQ5JMa}{here}.
 
-\protect\hyperlink{tasks}{tasks}
+\textbf{Here are the basic steps to program the SBE56:}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open SeatermV2 and select SBE56 from the instruments menu.
+  \includegraphics{images/SBE56_program_step_1.jpg}
+\item
+  Open the housing with the custom endcap remover and connect the SBE 56 to your PC via a USB mini cable.
+  \includegraphics{images/SBE56_connect.jpg}
+\item
+  When a successful connection is made, you will notice a ``Device Identified'' notification in the bottom left of the screen and you will see the serial number of the unit you have connected to in the upper left of the application window and in the current configuration window.
+  \includegraphics{images/SBE56_program_step_2.jpg}
+\item
+  Edit the configuration options as follows
+\item
+  sample period = 5 minutes (300 seconds)
+\item
+  set time to UTC by clicking the ``time options'' button on the right and select ``GreenWich Mean Time.''
+  \includegraphics{images/SBE56_program_step_3.jpg}
+\item
+  check the box for clear memory
+\item
+  check the boxy for clear events
+\item
+  check the box for new battery installed (if it is relatively new, which if it is just back from refurbishment, it should be)
+\item
+  set the date and time for the unit to begin sampling for a time is prior to the day it will be deployed
+\item
+  When you are done editing the configuration of the SBE56, click the ``Update Configuration'' button and confirm the changes you want to make when the pop-up window asks you to do so. When you have finished, you should see the notification in the bottom left that says, ``finished configuring device - success.'' At this point double check that the ``current configuration'' window on the left shows the parameters that you intended to program the instrument with.
+  \includegraphics{images/SBE56_program_step_4.jpg}
+\item
+  At this point, you can disconnect the SBE56, install a new dessicant in its endcap, examine its o-rings for any hairs and re-seal the housing. It is now ready for taping and installation in the deployment bracket.
+\end{enumerate}
 
 \hypertarget{ctd}{%
 \chapter{CTD}\label{ctd}}
@@ -1846,6 +1880,35 @@ As of January 2020, the OCC team is in the process of working with the data mana
 
 After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
 
+\hypertarget{how-to-connect-to-the-oracle-database}{%
+\section{How to Connect to the Oracle Database}\label{how-to-connect-to-the-oracle-database}}
+
+\href{https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit\#}{Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database}
+
+\hypertarget{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}{%
+\section{How to Connect to the OCC Oracle Databse Via Oracle SQL Developer}\label{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open Oracle SQL Developer
+\item
+  On the ``Welcome Page'' tab, under the ``Databases Detected'' tab, find the ``GIS'' database and click it.
+  \includegraphics{images/SQL_Dev_Screenshot_1.jpg}
+\item
+  When prompted, enter your Oracle username and password
+  \includegraphics{images/SQL_Dev_Screenshot_2.jpg}
+\item
+  In the ``Connections'' pane, expand the ``GIS'' database and navigate down to ``Other Users''
+  \includegraphics{images/SQL_Dev_Screenshot_3.jpg}
+\item
+  Expand ``Other Users'' and navigate down to ``GISDAT''
+  \includegraphics{images/SQL_Dev_Screenshot_4.jpg}
+\item
+  Within ``GISDAT'' find OCC tables begining with ``OCN'' (note as of March 2020, this is soon to be changed to ``OCC'' prefix when the data team updates the new tables)
+\end{enumerate}
+
 \hypertarget{various-underway-resources}{%
 \chapter{Various Underway resources}\label{various-underway-resources}}
 
@@ -1855,11 +1918,50 @@ Checkout \href{https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL
 \hypertarget{cau}{%
 \chapter{CAU Processing}\label{cau}}
 
-Ari this section is for you!!!!!
+Summary: This web application was created using Oracle Application Express (APEX) 5.0 in order facilitate the process of recording the Calcification Accretion Unit (CAU) weights into a database. In order to request access to the application, please contact ITS or the Data Management department for assistance.
 
-What NVP means by this is, \textbf{BECCA}, this is for youuuuuuuu!!!
+Interface: The web application is segregated in to four main sections:
 
-Today we had fun trying to sync our edits via GitHub. It was \textbf{so} much fun.
+\textbf{• Home}
+\textbf{• Data Entry}
+\textbf{• Data Summary}
+\textbf{• Audit}
+
+\textbf{A. Home}
+
+This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The \textbf{Valid Plate, Valid Filter, and Filter Subplate} fields are explained in another section.
+
+INSERT PHOTO
+
+\textbf{B. Data Entry}
+The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you'll see when you navigate to the \textbf{Data Entry} page.
+
+INSERT PHOTO
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Breadcrumb Bar} -- use this to navigate through the different levels of the application.
+\item
+  \textbf{Finder Drop Down} -- use this to select the column you wish to search by
+\item
+  \textbf{Search Field} -- enter search criteria here
+\item
+  \textbf{Search Button} -- click this button to execute your search criteria or hit `Enter'
+\item
+  \textbf{Row Selector} -- choose the number of rows you wish to display on the page
+\item
+  \textbf{Action} -- Allows you to download the table, and perform more advanced functions
+\item
+  \textbf{Edit Plate Weights} - Navigates to a new page where data for the CAU plates are entered
+\item
+  \textbf{Edit Filter Weights} - Navigates to a new page where data for the CAU filters are entered
+\end{enumerate}
+
+\hypertarget{edit-plate-weights-page}{%
+\section{Edit Plate Weights Page}\label{edit-plate-weights-page}}
+
+The \textbf{Edit Plate} and Edit Filter pages are identical; however, we are going to work with the Edit Plate page below. Click on the Edit Plate Weights button (shown in figure 2) to navigate to the screen below:
 
 \hypertarget{postcruise}{%
 \chapter{Post Cruise Activities}\label{postcruise}}
@@ -1869,6 +1971,14 @@ Today we had fun trying to sync our edits via GitHub. It was \textbf{so} much fu
 
 \hypertarget{instrument-refurbishment}{%
 \section{Instrument Refurbishment}\label{instrument-refurbishment}}
+
+\hypertarget{this-is-an-example-blank-chapter}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+\includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
 
 
 \end{document}

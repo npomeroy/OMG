@@ -71,7 +71,30 @@ As of 2020, the OCC team is not buying anymore SBE56 sensors due to history of i
 
 Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for 30S. The user mnual for the SBE56 can be found [here](https://drive.google.com/drive/folders/1ujFmH1pJ704ikrsc11Ji2eNeuIBQ5JMa).
 
-[tasks](#tasks)
+**Here are the basic steps to program the SBE56:**
+
+1. Open SeatermV2 and select SBE56 from the instruments menu.
+`r knitr::include_graphics(rep("images/SBE56_program_step_1.jpg"))`
+2. Open the housing with the custom endcap remover and connect the SBE 56 to your PC via a USB mini cable.
+`r knitr::include_graphics(rep("images/SBE56_connect.jpg"))`
+2. When a successful connection is made, you will notice a "Device Identified" notification in the bottom left of the screen and you will see the serial number of the unit you have connected to in the upper left of the application window and in the current configuration window.
+`r knitr::include_graphics(rep("images/SBE56_program_step_2.jpg"))`
+3. Edit the configuration options as follows
+  1. sample period = 5 minutes (300 seconds)
+  2. set time to UTC by clicking the "time options" button on the right and select "GreenWich Mean Time."
+  `r knitr::include_graphics(rep("images/SBE56_program_step_3.jpg"))`
+  3.  check the box for clear memory
+  4.  check the boxy for clear events
+  5.  check the box for new battery installed (if it is relatively new, which if it is just back from refurbishment, it should be)
+  6.  set the date and time for the unit to begin sampling for a time is prior to the day it will be deployed
+4.  When you are done editing the configuration of the SBE56, click the "Update Configuration" button and confirm the changes you want to make when the pop-up window asks you to do so.  When you have finished, you should see the notification in the bottom left that says, "finished configuring device - success." At this point double check that the "current configuration" window on the left shows the parameters that you intended to program the instrument with. 
+  `r knitr::include_graphics(rep("images/SBE56_program_step_4.jpg"))`
+5.  At this point, you can disconnect the SBE56, install a new dessicant in its endcap, examine its o-rings for any hairs and re-seal the housing. It is now ready for taping and installation in the deployment bracket. 
+
+  
+
+
+
 
 
 

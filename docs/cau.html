@@ -24,7 +24,7 @@
 <meta name="author" content="NVP" />
 
 
-<meta name="date" content="2020-02-05" />
+<meta name="date" content="2020-03-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -199,13 +199,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="12" data-path="data-how-to.html"><a href="data-how-to.html"><i class="fa fa-check"></i><b>12</b> Data How To</a><ul>
 <li class="chapter" data-level="12.1" data-path="data-how-to.html"><a href="data-how-to.html#how-to-gain-access-to-the-occ-database"><i class="fa fa-check"></i><b>12.1</b> How to Gain Access to the OCC Database</a></li>
 <li class="chapter" data-level="12.2" data-path="data-how-to.html"><a href="data-how-to.html#how-to-archive-data"><i class="fa fa-check"></i><b>12.2</b> How to Archive Data</a></li>
+<li class="chapter" data-level="12.3" data-path="data-how-to.html"><a href="data-how-to.html#how-to-connect-to-the-oracle-database"><i class="fa fa-check"></i><b>12.3</b> How to Connect to the Oracle Database</a></li>
+<li class="chapter" data-level="12.4" data-path="data-how-to.html"><a href="data-how-to.html#how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer"><i class="fa fa-check"></i><b>12.4</b> How to Connect to the OCC Oracle Databse Via Oracle SQL Developer</a></li>
 </ul></li>
 <li class="chapter" data-level="13" data-path="various-underway-resources.html"><a href="various-underway-resources.html"><i class="fa fa-check"></i><b>13</b> Various Underway resources</a></li>
-<li class="chapter" data-level="14" data-path="cau.html"><a href="cau.html"><i class="fa fa-check"></i><b>14</b> CAU Processing</a></li>
+<li class="chapter" data-level="14" data-path="cau.html"><a href="cau.html"><i class="fa fa-check"></i><b>14</b> CAU Processing</a><ul>
+<li class="chapter" data-level="14.1" data-path="cau.html"><a href="cau.html#edit-plate-weights-page"><i class="fa fa-check"></i><b>14.1</b> Edit Plate Weights Page</a></li>
+</ul></li>
 <li class="chapter" data-level="15" data-path="postcruise.html"><a href="postcruise.html"><i class="fa fa-check"></i><b>15</b> Post Cruise Activities</a><ul>
 <li class="chapter" data-level="15.1" data-path="postcruise.html"><a href="postcruise.html#data-qc-and-import-into-oracle-database"><i class="fa fa-check"></i><b>15.1</b> Data QC and Import into Oracle Database</a></li>
 <li class="chapter" data-level="15.2" data-path="postcruise.html"><a href="postcruise.html#instrument-refurbishment"><i class="fa fa-check"></i><b>15.2</b> Instrument Refurbishment</a></li>
 </ul></li>
+<li class="chapter" data-level="16" data-path="this-is-an-example-blank-chapter.html"><a href="this-is-an-example-blank-chapter.html"><i class="fa fa-check"></i><b>16</b> This is an Example Blank Chapter</a></li>
 </ul>
 
       </nav>
@@ -225,10 +230,33 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="cau" class="section level1">
 <h1><span class="header-section-number">14</span> CAU Processing</h1>
-<p>Ari this section is for you!!!!!</p>
-<p>What NVP means by this is, <strong>BECCA</strong>, this is for youuuuuuuu!!!</p>
-<p>Today we had fun trying to sync our edits via GitHub. It was <strong>so</strong> much fun.</p>
+<p>Summary: This web application was created using Oracle Application Express (APEX) 5.0 in order facilitate the process of recording the Calcification Accretion Unit (CAU) weights into a database. In order to request access to the application, please contact ITS or the Data Management department for assistance.</p>
+<p>Interface: The web application is segregated in to four main sections:</p>
+<p><strong>• Home</strong>
+<strong>• Data Entry</strong>
+<strong>• Data Summary</strong>
+<strong>• Audit</strong></p>
+<p><strong>A. Home</strong></p>
+<p>This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The <strong>Valid Plate, Valid Filter, and Filter Subplate</strong> fields are explained in another section.</p>
+<p>INSERT PHOTO</p>
+<p><strong>B. Data Entry</strong>
+The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the <strong>Data Entry</strong> page.</p>
+<p>INSERT PHOTO</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Breadcrumb Bar</strong> – use this to navigate through the different levels of the application.</p></li>
+<li><p><strong>Finder Drop Down</strong> – use this to select the column you wish to search by</p></li>
+<li><p><strong>Search Field</strong> – enter search criteria here</p></li>
+<li><p><strong>Search Button</strong> – click this button to execute your search criteria or hit ‘Enter’</p></li>
+<li><p><strong>Row Selector</strong> – choose the number of rows you wish to display on the page</p></li>
+<li><p><strong>Action</strong> – Allows you to download the table, and perform more advanced functions</p></li>
+<li><p><strong>Edit Plate Weights</strong> - Navigates to a new page where data for the CAU plates are entered</p></li>
+<li><p><strong>Edit Filter Weights</strong> - Navigates to a new page where data for the CAU filters are entered</p></li>
+</ol>
+<div id="edit-plate-weights-page" class="section level2">
+<h2><span class="header-section-number">14.1</span> Edit Plate Weights Page</h2>
+<p>The <strong>Edit Plate</strong> and Edit Filter pages are identical; however, we are going to work with the Edit Plate page below. Click on the Edit Plate Weights button (shown in figure 2) to navigate to the screen below:</p>
 
+</div>
 </div>
             </section>
 
