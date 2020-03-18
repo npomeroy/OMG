@@ -318,3 +318,154 @@ Decal | Sc/Decal | Sc/Decal | Filt |  Filt   |   Filt  |   AD  | Week 3 **DECALC
                                                                            **85**
 
 
+
+
+# Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
+
+* *Refer to the brand/model user documentation/manual if using a different camera and setup*
+
+### A. Installing the software
+
+For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder *T:\general\ProjectGroup\Ocean Acidification\CAUs\Analysis\CAU Processing SOP, Data sheet, Labels/CAU SOPs 2015/ CAUSOP_NikonD7000Settings.pdf*
+
+### B. Connecting the camera to the computer
+
+1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f\2.8G ED lens) to the computer via USB mini cable
+
+`r knitr::include_graphics(rep("images/Camera.jpg"))`
+
+2.	Start the Nikon Camera Control Pro 2 application
+3.	Turn the camera ON
+
+4.	Once connected, the connection status of the camera in use will be displayed on the Camera Control Pro window
+
+`r knitr::include_graphics(rep("images/Camera2.jpg"))`
+
+5.	**If using the software for the FIRST TIME:**
+		
+a)	Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
+		
+Shutter speed: **1/50 sec**  
+Aperture: **f/8**  
+
+`r knitr::include_graphics(rep("images/Camera3.jpg"))`
+
+b)	Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
+		
+	ISO Sensitivity: **ISO 400**  
+	White Balance: **Auto**  
+	Option: **Normal**  
+
+`r knitr::include_graphics(rep("images/Camera4.jpg"))`
+
+c)	Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
+
+		Image Quality: **JPEG fine**  
+    JPEG Compression: **Optimal quality**  
+		Image size: **Large (4928x3264)**  
+		Record to: **PC**  
+		Card Record Mode: **Backup**  
+
+`r knitr::include_graphics(rep("images/Camera5.jpg"))`
+
+
+d)	Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
+
+		Picture Control: **Standard**   
+		High ISO NR: **On (High)**  
+
+* *Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used*
+
+`r knitr::include_graphics(rep("images/Camera6.jpg"))`
+
+
+### C. CAU plate photo-documentation
+
+1.	Ensure that the camera’s Mode dial is set to “M” (Manual) 
+
+`r knitr::include_graphics(rep("images/Camera7.jpg"))`
+
+2.	Ensure that the camera lens’ A-M switch is set to “M\A” (Autofocus w/ manual override).
+
+`r knitr::include_graphics(rep("images/Camera8.jpg"))`
+
+3.	Connect the Nikon DSLR camera to the copier stand, then connect the camera to the computer via mini USB cable
+
+`r knitr::include_graphics(rep("images/Camera9.jpg"))`
+
+4.	Start the Nikon Camera Control Pro 2 application
+
+5.	Turn the camera ON
+
+6.	Once connected, the connection status of the camera in use will be displayed on the Camera Control Pro main window
+
+`r knitr::include_graphics(rep("images/Camera10.jpg"))`
+
+7.	Go to the **Tools** menu to display the **Transfer Options** window 
+
+`r knitr::include_graphics(rep("images/Camera11.jpg"))`
+
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location (e.g. Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS\SWA03\SWA03_368) where the images will be downloaded as they are taken. Click **OK**
+
+`r knitr::include_graphics(rep("images/Camera12.jpg"))`
+
+`r knitr::include_graphics(rep("images/Camera13.jpg"))`
+
+9.	On the Camera Control Pro main window, click on the “**LV**” button at the bottom-right corner to display the Live View window. 
+		
+*Note: the camera controls and folder location options cannot be modified while the Live View window is displayed*
+
+`r knitr::include_graphics(rep("images/Camera14.jpg"))`
+
+10.	Center the glass dish with the plate under the camera and using the Live View display, ensure that all corners of the plate are visible in the frame 			
+	
+*Note: both copier stand lights should be switched on at this time and that any external light sources are minimized (i.e., window shades are drawn, overhead/ceiling lights are switched off)*
+
+`r knitr::include_graphics(rep("images/Camera15.jpg"))`
+
+11.	Using the “**AF and Shoot**” button on the Live View window, photograph the top of the plate, **first with the Plate Photo ID tag** and then a **second image without the tag**
+
+`r knitr::include_graphics(rep("images/CAU_image.jpg"))`
+
+12.	Flip the plate and photograph the **bottom** of the plate, again with Plate Photo ID tag and then a second image without the tag
+
+13.	From the designated CAU unit folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus
+14.	Repeat for the next set of plates/surfaces for each unit
+
+15.	After all 8 images have been taken and saved to the unit folder (e.g. SWA03_368), click on the “**LV**” button at the bottom-right corner to turn off Live View
+
+16.	On the Camera Control Pro main window, go to the Tools menu to display the **Transfer Options window**. Click on the **Browse** button next to the “*Destination folder*” and **navigate to the next CAU site and unit folder** (e.g. SWA03_394). Repeat steps C. 7-13
+
+`r knitr::include_graphics(rep("images/Camera16.jpg"))`
+
+`r knitr::include_graphics(rep("images/Camera17.jpg"))`
+
+17.	At the end of the plate photo documentation session, ensure that all CAU plate photos have been taken and saved to their appropriate local drive folders
+
+18.	Backup the images by copying the **Island** parent folder (e.g. Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS) to the network drive (e.g. *T:/Oceanography/CAUs/Analysis/2018_CAU Analysis/ASRAMP18/PHOTO ANALYSIS/SAMOA/SWAINS*) and to the external hard drive. If prompted, select “Overwrite”
+
+19.	Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu
+
+20.	Rename all plate photos with the following naming convention:  
+
+a)	**With Plate Photo ID tag:** 
+*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - 	lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg*  
+
+b)	**Without Plate Photo ID tag:**  
+*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg*  
+
+	Example:  
+	SWA03_2015_368_U_T_ID.jpg  	– Upper Plate, Top Side with tag  
+	SWA03_2015_368_U_T.jpg		  – Upper Plate, Top Side  
+	SWA03_2015_368_U_B_ID.jpg	  – Upper Plate, Bottom Side with tag  
+  SWA03_2015_368_U_B.jpg		  – Upper Plate, Bottom Side  
+	SWA03_2015_368_L_T_ID.jpg	  – Lower Plate, Top Side with tag  
+	SWA03_2015_368_L_T.jpg		  – Lower Plate, Top Side  
+	SWA03_2015_368_L_B_ID.jpg	  – Lower Plate, Bottom Side with tag  
+	SWA03_2015_368_L_B.jpg		  – Lower Plate, Bottom Side  
+
+`r knitr::include_graphics(rep("images/Camera18.jpg"))`
+
+21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (e.g. Documents/CAU Analysis/ASRAMP 2015/PHOTO ANALYSIS/SAMOA/SWAINS) to the network drive (e.g. T:/Oceanography/CAUs/Analysis/2018_CAU Analysis/ASRAMP18/PHOTO ANALYSIS/SAMOA/SWAINS) and to the external hard drive. If prompted, select “Overwrite”
+
+
