@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  18 MAR 2020 13:53
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  18 MAR 2020 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1358,16 +1358,11 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [69]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/it' will be
-(Font)              scaled to size 11.03357pt on input line 1943.
+(Font)              scaled to size 9.19464pt on input line 1945.
 
-Overfull \hbox (5.72545pt too wide) in paragraph at lines 1959--1960
+Overfull \hbox (5.72545pt too wide) in paragraph at lines 1961--1962
 []\TU/Calibri(0)/m/n/10 Using a pencil, \TU/Calibri(0)/bx/n/10 pre-label the fo
 llowing with the CAU Plate ID (e.g. PAL01_2012_5319_U): 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1966--1968
-
  []
 
 
@@ -1376,56 +1371,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 1968--1970
  []
 
 
-Overfull \hbox (6.88806pt too wide) has occurred while \output is active
-\TU/Calibri(0)/m/n/10 70 \TU/Calibri(0)/m/it/10 CHAPTER 14.  CALCIFICATION ACCR
-ETION UNIT (CAU) LABORATORY SAMPLE PROCESSING SOP
+Underfull \hbox (badness 10000) in paragraph at lines 1970--1972
+
  []
 
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 1996--1998
+Underfull \hbox (badness 10000) in paragraph at lines 1998--2000
 
  []
 
 [71]
-Overfull \hbox (6.88806pt too wide) has occurred while \output is active
-\TU/Calibri(0)/m/n/10 72 \TU/Calibri(0)/m/it/10 CHAPTER 14.  CALCIFICATION ACCR
-ETION UNIT (CAU) LABORATORY SAMPLE PROCESSING SOP
- []
-
-[72]
-Chapter 15.
 File: images/CAU_plate_ID.jpg Graphic file (type bmp)
 <images/CAU_plate_ID.jpg>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1112) has occurred while \output is active []
 
-[73
-
-]
+[72]
 File: images/CAU_dried.jpg Graphic file (type bmp)
 <images/CAU_dried.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74]
-LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/it' will be
-(Font)              scaled to size 9.19464pt on input line 2095.
+[73]
 File: images/CAU_photograph.jpg Graphic file (type bmp)
 <images/CAU_photograph.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+[74]
+File: images/CAU_image.jpg Graphic file (type bmp)
+<images/CAU_image.jpg>
 [75]
+Underfull \hbox (badness 5741) in paragraph at lines 2121--2123
+\TU/Calibri(0)/m/n/10 *SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - 
+upper plate or “L” - lower
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2124--2126
+\TU/Calibri(0)/m/n/10 *SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - 
+upper plate, “L” lower
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2137--2137
+[]\TU/lmtt/m/n/10 PAL01_2012_5319_U_B_ID.jpg      – Upper Plate, Bottom   Side 
+with tag[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 2137--2137
+[]\TU/lmtt/m/n/10 PAL01_2012_5319_L_B_ID.jpg      – Lower Plate, Bottom Side wi
+th tag[] 
+ []
+
+[76] [77]
+File: images/CAU_dissolve.jpg Graphic file (type bmp)
+<images/CAU_dissolve.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[78] [79]
+File: images/CAU_drying.jpg Graphic file (type bmp)
+<images/CAU_drying.jpg>
+[80]
+File: images/CAU_filter.jpg Graphic file (type bmp)
+<images/CAU_filter.jpg>
+[81]
+File: images/CAU_weigh.jpg Graphic file (type bmp)
+<images/CAU_weigh.jpg>
+[82]
+File: images/CAU_bag.jpg Graphic file (type bmp)
+<images/CAU_bag.jpg>
+
+Overfull \hbox (0.31395pt too wide) in alignment at lines 2414--2420
+ [] [] [] [] [] [] [] 
+ []
+
+[83]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 14.1 on input line 2420.
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2424--2424
+[]                                                                     \TU/lmtt
+/m/n/10 **Hours**[] 
+ []
+
 ! Undefined control sequence.
-l.2104 ...D General (T:) Drive at: T:\Oceanography
-                                                  \CAUs\Analysis organized b...
- 
+<argument> ...ication\textbackslash CAUs\Analysis 
+                                                  \textbackslash CAU Process...
+l.2451 ...ackslash CAUSOP\_NikonD7000Settings.pdf}
+                                                   
 Here is how much of TeX's memory you used:
- 22702 strings out of 494944
- 417665 string characters out of 6175978
+ 22726 strings out of 494944
+ 418117 string characters out of 6175978
  536864 words of memory out of 5000000
- 26351 multiletter control sequences out of 15000+600000
- 545153 words of font info for 66 fonts, out of 8000000 for 9000
+ 26370 multiletter control sequences out of 15000+600000
+ 545145 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,8n,117p,995b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on OMG.pdf (75 pages).
+
+Output written on OMG.pdf (83 pages).

@@ -14,7 +14,7 @@ output:
           <li><a href="./">OMG</a></li>
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
-      collapse: section
+      collapse: subsection
       delete_merged_file: FALSE
   bookdown::pdf_book:
     includes:
@@ -974,7 +974,9 @@ Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQg
 <!--chapter:end:11-Various-Underway-Resources.Rmd-->
 
 
-# Calcification Accretion Unit (CAU) Laboratory Sample Processing SOP
+# Calcification Accretion Unit (CAU)
+
+##Calcification Accretion Unit (CAU) Laboratory Sample Processing SOP
 
 Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised March 2020)
 
@@ -982,7 +984,7 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 
 
-## Calcification Accretion Unit (CAU) schematic
+### Calcification Accretion Unit (CAU) schematic
 
 `r knitr::include_graphics(rep("images/CAU_assembly.jpg"))`
 
@@ -990,9 +992,9 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 
 
-## Preparation Work
+### Preparation Work
 
-### *ID Tags*
+#### *ID Tags*
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
   
@@ -1021,25 +1023,25 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 a)	Paper tray A - record the value in Column (‘Paper Tray A Weight [g]’)  
 b)	Paper tray B + Filterpaper - record the value in Column (‘Filter & Paper Tray B Dry Weight  [g]’)  
 
-### *Re-sealable Bag ID*
+#### *Re-sealable Bag ID*
 
 Pre-label **re-sealable plastic bags** 0.95L (1 quart) with the CAU Plate ID. The filter residue will be stored in this bag for archiving
 
-### *Database*
+#### Database*
 
 1. Using the **ESD Apex CAU Mission App** (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20), have the Data Management team enter the CAU Site IDs (e.g. PAL01) and 4-digit CAU Serial #s (e.g. 5319) for each unit to be processed
 
 
 2. To calculate the **“Soak Time”** of each unit, record the CAU “Deployment Date” and “Recovery Date” in Column CA and CB, respectively. Record any other additional field data in the spreadsheet (e.g. coordinates, depth, comments, etc.). When using the ESD Apex CAU Mission App, soak time is calculated automatically.
 
-### *Pre-heat Drying Oven*
+#### *Pre-heat Drying Oven*
 
 Oven (Heratherm OGS-180) settings:  
 
     Temperature: 70°C (140°F)  
     Damper: level 3 (mid-high)  
     
-### *Prepare 5% HCl acid solution in 2-liter bottles*  
+#### *Prepare 5% HCl acid solution in 2-liter bottles*  
 
 One batch (20-30 units) of CAUs will require about 10-15, 2-liter bottles of 5% HCl acid solution in order to completely dissolve calcified materials. More may be needed depending on the amount of accreted CaCO3.  
 	
@@ -1057,11 +1059,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 ** Acid solutions with a higher (>5% HCl concentration) may be prepared and used if desired for processing CAUs from heavily calcified regions (American Samoa, PRIAs), however concentrations **greater than or equal to 15% HCl require special PPE including fume hood utilization.**
 
-
-
-
-
-# CAU Processing Steps
+## CAU Processing Steps
 
 * *see Section IV, p.11 for sample processing timeline and Section VII.A, p.36 for sample daily task guide*
 
@@ -1088,7 +1086,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at: T:\Oceanography\CAUs\Analysis organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at: T:\\Oceanography\\CAUs\\Analysis organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -1267,7 +1265,7 @@ b)	If the difference in weight is greater than 0.1 g, return the plates to the o
 
 
 
-# Processing Timeline
+## Processing Timeline
 
 Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP, this is equivalent to CAUs collected from about 1 island). The processing of each batch is typically completed in 4 weeks. Below is an example of a typical processing timeline 
 
@@ -1295,13 +1293,13 @@ Decal | Sc/Decal | Sc/Decal | Filt |  Filt   |   Filt  |   AD  | Week 3 **DECALC
 
 
 
-# Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
+## Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
 
 * *Refer to the brand/model user documentation/manual if using a different camera and setup*
 
 ### A. Installing the software
 
-For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder *T:\general\ProjectGroup\Ocean Acidification\CAUs\Analysis\CAU Processing SOP, Data sheet, Labels/CAU SOPs 2015/ CAUSOP_NikonD7000Settings.pdf*
+For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder *T:\\general\\ProjectGroup\\Ocean Acidification\\CAUs\Analysis\\CAU Processing SOP, Data sheet, Labels\\CAU SOPs 2015\\CAUSOP_NikonD7000Settings.pdf*
 
 ### B. Connecting the camera to the computer
 
@@ -1380,7 +1378,7 @@ d)	Click on “**Image Processing**” under the Camera Control tabs and change 
 
 `r knitr::include_graphics(rep("images/Camera11.jpg"))`
 
-8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location (e.g. Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS\SWA03\SWA03_368) where the images will be downloaded as they are taken. Click **OK**
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368"` where the images will be downloaded as they are taken. Click **OK**
 
 `r knitr::include_graphics(rep("images/Camera12.jpg"))`
 
@@ -1417,7 +1415,7 @@ d)	Click on “**Image Processing**” under the Camera Control tabs and change 
 
 17.	At the end of the plate photo documentation session, ensure that all CAU plate photos have been taken and saved to their appropriate local drive folders
 
-18.	Backup the images by copying the **Island** parent folder (e.g. Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS) to the network drive (e.g. *T:/Oceanography/CAUs/Analysis/2018_CAU Analysis/ASRAMP18/PHOTO ANALYSIS/SAMOA/SWAINS*) and to the external hard drive. If prompted, select “Overwrite”
+18.	Backup the images by copying the **Island** parent folder, ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS"` to the network drive, ex: T://Oceanography//CAUs//Analysis//2018_CAU Analysis//ASRAMP18//PHOTO ANALYSIS//SAMOA//SWAINS and to the external hard drive. If prompted, select “Overwrite”
 
 19.	Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu
 
@@ -1441,11 +1439,11 @@ b)	**Without Plate Photo ID tag:**
 
 `r knitr::include_graphics(rep("images/Camera18.jpg"))`
 
-21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (e.g. Documents/CAU Analysis/ASRAMP 2015/PHOTO ANALYSIS/SAMOA/SWAINS) to the network drive (e.g. T:/Oceanography/CAUs/Analysis/2018_CAU Analysis/ASRAMP18/PHOTO ANALYSIS/SAMOA/SWAINS) and to the external hard drive. If prompted, select “Overwrite”
+21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (e.g. Documents//CAU Analysis//ASRAMP 2015//PHOTO ANALYSIS//SAMOA//SWAINS) to the network drive (e.g. T://Oceanography//CAUs//Analysis//2018_CAU Analysis//ASRAMP18//PHOTO ANALYSIS/SAMOA/SWAINS) and to the external hard drive. If prompted, select “Overwrite”
 
 
 
-<!--chapter:end:12-CAU-Processing.Rmd-->
+<!--chapter:end:12-Calcification-Accretion-Units-CAUs.Rmd-->
 
 # Post Cruise Activities {#postcruise}
 

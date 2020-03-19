@@ -14,7 +14,7 @@ output:
           <li><a href="./">OMG</a></li>
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
-      collapse: section
+      collapse: subsection
       delete_merged_file: FALSE
   bookdown::pdf_book:
     includes:
