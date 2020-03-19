@@ -1,95 +1,99 @@
 
 # Calcification Accretion Unit (CAU)
 
-##Calcification Accretion Unit (CAU) Laboratory Sample Processing SOP
 
 Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised March 2020)
 
 `r knitr::include_graphics(rep("images/CAU.jpg"))`
 
 
-
-### Calcification Accretion Unit (CAU) schematic
+## Calcification Accretion Unit (CAU) Assembly 
 
 `r knitr::include_graphics(rep("images/CAU_assembly.jpg"))`
 
 
 
+## Calcification Accretion Unit (CAU) Laboratory Sample Processing SOP
 
 
 ### Preparation Work
 
-#### *ID Tags*
+**ID Tags**
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
   
-  e.g. PAL01_2012_5319_U; PAL01_2012_5319_L
+    e.g. *PAL01_2012_5319_U*
+         *PAL01_2012_5319_L*
 
 2.	Using a pencil, **pre-label the following with the CAU Plate ID (e.g. PAL01_2012_5319_U):**  
   
-  a)	Paper tray A - blank index card 12.7 x 20.32cm (5” x 8”) folded into 12.7 x 12.7cm (5” x 5”) paper tray  
-  b)	Paper tray B - same as above  
-  c)	Filterpaper 11cm diameter, #1, >11μm particle retention (e.g. Whatman No.1001-110)  
+    a)	Paper tray A - blank index card 12.7 x 20.32cm (5” x 8”) folded into 12.7 x 12.7cm (5” x 5”) paper tray  
+    b)	Paper tray B - same as above  
+    c)	Filterpaper 11cm diameter, #1, >11μm particle retention (e.g. Whatman No.1001-110)  
 
 3.	Insert the corresponding Filter paper into the fold of Paper tray B and store in a container. Place Paper tray A in a separate container. Store both containers away from moisture and direct sunlight. See I. Step 8 for pre-weighing instructions. 
 
 4.	Print **Glass Dish Labels** on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
 
 5.	Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:  
-	**Upper Plate, Top Side**  
-	**Upper Plate, Bottom Side**  
-	**Lower Plate, Top Side**  
-	**Lower Plate, Bottom Side**  
+    **Upper Plate, Top Side**  
+	  **Upper Plate, Bottom Side**  
+	  **Lower Plate, Top Side**  
+	  **Lower Plate, Bottom Side**  
 	
-	An example of a plate photo ID: PAL01_2012_5319_U_T
+	An example of a plate photo ID: *PAL01_2012_5319_U_T*
 
 6.	Using an analytical balance, **pre-weigh** the following and record the value (up to 3 decimal points) in the ESD Apex CAU Mission App (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20):  
 
-a)	Paper tray A - record the value in Column (‘Paper Tray A Weight [g]’)  
-b)	Paper tray B + Filterpaper - record the value in Column (‘Filter & Paper Tray B Dry Weight  [g]’)  
+    a)	Paper tray A - record the value in Column (‘Paper Tray A Weight [g]’)  
+    b)	Paper tray B + Filterpaper - record the value in Column (‘Filter & Paper Tray B Dry Weight  [g]’)  
 
-#### *Re-sealable Bag ID*
+**Re-sealable Bag ID**
 
 Pre-label **re-sealable plastic bags** 0.95L (1 quart) with the CAU Plate ID. The filter residue will be stored in this bag for archiving
 
-#### Database*
+**Database**
 
 1. Using the **ESD Apex CAU Mission App** (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20), have the Data Management team enter the CAU Site IDs (e.g. PAL01) and 4-digit CAU Serial #s (e.g. 5319) for each unit to be processed
 
 
 2. To calculate the **“Soak Time”** of each unit, record the CAU “Deployment Date” and “Recovery Date” in Column CA and CB, respectively. Record any other additional field data in the spreadsheet (e.g. coordinates, depth, comments, etc.). When using the ESD Apex CAU Mission App, soak time is calculated automatically.
 
-#### *Pre-heat Drying Oven*
+**Pre-heat Drying Oven**
 
 Oven (Heratherm OGS-180) settings:  
 
     Temperature: 70°C (140°F)  
     Damper: level 3 (mid-high)  
     
-#### *Prepare 5% HCl acid solution in 2-liter bottles*  
+**Prepare 5% HCl acid solution in 2-liter bottles** 
 
 One batch (20-30 units) of CAUs will require about 10-15, 2-liter bottles of 5% HCl acid solution in order to completely dissolve calcified materials. More may be needed depending on the amount of accreted CaCO3.  
 	
+	
+	
 To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5% solution, use the recommended ratio below:  
 
-2L stock: 225 ml HCl  
-			  1775 ml deionized/distilled H2O  
+    2L stock: 225 ml HCl  
+         1775 ml deionized/distilled H2O  
 	
-1L stock: 112.5 ml HCl  
-			   887.5 ml deionized/distilled H2O  
+    1L stock: 112.5 ml HCl  
+         887.5 ml deionized/distilled H2O  
 
-* ”Be sure to **ADD ACID TO WATER** to avoid excessive heating, violent boiling or splashing of concentrated acid that could result from the exothermic reaction. 
-“Do as you oughta, add acid to water!” - Dr. Anne Cohen, WHOI  
+
+
+** Be sure to **ADD ACID TO WATER** to avoid excessive heating, violent boiling or splashing of concentrated acid that could result from the exothermic reaction. 
+“Do as you oughta, add acid to water!” - Dr. Anne Cohen, WHOI    
  
 
 ** Acid solutions with a higher (>5% HCl concentration) may be prepared and used if desired for processing CAUs from heavily calcified regions (American Samoa, PRIAs), however concentrations **greater than or equal to 15% HCl require special PPE including fume hood utilization.**
 
-## CAU Processing Steps
+### CAU Processing Steps
 
-* *see Section IV, p.11 for sample processing timeline and Section VII.A, p.36 for sample daily task guide*
+*see Section IV, p.11 for sample processing timeline and Section VII.A, p.36 for sample daily task guide*
 
 
-### A. Dissassembling and Photo-documentation
+#### Dissassembling and Photo-documentation
 
 1.	Thaw a batch of CAUs (typically 20-30 units) in the sink for at least 12 hours. Do not thaw over water.
 
@@ -107,11 +111,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 6.	Attach a DSLR camera to a camera copy stand or a tripod. Arrange lighting such that the plate is fully illuminated and no glare is visible to the camera 
 
-* *If using a Nikon D7000 camera mounted on a copy stand kit with attached lights, see Section V, p. 12 for tethering protocol and recommended settings (**f/8, ISO400, AWB**).*
+** *If using a Nikon D7000 camera mounted on a copy stand kit with attached lights, see Section V, p. 12 for tethering protocol and recommended settings (**f/8, ISO400, AWB**).*
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at: T:\\Oceanography\\CAUs\\Analysis organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at: *T:\\Oceanography\\CAUs\\Analysis* organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -119,11 +123,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 9.	From the designated CAU photoset folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus. After photographing both sides of each plate, each CAU photoset folder should have **8 photos**. The photos should be later on renamed with the following naming convention:  
 
-**a)	With Plate Photo ID tag:**   
-*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg*   
+    **a)	With Plate Photo ID tag:**   
+    *SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg*   
 
-**b)	Without Plate Photo ID tag:**  
-*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg*  
+    **b)	Without Plate Photo ID tag:**  
+    *SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg*  
 
 	Example:
 	PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
@@ -146,11 +150,11 @@ Drying at room temperature before placing in the oven can help reduce the time t
 Wash and rinse the glass dishes but keep the labels on. The same glass dishes will be used during the HCl acid decalcification process.
 
 
-### B. Determining the weight of the CAU plate
+#### Determining the weight of the CAU plate
 
 1.	After a minimum air-drying period of 24 hours, place the **plate assembly (plate, dislodged pieces of calcified material and Paper Tray A)** in the oven labeled “**Non-HCl**” to dry at 60°C for 24 hours.  
 
-**Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.
+** *Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.*
 
 2.	After 24 hours, remove the plate assembly and allow it to come to room temperature (roughly 10 min).
 
@@ -170,16 +174,16 @@ Wash and rinse the glass dishes but keep the labels on. The same glass dishes wi
 
 10.	Compare the current weight from the previous weight:
 
-a)	If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
++	If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
 		
-b)	If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
++ If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
 
 11.	Repeat III.B Steps 5-10 until the difference in weight is less than 0.1 g.
 
 
-### C. Decalcification of CaCO3 in Hydrochloric Acid 
+#### Decalcification of CaCO3 in Hydrochloric Acid 
 
-* **Be sure to wear proper PPE when handling acid contaminated objects (steps 1-9) including gloves, safety glasses, and lab coat.**
+**Be sure to wear proper PPE when handling acid contaminated objects (steps 1-9) including gloves, safety glasses, and lab coat.**
 
 1.	Ensure that the plate is fully dry (mass lost between last two weighing will have been less than 0.1g) and the weight of the plate assembly and Paper Tray A has been recorded.
 
@@ -191,15 +195,15 @@ b)	If the difference in weight is greater than 0.1 g, return the plates to the o
 
 5.	When decalcification has slowed (12-24 hours):  
 
-a)	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
++	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
 
-b)	Grind pieces of calcified materials that may still be present and return in the glass dish.  
++	Grind pieces of calcified materials that may still be present and return in the glass dish.  
 
-c)	Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
++	Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
 
-d)	Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
++	Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
 
-e)	If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
++	If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
 
 `r knitr::include_graphics(rep("images/CAU_dissolve.jpg"))`
 
@@ -226,17 +230,17 @@ e)	If there are more calcified materials in the dish, but no obvious decalcifica
 15.	Collect the clean and weighed CAU PVCs and store for redeployment/archiving.
 
 
-### D. Vacuum filtration of fleshy material
+#### Vacuum filtration of fleshy material
 
-* **Be sure to wear proper PPE when handling acid contaminated objects (steps 1-4) including gloves, safety glasses, and lab coat.**
+**Be sure to wear proper PPE when handling acid contaminated objects (steps 1-4) including gloves, safety glasses, and lab coat.**
 
 1.	Using a 4-liter Buchner funnel, a plastic mesh layer (with attached pull string) and the corresponding pre-weighed filter paper, vacuum filter the acid bath and remaining fleshy material for each CAU plate. Use a freshwater squeeze bottle to rinse contents of the glass dish into the funnel.
 
 2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (see III.D, Step 2, a-c) can be used to filter the remaining volume of acid bath and fleshy material:  
 
-a)	Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
++	Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
 
-b)	In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
++	In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
 
 3.	If filtering has slowed down, use a spatula/teaspoon to gently scrape the surface of the filter paper to allow more solution to filter through. Filtering can take >5 mins depending the amount of fleshy material in the acid bath.
 
@@ -245,13 +249,13 @@ b)	In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + 
 4.	When filtration is completed, place the filter paper on its corresponding Paper Tray B and onto a drying rack. The drying rack should be left in a fume hood to air dry at room temperature (minimum of 24 hours). The filter paper can continue to air dry at room temperature, indefinitely, until they are dried in the oven.
 
 
-### E. Determining the weight of the fleshy material
+#### Determining the weight of the fleshy material
 
-* **Be sure to wear proper PPE (gloves) when handling acid contaminated filters in this section.**
+**Be sure to wear proper PPE (gloves) when handling acid contaminated filters in this section.**
 
 1.	After a minimum air-drying period of 24 hours, place the **filter paper assembly (filter paper and Paper Tray B)** in the oven to dry at 60°C for 24 hours.  
 
-* *Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.*
+** *Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.*
 
 2.	After 24 hours, remove the filterpaper assembly and allow it to come to room temperature (roughly 10min).
 
@@ -267,66 +271,47 @@ b)	In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + 
 
 7.	Remove the filterpaper assembly and allow it to come to room temperature (roughly 10min).
 
-8.	Weigh the **entire filterpaper assembly.**
+8.	Weigh the **entire filterpaper assembly**
 
 9.	In the ESD Apex CAU Mission App, record the weight to at least 3 decimal places under “Filters” >‘*Drying 2 [48 h] [paper tray + filterpaper] [g]*’. 
 
 10.	Compare the current weight from the previous weight:  
 
-a)	If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
++	If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
 
-* *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*  
+** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*  
 		
-b)	If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
++	If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
 
 11.	Repeat III.E Steps 5-10 until the difference in weight is less than 0.1 g.
 
 12.	After recording the final filterpaper assembly dry weight, place the filterpaper and Paper tray B in its corresponding re-sealable bag for archiving. Ensure the bag is labeled properly using the CAU Plate ID naming convention:  
 
-*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate).*
+*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)*
 
 `r knitr::include_graphics(rep("images/CAU_bag.jpg"))`
 
 
 
 
-## Processing Timeline
+### Processing Timeline
 
 Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP, this is equivalent to CAUs collected from about 1 island). The processing of each batch is typically completed in 4 weeks. Below is an example of a typical processing timeline 
 
-Sun   |    M     |    T     |   W  |   Th    |   F     |  Sat  |
------ |--------- |----------|------|---------|---------|-------|
-      |   Prep   |   Prep   |  Def |  Proc   |   AD    |   AD  | Week 1 **PREP, DISASSEMBLE**
-  AD  |    OD    |    W/O   |  W/O | w/Decal | W/Decal | Decal | Week 2 **WEIGH PLATES, DECALCIFY**
-Decal | Sc/Decal | Sc/Decal | Filt |  Filt   |   Filt  |   AD  | Week 3 **DECALCIFY, FILTER**
-  AD  |    W/O   |    W/O   |  w/O |   w/O   |   W/O   |       | Week 4 **WEIGH FILTERPAPERS**
-  
-                                                                         **Hours**
-**Prep**       *Prep labels, dilute acid, etc.*                             8x2
-**Def**        *Defrost; prep lab*                                           2
-**Proc**       *Process: Dismantle and photograph*                           7
-**AD**         *Air-dry*
-**OD**         *Oven-dry*
-**Decal**      *Decalcify (sit in 5% HCl bath)*                              4
-**Sc/Decal**   *Scrape and decalcify*                                       7x2
-**Filt**       *Vacuum filtration process*                                  7x3
-**W/O**        *Weigh (and oven-dry)*                                       1x7
-**W/Decal**    *Weigh and decalcify (pour HCl; pulverize large pieces)*     7x2
-                                                                           -----
-                                                                           **85**
+
+`r knitr::include_graphics(rep("images/CAU_table.jpg"))`
 
 
 
+### Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
 
-## Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
+*Refer to the brand/model user documentation/manual if using a different camera and setup*
 
-* *Refer to the brand/model user documentation/manual if using a different camera and setup*
-
-### A. Installing the software
+#### Installing the software
 
 For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder *T:\\general\\ProjectGroup\\Ocean Acidification\\CAUs\Analysis\\CAU Processing SOP, Data sheet, Labels\\CAU SOPs 2015\\CAUSOP_NikonD7000Settings.pdf*
 
-### B. Connecting the camera to the computer
+#### Connecting the camera to the computer
 
 1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f\2.8G ED lens) to the computer via USB mini cable
 
@@ -341,49 +326,49 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 5.	**If using the software for the FIRST TIME:**
 		
-a)	Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
++	Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
 		
-Shutter speed: **1/50 sec**  
-Aperture: **f/8**  
+    Shutter speed: 1/50 sec  
+    Aperture: f/8  
 
 `r knitr::include_graphics(rep("images/Camera3.jpg"))`
 
-b)	Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
++	Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
 		
-	ISO Sensitivity: **ISO 400**  
-	White Balance: **Auto**  
-	Option: **Normal**  
+    ISO Sensitivity: ISO 400  
+    White Balance: Auto  
+    Option: Normal  
 
 `r knitr::include_graphics(rep("images/Camera4.jpg"))`
 
-c)	Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
++	Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
 
-		Image Quality: **JPEG fine**  
-    JPEG Compression: **Optimal quality**  
-		Image size: **Large (4928x3264)**  
-		Record to: **PC**  
-		Card Record Mode: **Backup**  
+    Image Quality: JPEG fine  
+    JPEG Compression: Optimal quality  
+    Image size: Large (4928x3264)  
+    Record to: PC  
+    Card Record Mode: Backup  
 
 `r knitr::include_graphics(rep("images/Camera5.jpg"))`
 
 
-d)	Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
++	Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
 
-		Picture Control: **Standard**   
-		High ISO NR: **On (High)**  
+    Picture Control: Standard  
+    High ISO NR: On (High) 
 
-* *Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used*
+** *Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used*
 
 `r knitr::include_graphics(rep("images/Camera6.jpg"))`
 
 
-### C. CAU plate photo-documentation
+#### CAU plate photo-documentation
 
 1.	Ensure that the camera’s Mode dial is set to “M” (Manual) 
 
 `r knitr::include_graphics(rep("images/Camera7.jpg"))`
 
-2.	Ensure that the camera lens’ A-M switch is set to “M\A” (Autofocus w/ manual override).
+2.	Ensure that the camera lens’ A-M switch is set to “M-A” (Autofocus w/ manual override).
 
 `r knitr::include_graphics(rep("images/Camera8.jpg"))`
 
@@ -403,7 +388,7 @@ d)	Click on “**Image Processing**” under the Camera Control tabs and change 
 
 `r knitr::include_graphics(rep("images/Camera11.jpg"))`
 
-8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368"` where the images will be downloaded as they are taken. Click **OK**
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location *ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368* where the images will be downloaded as they are taken. Click **OK**
 
 `r knitr::include_graphics(rep("images/Camera12.jpg"))`
 
@@ -411,13 +396,13 @@ d)	Click on “**Image Processing**” under the Camera Control tabs and change 
 
 9.	On the Camera Control Pro main window, click on the “**LV**” button at the bottom-right corner to display the Live View window. 
 		
-*Note: the camera controls and folder location options cannot be modified while the Live View window is displayed*
+** *Note: the camera controls and folder location options cannot be modified while the Live View window is displayed*
 
 `r knitr::include_graphics(rep("images/Camera14.jpg"))`
 
 10.	Center the glass dish with the plate under the camera and using the Live View display, ensure that all corners of the plate are visible in the frame 			
 	
-*Note: both copier stand lights should be switched on at this time and that any external light sources are minimized (i.e., window shades are drawn, overhead/ceiling lights are switched off)*
+** *Note: both copier stand lights should be switched on at this time and that any external light sources are minimized (i.e., window shades are drawn, overhead/ceiling lights are switched off)*
 
 `r knitr::include_graphics(rep("images/Camera15.jpg"))`
 
@@ -440,30 +425,31 @@ d)	Click on “**Image Processing**” under the Camera Control tabs and change 
 
 17.	At the end of the plate photo documentation session, ensure that all CAU plate photos have been taken and saved to their appropriate local drive folders
 
-18.	Backup the images by copying the **Island** parent folder, ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS"` to the network drive, ex: T://Oceanography//CAUs//Analysis//2018_CAU Analysis//ASRAMP18//PHOTO ANALYSIS//SAMOA//SWAINS and to the external hard drive. If prompted, select “Overwrite”
+18.	Backup the images by copying the **Island** parent folder, *ex: Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS* to the network drive, *ex: T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS* and to the external hard drive. If prompted, select “Overwrite”
 
 19.	Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu
 
 20.	Rename all plate photos with the following naming convention:  
 
-a)	**With Plate Photo ID tag:** 
++	**With Plate Photo ID tag:**  
 *SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - 	lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg*  
 
-b)	**Without Plate Photo ID tag:**  
-*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg*  
++	**Without Plate Photo ID tag:**  
+*SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg*   
 
-	Example:  
-	SWA03_2015_368_U_T_ID.jpg  	– Upper Plate, Top Side with tag  
-	SWA03_2015_368_U_T.jpg		  – Upper Plate, Top Side  
-	SWA03_2015_368_U_B_ID.jpg	  – Upper Plate, Bottom Side with tag  
-  SWA03_2015_368_U_B.jpg		  – Upper Plate, Bottom Side  
-	SWA03_2015_368_L_T_ID.jpg	  – Lower Plate, Top Side with tag  
-	SWA03_2015_368_L_T.jpg		  – Lower Plate, Top Side  
-	SWA03_2015_368_L_B_ID.jpg	  – Lower Plate, Bottom Side with tag  
-	SWA03_2015_368_L_B.jpg		  – Lower Plate, Bottom Side  
+	Example:
+	PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
+	PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
+	PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
+	PAL01_2012_5319_U_B.jpg		    – Upper Plate, Bottom Side  
+	PAL01_2012_5319_L_T_ID.jpg		– Lower Plate, Top Side with tag  
+	PAL01_2012_5319_L_T.jpg			  – Lower Plate, Top Side  
+	PAL01_2012_5319_L_B_ID.jpg		– Lower Plate, Bottom Side with tag   
+	PAL01_2012_5319_L_B.jpg			  – Lower Plate, Bottom Side  
+
 
 `r knitr::include_graphics(rep("images/Camera18.jpg"))`
 
-21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (e.g. Documents//CAU Analysis//ASRAMP 2015//PHOTO ANALYSIS//SAMOA//SWAINS) to the network drive (e.g. T://Oceanography//CAUs//Analysis//2018_CAU Analysis//ASRAMP18//PHOTO ANALYSIS/SAMOA/SWAINS) and to the external hard drive. If prompted, select “Overwrite”
+21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (*e.g. Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS*) to the network drive (e.g. T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS) and to the external hard drive. If prompted, select “Overwrite”
 
 
