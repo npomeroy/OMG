@@ -22,8 +22,8 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
   
-    e.g. *PAL01_2012_5319_U*
-         *PAL01_2012_5319_L*
+    e.g. PAL01_2012_5319_U   
+         PAL01_2012_5319_L
 
 2.	Using a pencil, **pre-label the following with the CAU Plate ID (e.g. PAL01_2012_5319_U):**  
   
@@ -36,10 +36,11 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 4.	Print **Glass Dish Labels** on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
 
 5.	Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:  
-    **Upper Plate, Top Side**  
-	  **Upper Plate, Bottom Side**  
-	  **Lower Plate, Top Side**  
-	  **Lower Plate, Bottom Side**  
+    
+    Upper Plate, Top Side 
+    Upper Plate, Bottom Side 
+    Lower Plate, Top Side
+    Lower Plate, Bottom Side 
 	
 	An example of a plate photo ID: *PAL01_2012_5319_U_T*
 
@@ -54,7 +55,7 @@ Pre-label **re-sealable plastic bags** 0.95L (1 quart) with the CAU Plate ID. Th
 
 **Database**
 
-1. Using the **ESD Apex CAU Mission App** (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20), have the Data Management team enter the CAU Site IDs (e.g. PAL01) and 4-digit CAU Serial #s (e.g. 5319) for each unit to be processed
+1. Using the **ESD Apex CAU Mission App** (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20), have the Data Management team enter the CAU Site IDs (e.g. *PAL01*) and 4-digit CAU Serial #s (e.g. *5319*) for each unit to be processed
 
 
 2. To calculate the **“Soak Time”** of each unit, record the CAU “Deployment Date” and “Recovery Date” in Column CA and CB, respectively. Record any other additional field data in the spreadsheet (e.g. coordinates, depth, comments, etc.). When using the ESD Apex CAU Mission App, soak time is calculated automatically.
@@ -115,7 +116,13 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at: *T:\\Oceanography\\CAUs\\Analysis* organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly.  
+
+(May 2019 - ESD General (T:) Drive at:
+
+    T:\\Oceanography\\CAUs\\Analysis
+    
+organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -178,7 +185,7 @@ Wash and rinse the glass dishes but keep the labels on. The same glass dishes wi
 		
 + If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
 
-11.	Repeat III.B Steps 5-10 until the difference in weight is less than 0.1 g.
+11.	Repeat *III.B Steps 5-10* until the difference in weight is less than 0.1 g.
 
 
 #### Decalcification of CaCO3 in Hydrochloric Acid 
@@ -236,7 +243,7 @@ Wash and rinse the glass dishes but keep the labels on. The same glass dishes wi
 
 1.	Using a 4-liter Buchner funnel, a plastic mesh layer (with attached pull string) and the corresponding pre-weighed filter paper, vacuum filter the acid bath and remaining fleshy material for each CAU plate. Use a freshwater squeeze bottle to rinse contents of the glass dish into the funnel.
 
-2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (see III.D, Step 2, a-c) can be used to filter the remaining volume of acid bath and fleshy material:  
+2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (*see III.D, Step 2, a-c*) can be used to filter the remaining volume of acid bath and fleshy material:  
 
 +	Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
 
@@ -309,7 +316,9 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 
 #### Installing the software
 
-For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder *T:\\general\\ProjectGroup\\Ocean Acidification\\CAUs\Analysis\\CAU Processing SOP, Data sheet, Labels\\CAU SOPs 2015\\CAUSOP_NikonD7000Settings.pdf*
+For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder 
+
+    T:\\general\\ProjectGroup\\Ocean Acidification\\CAUs\Analysis\\CAU Processing SOP, Data sheet, Labels\\CAU SOPs 2015\\CAUSOP_NikonD7000Settings.pdf
 
 #### Connecting the camera to the computer
 
@@ -388,7 +397,11 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 `r knitr::include_graphics(rep("images/Camera11.jpg"))`
 
-8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location *ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368* where the images will be downloaded as they are taken. Click **OK**
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location 
+
+    ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368 
+    
+where the images will be downloaded as they are taken. Click **OK**
 
 `r knitr::include_graphics(rep("images/Camera12.jpg"))`
 
@@ -417,7 +430,7 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 15.	After all 8 images have been taken and saved to the unit folder (e.g. SWA03_368), click on the “**LV**” button at the bottom-right corner to turn off Live View
 
-16.	On the Camera Control Pro main window, go to the Tools menu to display the **Transfer Options window**. Click on the **Browse** button next to the “*Destination folder*” and **navigate to the next CAU site and unit folder** (e.g. SWA03_394). Repeat steps C. 7-13
+16.	On the Camera Control Pro main window, go to the Tools menu to display the **Transfer Options window**. Click on the **Browse** button next to the “*Destination folder*” and **navigate to the next CAU site and unit folder** (e.g. *SWA03_394*). Repeat steps C. 7-13
 
 `r knitr::include_graphics(rep("images/Camera16.jpg"))`
 
@@ -425,7 +438,15 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 17.	At the end of the plate photo documentation session, ensure that all CAU plate photos have been taken and saved to their appropriate local drive folders
 
-18.	Backup the images by copying the **Island** parent folder, *ex: Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS* to the network drive, *ex: T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS* and to the external hard drive. If prompted, select “Overwrite”
+18.	Backup the images by copying the **Island** parent folder,   
+
+    ex: Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS   
+    
+to the network drive,   
+
+    ex: T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS   
+    
+and to the external hard drive. If prompted, select “Overwrite”
 
 19.	Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu
 
@@ -450,6 +471,14 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 `r knitr::include_graphics(rep("images/Camera18.jpg"))`
 
-21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder (*e.g. Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS*) to the network drive (e.g. T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS) and to the external hard drive. If prompted, select “Overwrite”
+21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder 
+
+    e.g. Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS  
+
+to the network drive   
+
+    e.g. T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS  
+
+and to the external hard drive. If prompted, select “Overwrite”  
 
 
