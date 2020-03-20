@@ -6,15 +6,18 @@
 
 Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
 
-```{r, echo=FALSE,message=FALSE, warning=FALSE}
+```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
 library(leaflet)
 
 sites <- read.csv("data/OCC_LIST_OF_SITES_21-FEB-2020.csv", stringsAsFactors=FALSE)
 
 m <- leaflet(sites) %>% addProviderTiles("Esri.WorldImagery") %>%
-  addMarkers(~LONGITUDE, ~LATITUDE, popup=sites$OCC_SITEID)
+  addCircleMarkers(~LONGITUDE, ~LATITUDE, radius=10, color="orange", popup=sites$OCC_SITEID) %>% setView(-158.0001, 21.4389, zoom =9)
 
 m
+
+
+
 ```
 
 

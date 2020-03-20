@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-03-17}
+    \date{2020-03-19}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -190,7 +190,7 @@ If you need some tips for your R Markdown formatting, \href{https://rmarkdown.rs
 
 Determine the team's goals in the region the research cruise is scheduled to visit. Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
 
-\hypertarget{htmlwidget-0c6413547a29ffdb5442}{}
+\hypertarget{htmlwidget-eedfb1102584adc6687d}{}
 
 \hypertarget{spatial-data-preparation}{%
 \section{Spatial Data Preparation}\label{spatial-data-preparation}}
@@ -1924,53 +1924,729 @@ After data is qc'd it mus be archived. As of January 2020, the best place to loo
 \textbf{Where to Save Various Data Streams}
 Checkout \href{https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit\#gid=1675337307}{this google drive file} showing the paths of where to save various things
 
-\hypertarget{cau}{%
-\chapter{CAU Processing}\label{cau}}
+\hypertarget{calcification-accretion-unit-cau}{%
+\chapter{Calcification Accretion Unit (CAU)}\label{calcification-accretion-unit-cau}}
 
-Summary: This web application was created using Oracle Application Express (APEX) 5.0 in order facilitate the process of recording the Calcification Accretion Unit (CAU) weights into a database. In order to request access to the application, please contact ITS or the Data Management department for assistance.
+Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised March 2020)
 
-Interface: The web application is segregated in to four main sections:
+\includegraphics{images/CAU.jpg}
 
-\textbf{• Home}
-\textbf{• Data Entry}
-\textbf{• Data Summary}
-\textbf{• Audit}
+\hypertarget{calcification-accretion-unit-cau-assembly}{%
+\section{Calcification Accretion Unit (CAU) Assembly}\label{calcification-accretion-unit-cau-assembly}}
 
-\textbf{A. Home}
+\includegraphics{images/CAU_assembly.jpg}
 
-This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The \textbf{Valid Plate, Valid Filter, and Filter Subplate} fields are explained in another section.
+\hypertarget{calcification-accretion-unit-cau-laboratory-sample-processing-sop}{%
+\section{Calcification Accretion Unit (CAU) Laboratory Sample Processing SOP}\label{calcification-accretion-unit-cau-laboratory-sample-processing-sop}}
 
-INSERT PHOTO
+\hypertarget{preparation-work}{%
+\subsection{Preparation Work}\label{preparation-work}}
 
-\textbf{B. Data Entry}
-The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you'll see when you navigate to the \textbf{Data Entry} page.
-
-INSERT PHOTO
+\textbf{ID Tags}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  \textbf{Breadcrumb Bar} -- use this to navigate through the different levels of the application.
+  Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the \textbf{CAU Plate ID} naming convention SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate, ``L'' - lower plate)
+
+  e.g.~PAL01\_2012\_5319\_U\\
+  PAL01\_2012\_5319\_L
 \item
-  \textbf{Finder Drop Down} -- use this to select the column you wish to search by
+  Using a pencil, \textbf{pre-label the following with the CAU Plate ID (e.g.~PAL01\_2012\_5319\_U):}
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii})}
+  \tightlist
+  \item
+    Paper tray A - blank index card 12.7 x 20.32cm (5'' x 8'') folded into 12.7 x 12.7cm (5'' x 5'') paper tray\\
+  \item
+    Paper tray B - same as above\\
+  \item
+    Filterpaper 11cm diameter, \#1, \textgreater11μm particle retention (e.g.~Whatman No.1001-110)
+  \end{enumerate}
 \item
-  \textbf{Search Field} -- enter search criteria here
+  Insert the corresponding Filter paper into the fold of Paper tray B and store in a container. Place Paper tray A in a separate container. Store both containers away from moisture and direct sunlight. See I. Step 8 for pre-weighing instructions.
 \item
-  \textbf{Search Button} -- click this button to execute your search criteria or hit `Enter'
+  Print \textbf{Glass Dish Labels} on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
 \item
-  \textbf{Row Selector} -- choose the number of rows you wish to display on the page
+  Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:
+
+  Upper Plate, Top Side
+  Upper Plate, Bottom Side
+  Lower Plate, Top Side
+  Lower Plate, Bottom Side
+
+  An example of a plate photo ID: \emph{PAL01\_2012\_5319\_U\_T}
 \item
-  \textbf{Action} -- Allows you to download the table, and perform more advanced functions
-\item
-  \textbf{Edit Plate Weights} - Navigates to a new page where data for the CAU plates are entered
-\item
-  \textbf{Edit Filter Weights} - Navigates to a new page where data for the CAU filters are entered
+  Using an analytical balance, \textbf{pre-weigh} the following and record the value (up to 3 decimal points) in the ESD Apex CAU Mission App (or the CAU Data Entry tool for ESD-CREP users, see Section VI p.~20):
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii})}
+  \tightlist
+  \item
+    Paper tray A - record the value in Column (`Paper Tray A Weight {[}g{]}')\\
+  \item
+    Paper tray B + Filterpaper - record the value in Column (`Filter \& Paper Tray B Dry Weight {[}g{]}')
+  \end{enumerate}
 \end{enumerate}
 
-\hypertarget{edit-plate-weights-page}{%
-\section{Edit Plate Weights Page}\label{edit-plate-weights-page}}
+\textbf{Re-sealable Bag ID}
 
-The \textbf{Edit Plate} and Edit Filter pages are identical; however, we are going to work with the Edit Plate page below. Click on the Edit Plate Weights button (shown in figure 2) to navigate to the screen below:
+Pre-label \textbf{re-sealable plastic bags} 0.95L (1 quart) with the CAU Plate ID. The filter residue will be stored in this bag for archiving
+
+\textbf{Database}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Using the \textbf{ESD Apex CAU Mission App} (or the CAU Data Entry tool for ESD-CREP users, see Section VI p.~20), have the Data Management team enter the CAU Site IDs (e.g.~\emph{PAL01}) and 4-digit CAU Serial \#s (e.g.~\emph{5319}) for each unit to be processed
+\item
+  To calculate the \textbf{``Soak Time''} of each unit, record the CAU ``Deployment Date'' and ``Recovery Date'' in Column CA and CB, respectively. Record any other additional field data in the spreadsheet (e.g.~coordinates, depth, comments, etc.). When using the ESD Apex CAU Mission App, soak time is calculated automatically.
+\end{enumerate}
+
+\textbf{Pre-heat Drying Oven}
+
+Oven (Heratherm OGS-180) settings:
+
+\begin{verbatim}
+Temperature: 70°C (140°F)  
+Damper: level 3 (mid-high)  
+\end{verbatim}
+
+\textbf{Prepare 5\% HCl acid solution in 2-liter bottles}
+
+One batch (20-30 units) of CAUs will require about 10-15, 2-liter bottles of 5\% HCl acid solution in order to completely dissolve calcified materials. More may be needed depending on the amount of accreted CaCO3.
+
+To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5\% solution, use the recommended ratio below:
+
+\begin{verbatim}
+2L stock: 225 ml HCl  
+     1775 ml deionized/distilled H2O  
+
+1L stock: 112.5 ml HCl  
+     887.5 ml deionized/distilled H2O  
+\end{verbatim}
+
+** Be sure to \textbf{ADD ACID TO WATER} to avoid excessive heating, violent boiling or splashing of concentrated acid that could result from the exothermic reaction.
+``Do as you oughta, add acid to water!'' - Dr.~Anne Cohen, WHOI
+
+** Acid solutions with a higher (\textgreater5\% HCl concentration) may be prepared and used if desired for processing CAUs from heavily calcified regions (American Samoa, PRIAs), however concentrations \textbf{greater than or equal to 15\% HCl require special PPE including fume hood utilization.}
+
+\hypertarget{cau-processing-steps}{%
+\subsection{CAU Processing Steps}\label{cau-processing-steps}}
+
+\emph{see Section IV, p.11 for sample processing timeline and Section VII.A, p.36 for sample daily task guide}
+
+\hypertarget{dissassembling-and-photo-documentation}{%
+\subsubsection{Dissassembling and Photo-documentation}\label{dissassembling-and-photo-documentation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Thaw a batch of CAUs (typically 20-30 units) in the sink for at least 12 hours. Do not thaw over water.
+\item
+  Disassemble the plates of each CAU by removing the hex nuts and washers using two 1/4" wrenches (one to hold the unit steady). Make sure to maintain plate identity (upper vs lower plate, top vs bottom side of plate) and the CAU Plate ID.
+\end{enumerate}
+
+\includegraphics{images/CAU_plate_ID.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  Carefully rinse each plate in a saltwater rinse basin (if saltwater is not readily available, freshwater may be used) to remove loose sediment, sand and mobile fauna. Discard any mobile fauna that may have fallen off during rinsing.
+\item
+  Fill each pre-labeled glass dish with saltwater(or freshwater).
+\item
+  Place each CAU plate with the \textbf{top plate facing upwards} into its corresponding glass dish. Ensure that the plate and any encrusting fauna are completely submerged in water. Add more water if necessary (see Section V.C for additional instructions)
+\end{enumerate}
+
+\includegraphics{images/CAU_dried.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\tightlist
+\item
+  Attach a DSLR camera to a camera copy stand or a tripod. Arrange lighting such that the plate is fully illuminated and no glare is visible to the camera
+\end{enumerate}
+
+** \emph{If using a Nikon D7000 camera mounted on a copy stand kit with attached lights, see Section V, p.~12 for tethering protocol and recommended settings (\textbf{f/8, ISO400, AWB}).}
+
+\includegraphics{images/CAU_photograph.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  It is recommended to tether the camera to a computer and save the photos directly to the computer's local drive (while using the camera's SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly.
+\end{enumerate}
+
+(May 2019 - ESD General (T:) Drive at:
+
+\begin{verbatim}
+T:\\Oceanography\\CAUs\\Analysis
+\end{verbatim}
+
+organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.)
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
+\item
+  Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
+\end{enumerate}
+
+\includegraphics{images/CAU_image.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\item
+  From the designated CAU photoset folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus. After photographing both sides of each plate, each CAU photoset folder should have \textbf{8 photos}. The photos should be later on renamed with the following naming convention:
+
+  \textbf{a) With Plate Photo ID tag:}\\
+  *SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate or ``L'' - lower plate)\_PlateSurface (``T'' - top plate or ``B'' - bottom plate)\_ID.jpg*
+
+  \textbf{b) Without Plate Photo ID tag:}\\
+  *SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate, ``L'' lower plate)\_PlateSurface (``T'' - top plate, ``B'' - bottom plate).jpg*
+
+  Example:
+  PAL01\_2012\_5319\_U\_T\_ID.jpg -- Upper Plate, Top Side with tag\\
+  PAL01\_2012\_5319\_U\_T.jpg -- Upper Plate, Top Side\\
+  PAL01\_2012\_5319\_U\_B\_ID.jpg -- Upper Plate, Bottom Side with tag
+  PAL01\_2012\_5319\_U\_B.jpg -- Upper Plate, Bottom Side\\
+  PAL01\_2012\_5319\_L\_T\_ID.jpg -- Lower Plate, Top Side with tag\\
+  PAL01\_2012\_5319\_L\_T.jpg -- Lower Plate, Top Side\\
+  PAL01\_2012\_5319\_L\_B\_ID.jpg -- Lower Plate, Bottom Side with tag\\
+  PAL01\_2012\_5319\_L\_B.jpg -- Lower Plate, Bottom Side
+\item
+  After photographing all units, if the CAUs were submerged in seawater, carefully rinse each plate in freshwater. If the CAUs were submerged in freshwater, skip the rinsing process.
+\item
+  Be sure to remove all hex nuts and washers that may still be attached at the center of the plate. Hex nuts and washers can be covered by calcified material and difficult to see. Inspect each side of each plate to ensure that there are no washers or hex nuts present. If a hex nut or washer is covered in calcified material, remove the hardware and chip off the calcified material from the hardware. Retain the removed material with the rest of the plate.
+\item
+  Place each plate and any dislodged pieces of calcified material on its corresponding Paper Tray A, then onto a drying rack and placed in the fume hood. The drying rack can be left in a fume hood to air dry at room temperature indefinitely (\textbf{minimum of 24 hours}), until they are dried in the oven.
+\end{enumerate}
+
+Drying at room temperature before placing in the oven can help reduce the time the plates remain in the oven.
+
+Wash and rinse the glass dishes but keep the labels on. The same glass dishes will be used during the HCl acid decalcification process.
+
+\hypertarget{determining-the-weight-of-the-cau-plate}{%
+\subsubsection{Determining the weight of the CAU plate}\label{determining-the-weight-of-the-cau-plate}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  After a minimum air-drying period of 24 hours, place the \textbf{plate assembly (plate, dislodged pieces of calcified material and Paper Tray A)} in the oven labeled ``\textbf{Non-HCl}'' to dry at 60°C for 24 hours.
+\end{enumerate}
+
+** \emph{Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  After 24 hours, remove the plate assembly and allow it to come to room temperature (roughly 10 min).
+\item
+  Weigh the \textbf{entire plate assembly}.
+\item
+  In the ESD Apex CAU Mission App (or CAU Data Entry tool for ESD-CREP users), record the weight to at least 3 decimal places under the column `\emph{Drying 1 {[}24 h{]} {[}paper tray + CAU plate{]} {[}g{]}}'.
+\item
+  Return the plate assembly in the oven.
+\item
+  Dry the CAU plates for another 24 hours.
+\item
+  Remove the plate assembly and allow it to come to room temperature (roughly 10 min).
+\item
+  Weigh the \textbf{entire plate assembly}.
+\item
+  In the ESD Apex CAU Mission App (or CAU Data Entry tool for ESD-CREP users), record the 2nd weight to at least 3 decimal places under the column `\emph{Drying 2 {[}48 h{]} {[}paper tray + CAU plate{]} {[}g{]}}'.
+\item
+  Compare the current weight from the previous weight:
+\end{enumerate}
+
+\begin{itemize}
+\item
+  If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the `Plate Dry' column on the far right saying `YES'.
+\item
+  If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Repeat \emph{III.B Steps 5-10} until the difference in weight is less than 0.1 g.
+\end{enumerate}
+
+\hypertarget{decalcification-of-caco3-in-hydrochloric-acid}{%
+\subsubsection{Decalcification of CaCO3 in Hydrochloric Acid}\label{decalcification-of-caco3-in-hydrochloric-acid}}
+
+\textbf{Be sure to wear proper PPE when handling acid contaminated objects (steps 1-9) including gloves, safety glasses, and lab coat.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Ensure that the plate is fully dry (mass lost between last two weighing will have been less than 0.1g) and the weight of the plate assembly and Paper Tray A has been recorded.
+\item
+  Place the individual plates in the pre-labeled glass dishes. Keep Paper Tray A and place under the glass dish.
+\item
+  Chip off large pieces of calcified materials (e.g.~CCA, coral, shells, etc.) and grind using a mortar and pestle. Return the pulverized forms in the glass dish.
+\item
+  Fill the glass dish midway with 5\% HCl (or otherwise chosen concentration) acid solution or until the entire CAU plate is fully submerged in acid. \textbf{Add HCl acid slowly as the solution may overflow when bubble formation/decalcification begins. The overflow most definitely occurs when dissolving plates from Rose and Swains Atoll.}
+\item
+  When decalcification has slowed (12-24 hours):
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).
+\item
+  Grind pieces of calcified materials that may still be present and return in the glass dish.
+\item
+  Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.
+\item
+  Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.
+\item
+  If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5\% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.
+\end{itemize}
+
+\includegraphics{images/CAU_dissolve.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{5}
+\item
+  Repeat III.C, Steps 5b)-e) until all CaCO3 is fully dissolved. Additional 5\% HCl acid solution (*or desired concentration) may need to be added 2-4x, depending on the amount of CaCO3 present.
+\item
+  Using 5\% HCl acid (*or desired concentration) in a squeeze bottle, thoroughly rinse the tools (gloves, mortar and pestle, razor/scraper) into the glass dish.
+\item
+  When the CAU PVC plates have been scraped clean (fleshy/calcified material completely removed from either side and edges of the plate), rinse all sides of the plates with 5\% acid (*or desired concentration) into the glass dish.
+\item
+  Have a bowl of freshwater ready to scrub and rinse the CAU PVC plates once they are completely clear of particles from the previous step. Pat to dry.
+\item
+  Place the CAU PVC plate on its corresponding Paper Tray A.
+\item
+  Place the rinsed CAU PVC plates in the oven at 60°C for 24 hours on top of the corresponding Paper Tray A.
+\item
+  Remove the plate from the oven and allow to come to room temperature (roughly 10 min).
+\end{enumerate}
+
+\includegraphics{images/CAU_drying.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{12}
+\item
+  Weigh the clean and dry CAU PVC plate without the underlying paper tray. - *Paper Tray A can be discarded after the CAU PVC plates have been weighed and recorded.
+\item
+  In the ESD Apex CAU Mission App, record the weight to at least 3 decimal places under the column `\emph{CAU PVC Dry Weight {[}g{]}}'.
+\item
+  Collect the clean and weighed CAU PVCs and store for redeployment/archiving.
+\end{enumerate}
+
+\hypertarget{vacuum-filtration-of-fleshy-material}{%
+\subsubsection{Vacuum filtration of fleshy material}\label{vacuum-filtration-of-fleshy-material}}
+
+\textbf{Be sure to wear proper PPE when handling acid contaminated objects (steps 1-4) including gloves, safety glasses, and lab coat.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Using a 4-liter Buchner funnel, a plastic mesh layer (with attached pull string) and the corresponding pre-weighed filter paper, vacuum filter the acid bath and remaining fleshy material for each CAU plate. Use a freshwater squeeze bottle to rinse contents of the glass dish into the funnel.
+\item
+  If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (\emph{see III.D, Step 2, a-c}) can be used to filter the remaining volume of acid bath and fleshy material:
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g.~\emph{PAL01\_2012\_5319\_U}).
+\item
+  In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column `\emph{Addtl Filter \& Paper tray B Dry Weight {[}g{]}}'.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  If filtering has slowed down, use a spatula/teaspoon to gently scrape the surface of the filter paper to allow more solution to filter through. Filtering can take \textgreater5 mins depending the amount of fleshy material in the acid bath.
+\end{enumerate}
+
+\includegraphics{images/CAU_filter.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  When filtration is completed, place the filter paper on its corresponding Paper Tray B and onto a drying rack. The drying rack should be left in a fume hood to air dry at room temperature (minimum of 24 hours). The filter paper can continue to air dry at room temperature, indefinitely, until they are dried in the oven.
+\end{enumerate}
+
+\hypertarget{determining-the-weight-of-the-fleshy-material}{%
+\subsubsection{Determining the weight of the fleshy material}\label{determining-the-weight-of-the-fleshy-material}}
+
+\textbf{Be sure to wear proper PPE (gloves) when handling acid contaminated filters in this section.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  After a minimum air-drying period of 24 hours, place the \textbf{filter paper assembly (filter paper and Paper Tray B)} in the oven to dry at 60°C for 24 hours.
+\end{enumerate}
+
+** \emph{Check that the internal temperature remains consistent. If not, minor adjustments should be made to the oven temperature and damper settings.}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  After 24 hours, remove the filterpaper assembly and allow it to come to room temperature (roughly 10min).
+\item
+  Weigh the \emph{entire filterpaper assembly.}
+\end{enumerate}
+
+\includegraphics{images/CAU_weigh.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  In the ESD Apex CAU Mission App, record the weight to at least 3 decimal places under ``Filters'' \textgreater{}`\emph{Drying 1 {[}24 h{]} {[}paper tray + filterpaper{]} {[}g{]}}'.
+\item
+  Return the filterpaper assembly to the oven.
+\item
+  Dry the filterpaper for another 24 hours.
+\item
+  Remove the filterpaper assembly and allow it to come to room temperature (roughly 10min).
+\item
+  Weigh the \textbf{entire filterpaper assembly}
+\item
+  In the ESD Apex CAU Mission App, record the weight to at least 3 decimal places under ``Filters'' \textgreater{}`\emph{Drying 2 {[}48 h{]} {[}paper tray + filterpaper{]} {[}g{]}}'.
+\item
+  Compare the current weight from the previous weight:
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.
+\end{itemize}
+
+** \emph{In the ESD Apex CAU Mission App, the column to the far right called ``Filter Dry'' has been formatted to change from `NO' to ``YES'' if the difference in weight is less than 0.1g.}
+
+\begin{itemize}
+\tightlist
+\item
+  If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\item
+  Repeat III.E Steps 5-10 until the difference in weight is less than 0.1 g.
+\item
+  After recording the final filterpaper assembly dry weight, place the filterpaper and Paper tray B in its corresponding re-sealable bag for archiving. Ensure the bag is labeled properly using the CAU Plate ID naming convention:
+\end{enumerate}
+
+*SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate, ``L'' - lower plate)*
+
+\includegraphics{images/CAU_bag.jpg}
+
+\hypertarget{processing-timeline}{%
+\subsection{Processing Timeline}\label{processing-timeline}}
+
+Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP, this is equivalent to CAUs collected from about 1 island). The processing of each batch is typically completed in 4 weeks. Below is an example of a typical processing timeline
+
+\includegraphics{images/CAU_table.jpg}
+
+\hypertarget{camera-tethering-and-cau-plate-photo-documentation-via-nikon-camera-control-pro-2}{%
+\subsection{Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2}\label{camera-tethering-and-cau-plate-photo-documentation-via-nikon-camera-control-pro-2}}
+
+\emph{Refer to the brand/model user documentation/manual if using a different camera and setup}
+
+\hypertarget{installing-the-software}{%
+\subsubsection{Installing the software}\label{installing-the-software}}
+
+For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder
+
+\begin{verbatim}
+T:\\general\\ProjectGroup\\Ocean Acidification\\CAUs\Analysis\\CAU Processing SOP, Data sheet, Labels\\CAU SOPs 2015\\CAUSOP_NikonD7000Settings.pdf
+\end{verbatim}
+
+\hypertarget{connecting-the-camera-to-the-computer}{%
+\subsubsection{Connecting the camera to the computer}\label{connecting-the-camera-to-the-computer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f\textbackslash2.8G ED lens) to the computer via USB mini cable
+\end{enumerate}
+
+\includegraphics{images/Camera.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\item
+  Start the Nikon Camera Control Pro 2 application
+\item
+  Turn the camera ON
+\item
+  Once connected, the connection status of the camera in use will be displayed on the Camera Control Pro window
+\end{enumerate}
+
+\includegraphics{images/Camera2.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  \textbf{If using the software for the FIRST TIME:}
+\end{enumerate}
+
+\begin{itemize}
+\item
+  Click on ``\textbf{Exposure 1}'' under the Camera Control tabs and change the settings of the following:
+
+  Shutter speed: 1/50 sec\\
+  Aperture: f/8
+\end{itemize}
+
+\includegraphics{images/Camera3.jpg}
+
+\begin{itemize}
+\item
+  Click on ``\textbf{Exposure 2}'' under the Camera Control tabs and change the settings of the following:
+
+  ISO Sensitivity: ISO 400\\
+  White Balance: Auto\\
+  Option: Normal
+\end{itemize}
+
+\includegraphics{images/Camera4.jpg}
+
+\begin{itemize}
+\item
+  Click on ``\textbf{Storage}'' under the Camera Control tabs and change the settings of the following:
+
+  Image Quality: JPEG fine\\
+  JPEG Compression: Optimal quality\\
+  Image size: Large (4928x3264)\\
+  Record to: PC\\
+  Card Record Mode: Backup
+\end{itemize}
+
+\includegraphics{images/Camera5.jpg}
+
+\begin{itemize}
+\item
+  Click on ``\textbf{Image Processing}'' under the Camera Control tabs and change the settings of the following:
+
+  Picture Control: Standard\\
+  High ISO NR: On (High)
+\end{itemize}
+
+** \emph{Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used}
+
+\includegraphics{images/Camera6.jpg}
+
+\hypertarget{cau-plate-photo-documentation}{%
+\subsubsection{CAU plate photo-documentation}\label{cau-plate-photo-documentation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Ensure that the camera's Mode dial is set to ``M'' (Manual)
+\end{enumerate}
+
+\includegraphics{images/Camera7.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Ensure that the camera lens' A-M switch is set to ``M-A'' (Autofocus w/ manual override).
+\end{enumerate}
+
+\includegraphics{images/Camera8.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Connect the Nikon DSLR camera to the copier stand, then connect the camera to the computer via mini USB cable
+\end{enumerate}
+
+\includegraphics{images/Camera9.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\item
+  Start the Nikon Camera Control Pro 2 application
+\item
+  Turn the camera ON
+\item
+  Once connected, the connection status of the camera in use will be displayed on the Camera Control Pro main window
+\end{enumerate}
+
+\includegraphics{images/Camera10.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{6}
+\tightlist
+\item
+  Go to the \textbf{Tools} menu to display the \textbf{Transfer Options} window
+\end{enumerate}
+
+\includegraphics{images/Camera11.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\item
+  Click the \textbf{Browse} button next to the ``\emph{Destination folder}''. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location
+
+  ex: Documents\textbackslash CAU Analysis\textbackslash ASRAMP 2015\textbackslash PHOTO ANALYSIS\textbackslash SAMOA\textbackslash SWAINS\textbackslash SWA03\textbackslash SWA03\_368
+\end{enumerate}
+
+where the images will be downloaded as they are taken. Click \textbf{OK}
+
+\includegraphics{images/Camera12.jpg}
+
+\includegraphics{images/Camera13.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{8}
+\tightlist
+\item
+  On the Camera Control Pro main window, click on the ``\textbf{LV}'' button at the bottom-right corner to display the Live View window.
+\end{enumerate}
+
+** \emph{Note: the camera controls and folder location options cannot be modified while the Live View window is displayed}
+
+\includegraphics{images/Camera14.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{9}
+\tightlist
+\item
+  Center the glass dish with the plate under the camera and using the Live View display, ensure that all corners of the plate are visible in the frame
+\end{enumerate}
+
+** \emph{Note: both copier stand lights should be switched on at this time and that any external light sources are minimized (i.e., window shades are drawn, overhead/ceiling lights are switched off)}
+
+\includegraphics{images/Camera15.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{10}
+\tightlist
+\item
+  Using the ``\textbf{AF and Shoot}'' button on the Live View window, photograph the top of the plate, \textbf{first with the Plate Photo ID tag} and then a \textbf{second image without the tag}
+\end{enumerate}
+
+\includegraphics{images/CAU_image.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{11}
+\item
+  Flip the plate and photograph the \textbf{bottom} of the plate, again with Plate Photo ID tag and then a second image without the tag
+\item
+  From the designated CAU unit folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus
+\item
+  Repeat for the next set of plates/surfaces for each unit
+\item
+  After all 8 images have been taken and saved to the unit folder (e.g.~SWA03\_368), click on the ``\textbf{LV}'' button at the bottom-right corner to turn off Live View
+\item
+  On the Camera Control Pro main window, go to the Tools menu to display the \textbf{Transfer Options window}. Click on the \textbf{Browse} button next to the ``\emph{Destination folder}'' and \textbf{navigate to the next CAU site and unit folder} (e.g.~\emph{SWA03\_394}). Repeat steps C. 7-13
+\end{enumerate}
+
+\includegraphics{images/Camera16.jpg}
+
+\includegraphics{images/Camera17.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{16}
+\item
+  At the end of the plate photo documentation session, ensure that all CAU plate photos have been taken and saved to their appropriate local drive folders
+\item
+  Backup the images by copying the \textbf{Island} parent folder,
+
+  ex: Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS
+\end{enumerate}
+
+to the network drive,
+
+\begin{verbatim}
+ex: T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS   
+\end{verbatim}
+
+and to the external hard drive. If prompted, select ``Overwrite''
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{18}
+\item
+  Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu
+\item
+  Rename all plate photos with the following naming convention:
+\end{enumerate}
+
+\begin{itemize}
+\item
+  \textbf{With Plate Photo ID tag:}\\
+  *SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate or ``L'' - lower plate)\_PlateSurface (``T'' - top plate or ``B'' - bottom plate)\_ID.jpg*
+\item
+  \textbf{Without Plate Photo ID tag:}\\
+  *SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate, ``L'' - lower plate)\_PlateSurface (``T'' - top plate, ``B'' - bottom plate).jpg*
+
+  Example:
+  PAL01\_2012\_5319\_U\_T\_ID.jpg -- Upper Plate, Top Side with tag\\
+  PAL01\_2012\_5319\_U\_T.jpg -- Upper Plate, Top Side\\
+  PAL01\_2012\_5319\_U\_B\_ID.jpg -- Upper Plate, Bottom Side with tag
+  PAL01\_2012\_5319\_U\_B.jpg -- Upper Plate, Bottom Side\\
+  PAL01\_2012\_5319\_L\_T\_ID.jpg -- Lower Plate, Top Side with tag\\
+  PAL01\_2012\_5319\_L\_T.jpg -- Lower Plate, Top Side\\
+  PAL01\_2012\_5319\_L\_B\_ID.jpg -- Lower Plate, Bottom Side with tag\\
+  PAL01\_2012\_5319\_L\_B.jpg -- Lower Plate, Bottom Side
+\end{itemize}
+
+\includegraphics{images/Camera18.jpg}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{20}
+\item
+  Copy the newly-renamed images to the network folder by copying the \textbf{Island} parent folder
+
+  e.g.~Documents-CAU Analysis-ASRAMP 2015-PHOTO ANALYSIS-SAMOA-SWAINS
+\end{enumerate}
+
+to the network drive
+
+\begin{verbatim}
+e.g. T:\\Oceanography\\CAUs\\Analysis\\2018_CAU Analysis\\ASRAMP18\\PHOTO ANALYSIS\\SAMOA\\SWAINS  
+\end{verbatim}
+
+and to the external hard drive. If prompted, select ``Overwrite''
 
 \hypertarget{postcruise}{%
 \chapter{Post Cruise Activities}\label{postcruise}}
