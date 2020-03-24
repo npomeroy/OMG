@@ -6,6 +6,8 @@
 
 Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
 
+## Map of Current OCC Sites 
+
 ```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
 library(leaflet)
 
