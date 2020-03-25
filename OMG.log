@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  24 MAR 2020 09:57
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  24 MAR 2020 16:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,71 +914,87 @@ LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
 ]
 File: images/OCC_Diurnal_Suite_Recovery_CJS.jpg Graphic file (type bmp)
 <images/OCC_Diurnal_Suite_Recovery_CJS.jpg>
+
+Overfull \hbox (79.16222pt too wide) in paragraph at lines 158--160
+[]\TU/Calibri(0)/m/n/10 At work underwater: [] 
+ []
+
+File: images/OCC_Team_March_2020.jpg Graphic file (type bmp)
+<images/OCC_Team_March_2020.jpg>
+
+Overfull \hbox (88.05283pt too wide) in paragraph at lines 161--163
+[]\TU/Calibri(0)/m/n/10 The OCC Team Topside: [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [5]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 13.36551pt on input line 163.
+(Font)              scaled to size 13.36551pt on input line 165.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
-(Font)              scaled to size 13.24026pt on input line 163.
-LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
-(Font)              scaled to size 9.19464pt on input line 179.
+(Font)              scaled to size 13.24026pt on input line 165.
 [6]
+LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
+(Font)              scaled to size 9.19464pt on input line 185.
+[7] [8
+
+]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
-(Font)              scaled to size 19.06969pt on input line 184.
+(Font)              scaled to size 19.06969pt on input line 190.
 File: images/Sette_Big_Island_2010_Pomeroy.jpg Graphic file (type bmp)
 <images/Sette_Big_Island_2010_Pomeroy.jpg>
 
 Underfull \vbox (badness 3291) has occurred while \output is active []
 
-[7
-
-]
-Overfull \hbox (27.95686pt too wide) in paragraph at lines 258--259
+[9]
+Overfull \hbox (27.95686pt too wide) in paragraph at lines 264--265
 []\TU/Calibri(0)/m/n/10 Manufacturer|  
  []
 
 
-Overfull \hbox (14.29353pt too wide) in paragraph at lines 262--263
+Overfull \hbox (14.29353pt too wide) in paragraph at lines 268--269
 []\TU/Calibri(0)/m/n/10 Instrument|  
  []
 
 
-Overfull \hbox (1.35072pt too wide) in alignment at lines 251--267
+Overfull \hbox (1.35072pt too wide) in alignment at lines 257--273
  [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (2.60916pt too wide) in paragraph at lines 286--287
+Overfull \hbox (2.60916pt too wide) in paragraph at lines 292--293
 []\TU/Calibri(0)/m/n/10 Google|  
  []
 
 
-Overfull \hbox (7.00525pt too wide) in paragraph at lines 299--300
+Overfull \hbox (7.00525pt too wide) in paragraph at lines 305--306
 []\TU/Calibri(0)/m/n/10 Keyspan|  
  []
 
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 305.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 311.
 
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.f
 d
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 305.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 311.
 
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.f
 d
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 305
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 311
 .
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.
 fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 305
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 311
 .
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.
@@ -986,111 +1002,111 @@ fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 305.
+(Font)              <10> on input line 311.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 305.
+(Font)              <7> on input line 311.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 305.
-LaTeX Font Info:    Try loading font information for U+msa on input line 305.
+(Font)              <5> on input line 311.
+LaTeX Font Info:    Try loading font information for U+msa on input line 311.
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
 sa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 305.
+LaTeX Font Info:    Try loading font information for U+msb on input line 311.
 
 (c:/Users/Noah.Pomeroy/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/um
 sb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (12.05847pt too wide) in paragraph at lines 312--313
+Overfull \hbox (12.05847pt too wide) in paragraph at lines 318--319
 []\TU/Calibri(0)/m/n/10 Microsoft|  
  []
 
 
-Overfull \hbox (12.05847pt too wide) in paragraph at lines 325--326
+Overfull \hbox (12.05847pt too wide) in paragraph at lines 331--332
 []\TU/Calibri(0)/m/n/10 Microsoft|  
  []
 
 
-Overfull \hbox (16.25061pt too wide) in paragraph at lines 338--339
+Overfull \hbox (16.25061pt too wide) in paragraph at lines 344--345
 []\TU/Calibri(0)/m/n/10 Minnesota 
  []
 
 
-Overfull \hbox (16.25061pt too wide) in paragraph at lines 351--352
+Overfull \hbox (16.25061pt too wide) in paragraph at lines 357--358
 []\TU/Calibri(0)/m/n/10 Minnesota 
  []
 
 
-Overfull \hbox (1.81606pt too wide) in paragraph at lines 364--365
+Overfull \hbox (1.81606pt too wide) in paragraph at lines 370--371
 []\TU/Calibri(0)/m/n/10 Nortek|  
  []
 
 
-Overfull \hbox (11.49274pt too wide) in paragraph at lines 368--369
+Overfull \hbox (11.49274pt too wide) in paragraph at lines 374--375
 []\TU/Calibri(0)/m/n/10 Aquadopp 
  []
 
 
-Overfull \hbox (21.37181pt too wide) in paragraph at lines 377--378
+Overfull \hbox (21.37181pt too wide) in paragraph at lines 383--384
 \TU/Calibri(0)/m/n/10 Instruments|  
  []
 
 
-Overfull \hbox (2.89015pt too wide) in paragraph at lines 390--391
+Overfull \hbox (2.89015pt too wide) in paragraph at lines 396--397
 []\TU/Calibri(0)/m/n/10 Paralax 
  []
 
 
-Overfull \hbox (42.2915pt too wide) in paragraph at lines 396--397
+Overfull \hbox (42.2915pt too wide) in paragraph at lines 402--403
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$
 []|  
  []
 
 
-Overfull \hbox (2.6998pt too wide) in paragraph at lines 403--404
+Overfull \hbox (2.6998pt too wide) in paragraph at lines 409--410
 []\TU/Calibri(0)/m/n/10 Python|  
  []
 
 
-Overfull \hbox (8.04308pt too wide) in paragraph at lines 416--417
+Overfull \hbox (8.04308pt too wide) in paragraph at lines 422--423
 []\TU/Calibri(0)/m/n/10 Satlantic|  
  []
 
 
-Overfull \hbox (4.34041pt too wide) in paragraph at lines 429--430
+Overfull \hbox (4.34041pt too wide) in paragraph at lines 435--436
 []\TU/Calibri(0)/m/n/10 SeaBird|  
  []
 
 
-Overfull \hbox (4.34041pt too wide) in paragraph at lines 442--443
+Overfull \hbox (4.34041pt too wide) in paragraph at lines 448--449
 []\TU/Calibri(0)/m/n/10 SeaBird|  
  []
 
 
-Overfull \hbox (4.34041pt too wide) in paragraph at lines 455--456
+Overfull \hbox (4.34041pt too wide) in paragraph at lines 461--462
 []\TU/Calibri(0)/m/n/10 SeaBird|  
  []
 
 
-Overfull \hbox (1.35072pt too wide) in alignment at lines 267--490
+Overfull \hbox (1.35072pt too wide) in alignment at lines 273--496
  [] [] [] [] [] [] 
  []
 
-[8] [9] [10]
+[10] [11] [12]
 Chapter 2.
-[11
+[13
 
 ]
 File: images/BOD_bottle_headspace.png Graphic file (type bmp)
 <images/BOD_bottle_headspace.png>
-[12]
+[14]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[13]
+[15]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
-(Font)              scaled to size 11.03357pt on input line 579.
+(Font)              scaled to size 11.03357pt on input line 585.
 File: images/Saturated-Mercuric-Chloride-SDS_Page_1.png Graphic file (type bmp)
 
 <images/Saturated-Mercuric-Chloride-SDS_Page_1.png>
@@ -1124,17 +1140,11 @@ File: images/Saturated-Mercuric-Chloride-SDS_Page_1.png Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[14]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[15]
-Overfull \vbox (368.36224pt too high) has occurred while \output is active []
-
 [16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Overfull \vbox (368.36224pt too high) has occurred while \output is active []
 
 [18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1151,37 +1161,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[23] [24]
+[23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[25] [26]
 Chapter 3.
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 606.
-[25
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 612.
+[27
 
-] [26
+] [28
 
 ]
 Chapter 4.
 File: images/d_suite_deploy_small.jpg Graphic file (type bmp)
 <images/d_suite_deploy_small.jpg>
-[27] [28
+[29] [30
 
-] [29] [30]
+] [31] [32]
 Chapter 5.
 File: images/STR_party_2019.jpg Graphic file (type bmp)
 <images/STR_party_2019.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[31
+[33
 
-] [32]
-Underfull \hbox (badness 2368) in paragraph at lines 763--764
+] [34]
+Underfull \hbox (badness 2368) in paragraph at lines 769--770
 []\TU/Calibri(0)/m/n/10 The file extension indicates the file format and should
  not be changed.
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 763--764
+Underfull \hbox (badness 1087) in paragraph at lines 769--770
 \TU/Calibri(0)/m/n/10 If you change it, the file extension that you specify bec
 omes part of the
  []
@@ -1189,59 +1205,59 @@ omes part of the
 File: images/SBE56_program_step_1.jpg Graphic file (type bmp)
 <images/SBE56_program_step_1.jpg>
 
-Overfull \hbox (235.5396pt too wide) in paragraph at lines 780--783
+Overfull \hbox (235.5396pt too wide) in paragraph at lines 786--789
 []\TU/Calibri(0)/m/n/10 Open SeatermV2 and select SBE56 from the instruments me
 nu. [] 
  []
 
-[33]
+[35]
 File: images/SBE56_connect.jpg Graphic file (type bmp)
 <images/SBE56_connect.jpg>
 
-Overfull \hbox (77.44717pt too wide) in paragraph at lines 783--786
+Overfull \hbox (77.44717pt too wide) in paragraph at lines 789--792
 \TU/Calibri(0)/m/n/10 via a USB mini cable. [] 
  []
 
 File: images/SBE56_program_step_2.jpg Graphic file (type bmp)
 <images/SBE56_program_step_2.jpg>
 
-Overfull \hbox (72.2148pt too wide) in paragraph at lines 786--789
+Overfull \hbox (72.2148pt too wide) in paragraph at lines 792--795
 \TU/Calibri(0)/m/n/10 figuration window. [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[34]
+[36]
 File: images/SBE56_program_step_3.jpg Graphic file (type bmp)
 <images/SBE56_program_step_3.jpg>
 
-Overfull \hbox (70.6573pt too wide) in paragraph at lines 793--796
+Overfull \hbox (70.6573pt too wide) in paragraph at lines 799--802
 \TU/Calibri(0)/m/n/10 Wich Mean Time.” [] 
  []
 
 File: images/SBE56_program_step_4.jpg Graphic file (type bmp)
 <images/SBE56_program_step_4.jpg>
 
-Underfull \hbox (badness 1502) in paragraph at lines 804--807
+Underfull \hbox (badness 1502) in paragraph at lines 810--813
 []\TU/Calibri(0)/m/n/10 When you are done editing the configuration of the SBE5
 6, click the “Update
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 804--807
+Underfull \hbox (badness 2856) in paragraph at lines 810--813
 \TU/Calibri(0)/m/n/10 Configuration” button and confirm the changes you want to
  make when the
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 804--807
+Underfull \hbox (badness 1325) in paragraph at lines 810--813
 \TU/Calibri(0)/m/n/10 pop-up window asks you to do so. When you have finished, 
 you should see
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 804--807
+Underfull \hbox (badness 1533) in paragraph at lines 810--813
 \TU/Calibri(0)/m/n/10 left shows the parameters that you intended to program th
 e instrument with.
  []
@@ -1249,73 +1265,73 @@ e instrument with.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[35] [36]
+[37] [38]
 Chapter 6.
-[37
+[39
 
-] [38]
-Underfull \hbox (badness 10000) in paragraph at lines 988--990
+] [40]
+Underfull \hbox (badness 10000) in paragraph at lines 994--996
 
  []
 
 
 Underfull \vbox (badness 1107) has occurred while \output is active []
 
-[39] [40]
+[41] [42]
 Chapter 7.
-[41
+[43
 
-] [42] [43] [44]
-Underfull \vbox (badness 10000) detected at line 1236
- []
-
-
+] [44] [45] [46]
 Underfull \vbox (badness 10000) detected at line 1242
  []
 
-[45] [46] [47] [48
+
+Underfull \vbox (badness 10000) detected at line 1248
+ []
+
+[47] [48] [49] [50
 
 ]
 Chapter 8.
-[49] [50]
+[51] [52]
 File: images/PUC_bag_pop.png Graphic file (type bmp)
 <images/PUC_bag_pop.png>
 
-Overfull \hbox (297.41805pt too wide) in paragraph at lines 1494--1495
+Overfull \hbox (297.41805pt too wide) in paragraph at lines 1500--1501
 [][] 
  []
 
-[51] [52] [53] [54]
+[53] [54] [55] [56]
 Chapter 9.
-[55
+[57
 
 ]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 11.13791pt on input line 1649.
-[56]
+(Font)              scaled to size 11.13791pt on input line 1655.
+[58]
 Chapter 10.
-[57
+[59
 
-] [58
+] [60
 
 ]
 Chapter 11.
-[59] [60] [61] [62
+[61] [62] [63] [64
 
 ]
 Chapter 12.
 File: images/SQL_Dev_Screenshot_1.jpg Graphic file (type bmp)
 <images/SQL_Dev_Screenshot_1.jpg>
 
-Overfull \hbox (79.12776pt too wide) in paragraph at lines 1909--1912
+Overfull \hbox (79.12776pt too wide) in paragraph at lines 1915--1918
 \TU/Calibri(0)/m/n/10 database and click it. [] 
  []
 
-[63]
+[65]
 File: images/SQL_Dev_Screenshot_2.jpg Graphic file (type bmp)
 <images/SQL_Dev_Screenshot_2.jpg>
 
-Overfull \hbox (223.46346pt too wide) in paragraph at lines 1912--1915
+Overfull \hbox (223.46346pt too wide) in paragraph at lines 1918--1921
 []\TU/Calibri(0)/m/n/10 When prompted, enter your Oracle username and password 
 [] 
  []
@@ -1323,29 +1339,29 @@ Overfull \hbox (223.46346pt too wide) in paragraph at lines 1912--1915
 File: images/SQL_Dev_Screenshot_3.jpg Graphic file (type bmp)
 <images/SQL_Dev_Screenshot_3.jpg>
 
-Overfull \hbox (26.20282pt too wide) in paragraph at lines 1915--1918
+Overfull \hbox (26.20282pt too wide) in paragraph at lines 1921--1924
 \TU/Calibri(0)/m/n/10 Users” [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[64]
+[66]
 File: images/SQL_Dev_Screenshot_4.jpg Graphic file (type bmp)
 <images/SQL_Dev_Screenshot_4.jpg>
 
-Overfull \hbox (199.4444pt too wide) in paragraph at lines 1918--1921
+Overfull \hbox (199.4444pt too wide) in paragraph at lines 1924--1927
 []\TU/Calibri(0)/m/n/10 Expand “Other Users” and navigate down to “GISDAT” [] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[65] [66]
+[67] [68]
 Chapter 13.
-[67
+[69
 
-] [68
+] [70
 
 ]
 Chapter 14.
@@ -1356,70 +1372,70 @@ File: images/CAU_assembly.jpg Graphic file (type bmp)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[69]
+[71]
 File: images/CAU_table.jpg Graphic file (type bmp)
 <images/CAU_table.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[70]
-Overfull \hbox (5.72545pt too wide) in paragraph at lines 1964--1965
+[72]
+Overfull \hbox (5.72545pt too wide) in paragraph at lines 1970--1971
 []\TU/Calibri(0)/m/n/10 Using a pencil, \TU/Calibri(0)/bx/n/10 pre-label the fo
 llowing with the CAU Plate ID (e.g. PAL01_2012_5319_U): 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1970--1972
+Underfull \hbox (badness 10000) in paragraph at lines 1976--1978
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1972--1974
+Underfull \hbox (badness 10000) in paragraph at lines 1978--1980
 
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 1974--1975
+Underfull \hbox (badness 2970) in paragraph at lines 1980--1981
 []\TU/Calibri(0)/m/n/10 Filterpaper 11cm diameter, #1, >11μm particle retention
  (e.g. Whatman
  []
 
-[71]
-Underfull \hbox (badness 10000) in paragraph at lines 1996--1998
+[73]
+Underfull \hbox (badness 10000) in paragraph at lines 2002--2004
 
  []
 
-[72]
+[74]
 File: images/CAU_plate_ID.jpg Graphic file (type bmp)
 <images/CAU_plate_ID.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[73]
+[75]
 File: images/CAU_dried.jpg Graphic file (type bmp)
 <images/CAU_dried.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74]
+[76]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/it' will be
-(Font)              scaled to size 9.19464pt on input line 2083.
+(Font)              scaled to size 9.19464pt on input line 2089.
 File: images/CAU_photograph.jpg Graphic file (type bmp)
 <images/CAU_photograph.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[75]
+[77]
 ! Undefined control sequence.
-l.2093   T:\Oceanography
+l.2099   T:\Oceanography
                         \CAUs\Analysis 
 Here is how much of TeX's memory you used:
- 22704 strings out of 494944
- 417663 string characters out of 6175978
+ 22709 strings out of 494944
+ 417793 string characters out of 6175978
  535864 words of memory out of 5000000
- 26353 multiletter control sequences out of 15000+600000
+ 26356 multiletter control sequences out of 15000+600000
  545145 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,8n,117p,995b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on OMG.pdf (75 pages).
+Output written on OMG.pdf (77 pages).
