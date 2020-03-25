@@ -29,8 +29,9 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 **ID Tags**
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
-  
-    e.g. PAL01_2012_5319_U; PAL01_2012_5319_L
+
+    e.g. PAL01_2012_5319_U;  
+         PAL01_2012_5319_L
 
 2.	Using a pencil, **pre-label the following with the CAU Plate ID (e.g. PAL01_2012_5319_U):**  
   
@@ -43,11 +44,11 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 4.	Print **Glass Dish Labels** on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
 
 5.	Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:  
-
-    Upper Plate, Top Side  
-    Upper Plate, Bottom Side  
-    Lower Plate, Top Side  
-    Lower Plate, Bottom Side   
+  
+    **Upper Plate, Top Side**  
+    **Upper Plate, Bottom Side**  
+    **Lower Plate, Top Side**  
+    **Lower Plate, Bottom Side**   
 	
     An example of a plate photo ID: *PAL01_2012_5319_U_T*
 
@@ -123,11 +124,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at:
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at:  
 
     T:\Oceanography\CAUs\Analysis
     
-    organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
+    Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.* 
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -139,9 +140,10 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg    
 
     **b)	Without Plate Photo ID tag:**  
-    SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg   
+    SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg  
 
     Example:  
+    
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
     PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
@@ -184,11 +186,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 9.	In the ESD Apex CAU Mission App (or CAU Data Entry tool for ESD-CREP users), record the 2nd weight to at least 3 decimal places under the column ‘*Drying 2 [48 h] [paper tray + CAU plate] [g]*’.
 
-10.	Compare the current weight from the previous weight:
+10.	Compare the current weight from the previous weight:  
 
-    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
+    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
 		
-    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
+    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
 
 11.	Repeat *III.B Steps 5-10* until the difference in weight is less than 0.1 g.
 
@@ -207,15 +209,15 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 5.	When decalcification has slowed (12-24 hours):  
 
-    a.	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
+    a)	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
 
-    b. Grind pieces of calcified materials that may still be present and return in the glass dish.  
+    b) Grind pieces of calcified materials that may still be present and return in the glass dish.  
 
-    c. Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
+    c) Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
 
-    d. Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
+    d) Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
 
-    e. If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
+    e) If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
 
 `r knitr::include_graphics(rep("images/CAU_dissolve.jpg"))`
 
@@ -250,9 +252,9 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (*see III.D, Step 2, a-c*) can be used to filter the remaining volume of acid bath and fleshy material:  
 
-    a. Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
+    a) Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
 
-    b. In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
+    b) In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
 
 3.	If filtering has slowed down, use a spatula/teaspoon to gently scrape the surface of the filter paper to allow more solution to filter through. Filtering can take >5 mins depending the amount of fleshy material in the acid bath.
 
@@ -289,11 +291,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 10.	Compare the current weight from the previous weight:  
 
-    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
+    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
 
 ** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*  
-		
-    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
+
+    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
 
 11.	Repeat III.E Steps 5-10 until the difference in weight is less than 0.1 g.
 
@@ -320,7 +322,7 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 #### Connecting the camera to the computer
 
-1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f\2.8G ED lens) to the computer via USB mini cable
+1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f2.8G ED lens) to the computer via USB mini cable
 
 `r knitr::include_graphics(rep("images/Camera.jpg"))`
 
@@ -333,22 +335,22 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 5.	**If using the software for the FIRST TIME:**
 		
-    a. Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following: 
+    a) Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
 
-    Shutter speed: 1/50 sec
-    Aperture: f/8
+    Shutter speed: **1/50 sec**  
+    Aperture: f/8**
 
-`r knitr::include_graphics(rep("images/Camera3.jpg"))`
+`r knitr::include_graphics(rep("images/Camera3.jpg"))`  
 
-    b. Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
+    b) Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
 
-    ISO Sensitivity: ISO 400
+    ISO Sensitivity: **ISO 400**
     White Balance: Auto
     Option: Normal  
 
-`r knitr::include_graphics(rep("images/Camera4.jpg"))`
+`r knitr::include_graphics(rep("images/Camera4.jpg"))`  
 
-    c. Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
+    c) Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
 
     Image Quality: JPEG fine
     JPEG Compression: Optimal quality
@@ -356,10 +358,9 @@ For ESD-CREP users, the installation instructions and software product key can b
     Record to: PC
     Card Record Mode: Backup  
 
-`r knitr::include_graphics(rep("images/Camera5.jpg"))`
+`r knitr::include_graphics(rep("images/Camera5.jpg"))`  
 
-
-    d. Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
+    d) Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
 
     Picture Control: Standard
     High ISO NR: On (High) 
@@ -395,9 +396,9 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 `r knitr::include_graphics(rep("images/Camera11.jpg"))`
 
-8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location 
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location  
 
-    ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368 
+    ex: Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS\SWA03\SWA03_368 
 
     where the images will be downloaded as they are taken. Click **OK**
 
@@ -438,11 +439,11 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 18.	Backup the images by copying the **Island** parent folder,   
 
-    ex: Documents//CAU Analysis//ASRAMP 2015//HOTO ANALYSIS//SAMOA//SWAINS   
+    ex: Documents/CAU Analysis/ASRAMP 2015/HOTO ANALYSIS/SAMOA/SWAINS   
     
-    to the network drive,   
+    to the network drive,  
 
-    ex: T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS
+    ex: T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS  
     
     and to the external hard drive. If prompted, select “Overwrite”
 
@@ -450,13 +451,14 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 20.	Rename all plate photos with the following naming convention:  
 
-    a. **With Plate Photo ID tag:**  
+    a) **With Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - 	lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg  
 
-    b. **Without Plate Photo ID tag:**  
+    b) **Without Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg   
 
     Example:  
+
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
     PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
@@ -471,9 +473,9 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder 
 
-    e.g. Documents//CAU Analysis//ASRAMP 2015//PHOTO ANALYSIS//SAMOA//SWAINS
+    e.g. Documents/CAU Analysis/ASRAMP 2015/PHOTO ANALYSIS/SAMOA/SWAINS
     
-    to the network drive   
+    to the network drive  
 
     e.g. T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS  
     
@@ -481,10 +483,10 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 
 
-## CAU Data Entry Tool User Documentation
-	 
-	 *for ESD-CREP use only*
-	 *Last modified by David Igeta on 12/15/2015*
+## CAU Data Entry Tool User Documentation  
+
+*for ESD-CREP use only*
+*Last modified by David Igeta on 12/15/2015*
 	 
 	 
 ### Application Overview
@@ -510,8 +512,8 @@ This page breaks down the number of CAUs that still need to be weighed by Plate,
 	 
 The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the Data Entry page.
 	 
-`r knitr::include_graphics(rep("images/Data2.jpg"))`
-	 
+`r knitr::include_graphics(rep("images/Data2.jpg"))`  
+
     a)	**Breadcrumb Bar** – use this to navigate through the different levels of the application  
 
     b)	**Finder Drop Down** – use this to select the column you wish to search by  
@@ -535,8 +537,8 @@ The Data Entry section is where you will go to enter all the weights that you wi
 	 
 The **Edit Plate** and **Edit Filter** pages are identical; however, we are going to work with the **Edit Plate** page below. Click on the **Edit Plate Weights** button (shown in figure 2) to navigate to the screen below:
 	 
-`r knitr::include_graphics(rep("images/Data3.jpg"))`
-	 
+`r knitr::include_graphics(rep("images/Data3.jpg"))`  
+
     a)	Filter By Island – Drop down list of islands shown in table  
 
     b)	Rows to Display – Select number of rows to display  
@@ -556,6 +558,7 @@ The **Edit Plate** and **Edit Filter** pages are identical; however, we are goin
     g)	Save – allows you to submit your changes and displays the number of records that have been updated  
 
     h)	Calculate – Filters any records that have been completed from the table. Once filtered, these CAU plates will be used in the calcification rates calculations. The following criteria must be met before a record is filtered from the Edit Plate Weights and Edit Filter Weights pages:  
+
     *	Edit Plate Weights  
         +	The **Plate_Dry** column says **YES** (This value determines whether a plate is dry)  
         +	The **Paper_Tray_Weight** is NOT empty (Entering ‘0’ will suffice)  
@@ -613,7 +616,7 @@ This column can be modified by selecting the drying cycle to **Comments**. The c
 
 **Valid Plate/Filter Codes**
 	 
-There are three main codes associated with these columns:
+There are three main codes associated with these columns:  
 
     *	N = record is not dry  
     *	Y = record is dry and will be included in the calculation if both the upper and lower plates are ‘Y’ or ‘F’  
@@ -632,18 +635,17 @@ Each report has the same options to choose from in the **Actions** drop-down men
 	 
 `r knitr::include_graphics(rep("images/Data7.jpg"))`
 
-The Data Summary page is where you will see the following calculations:
+The Data Summary page is where you will see the following calculations:  
 
-    *	Net Weight  
-    *	Final Material Dry Weight  
-    *	Final Fleshy Weight  
-    *	Calcification Rate By Plate    
+*	Net Weight  
+*	Final Material Dry Weight  
+*	Final Fleshy Weight  
+*	Calcification Rate By Plate    
 
 There are three additional report pages:  
     
-    *	Calcification Rate By Unit (shows calculation by grouping the upper and lower plates together)  
-    *	Calcification Rate By Site (shows calculation by grouping the sites together)  
-    *	Calcification Rate By Island (shows calculation by grouping the islands together)  
+*	Calcification Rate By Unit (shows calculation by grouping the upper and lower plates together)  *	Calcification Rate By Site (shows calculation by grouping the sites together)  
+*	Calcification Rate By Island (shows calculation by grouping the islands together)  
 
 **Generating Reports with Calcification Rate By Island**
 	 
@@ -681,9 +683,9 @@ In this tutorial, we will be adding plate weights into our application. A simila
 
 3.	Let’s say we wish to record the first drying cycle weight for a plate in Baker: and show 25 results per page:
 
-    a.	**Filter By Island** – Select Baker
-    b.	**Rows to Display** – Select 25
-    c.	**Select Drying Cycle** – Weight Plate Drying 1
+    a)	**Filter By Island** – Select Baker
+    b)	**Rows to Display** – Select 25
+    c)	**Select Drying Cycle** – Weight Plate Drying 1  
 
 4.	Once you have made your changes, click on the **Apply Filters** button to see them take effect
 
