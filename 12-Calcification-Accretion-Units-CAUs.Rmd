@@ -322,7 +322,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 
 
-### Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
+## Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)
 
 *Refer to the brand/model user documentation/manual if using a different camera and setup*
 
