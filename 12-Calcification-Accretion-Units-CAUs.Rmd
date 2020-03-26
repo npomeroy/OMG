@@ -11,9 +11,17 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 `r knitr::include_graphics(rep("images/CAU_assembly.jpg"))`
 
+### Equipment and Supplies
 
+`r knitr::include_graphics(rep("images/AssemblyEquipment1.jpg"))`
+`r knitr::include_graphics(rep("images/AssemblyEquipment2.jpg"))`
 
 ## CAU Laboratory Sample Processing SOP
+
+### Equipment and Supplies
+
+`r knitr::include_graphics(rep("images/CauEquipment.jpg"))`
+`r knitr::include_graphics(rep("images/CauEquipment.jpg"))`
 
 
 ### Processing Timeline
@@ -41,9 +49,11 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 
 3.	Insert the corresponding Filter paper into the fold of Paper tray B and store in a container. Place Paper tray A in a separate container. Store both containers away from moisture and direct sunlight. See I. Step 8 for pre-weighing instructions. 
 
-4.	Print **Glass Dish Labels** on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
+4.	Print **Glass Dish Labels** on waterproof paper using the template below. Attach each label on one side of the glass dish with tape.
 
-5.	Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:  
+`r knitr::include_graphics(rep("images/Template1.jpg"))`
+
+5.	Print the Plate Photo ID tags on waterproof paper using the template below.There are 4 tags, one for each surface of the CAU to be photographed:  
   
     **Upper Plate, Top Side**  
     **Upper Plate, Bottom Side**  
@@ -51,6 +61,8 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
     **Lower Plate, Bottom Side**   
 	
     An example of a plate photo ID: *PAL01_2012_5319_U_T*
+
+`r knitr::include_graphics(rep("images/Template2.jpg"))`
 
 6.	Using an analytical balance, **pre-weigh** the following and record the value (up to 3 decimal points) in the ESD Apex CAU Mission App (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20):  
 
@@ -765,7 +777,172 @@ If successful, you should see a green dialog box appear in the top-right corner.
 
 
 
+## Daily Task Guide
 
+### Sample Processing Schedule
+
+`r knitr::include_graphics(rep("images/DailyTasks1.jpg"))`
+
+### Sample Processing Daily Tasks
+
+#### WEEK 1
+
+*Monday - Tuesday, Week 1*
+
+1.	Fold, label and weigh paper trays and filter papers.
+2.	Print glass dish labels and plate photo labels.
+3.	Label quart-sized resealable plastic bags.
+4.	Dilute acid to 5% and restock as needed.
+
+*Wednesday, Week 1*
+
+1.	Prepare glass dishes for each CAU plate.
+2.	Attach glass dish labels to each glass dish using regular clear tape.
+
+`r knitr::include_graphics(rep("images/DailyTasks2.jpg"))`
+
+3.	Arrange glass dishes between two carts in alphabetical order (island, site, serial # and plate) and fill the dishes with freshwater/seawater.
+
+`r knitr::include_graphics(rep("images/DailyTasks3.jpg"))`
+
+4.	Arrange oven wire mesh shelves in the fume hood elevated by a drying rack; arrange paper trays on the wire mesh shelves in alphabetical order.
+
+`r knitr::include_graphics(rep("images/DailyTasks4.jpg"))`
+
+5.	Place CAUs in the lab sink and thaw overnight.
+
+`r knitr::include_graphics(rep("images/DailyTasks5.jpg"))`
+
+*Thursday, Week 1*
+
+1.	Disassemble CAUs (orient each plate on the dish with the top surface facing up).
+
+`r knitr::include_graphics(rep("images/DailyTasks6.jpg"))`
+
+2.	Photograph each plate surface on the copy stand (with and without the plate photo ID tags; see SOPs).
+
+`r knitr::include_graphics(rep("images/DailyTasks7.jpg"))`
+
+3.	If using seawater, rinse plate with freshwater and place each plate on their corresponding paper trays in the fume hood. 
+4.	Air dry overnight.
+5.	Rinse glass dishes (do not remove dish labels) and dry on the cart. 
+
+
+*Friday PM, Week 1*
+
+1.	Place wire mesh shelves with plates in the rolling rack. 
+2.	Arrange the shelves between the two drying ovens (pre-set to 75C with damper settings at level 3 to achieve a uniform 60C internal temp).
+
+** *For the initial drying, CAU plates are best dried continuously over the weekend* 
+
+
+#### WEEK 2
+
+*Monday, Week 2*
+
+1.	Pull plates from the oven at 8:00 AM and cool to room temperature in the fume hood for 15-30 minutes.
+2.	Weigh each plate (with the paper tray) and enter into data spreadsheet or the CAU Data Entry tool. 
+3.	Return CAUs to the oven.
+
+
+*Tuesday, Week 2*
+
+1.	Repeat Monday’s tasks.
+2.	Take note of the average difference in weight of all plates. 
+3.	*For ESD-CREP users, if a majority of the upper plates are almost dry (weight difference of 0.2 -0.5), coordinate with NIST representatives to schedule CCA subsampling for the following day when applicable*
+4.	Line up upper plate glass dishes on the bench top in alphabetical order; arrange lower plate glass dishes in the right fume hood. 
+
+`r knitr::include_graphics(rep("images/DailyTasks8.jpg"))`
+
+*Wednesday, Week 2*
+
+1.	Pull plates from the oven and weigh 
+2.	If majority of the **upper plates** are **NOT dry**, return all upper plates to oven.
+3.	If all **upper plates ARE dry**, place each plate (with paper tray) inside its corresponding glass dish on the bench top.
+4.	*For ESD-CREP users, if applicable, call/email NIST representatives to confirm that subsampling can occur today*
+5.	If majority of the **lower plates ARE dry**, place each plate in their respective glass dish in the fume hood, place paper tray under each dish. Return the rest of the non-dry lower plates to the oven.
+6.	Start decalcifiying the dry plates: slowly pour 5% HCl acid in each dish and allow the plate to sit in acid for 12-24 hours.
+7.	Optional: if the plates have a good amount of calcified material, pry the calcified material off and pulverize with a mortar and pestle prior to pouring HCl acid in the dish
+
+
+*Thursday, Week 2*
+
+1.	Pull the remaining plates from the oven and weigh.
+2.	Place the remaining CAUs into their respective dishes and pour 5% HCl acid on each and allow to sit in acid for 12-24 hours.
+3.	For plates that have already been soaked in acid for 12-24 hours, scrape the accreted materials from the PVC plates using a scraper.
+
+`r knitr::include_graphics(rep("images/DailyTasks9.jpg"))`
+
+4.	Place the clean PVC plates on their corresponding paper trays and air dry on a baking tray.
+
+`r knitr::include_graphics(rep("images/DailyTasks10.jpg"))`
+
+5.	For dishes that have large pieces of calcified materials (CCA/coral), pulverize these pieces using a mortar and pestle or a blender.
+
+
+*Friday, Week 2*
+
+1.	Find dishes that still have PVC plates and scrape off accreted materials. 
+2.	Find dishes that still have large pieces of calcified materials and pulverize pieces via mortar and pestle or blender.
+3.	If some dishes still contain calcified materials that have settled, decant acid solution into a pre-labeled (serial number and plate identity, e.g. “650_U” is sufficient) plastic container and pour more 5% HCl acid into the glass dish.
+
+`r knitr::include_graphics(rep("images/DailyTasks11.jpg"))`
+
+4.	Make sure that all dishes have “new” acid in them before the end of the day.
+
+
+#### WEEK 3
+
+*Monday - Friday, Week 3*
+
+1.	Check for solid calcified materials in each dish.
+2.	Repeat tasks from Week 2, Friday.
+3.	Arrange wire mesh shelves in one of the fume hoods/bench top.
+4.	Set aside the dishes that have completely decalcified materials next to the Filtration station.
+
+`r knitr::include_graphics(rep("images/DailyTasks12.jpg"))`
+
+5.	Find the corresponding paper tray+filterpaper and place next to dishes that are ready for filtration.
+6.	Filter. 
+
+`r knitr::include_graphics(rep("images/DailyTasks13.jpg"))`
+
+7.	Place the solid residue+filterpaper on their corresponding paper trays and on to the wire mesh shelves.
+
+`r knitr::include_graphics(rep("images/DailyTasks14.jpg"))`
+
+8.	Ensure that the wire mesh shelves are left in the fume hood/s over the weekend to prevent the filterpapers from absorbing too much moisture.
+
+
+
+#### WEEK 4
+
+*Monday, Week 4*
+
+1.	Place wire mesh shelves with filterpapers+paper tray in the rolling rack 
+2.	Arrange the shelves between the two drying ovens (pre-set to 75C with damper settings at level 3 to achieve a uniform 60C internal temp).
+3.	Label and rinse each PVC plate; discard the paper trays.
+4.	Pat the PVC plates dry, arrange on wire mesh shelves and place in the oven to dry for 24 hours.
+
+*Tuesday, Week 4*
+
+1.	Pull filterpapers from the oven at 8:00AM and cool to room temperature in the fume hood for 15-30mins.
+2.	Weigh each filterpaper (with the paper tray) and enter into data spreadsheet or the CAU Data Entry tool. 
+3.	Return filterpapers to the oven.
+4.	Pull PVC plates from the oven, cool to room temperature for 15-30 mins, weigh and enter reading to data spreadsheet. 
+5.	Bind PVC plates with painter’s tape and store in action packers to be reused.
+
+
+*Wednesday-Friday, Week 4*
+
+1.	Pull filterpapers from the oven at 8:00AM and cool to room temperature for 1 hour. 
+2.	Weigh each filterpaper (with the paper tray).
+3.	Return CAUs to the oven.
+4.	When a filterpaper is considered dry, place the filterpaper+paper tray in its corresponding pre-labeled quart-sized resealable plastic bag.
+
+`r knitr::include_graphics(rep("images/DailyTasks15.jpg"))`
+
+5.	Place all plastic bags in a larger pre-labeled (“ISLAND YYYY”) plastic bag and store in the Dry Archive room.
 
 
 
