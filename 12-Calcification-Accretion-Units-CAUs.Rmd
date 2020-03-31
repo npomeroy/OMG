@@ -20,8 +20,8 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 ### Equipment and Supplies
 
-`r knitr::include_graphics(rep("images/CauEquipment.jpg"))`
-`r knitr::include_graphics(rep("images/CauEquipment.jpg"))`
+`r knitr::include_graphics(rep("images/CauEquipment1.jpg"))`
+`r knitr::include_graphics(rep("images/CauEquipment2.jpg"))`
 
 
 ### Processing Timeline

@@ -15,7 +15,7 @@ output:
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
       collapse: section
-      delete_merged_file: FALSE
+      delete_merged_file: TRUE
   bookdown::pdf_book:
     includes:
       in_header: preamble.tex
@@ -25,7 +25,7 @@ output:
 ---
 # Preface {-}
 
-The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to help inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
+The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
 
 At work underwater:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`

@@ -10,14 +10,31 @@ Determine the team's goals in the region the research cruise is scheduled to vis
 
 ```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
 library(leaflet)
+library(leaflet.extras)
+library(viridis)
 
-sites <- read.csv("data/OCC_LIST_OF_SITES_21-FEB-2020.csv", stringsAsFactors=FALSE)
+#ingest site table
+sites <- read.csv("data/OCC_LIST_OF_SITES_instrumentsummary_25-MAR-2020.csv", stringsAsFactors=FALSE)
 
-m <- leaflet(sites) %>% addProviderTiles("Esri.WorldImagery") %>%
-  addCircleMarkers(~LONGITUDE, ~LATITUDE, radius=10, color="orange", popup=sites$OCC_SITEID) %>% setView(-158.0001, 21.4389, zoom =9)
+#make color pallete
+sitemap_pal <- colorFactor(viridis(7), sites$STATUS)
 
-m
-
+leaflet(sites) %>%
+  addProviderTiles("Esri.WorldImagery") %>%
+  setView(-158.0001, 21.4389, zoom =9) %>%
+  addCircleMarkers(~LONGITUDE,
+                   ~LATITUDE,
+                   radius=10,
+                   popup=sites$OCC_SITEID,
+                   fillColor = ~sitemap_pal(STATUS),
+                   stroke=FALSE,
+                   fillOpacity = 0.7) %>%
+  addLegend("bottomright",
+            pal = sitemap_pal,
+            values = ~STATUS,
+            labels = "Status",
+            title = "OCC Sites") %>% 
+  addFullscreenControl(position = "topleft", pseudoFullscreen = FALSE)
 
 
 ```

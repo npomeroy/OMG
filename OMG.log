@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  24 MAR 2020 16:21
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  31 MAR 2020 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1373,69 +1373,95 @@ File: images/CAU_assembly.jpg Graphic file (type bmp)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [71]
-File: images/CAU_table.jpg Graphic file (type bmp)
-<images/CAU_table.jpg>
+File: images/AssemblyEquipment1.jpg Graphic file (type bmp)
+<images/AssemblyEquipment1.jpg>
+File: images/AssemblyEquipment2.jpg Graphic file (type bmp)
+<images/AssemblyEquipment2.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [72]
-Overfull \hbox (5.72545pt too wide) in paragraph at lines 1970--1971
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[73]
+Overfull \vbox (13.18132pt too high) has occurred while \output is active []
+
+[74]
+File: images/CauEquipment1.jpg Graphic file (type bmp)
+<images/CauEquipment1.jpg>
+File: images/CauEquipment2.jpg Graphic file (type bmp)
+<images/CauEquipment2.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1960--1962
+[]
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[75]
+Overfull \vbox (243.6005pt too high) has occurred while \output is active []
+
+[76]
+File: images/CAU_table.jpg Graphic file (type bmp)
+<images/CAU_table.jpg>
+
+Overfull \hbox (5.72545pt too wide) in paragraph at lines 1983--1984
 []\TU/Calibri(0)/m/n/10 Using a pencil, \TU/Calibri(0)/bx/n/10 pre-label the fo
 llowing with the CAU Plate ID (e.g. PAL01_2012_5319_U): 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1976--1978
+Underfull \hbox (badness 10000) in paragraph at lines 1989--1991
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1978--1980
+Underfull \hbox (badness 10000) in paragraph at lines 1991--1993
 
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 1980--1981
+Underfull \hbox (badness 2970) in paragraph at lines 1993--1994
 []\TU/Calibri(0)/m/n/10 Filterpaper 11cm diameter, #1, >11μm particle retention
  (e.g. Whatman
  []
 
-[73]
-Underfull \hbox (badness 10000) in paragraph at lines 2002--2004
+[77]
+File: images/Template1.jpg Graphic file (type bmp)
+<images/Template1.jpg>
+[78]
+File: images/Template2.jpg Graphic file (type bmp)
+<images/Template2.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2029--2031
 
  []
 
-[74]
+[79] [80]
 File: images/CAU_plate_ID.jpg Graphic file (type bmp)
 <images/CAU_plate_ID.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[75]
 File: images/CAU_dried.jpg Graphic file (type bmp)
 <images/CAU_dried.jpg>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[76]
+[81]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/it' will be
-(Font)              scaled to size 9.19464pt on input line 2089.
+(Font)              scaled to size 9.19464pt on input line 2116.
 File: images/CAU_photograph.jpg Graphic file (type bmp)
 <images/CAU_photograph.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[77]
+[82]
 ! Undefined control sequence.
-l.2099   T:\Oceanography
+l.2126   T:\Oceanography
                         \CAUs\Analysis 
 Here is how much of TeX's memory you used:
- 22709 strings out of 494944
- 417793 string characters out of 6175978
- 535864 words of memory out of 5000000
- 26356 multiletter control sequences out of 15000+600000
+ 22733 strings out of 494944
+ 418413 string characters out of 6175978
+ 537864 words of memory out of 5000000
+ 26374 multiletter control sequences out of 15000+600000
  545145 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,8n,117p,995b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,8n,117p,995b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on OMG.pdf (77 pages).
+Output written on OMG.pdf (82 pages).
