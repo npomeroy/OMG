@@ -209,18 +209,18 @@ The OCC team uses the SeaBird SeaFet pH sensor as part of the [Diel Suite](#diel
 
 ## Conditioning the SeaFet in seawater at least 24 hours prior to deployment
 
-At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment.  We call this &quot;conditioning time&quot;.  Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.
+At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment.  We call this **conditioning time**.  Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.
 
 ##How to Set the SeaFet to polled mode**
 
 1. If needed, install new batteries in the SeaFet (12 Ds)
 2. Remove dummy plug from endcap of SeaFet and connect SeaFet to computer with USB cable
 3. Open SeaFetCom software
-4. Swipe magnet over magnetic switch to &quot;activate&quot; batteries (indicator light by magnetic switch will blink green)
-5. Press &quot;connect&quot;
-6. Open settings and confirm operational mode is &quot;polled mode&quot;
-7. Click &quot;upload&quot; to make sure
-8. Click &quot;disconnect&quot;
+4. Swipe magnet over magnetic switch to **activate** batteries (indicator light by magnetic switch will blink green)
+5. Press **connect**
+6. Open settings and confirm operational mode is **polled mode*
+7. Click *upload* to make sure
+8. Click *disconnect*
 
 ## Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)
 
@@ -230,11 +230,11 @@ At least **24 hours** prior to deployment: install and activate internal batteri
 
 1. Remove the dummy plug and connect data logger cable.
 
-2. Open SeaFETCom and select &quot;Connect to SeaFET&quot; to begin communications with instrument.
+2. Open SeaFETCom and select *Connect to SeaFET* to begin communications with instrument.
 
-3. Sync instrument clock with computer clock: Sensor -\&gt; Set Clock, &quot;Sync Time&quot; . Instrument time should be in UTC.
+3. Sync instrument clock with computer clock: Sensor -\&gt; Set Clock, *Sync Time* . Instrument time should be in UTC.
 
-4. To access SeaFET deployment settings, select the &quot;SeaFET Settings&quot; button in the dashboard window or Sensor -\&gt; &quot;SeaFET Settings&quot;.  Use the following settings:
+4. To access SeaFET deployment settings, select the *SeaFET Settings* button in the dashboard window or Sensor -\&gt; *SeaFET Settings*.  Use the following settings:
 
 **General**
 
@@ -272,7 +272,7 @@ At least **24 hours** prior to deployment: install and activate internal batteri
 
 **Maximum Size:** 9999 KB
 
-**Uncheck**&quot;legacy format&quot;
+**Uncheck***legacy format*
 
 **Processing**
 
@@ -286,13 +286,13 @@ Note: For RAMP deployments, the SeaFET will be deployed in **periodic mode** , i
 
 **Activiate the instrument prior to getting on the small boat**
 
-1. Start deployment by selecting the &quot;Start&quot; button in the SeaFETCom dashboard or Sensor -\&gt; &quot;Start&quot;.
+1. Start deployment by selecting the *Start* button in the SeaFETCom dashboard or Sensor -\&gt; *Start*.
 2. Disconnect from SeaFET, remove data logger cable, and replace dummy plug.
 
 **On the small boat**
 
-1. Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32&quot; hex driver or Allen key, remove the three 10-32 x 5/8&quot; socket head cap screws from the wet cap. Remove the wet cap.
-2. Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8&quot; socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.
+1. Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32* hex driver or Allen key, remove the three 10-32 x 5/8* socket head cap screws from the wet cap. Remove the wet cap.
+2. Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8* socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.
 
 **Retrieving the SeaFet**
 
@@ -302,11 +302,11 @@ Note: For RAMP deployments, the SeaFET will be deployed in **periodic mode** , i
 
 2. Remove dummy plug, attach data logger cable, and connect to SeaFETCOM software.
 
-3. Select &quot;Transfer Files&quot; from the SeaFETCom Dashboard.
+3. Select *Transfer Files* from the SeaFETCom Dashboard.
 
-4. In the &quot;Local Filesystem&quot; pane, press &quot;Browse&quot; to select the local folder on the computer that will receive downloaded files.
+4. In the *Local Filesystem* pane, press *Browse* to select the local folder on the computer that will receive downloaded files.
 
-5. In the &quot;Instrument Filesystem&quot; pane, select the files to be downloaded from the SeaFET and press the &quot;\&lt;-&quot; button to transfer selected files.
+5. In the *Instrument Filesystem* pane, select the files to be downloaded from the SeaFET and press the *\&lt;-* button to transfer selected files.
   + A Seafet deployment creates 2 file types: a log file that contains metadata about the deployment and the data file (may be more than one data file)
 
 6. If the instrument will be used in the near future, place in **polled mode** following deployment steps above. This low-power stand-by mode will maintain a continuous current flow to the sensing element and eliminate the need for a 24-hour warmup. If the instrument will not be used in the near future, deactivate internal batteries by swiping the magnet over the target until the LED flashes red.
@@ -344,9 +344,9 @@ Within SeaFETCom - SeaFET Settings - In the SeaFET General Settings Tab you can 
 
 But looking into the firmware commands it appears the SeaFET can be programmed with a start time as well.
 
-At the SeaFET&#39;s command prompt, enter the following commands as an example: &quot;set --samplwin true&quot; and then &quot;set --samstart yyyy/mm/dd.hh:mm:ss
+At the SeaFET&#39;s command prompt, enter the following commands as an example: *set --samplwin true* and then *set --samstart yyyy/mm/dd.hh:mm:ss
 
-Note these commands can be sent using the &quot;Command Terminal&quot; found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.
+Note these commands can be sent using the *Command Terminal* found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.
 
 I believe programming in periodic mode, with a delayed start up time would achieve the same effect.
 
@@ -365,7 +365,7 @@ Hello Noah,
 
 Thank You for your email !
 
-- Is 24hrs adequate for the instrument to &quot;warm up&quot; in polled mode (I believe you&#39;ve called this &quot;conditioning mode&quot; before) prior to deployment or are multiple days necessary?
+- Is 24hrs adequate for the instrument to *warm up* in polled mode (I believe you&#39;ve called this *conditioning mode* before) prior to deployment or are multiple days necessary?
 
 **The time of **** SeaFET ****&#39;s sensors adjusting to the in-situ environment can vary. Really it depends on how different the water is from the storage solution.
 When we perform calibration it can take anywhere for a day, to several days - but we are looking for high level of stability.
@@ -375,7 +375,7 @@ When deploying the  **** SeaFET **** the pH values may take a couple of days for
 
 **I do not see a problem here. For damage to occur to the ISFET it will have to become dry. I would say best practice would be no more than 1 hour. But a couple of hours will not cause damage, just likely additional time to reach stability in the new environment. The external reference can become dry without damage - but some further conditioning time would be expected.**
 
-- Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to &quot;polled mode&quot;
+- Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to *polled mode*
 
 Yes I believe this would achieve the same, however you would need to ensure to switch to polled mode if this is method use during deployment.
 If you have an external controller, polled is likely the better option for use. If you were using periodic mode and an external device collecting the SeaFET&#39;s data - this would rely on the two systems have no change in the their clocks. Polled mode would be better as the external controller would be able to collect data whenever it chooses.
@@ -395,7 +395,7 @@ You&#39;ve brought up some good questions about the SeaFET- I went ahead and con
 
 SeaFET soak time:
 
-Craig is correct- the SeaFET requires a &quot;conditioning time&quot; that allows the sensors to stabilize before achieving full accuracy. I&#39;ve attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:
+Craig is correct- the SeaFET requires a *conditioning time* that allows the sensors to stabilize before achieving full accuracy. I&#39;ve attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:
 
 Upon first contact with seawater, pH sensor voltages relative to both reference electrodes exhibit an asymptotic
 drift. This conditioning period arises from several sources:
@@ -473,7 +473,7 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 
 2. Open the PUC carefully with the PUC opener tool
 
-3. Connect the PUC to your PC with the RS232 (serial) cable and a Keyspan USB to serial adapter. NOTE: It may be necessary to plug the USB cable into a &quot;high-power&quot; USB port on your PC. If using the instrument computer PICSC26, this is the USB port that has a lighting bolt symbol over it
+3. Connect the PUC to your PC with the RS232 (serial) cable and a Keyspan USB to serial adapter. NOTE: It may be necessary to plug the USB cable into a *high-power* USB port on your PC. If using the instrument computer PICSC26, this is the USB port that has a lighting bolt symbol over it
 
 4. Turn on the red power on/off switch on the PUC motherboard
 
@@ -496,11 +496,11 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 * Then open the latest firmware from basic stamp from the [PUC Google Drive Folder](https://drive.google.com/drive/folders/1X6fAG4OIDs66Ji5xzYsX8JySqhkSs5k-): PUC firmware upgrade 07Jan18.bs2
 * note: You may need to change the comp port number in the top line of code
 
-7. Start Sample Program, results in the PUC displaying &quot;Entering sample Mode&quot; + Sample Time + Pump Time + current Date/Time
+7. Start Sample Program, results in the PUC displaying *Entering sample Mode* + Sample Time + Pump Time + current Date/Time
 
 8. NOTE: all PUCs do not pump at the same rate.  We aim to have 800mL of water in each 1L bag. The time it takes for a pump to fill a bag to 800mL varies from 27-36 minutes; see the chart below of PUC times in the next and program each PUC accordingly.
 
-9. The final program step is ALWAYS press #4 to get &quot;Entering sampling Mode&quot; prompt. Confirm sample date/time and pump time.
+9. The final program step is ALWAYS press #4 to get *Entering sampling Mode* prompt. Confirm sample date/time and pump time.
 
 10. Pre-fill a Diurnal Suite Datasheet Spreadsheet with relevant information for the deployment
   
@@ -530,8 +530,8 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 ## PUC Deployment
 
 1. Ensure PUCs are fastened securely to the milk crate (maximum 4 PUCs per crate)
-2. With tubing connected to &quot;water out&quot; valve tip but NOT YET to the tedlar bag, swipe the magnetic switch (red dot) on PUC endcap to run the pump once to pump ambient seawater through the tubing.
-3. Connect the other end of the tubing to the &quot;water in&quot; valve tip of the tedlar bag
+2. With tubing connected to **water out** valve tip but NOT YET to the tedlar bag, swipe the magnetic switch (red dot) on PUC endcap to run the pump once to pump ambient seawater through the tubing.
+3. Connect the other end of the tubing to the *water in* valve tip of the tedlar bag
 4. Open tedlar bags by turning valve one full turn
 
 ## PUC Recovery
@@ -578,9 +578,9 @@ New style cap---- dash#  2-236     McM  9452K165
 2. Open Nortek software
 3. From the Communication menu, select the correct com port for the instrument&#39;s interface cable (look this up in the device manager)
 4. Communications -\&gt; connect (if it does not connect, the instrument&#39;s batteries may be dead; use the AC power adapter)
-5. &quot;Erase Recorder&quot;
+5. *Erase Recorder*
 6. Set clock to UTC time: On-line -\&gt; set clock
-7. Deploy-\&gt;planning-\&gt; load from file then chose&quot;PUC\_24HR\_1Mhz&quot; con file
+7. Deploy-\&gt;planning-\&gt; load from file then chose*PUC\_24HR\_1Mhz* con file
 8. If you can&#39;t find the file, use these settings:
   1. Frequency: 1 Mhz
   2. Profile interval: 300 seconds

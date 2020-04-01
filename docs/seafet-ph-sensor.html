@@ -50,18 +50,6 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
-<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-1.3.1/leaflet.js"></script>
-<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
-<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
-<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
-<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
-<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
-<link href="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet" />
-<script src="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 
 
 <style type="text/css">
@@ -264,17 +252,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>The OCC team uses the SeaBird SeaFet pH sensor as part of the <a href="dielsuite.html#dielsuite">Diel Suite</a> to capture pH information around the clock over a typical deployment interval of 1 to 2 days.</p>
 <div id="conditioning-the-seafet-in-seawater-at-least-24-hours-prior-to-deployment" class="section level2">
 <h2><span class="header-section-number">7.1</span> Conditioning the SeaFet in seawater at least 24 hours prior to deployment</h2>
-<p>At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment. We call this “conditioning time”. Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.</p>
+<p>At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment. We call this <strong>conditioning time</strong>. Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.</p>
 <p>##How to Set the SeaFet to polled mode**</p>
 <ol style="list-style-type: decimal">
 <li>If needed, install new batteries in the SeaFet (12 Ds)</li>
 <li>Remove dummy plug from endcap of SeaFet and connect SeaFet to computer with USB cable</li>
 <li>Open SeaFetCom software</li>
-<li>Swipe magnet over magnetic switch to “activate” batteries (indicator light by magnetic switch will blink green)</li>
-<li>Press “connect”</li>
-<li>Open settings and confirm operational mode is “polled mode”</li>
-<li>Click “upload” to make sure</li>
-<li>Click “disconnect”</li>
+<li>Swipe magnet over magnetic switch to <strong>activate</strong> batteries (indicator light by magnetic switch will blink green)</li>
+<li>Press <strong>connect</strong></li>
+<li>Open settings and confirm operational mode is **polled mode*</li>
+<li>Click <em>upload</em> to make sure</li>
+<li>Click <em>disconnect</em></li>
 </ol>
 </div>
 <div id="programming-the-seafet-for-deployment-after-it-has-already-been-warming-up-in-polled-aka-low-power-sleep-mode-for-at-least-24hrs" class="section level2">
@@ -283,9 +271,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>At least <strong>24 hours</strong> prior to deployment: install and activate internal batteries. To activate internal batteries, swipe the magnet to the target until the indicator LED starts flashing green (this may take a few attempts). Alternatively, connect the instrument to the computer and place in <strong>periodic mode</strong> following instructions below.</p>
 <ol style="list-style-type: decimal">
 <li><p>Remove the dummy plug and connect data logger cable.</p></li>
-<li><p>Open SeaFETCom and select “Connect to SeaFET” to begin communications with instrument.</p></li>
-<li><p>Sync instrument clock with computer clock: Sensor -&amp;gt; Set Clock, “Sync Time” . Instrument time should be in UTC.</p></li>
-<li><p>To access SeaFET deployment settings, select the “SeaFET Settings” button in the dashboard window or Sensor -&amp;gt; “SeaFET Settings”. Use the following settings:</p></li>
+<li><p>Open SeaFETCom and select <em>Connect to SeaFET</em> to begin communications with instrument.</p></li>
+<li><p>Sync instrument clock with computer clock: Sensor -&amp;gt; Set Clock, <em>Sync Time</em> . Instrument time should be in UTC.</p></li>
+<li><p>To access SeaFET deployment settings, select the <em>SeaFET Settings</em> button in the dashboard window or Sensor -&amp;gt; <em>SeaFET Settings</em>. Use the following settings:</p></li>
 </ol>
 <p><strong>General</strong></p>
 <p><strong>Operational Mode:</strong> Periodic</p>
@@ -304,7 +292,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><strong>Instrument Logging Frame Format:</strong> FULL_ASCII</p>
 <p><strong>Log File Creation Method</strong> : By file size</p>
 <p><strong>Maximum Size:</strong> 9999 KB</p>
-<p><strong>Uncheck</strong>“legacy format”</p>
+<p><strong>Uncheck</strong><em>legacy format</em></p>
 <p><strong>Processing</strong></p>
 <p><strong>Salinity</strong> : 35 psu</p>
 <p><strong>External Pump</strong> - no external pump in use</p>
@@ -312,13 +300,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Note: For RAMP deployments, the SeaFET will be deployed in <strong>periodic mode</strong> , in which it will sample at a specified interval and burst size and go to sleep in between measurements. The instrument can be put in <strong>polled mode,</strong> in which it remains in a low power sleep state until woken by an external command, for long-term storage or shipping. <strong>Continuous mode</strong> should only be used when the instrument is powered by an external power source.</p>
 <p><strong>Activiate the instrument prior to getting on the small boat</strong></p>
 <ol style="list-style-type: decimal">
-<li>Start deployment by selecting the “Start” button in the SeaFETCom dashboard or Sensor -&amp;gt; “Start”.</li>
+<li>Start deployment by selecting the <em>Start</em> button in the SeaFETCom dashboard or Sensor -&amp;gt; <em>Start</em>.</li>
 <li>Disconnect from SeaFET, remove data logger cable, and replace dummy plug.</li>
 </ol>
 <p><strong>On the small boat</strong></p>
 <ol style="list-style-type: decimal">
-<li>Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32" hex driver or Allen key, remove the three 10-32 x 5/8" socket head cap screws from the wet cap. Remove the wet cap.</li>
-<li>Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8" socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.</li>
+<li>Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32* hex driver or Allen key, remove the three 10-32 x 5/8* socket head cap screws from the wet cap. Remove the wet cap.</li>
+<li>Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8* socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.</li>
 </ol>
 <p><strong>Retrieving the SeaFet</strong></p>
 <ol style="list-style-type: decimal">
@@ -329,9 +317,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">7.3</span> Downloading Data from the SeaFet**</h2>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Remove dummy plug, attach data logger cable, and connect to SeaFETCOM software.</p></li>
-<li><p>Select “Transfer Files” from the SeaFETCom Dashboard.</p></li>
-<li><p>In the “Local Filesystem” pane, press “Browse” to select the local folder on the computer that will receive downloaded files.</p></li>
-<li><p>In the “Instrument Filesystem” pane, select the files to be downloaded from the SeaFET and press the “&amp;lt;-” button to transfer selected files.</p></li>
+<li><p>Select <em>Transfer Files</em> from the SeaFETCom Dashboard.</p></li>
+<li><p>In the <em>Local Filesystem</em> pane, press <em>Browse</em> to select the local folder on the computer that will receive downloaded files.</p></li>
+<li><p>In the <em>Instrument Filesystem</em> pane, select the files to be downloaded from the SeaFET and press the <em>&amp;lt;-</em> button to transfer selected files.</p></li>
 </ol>
 <ul>
 <li>A Seafet deployment creates 2 file types: a log file that contains metadata about the deployment and the data file (may be more than one data file)</li>
@@ -362,8 +350,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Regarding a specific start time:</p>
 <p>Within SeaFETCom - SeaFET Settings - In the SeaFET General Settings Tab you can select the desired Start date, but I not Believe you can specify the time of day.</p>
 <p>But looking into the firmware commands it appears the SeaFET can be programmed with a start time as well.</p>
-<p>At the SeaFET's command prompt, enter the following commands as an example: “set –samplwin true” and then "set –samstart yyyy/mm/dd.hh:mm:ss</p>
-<p>Note these commands can be sent using the “Command Terminal” found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.</p>
+<p>At the SeaFET's command prompt, enter the following commands as an example: <em>set –samplwin true</em> and then *set –samstart yyyy/mm/dd.hh:mm:ss</p>
+<p>Note these commands can be sent using the <em>Command Terminal</em> found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.</p>
 <p>I believe programming in periodic mode, with a delayed start up time would achieve the same effect.</p>
 <p>Please let me know if you have any questions or comments.</p>
 <p>Kind Regards,
@@ -384,7 +372,7 @@ Darrell</p>
 <p>Hello Noah,</p>
 <p>Thank You for your email !</p>
 <ul>
-<li>Is 24hrs adequate for the instrument to “warm up” in polled mode (I believe you've called this “conditioning mode” before) prior to deployment or are multiple days necessary?</li>
+<li>Is 24hrs adequate for the instrument to <em>warm up</em> in polled mode (I believe you've called this <em>conditioning mode</em> before) prior to deployment or are multiple days necessary?</li>
 </ul>
 <p><strong>The time of </strong>** SeaFET ****'s sensors adjusting to the in-situ environment can vary. Really it depends on how different the water is from the storage solution.
 When we perform calibration it can take anywhere for a day, to several days - but we are looking for high level of stability.
@@ -394,7 +382,7 @@ When deploying the **** SeaFET **** the pH values may take a couple of days for 
 </ul>
 <p><strong>I do not see a problem here. For damage to occur to the ISFET it will have to become dry. I would say best practice would be no more than 1 hour. But a couple of hours will not cause damage, just likely additional time to reach stability in the new environment. The external reference can become dry without damage - but some further conditioning time would be expected.</strong></p>
 <ul>
-<li>Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to “polled mode”</li>
+<li>Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to <em>polled mode</em></li>
 </ul>
 <p>Yes I believe this would achieve the same, however you would need to ensure to switch to polled mode if this is method use during deployment.
 If you have an external controller, polled is likely the better option for use. If you were using periodic mode and an external device collecting the SeaFET's data - this would rely on the two systems have no change in the their clocks. Polled mode would be better as the external controller would be able to collect data whenever it chooses.</p>
@@ -406,7 +394,7 @@ Darrell</p>
 <p>Hi Noah,</p>
 <p>You've brought up some good questions about the SeaFET- I went ahead and consulted our engineer responsible for this instrument to obtain some more concrete answers.</p>
 <p>SeaFET soak time:</p>
-<p>Craig is correct- the SeaFET requires a “conditioning time” that allows the sensors to stabilize before achieving full accuracy. I've attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:</p>
+<p>Craig is correct- the SeaFET requires a <em>conditioning time</em> that allows the sensors to stabilize before achieving full accuracy. I've attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:</p>
 <p>Upon first contact with seawater, pH sensor voltages relative to both reference electrodes exhibit an asymptotic
 drift. This conditioning period arises from several sources:</p>
 <ol style="list-style-type: decimal">

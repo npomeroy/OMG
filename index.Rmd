@@ -27,11 +27,11 @@ output:
 
 The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
 
-At work underwater:
-`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
-
 The OCC Team Topside:
 `r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
+
+At work underwater:
+`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
 ## How to Edit this Book {-}
 

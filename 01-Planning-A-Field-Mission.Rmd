@@ -9,6 +9,7 @@ Determine the team's goals in the region the research cruise is scheduled to vis
 ## Map of Current OCC Sites 
 
 ```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
+
 library(leaflet)
 library(leaflet.extras)
 library(viridis)
@@ -16,8 +17,8 @@ library(viridis)
 #ingest site table
 sites <- read.csv("data/OCC_LIST_OF_SITES_instrumentsummary_25-MAR-2020.csv", stringsAsFactors=FALSE)
 
-#make color pallete
-sitemap_pal <- colorFactor(viridis(7), sites$STATUS)
+#make color pallete and assign specific html colors
+sitemap_pal <- colorFactor(palette =c("#FF0000", "#EDBB99"), levels = c("Active", "Inactive"))
 
 leaflet(sites) %>%
   addProviderTiles("Esri.WorldImagery") %>%
@@ -35,6 +36,7 @@ leaflet(sites) %>%
             labels = "Status",
             title = "OCC Sites") %>% 
   addFullscreenControl(position = "topleft", pseudoFullscreen = FALSE)
+
 
 
 ```
