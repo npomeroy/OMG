@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  31 MAR 2020 13:31
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  31 MAR 2020 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,18 +912,18 @@ LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
 [3] [4
 
 ]
-File: images/OCC_Diurnal_Suite_Recovery_CJS.jpg Graphic file (type bmp)
-<images/OCC_Diurnal_Suite_Recovery_CJS.jpg>
-
-Overfull \hbox (79.16222pt too wide) in paragraph at lines 158--160
-[]\TU/Calibri(0)/m/n/10 At work underwater: [] 
- []
-
 File: images/OCC_Team_March_2020.jpg Graphic file (type bmp)
 <images/OCC_Team_March_2020.jpg>
 
-Overfull \hbox (88.05283pt too wide) in paragraph at lines 161--163
+Overfull \hbox (88.05283pt too wide) in paragraph at lines 158--160
 []\TU/Calibri(0)/m/n/10 The OCC Team Topside: [] 
+ []
+
+File: images/OCC_Diurnal_Suite_Recovery_CJS.jpg Graphic file (type bmp)
+<images/OCC_Diurnal_Suite_Recovery_CJS.jpg>
+
+Overfull \hbox (79.16222pt too wide) in paragraph at lines 161--163
+[]\TU/Calibri(0)/m/n/10 At work underwater: [] 
  []
 
 
@@ -1458,7 +1458,7 @@ l.2126   T:\Oceanography
 Here is how much of TeX's memory you used:
  22733 strings out of 494944
  418413 string characters out of 6175978
- 537864 words of memory out of 5000000
+ 535864 words of memory out of 5000000
  26374 multiletter control sequences out of 15000+600000
  545145 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
