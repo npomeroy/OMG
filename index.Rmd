@@ -30,6 +30,7 @@ The Ocean and Climate Change Team investigates the impacts of climate change on 
 The OCC Team Topside:
 `r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
 JNS
+Did Noah really not hear the *glasses off* call?! (NVP)
 
 At work underwater:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
