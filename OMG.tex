@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-03-31}
+    \date{2020-04-01}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -186,6 +186,34 @@ Once you have forked the repo onto your local machine, the HTML version of the O
 
 If you need some tips for your R Markdown formatting, \href{https://rmarkdown.rstudio.com/lesson-15.html}{this cheat sheet is great.}
 
+\hypertarget{part-research-overview}{%
+\part*{Research Overview}\label{part-research-overview}}
+\addcontentsline{toc}{part}{Research Overview}
+
+\hypertarget{research-questions}{%
+\chapter{Research Questions}\label{research-questions}}
+
+\textbf{What oceanographic factors might make a reef more or less resilient to climate change impacts?}
+
+Ocean Warming
+\emph{How does thermal stress impact corals?
+}How does water temperature change with depth on coral reefs?
+
+Carbonate Budgets
+*Are coral reefs growing or shrinking? Are framework production processes outpaced by framework erosion processes or visa versa?
+
+\hypertarget{where-we-work}{%
+\chapter{Where We Work}\label{where-we-work}}
+
+\hypertarget{htmlwidget-bee4a8e657869f40851b}{}
+
+\hypertarget{publications}{%
+\chapter{Publications}\label{publications}}
+
+\hypertarget{part-conducting-a-research-cruise}{%
+\part*{Conducting a Research Cruise}\label{part-conducting-a-research-cruise}}
+\addcontentsline{toc}{part}{Conducting a Research Cruise}
+
 \hypertarget{cruise_prep}{%
 \chapter{Preparing for a Research Cruise}\label{cruise_prep}}
 
@@ -195,11 +223,6 @@ If you need some tips for your R Markdown formatting, \href{https://rmarkdown.rs
 \section{Determine Goals}\label{determine-goals}}
 
 Determine the team's goals in the region the research cruise is scheduled to visit. Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
-
-\hypertarget{map-of-current-occ-sites}{%
-\section{Map of Current OCC Sites}\label{map-of-current-occ-sites}}
-
-\hypertarget{htmlwidget-da7f3c21fa1221acec0b}{}
 
 \hypertarget{spatial-data-preparation}{%
 \section{Spatial Data Preparation}\label{spatial-data-preparation}}
@@ -495,6 +518,43 @@ RBR Solo\strut
 \bottomrule
 \end{longtable}
 
+\hypertarget{training}{%
+\section{Training}\label{training}}
+
+\hypertarget{staffing-needs_buildout}{%
+\section{Staffing (needs\_buildout)}\label{staffing-needs_buildout}}
+
+\hypertarget{individual-staff-preparation-needs_buildout}{%
+\section{Individual Staff Preparation (needs\_buildout)}\label{individual-staff-preparation-needs_buildout}}
+
+\textbf{Diving}
+* Certifications: O2, CPR/FA (every 2 years)
+* TB test (annual)
+* Dive Physical (every 5 years)
+* medical history report (annual)
+* gear servicing
+
+\hypertarget{preparing-the-ship-needs_buildout}{%
+\section{Preparing the Ship (needs\_buildout)}\label{preparing-the-ship-needs_buildout}}
+
+\hypertarget{loading-the-ship}{%
+\subsection{Loading the Ship}\label{loading-the-ship}}
+
+Pallets, pallet totes and hand carry loading
+
+\hypertarget{drylab-setup}{%
+\subsection{Drylab Setup}\label{drylab-setup}}
+
+\textbf{Be sure and get network connectivity and server functionality working before sailing.}
+
+\hypertarget{this-is-an-example-blank-chapter}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+\includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
+
 \hypertarget{water}{%
 \chapter{CTD and DIC Water Sampling Field Guide}\label{water}}
 
@@ -595,52 +655,6 @@ d.~Complete data sheet including REA Site name or OCC Site Name (if it exists), 
 \includegraphics[width=1\textwidth,height=\textheight]{images/Saturated-Mercuric-Chloride-SDS_Page_9.png}
 \includegraphics[width=1\textwidth,height=\textheight]{images/Saturated-Mercuric-Chloride-SDS_Page_1.png}
 
-\hypertarget{data_processing}{%
-\chapter{Data Processing and the Occ Package}\label{data_processing}}
-
-The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R.
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Open the \emph{devtools} library.
-\end{enumerate}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(devtools)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{1}
-\tightlist
-\item
-  To download the \emph{occ} package, use the \texttt{install\_github} command. The repository name is in the form ``username/repo''. For the \emph{occ} package, the username is ``hannahbarkley'' and the repo is ``occ''. This install only need to occur once; however, the \emph{occ} package will need to be reinstalled if there are updates to the package (which is likely).
-\end{enumerate}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{install_github}\NormalTok{(}\StringTok{"hannahbarkley/occ"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{2}
-\tightlist
-\item
-  Once installed, load the \emph{occ} package.
-\end{enumerate}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(occ)}
-\end{Highlighting}
-\end{Shaded}
-
 \hypertarget{dielsuite}{%
 \chapter{Diel Suite}\label{dielsuite}}
 
@@ -672,6 +686,212 @@ ADCP
 \item
   Get compass bearing on ADCP head direction after final installation
 \end{enumerate}
+
+\hypertarget{this-is-an-example-blank-chapter-1}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter-1}}
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+\includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
+
+\hypertarget{tasks}{%
+\chapter{Tasks at Sea}\label{tasks}}
+
+\hypertarget{daily-tasks-for-the-team}{%
+\section{Daily Tasks for the Team}\label{daily-tasks-for-the-team}}
+
+\href{https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM}{Find Excel version here via Google Drive}
+
+\textbf{STR}
+
+\begin{itemize}
+\tightlist
+\item
+  Before Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    assemble, program and stage needed STRs
+  \item
+    confirm 10 36'' cable ties for each STR planned
+  \item
+    write serial numbers of planned STR deployments on tomorrow's data sheet
+  \end{itemize}
+\item
+  After Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    download strs
+  \item
+    enter deployments and retreivals into mooring database
+  \item
+    import waypoints into mooring database
+  \item
+    clean STRs, put weights and brackets on fantail or in DD bath
+  \end{itemize}
+\end{itemize}
+
+\textbf{CAU}
+
+\begin{itemize}
+\tightlist
+\item
+  Before Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pack supplies for planned CAU site swaps
+  \item
+    write down deploy CAU SNs on tomorrow's data sheet
+  \end{itemize}
+\item
+  After Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    scrape/record CAU SN's, re-bag and freeze with cruise \& site label
+  \item
+    dispose of old clips and stakes
+  \item
+    after CTD/H2O data is entered, give data sheets to data manager
+  \end{itemize}
+\end{itemize}
+
+\textbf{Water Sampling and CTD}
+
+\begin{itemize}
+\tightlist
+\item
+  Before Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    DIC bottles and all supplies in each kit
+  \item
+    Niskin, line, messenger, weight staged for each CTD
+  \end{itemize}
+\item
+  After Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    rinse and stage CTDs
+  \item
+    Swap full bottles for empties, dispose of waste
+  \item
+    restock all supplies
+  \item
+    replace and label any worn ziplocs
+  \item
+    enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
+  \end{itemize}
+\end{itemize}
+
+\textbf{GPS Units (for OCC and benthic/fish GPS)}
+
+\begin{itemize}
+\tightlist
+\item
+  Drop off GPS units with data manager for waypoiont download
+\end{itemize}
+
+\textbf{Cameras}
+
+\begin{itemize}
+\tightlist
+\item
+  Before Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Ensure cameras are set to UTC time
+  \item
+    Ensure cameras have memory cards
+  \item
+    charge camera batteries
+  \item
+    clean camera housings
+  \item
+    bake desiccants and install them
+  \end{itemize}
+\item
+  After Ops
+
+  \begin{itemize}
+  \tightlist
+  \item
+    download and sort photos
+  \item
+    download and sort photoquad photos
+  \item
+    charge cameras or swap charged batts for used batts
+  \item
+    install new dessicants
+  \end{itemize}
+\end{itemize}
+
+\textbf{Stage all Gear}
+
+\begin{itemize}
+\tightlist
+\item
+  Action packer packed for day of ops
+\item
+  Pam float and reel staged
+\item
+  If deep STR: Marker Float and drop weight
+\item
+  1 full bag of large cable ties (keep on boat)
+\item
+  CTDs and lines
+\end{itemize}
+
+\textbf{Other}
+
+\begin{itemize}
+\tightlist
+\item
+  gauge tanks
+\end{itemize}
+
+\textbf{Team Lead}
+
+\begin{itemize}
+\tightlist
+\item
+  Plan tomorrow's objectives
+\item
+  Plan and communicate tank needs to team members
+\end{itemize}
+
+\hypertarget{where-to-save-data}{%
+\section{Where to Save Data}\label{where-to-save-data}}
+
+\href{https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw}{Checkout this Excel file on Google Drive for details on where to save data}
+
+\hypertarget{various-underway-resources}{%
+\chapter{Various Underway resources}\label{various-underway-resources}}
+
+\textbf{Where to Save Various Data Streams}
+Checkout \href{https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit\#gid=1675337307}{this google drive file} showing the paths of where to save various things
+
+\hypertarget{postcruise}{%
+\chapter{Post Cruise Activities}\label{postcruise}}
+
+\hypertarget{data-qc-and-import-into-oracle-database}{%
+\section{Data QC and Import into Oracle Database}\label{data-qc-and-import-into-oracle-database}}
+
+\hypertarget{instrument-refurbishment}{%
+\section{Instrument Refurbishment}\label{instrument-refurbishment}}
 
 \hypertarget{part-instruments}{%
 \part*{Instruments}\label{part-instruments}}
@@ -1701,237 +1921,6 @@ Perform simple check of system daily (see to-be-developed checklist)
 \item
   \href{https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy}{See detailed documentation in this Google Drive Folder Link}
 \end{itemize}
-
-\hypertarget{tasks}{%
-\chapter{Tasks at Sea}\label{tasks}}
-
-\hypertarget{daily-tasks-for-the-team}{%
-\section{Daily Tasks for the Team}\label{daily-tasks-for-the-team}}
-
-\href{https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM}{Find Excel version here via Google Drive}
-
-\textbf{STR}
-
-\begin{itemize}
-\tightlist
-\item
-  Before Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    assemble, program and stage needed STRs
-  \item
-    confirm 10 36'' cable ties for each STR planned
-  \item
-    write serial numbers of planned STR deployments on tomorrow's data sheet
-  \end{itemize}
-\item
-  After Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    download strs
-  \item
-    enter deployments and retreivals into mooring database
-  \item
-    import waypoints into mooring database
-  \item
-    clean STRs, put weights and brackets on fantail or in DD bath
-  \end{itemize}
-\end{itemize}
-
-\textbf{CAU}
-
-\begin{itemize}
-\tightlist
-\item
-  Before Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Pack supplies for planned CAU site swaps
-  \item
-    write down deploy CAU SNs on tomorrow's data sheet
-  \end{itemize}
-\item
-  After Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    scrape/record CAU SN's, re-bag and freeze with cruise \& site label
-  \item
-    dispose of old clips and stakes
-  \item
-    after CTD/H2O data is entered, give data sheets to data manager
-  \end{itemize}
-\end{itemize}
-
-\textbf{Water Sampling and CTD}
-
-\begin{itemize}
-\tightlist
-\item
-  Before Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    DIC bottles and all supplies in each kit
-  \item
-    Niskin, line, messenger, weight staged for each CTD
-  \end{itemize}
-\item
-  After Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    rinse and stage CTDs
-  \item
-    Swap full bottles for empties, dispose of waste
-  \item
-    restock all supplies
-  \item
-    replace and label any worn ziplocs
-  \item
-    enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
-  \end{itemize}
-\end{itemize}
-
-\textbf{GPS Units (for OCC and benthic/fish GPS)}
-
-\begin{itemize}
-\tightlist
-\item
-  Drop off GPS units with data manager for waypoiont download
-\end{itemize}
-
-\textbf{Cameras}
-
-\begin{itemize}
-\tightlist
-\item
-  Before Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Ensure cameras are set to UTC time
-  \item
-    Ensure cameras have memory cards
-  \item
-    charge camera batteries
-  \item
-    clean camera housings
-  \item
-    bake desiccants and install them
-  \end{itemize}
-\item
-  After Ops
-
-  \begin{itemize}
-  \tightlist
-  \item
-    download and sort photos
-  \item
-    download and sort photoquad photos
-  \item
-    charge cameras or swap charged batts for used batts
-  \item
-    install new dessicants
-  \end{itemize}
-\end{itemize}
-
-\textbf{Stage all Gear}
-
-\begin{itemize}
-\tightlist
-\item
-  Action packer packed for day of ops
-\item
-  Pam float and reel staged
-\item
-  If deep STR: Marker Float and drop weight
-\item
-  1 full bag of large cable ties (keep on boat)
-\item
-  CTDs and lines
-\end{itemize}
-
-\textbf{Other}
-
-\begin{itemize}
-\tightlist
-\item
-  gauge tanks
-\end{itemize}
-
-\textbf{Team Lead}
-
-\begin{itemize}
-\tightlist
-\item
-  Plan tomorrow's objectives
-\item
-  Plan and communicate tank needs to team members
-\end{itemize}
-
-\hypertarget{where-to-save-data}{%
-\section{Where to Save Data}\label{where-to-save-data}}
-
-\href{https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw}{Checkout this Excel file on Google Drive for details on where to save data}
-
-\hypertarget{data_how_to}{%
-\chapter{Data How To}\label{data_how_to}}
-
-\hypertarget{how-to-gain-access-to-the-occ-database}{%
-\section{How to Gain Access to the OCC Database}\label{how-to-gain-access-to-the-occ-database}}
-
-As of January 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an \href{https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true\&os_destination=\%2Fbrowse\%2FPICITS-181121\%3Ffilter\%3D-2\&page_caps=\&user_role=}{ITS support ticket} to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup.
-
-\hypertarget{how-to-archive-data}{%
-\section{How to Archive Data}\label{how-to-archive-data}}
-
-After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
-
-\hypertarget{how-to-connect-to-the-oracle-database}{%
-\section{How to Connect to the Oracle Database}\label{how-to-connect-to-the-oracle-database}}
-
-\href{https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit\#}{Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database}
-
-\hypertarget{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}{%
-\section{How to Connect to the OCC Oracle Databse Via Oracle SQL Developer}\label{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Open Oracle SQL Developer
-\item
-  On the ``Welcome Page'' tab, under the ``Databases Detected'' tab, find the ``GIS'' database and click it.
-  \includegraphics{images/SQL_Dev_Screenshot_1.jpg}
-\item
-  When prompted, enter your Oracle username and password
-  \includegraphics{images/SQL_Dev_Screenshot_2.jpg}
-\item
-  In the ``Connections'' pane, expand the ``GIS'' database and navigate down to ``Other Users''
-  \includegraphics{images/SQL_Dev_Screenshot_3.jpg}
-\item
-  Expand ``Other Users'' and navigate down to ``GISDAT''
-  \includegraphics{images/SQL_Dev_Screenshot_4.jpg}
-\item
-  Within ``GISDAT'' find OCC tables begining with ``OCN'' (note as of March 2020, this is soon to be changed to ``OCC'' prefix when the data team updates the new tables)
-\end{enumerate}
-
-\hypertarget{various-underway-resources}{%
-\chapter{Various Underway resources}\label{various-underway-resources}}
-
-\textbf{Where to Save Various Data Streams}
-Checkout \href{https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit\#gid=1675337307}{this google drive file} showing the paths of where to save various things
 
 \hypertarget{calcification-accretion-unit-cau}{%
 \chapter{Calcification Accretion Unit (CAU)}\label{calcification-accretion-unit-cau}}
@@ -3331,17 +3320,119 @@ If successful, you should see a green dialog box appear in the top-right corner.
   Place all plastic bags in a larger pre-labeled (``ISLAND YYYY'') plastic bag and store in the Dry Archive room.
 \end{enumerate}
 
-\hypertarget{postcruise}{%
-\chapter{Post Cruise Activities}\label{postcruise}}
+\hypertarget{part-data-management}{%
+\part*{Data Management}\label{part-data-management}}
+\addcontentsline{toc}{part}{Data Management}
 
-\hypertarget{data-qc-and-import-into-oracle-database}{%
-\section{Data QC and Import into Oracle Database}\label{data-qc-and-import-into-oracle-database}}
+\hypertarget{data_how_to}{%
+\chapter{Data How To}\label{data_how_to}}
 
-\hypertarget{instrument-refurbishment}{%
-\section{Instrument Refurbishment}\label{instrument-refurbishment}}
+(needs\_buildout)
 
-\hypertarget{this-is-an-example-blank-chapter}{%
-\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
+\hypertarget{how-to-gain-access-to-the-occ-database}{%
+\section{How to Gain Access to the OCC Database}\label{how-to-gain-access-to-the-occ-database}}
+
+As of April 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an \href{https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true\&os_destination=\%2Fbrowse\%2FPICITS-181121\%3Ffilter\%3D-2\&page_caps=\&user_role=}{ITS support ticket} to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup.
+
+\hypertarget{how-to-archive-data}{%
+\section{How to Archive Data}\label{how-to-archive-data}}
+
+After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
+
+\hypertarget{how-to-connect-to-the-oracle-database}{%
+\section{How to Connect to the Oracle Database}\label{how-to-connect-to-the-oracle-database}}
+
+\href{https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit\#}{Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database}
+
+\hypertarget{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}{%
+\section{How to Connect to the OCC Oracle Databse Via Oracle SQL Developer}\label{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open Oracle SQL Developer
+\item
+  On the ``Welcome Page'' tab, under the ``Databases Detected'' tab, find the ``GIS'' database and click it.
+  \includegraphics{images/SQL_Dev_Screenshot_1.jpg}
+\item
+  When prompted, enter your Oracle username and password
+  \includegraphics{images/SQL_Dev_Screenshot_2.jpg}
+\item
+  In the ``Connections'' pane, expand the ``GIS'' database and navigate down to ``Other Users''
+  \includegraphics{images/SQL_Dev_Screenshot_3.jpg}
+\item
+  Expand ``Other Users'' and navigate down to ``GISDAT''
+  \includegraphics{images/SQL_Dev_Screenshot_4.jpg}
+\item
+  Within ``GISDAT'' find OCC tables begining with ``OCN'' (note as of March 2020, this is soon to be changed to ``OCC'' prefix when the data team updates the new tables)
+\end{enumerate}
+
+\hypertarget{data_processing}{%
+\chapter{Data Processing and the Occ Package}\label{data_processing}}
+
+The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Open the \emph{devtools} library.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(devtools)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  To download the \emph{occ} package, use the \texttt{install\_github} command. The repository name is in the form ``username/repo''. For the \emph{occ} package, the username is ``hannahbarkley'' and the repo is ``occ''. This install only need to occur once; however, the \emph{occ} package will need to be reinstalled if there are updates to the package (which is likely).
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{install_github}\NormalTok{(}\StringTok{"hannahbarkley/occ"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Once installed, load the \emph{occ} package.
+\end{enumerate}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(occ)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{part-inventory-and-procurement}{%
+\part*{Inventory and Procurement}\label{part-inventory-and-procurement}}
+\addcontentsline{toc}{part}{Inventory and Procurement}
+
+\hypertarget{inventory}{%
+\chapter{Inventory}\label{inventory}}
+
+(needs\_buildout)
+
+\hypertarget{how-to-access-the-building-130-system-needsbuildout}{%
+\section{How to access the building 130 system \#needsbuildout}\label{how-to-access-the-building-130-system-needsbuildout}}
+
+\hypertarget{procurement}{%
+\section{Procurement}\label{procurement}}
+
+(needs\_buildout)
+
+\hypertarget{this-is-an-example-blank-chapter-2}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter-2}}
 
 copy it and use it as a template if you like
 

@@ -51,15 +51,20 @@ If you need some tips for your R Markdown formatting, [this cheat sheet is great
 
 <!--chapter:end:index.Rmd-->
 
-# Preparing for a Research Cruise {#cruise_prep}
+# (PART\*) Research Overview {-}
 
-`r knitr::include_graphics(rep("images/Sette_Big_Island_2010_Pomeroy.jpg"))`
+# Research Questions
 
-## Determine Goals
+**What oceanographic factors might make a reef more or less resilient to climate change impacts?**
 
-Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
+Ocean Warming
+  *How does thermal stress impact corals?
+  *How does water temperature change with depth on coral reefs?
 
-## Map of Current OCC Sites 
+Carbonate Budgets
+  *Are coral reefs growing or shrinking? Are framework production processes outpaced by framework erosion processes or visa versa?
+
+# Where We Work
 
 ```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
 
@@ -94,7 +99,19 @@ leaflet(sites) %>%
 
 ```
 
+# Publications
 
+<!--chapter:end:01-OCC-Research-Overview.Rmd-->
+
+# (PART\*) Conducting a Research Cruise {-}
+
+# Preparing for a Research Cruise {#cruise_prep}
+
+`r knitr::include_graphics(rep("images/Sette_Big_Island_2010_Pomeroy.jpg"))`
+
+## Determine Goals
+
+Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
 
 ## Spatial Data Preparation
 - Create a single .kml file that includes all planned instrument retrievals and any planned additional deployments and other necessary points (collectively all called “planning points”. .kml files are more agile than ArcGIS files; they are easier to use in Google Earth for day to day planning.
@@ -139,7 +156,38 @@ leaflet(sites) %>%
 
 
 
-<!--chapter:end:01-Planning-A-Field-Mission.Rmd-->
+## Training
+## Staffing (needs_buildout)
+## Individual Staff Preparation (needs_buildout)
+
+**Diving**
+  * Certifications: O2, CPR/FA (every 2 years)
+  * TB test (annual)
+  * Dive Physical (every 5 years) 
+  * medical history report (annual)
+  * gear servicing
+  
+## Preparing the Ship (needs_buildout)
+
+### Loading the Ship
+
+Pallets, pallet totes and hand carry loading
+
+### Drylab Setup
+
+**Be sure and get network connectivity and server functionality working before sailing.**
+
+
+<!--chapter:end:20-Planning-A-Field-Mission.Rmd-->
+
+# This is an Example Blank Chapter
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
+
+<!--chapter:end:21-Field-Protocols.Rmd-->
 
 # CTD and DIC Water Sampling Field Guide {#water}
 
@@ -201,32 +249,7 @@ Use the OCC provided GPS unit to collect a waypoint when the CTD downcast begins
 ![](images/Saturated-Mercuric-Chloride-SDS_Page_9.png){width=100%}
 ![](images/Saturated-Mercuric-Chloride-SDS_Page_1.png){width=100%}
 
-<!--chapter:end:02-Water-Sampling-and-CTD-Protocol.Rmd-->
-
-
-# Data Processing and the Occ Package {#data_processing}
-The *occ* package is uploaded to GitHub and can be downloaded directly in R. 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, warning = FALSE, message = FALSE, strip.white = TRUE, cache = TRUE)
-```
-
-1. Open the *devtools* library.
-```{r load_devtools, eval = FALSE}
-library(devtools)
-```
-
-2. To download the *occ* package, use the `install_github` command. The repository name is in the form "username/repo". For the *occ* package, the username is "hannahbarkley" and the repo is "occ". This install only need to occur once; however, the *occ* package will need to be reinstalled if there are updates to the package (which is likely).
-```{r install_occ, eval = FALSE}
-install_github("hannahbarkley/occ")
-```
-
-3. Once installed, load the *occ* package.
-```{r load_occ}
-library(occ)
-```
-
-<!--chapter:end:03-Data-Processing.Rmd-->
+<!--chapter:end:23-Water-Sampling-and-CTD-Protocol.Rmd-->
 
 # Diel Suite {#dielsuite}
 
@@ -246,9 +269,118 @@ ADCP
 1. Ensure ADCP has unobstructed view of the surface
 2. Get compass bearing on ADCP head direction after final installation
 
-<!--chapter:end:05-Diel-Suite.Rmd-->
+<!--chapter:end:25-Diel-Suite.Rmd-->
+
+# This is an Example Blank Chapter
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
+
+<!--chapter:end:26-Coral-Coring.Rmd-->
+
+# Tasks at Sea {#tasks}
+
+## Daily Tasks for the Team
+
+[Find Excel version here via Google Drive](https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM)
+
+
+**STR**
+
+* Before Ops
+  + assemble, program and stage needed STRs 
+  + confirm 10 36'' cable ties for each STR planned
+  + write serial numbers of planned STR deployments on tomorrow's data sheet
+* After Ops
+  + download strs
+  + enter deployments and retreivals into mooring database
+  + import waypoints into mooring database
+  + clean STRs, put weights and brackets on fantail or in DD bath
+
+**CAU**
+
+* Before Ops
+  + Pack supplies for planned CAU site swaps
+  + write down deploy CAU SNs on tomorrow's data sheet
+
+* After Ops
+  + scrape/record CAU SN's, re-bag and freeze with cruise & site label
+  + dispose of old clips and stakes
+  + after CTD/H2O data is entered, give data sheets to data manager
+
+**Water Sampling and CTD**
+
+* Before Ops
+  + DIC bottles and all supplies in each kit
+  + Niskin, line, messenger, weight staged for each CTD
+
+* After Ops
+  + rinse and stage CTDs
+  + Swap full bottles for empties, dispose of waste
+  + restock all supplies
+  + replace and label any worn ziplocs
+  + enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
+
+**GPS Units (for OCC and benthic/fish GPS)**
+
+* Drop off GPS units with data manager for waypoiont download
+
+**Cameras**
+
+* Before Ops
+  + Ensure cameras are set to UTC time
+  + Ensure cameras have memory cards
+  + charge camera batteries
+  + clean camera housings
+  + bake desiccants and install them
+* After Ops
+  + download and sort photos
+  + download and sort photoquad photos
+  + charge cameras or swap charged batts for used batts
+  + install new dessicants
+
+**Stage all Gear**
+
+* Action packer packed for day of ops
+* Pam float and reel staged
+* If deep STR: Marker Float and drop weight
+* 1 full bag of large cable ties (keep on boat)
+* CTDs and lines
+
+**Other**
+
+* gauge tanks
+
+**Team Lead**
+
+* Plan tomorrow's objectives
+* Plan and communicate tank needs to team members
+
+## Where to Save Data
+
+[Checkout this Excel file on Google Drive for details on where to save data](https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw)
+
+<!--chapter:end:27-Tasks-At-Sea.Rmd-->
+
+# Various Underway resources
+
+**Where to Save Various Data Streams**
+Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit#gid=1675337307) showing the paths of where to save various things
+
+<!--chapter:end:28-Various-Underway-Resources.Rmd-->
+
+# Post Cruise Activities {#postcruise}
+
+## Data QC and Import into Oracle Database
+
+## Instrument Refurbishment
+
+<!--chapter:end:29-Post-Cruise-Activities.Rmd-->
 
 # (PART\*) Instruments {-}
+
 # STR
 
 ```{r, echo=FALSE}
@@ -877,132 +1009,7 @@ Perform simple check of system daily (see to-be-developed checklist)
 
 - [See detailed documentation in this Google Drive Folder Link](https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy)
 
-<!--chapter:end:06-Instrumentation.Rmd-->
-
-# Tasks at Sea {#tasks}
-
-## Daily Tasks for the Team
-
-[Find Excel version here via Google Drive](https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM)
-
-
-**STR**
-
-* Before Ops
-  + assemble, program and stage needed STRs 
-  + confirm 10 36'' cable ties for each STR planned
-  + write serial numbers of planned STR deployments on tomorrow's data sheet
-* After Ops
-  + download strs
-  + enter deployments and retreivals into mooring database
-  + import waypoints into mooring database
-  + clean STRs, put weights and brackets on fantail or in DD bath
-
-**CAU**
-
-* Before Ops
-  + Pack supplies for planned CAU site swaps
-  + write down deploy CAU SNs on tomorrow's data sheet
-
-* After Ops
-  + scrape/record CAU SN's, re-bag and freeze with cruise & site label
-  + dispose of old clips and stakes
-  + after CTD/H2O data is entered, give data sheets to data manager
-
-**Water Sampling and CTD**
-
-* Before Ops
-  + DIC bottles and all supplies in each kit
-  + Niskin, line, messenger, weight staged for each CTD
-
-* After Ops
-  + rinse and stage CTDs
-  + Swap full bottles for empties, dispose of waste
-  + restock all supplies
-  + replace and label any worn ziplocs
-  + enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
-
-**GPS Units (for OCC and benthic/fish GPS)**
-
-* Drop off GPS units with data manager for waypoiont download
-
-**Cameras**
-
-* Before Ops
-  + Ensure cameras are set to UTC time
-  + Ensure cameras have memory cards
-  + charge camera batteries
-  + clean camera housings
-  + bake desiccants and install them
-* After Ops
-  + download and sort photos
-  + download and sort photoquad photos
-  + charge cameras or swap charged batts for used batts
-  + install new dessicants
-
-**Stage all Gear**
-
-* Action packer packed for day of ops
-* Pam float and reel staged
-* If deep STR: Marker Float and drop weight
-* 1 full bag of large cable ties (keep on boat)
-* CTDs and lines
-
-**Other**
-
-* gauge tanks
-
-**Team Lead**
-
-* Plan tomorrow's objectives
-* Plan and communicate tank needs to team members
-
-## Where to Save Data
-
-[Checkout this Excel file on Google Drive for details on where to save data](https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw)
-
-<!--chapter:end:09-Tasks-At-Sea.Rmd-->
-
-# Data How To {#data_how_to}
-
-## How to Gain Access to the OCC Database
-
-As of January 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an [ITS support ticket](https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPICITS-181121%3Ffilter%3D-2&page_caps=&user_role=) to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup. 
-
-## How to Archive Data
-
-After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a [google drive folder setup by Annette](https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp).
-
-## How to Connect to the Oracle Database
-
-[Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database](https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit#)
-
-## How to Connect to the OCC Oracle Databse Via Oracle SQL Developer
-
-1. Open Oracle SQL Developer
-2. On the "Welcome Page" tab, under the "Databases Detected" tab, find the "GIS" database and click it.
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_1.jpg"))`
-3. When prompted, enter your Oracle username and password
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_2.jpg"))`
-4. In the "Connections" pane, expand the "GIS" database and navigate down to "Other Users"
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_3.jpg"))`
-5. Expand "Other Users" and navigate down to "GISDAT"
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_4.jpg"))`
-6. Within "GISDAT" find OCC tables begining with "OCN" (note as of March 2020, this is soon to be changed to "OCC" prefix when the data team updates the new tables)
-
-
-
-
-
-
-<!--chapter:end:10-Data-How-To.Rmd-->
-
-# Various Underway resources
-
-**Where to Save Various Data Streams**
-Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit#gid=1675337307) showing the paths of where to save various things
-
-<!--chapter:end:11-Various-Underway-Resources.Rmd-->
+<!--chapter:end:30-Instruments.Rmd-->
 
 
 # Calcification Accretion Unit (CAU)
@@ -1965,15 +1972,83 @@ If successful, you should see a green dialog box appear in the top-right corner.
 
 
 
-<!--chapter:end:12-Calcification-Accretion-Units-CAUs.Rmd-->
+<!--chapter:end:35-Calcification-Accretion-Units-CAUs.Rmd-->
 
-# Post Cruise Activities {#postcruise}
+# (PART\*) Data Management {-}
 
-## Data QC and Import into Oracle Database
+# Data How To {#data_how_to} 
 
-## Instrument Refurbishment
+(needs_buildout)
 
-<!--chapter:end:13-Post-Cruise-Activities.Rmd-->
+## How to Gain Access to the OCC Database
+
+As of April 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an [ITS support ticket](https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPICITS-181121%3Ffilter%3D-2&page_caps=&user_role=) to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup. 
+
+## How to Archive Data
+
+After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a [google drive folder setup by Annette](https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp).
+
+## How to Connect to the Oracle Database
+
+[Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database](https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit#)
+
+## How to Connect to the OCC Oracle Databse Via Oracle SQL Developer
+
+1. Open Oracle SQL Developer
+2. On the "Welcome Page" tab, under the "Databases Detected" tab, find the "GIS" database and click it.
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_1.jpg"))`
+3. When prompted, enter your Oracle username and password
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_2.jpg"))`
+4. In the "Connections" pane, expand the "GIS" database and navigate down to "Other Users"
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_3.jpg"))`
+5. Expand "Other Users" and navigate down to "GISDAT"
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_4.jpg"))`
+6. Within "GISDAT" find OCC tables begining with "OCN" (note as of March 2020, this is soon to be changed to "OCC" prefix when the data team updates the new tables)
+
+
+
+
+
+
+<!--chapter:end:40-Data-Management.Rmd-->
+
+
+# Data Processing and the Occ Package {#data_processing}
+The *occ* package is uploaded to GitHub and can be downloaded directly in R. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, warning = FALSE, message = FALSE, strip.white = TRUE, cache = TRUE)
+```
+
+1. Open the *devtools* library.
+```{r load_devtools, eval = FALSE}
+library(devtools)
+```
+
+2. To download the *occ* package, use the `install_github` command. The repository name is in the form "username/repo". For the *occ* package, the username is "hannahbarkley" and the repo is "occ". This install only need to occur once; however, the *occ* package will need to be reinstalled if there are updates to the package (which is likely).
+```{r install_occ, eval = FALSE}
+install_github("hannahbarkley/occ")
+```
+
+3. Once installed, load the *occ* package.
+```{r load_occ}
+library(occ)
+```
+
+<!--chapter:end:45-Data-Processing.Rmd-->
+
+# (PART\*) Inventory and Procurement {-}
+
+# Inventory
+(needs_buildout)
+
+## How to access the building 130 system #needsbuildout 
+
+## Procurement
+
+(needs_buildout)
+
+<!--chapter:end:50-Inventory-and-Procurement.Rmd-->
 
 # This is an Example Blank Chapter
 
@@ -1982,5 +2057,5 @@ copy it and use it as a template if you like
 This is how you insert an image:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
-<!--chapter:end:14-Blank_Example_Chapter.Rmd-->
+<!--chapter:end:99-Blank_Example_Chapter.Rmd-->
 

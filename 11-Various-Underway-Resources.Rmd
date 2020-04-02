@@ -1,4 +1,0 @@
-# Various Underway resources
-
-**Where to Save Various Data Streams**
-Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit#gid=1675337307) showing the paths of where to save various things
