@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-04-01}
+    \date{2020-04-02}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -157,6 +157,8 @@ The Ocean and Climate Change Team investigates the impacts of climate change on 
 
 The OCC Team Topside:
 \includegraphics{images/OCC_Team_March_2020.jpg}
+JNS
+Did Noah really not hear the \emph{glasses off} call?! (NVP)
 
 At work underwater:
 \includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
@@ -165,24 +167,27 @@ At work underwater:
 \section*{How to Edit this Book}\label{how-to-edit-this-book}}
 \addcontentsline{toc}{section}{How to Edit this Book}
 
-Welcome to the online knowledge base of the OCC Team. This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with \href{https://bookdown.org/yihui/bookdown/}{bookdown},published via \href{https://pages.github.com/}{GitHub Pages}. The current live version of the book that you can bookmark is \href{https://npomeroy.github.io/OMG/}{here}. All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from \href{https://github.com/npomeroy/OMG}{Noah via GitHub}, pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.
+Welcome to the online knowledge base of the OCC Team. This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with \href{https://bookdown.org/yihui/bookdown/}{bookdown},published via \href{https://pages.github.com/}{GitHub Pages}. The current live version of the book that you can bookmark is \href{https://npomeroy.github.io/OMG/}{here}. All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo \href{https://github.com/npomeroy/OMG}{Noah via GitHub}. Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
-Once you have forked the repo onto your local machine, the HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder ``OMG/docs'' A .PDF file of the book is also generated every time the book is built, that also ends up in the ``OMG/docs'' folder.
+HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder ``OMG/docs'' A .PDF file of the book is also generated every time the book is built, that also ends up in the ``OMG/docs'' folder.
+
+\textbf{To Build and Access a Local Version of the OMG on Your Machine}
+(prerequisite: you have already cloned the repo to your local machine)
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Fork the repo from \href{https://github.com/npomeroy/OMG}{Noah via GitHub}.
+  Once you have made changes to any .RMD file, click \emph{Build Book} under the \emph{Build} tab in the upper right window pane of R studio.
 \item
-  Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder. Build the book to see your edits in the form of the built book.
-\item
-  Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
-\item
-  In GitHub, open a Pull Request to have your edits considered for integration into the master branch.
+  If the book does not automatically open, find the Index.html file in the \emph{docs} subfolder of the \emph{OMG} folder and open it with a browser.
 \end{enumerate}
 
-\textbf{The Best How to Guide for Authoring Books with R Markdown} is written by Yihui Xie and is found right \href{https://bookdown.org/yihui/bookdown/}{here}
+\textbf{Some useful resources and notes for editing a Bookdown book and using R Markdown:}
+
+\href{https://bookdown.org/yihui/bookdown/}{\textbf{The Best How to Guide for Authoring Books with R Markdown}} by Yihui Xie
+
+You can create a link to any section in the book \href{https://bookdown.org/yihui/bookdown/cross-references.html}{by using the guidance here}
 
 If you need some tips for your R Markdown formatting, \href{https://rmarkdown.rstudio.com/lesson-15.html}{this cheat sheet is great.}
 
@@ -220,7 +225,7 @@ Carbonate Budgets
 
 \textbf{A Map of Active and Inactive OCC Sites}
 
-\hypertarget{htmlwidget-cfebf713d76dcc690e7f}{}
+\hypertarget{htmlwidget-83c1bbafe9ac793acecb}{}
 
 \hypertarget{publications}{%
 \chapter{Publications}\label{publications}}
@@ -562,14 +567,6 @@ Pallets, pallet totes and hand carry loading
 
 \textbf{Be sure and get network connectivity and server functionality working before sailing.}
 
-\hypertarget{this-is-an-example-blank-chapter}{%
-\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
-
-copy it and use it as a template if you like
-
-This is how you insert an image:
-\includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
-
 \hypertarget{water}{%
 \chapter{CTD and DIC Water Sampling Field Guide}\label{water}}
 
@@ -702,8 +699,8 @@ ADCP
   Get compass bearing on ADCP head direction after final installation
 \end{enumerate}
 
-\hypertarget{this-is-an-example-blank-chapter-1}{%
-\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter-1}}
+\hypertarget{this-is-an-example-blank-chapter}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter}}
 
 copy it and use it as a template if you like
 
@@ -3446,8 +3443,8 @@ The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R
 
 (needs\_buildout)
 
-\hypertarget{this-is-an-example-blank-chapter-2}{%
-\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter-2}}
+\hypertarget{this-is-an-example-blank-chapter-1}{%
+\chapter{This is an Example Blank Chapter}\label{this-is-an-example-blank-chapter-1}}
 
 copy it and use it as a template if you like
 
