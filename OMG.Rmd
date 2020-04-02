@@ -58,14 +58,18 @@ If you need some tips for your R Markdown formatting, [this cheat sheet is great
 **What oceanographic factors might make a reef more or less resilient to climate change impacts?**
 
 Ocean Warming
-  *How does thermal stress impact corals?
-  *How does water temperature change with depth on coral reefs?
+
+* How does thermal stress impact corals?
+* How does water temperature change with depth on coral reefs?
 
 Carbonate Budgets
-  *Are coral reefs growing or shrinking? Are framework production processes outpaced by framework erosion processes or visa versa?
+
+* Are coral reefs growing or shrinking? 
+* Are framework production processes outpaced by framework erosion processes or visa versa?
 
 # Where We Work
 
+**A Map of Active and Inactive OCC Sites**
 ```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
 
 library(leaflet)
