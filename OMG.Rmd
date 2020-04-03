@@ -10,12 +10,12 @@ output:
   bookdown::gitbook:
     config:
       toc:
+        collapse: section
         before: |
           <li><a href="./">OMG</a></li>
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
-      collapse: section
-      delete_merged_file: FALSE
+      
   bookdown::pdf_book:
     includes:
       in_header: preamble.tex
@@ -25,31 +25,96 @@ output:
 ---
 # Preface {-}
 
-The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to help inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
+The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
+
+The OCC Team Topside:
+`r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
+JNS
+Did Noah really not hear the *glasses off* call?! (NVP)
 
 At work underwater:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
-The OCC Team Topside:
-`r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
-
 ## How to Edit this Book {-}
 
 
-Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from [Noah via GitHub](https://github.com/npomeroy/OMG), pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.  
+Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo [Noah via GitHub](https://github.com/npomeroy/OMG). Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
-Once you have forked the repo onto your local machine, the HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
+ HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
 
-1. Fork the repo from [Noah via GitHub](https://github.com/npomeroy/OMG).
-2. Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder. Build the book to see your edits in the form of the built book. 
-3. Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
-4. In GitHub, open a Pull Request to have your edits considered for integration into the master branch. 
+**To Build and Access a Local Version of the OMG on Your Machine**
+(prerequisite: you have already cloned the repo to your local machine)
 
-**The Best How to Guide for Authoring Books with R Markdown** is written by Yihui Xie and is found right [here](https://bookdown.org/yihui/bookdown/)
+1. Once you have made changes to any .RMD file, click *Build Book* under the *Build* tab in the upper right window pane of R studio.
+2. If the book does not automatically open, find the Index.html file in the *docs* subfolder of the *OMG* folder and open it with a browser.
+
+**Some useful resources and notes for editing a Bookdown book and using R Markdown:** 
+
+[**The Best How to Guide for Authoring Books with R Markdown**](https://bookdown.org/yihui/bookdown/) by Yihui Xie
+
+You can create a link to any section in the book [by using the guidance here](https://bookdown.org/yihui/bookdown/cross-references.html)
 
 If you need some tips for your R Markdown formatting, [this cheat sheet is great.](https://rmarkdown.rstudio.com/lesson-15.html)
 
 <!--chapter:end:index.Rmd-->
+
+# (PART\*) Research Overview {-}
+
+# Research Questions
+
+**What oceanographic factors might make a reef more or less resilient to climate change impacts?**
+
+Ocean Warming
+
+* How does thermal stress impact corals?
+* How does water temperature change with depth on coral reefs?
+
+Carbonate Budgets
+
+* Are coral reefs growing or shrinking? 
+* Are framework production processes outpaced by framework erosion processes or visa versa?
+
+# Where We Work
+
+**A Map of Active and Inactive OCC Sites**
+```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
+
+library(leaflet)
+library(leaflet.extras)
+library(viridis)
+
+#ingest site table
+sites <- read.csv("data/OCC_LIST_OF_SITES_instrumentsummary_25-MAR-2020.csv", stringsAsFactors=FALSE)
+
+#make color pallete and assign specific html colors
+sitemap_pal <- colorFactor(palette =c("#FF0000", "#EDBB99"), levels = c("Active", "Inactive"))
+
+leaflet(sites) %>%
+  addProviderTiles("Esri.WorldImagery") %>%
+  setView(-158.0001, 21.4389, zoom =9) %>%
+  addCircleMarkers(~LONGITUDE,
+                   ~LATITUDE,
+                   radius=10,
+                   popup=sites$OCC_SITEID,
+                   fillColor = ~sitemap_pal(STATUS),
+                   stroke=FALSE,
+                   fillOpacity = 0.7) %>%
+  addLegend("bottomright",
+            pal = sitemap_pal,
+            values = ~STATUS,
+            labels = "Status",
+            title = "OCC Sites") %>% 
+  addFullscreenControl(position = "topleft", pseudoFullscreen = FALSE)
+
+
+
+```
+
+# Publications
+
+<!--chapter:end:01-OCC-Research-Overview.Rmd-->
+
+# (PART\*) Conducting a Research Cruise {-}
 
 # Preparing for a Research Cruise {#cruise_prep}
 
@@ -58,24 +123,6 @@ If you need some tips for your R Markdown formatting, [this cheat sheet is great
 ## Determine Goals
 
 Determine the team's goals in the region the research cruise is scheduled to visit.  Identify all planned retreivals, deployments and specialty projects (such as the diel suite), and the number of days, staff, and boats needed to accomplish these goals.
-
-## Map of Current OCC Sites 
-
-```{r, echo=FALSE,message=FALSE, warning=FALSE, width="100%"}
-library(leaflet)
-
-sites <- read.csv("data/OCC_LIST_OF_SITES_21-FEB-2020.csv", stringsAsFactors=FALSE)
-
-m <- leaflet(sites) %>% addProviderTiles("Esri.WorldImagery") %>%
-  addCircleMarkers(~LONGITUDE, ~LATITUDE, radius=10, color="orange", popup=sites$OCC_SITEID) %>% setView(-158.0001, 21.4389, zoom =9)
-
-m
-
-
-
-```
-
-
 
 ## Spatial Data Preparation
 - Create a single .kml file that includes all planned instrument retrievals and any planned additional deployments and other necessary points (collectively all called “planning points”. .kml files are more agile than ArcGIS files; they are easier to use in Google Earth for day to day planning.
@@ -120,7 +167,29 @@ m
 
 
 
-<!--chapter:end:01-Planning-A-Field-Mission.Rmd-->
+## Training
+## Staffing (needs_buildout)
+## Individual Staff Preparation (needs_buildout)
+
+**Diving**
+  * Certifications: O2, CPR/FA (every 2 years)
+  * TB test (annual)
+  * Dive Physical (every 5 years) 
+  * medical history report (annual)
+  * gear servicing
+  
+## Preparing the Ship (needs_buildout)
+
+### Loading the Ship
+
+Pallets, pallet totes and hand carry loading
+
+### Drylab Setup
+
+**Be sure and get network connectivity and server functionality working before sailing.**
+
+
+<!--chapter:end:20-Planning-A-Field-Mission.Rmd-->
 
 # CTD and DIC Water Sampling Field Guide {#water}
 
@@ -182,32 +251,7 @@ Use the OCC provided GPS unit to collect a waypoint when the CTD downcast begins
 ![](images/Saturated-Mercuric-Chloride-SDS_Page_9.png){width=100%}
 ![](images/Saturated-Mercuric-Chloride-SDS_Page_1.png){width=100%}
 
-<!--chapter:end:02-Water-Sampling-and-CTD-Protocol.Rmd-->
-
-
-# Data Processing and the Occ Package {#data_processing}
-The *occ* package is uploaded to GitHub and can be downloaded directly in R. 
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, warning = FALSE, message = FALSE, strip.white = TRUE, cache = TRUE)
-```
-
-1. Open the *devtools* library.
-```{r load_devtools, eval = FALSE}
-library(devtools)
-```
-
-2. To download the *occ* package, use the `install_github` command. The repository name is in the form "username/repo". For the *occ* package, the username is "hannahbarkley" and the repo is "occ". This install only need to occur once; however, the *occ* package will need to be reinstalled if there are updates to the package (which is likely).
-```{r install_occ, eval = FALSE}
-install_github("hannahbarkley/occ")
-```
-
-3. Once installed, load the *occ* package.
-```{r load_occ}
-library(occ)
-```
-
-<!--chapter:end:03-Data-Processing.Rmd-->
+<!--chapter:end:23-Water-Sampling-and-CTD-Protocol.Rmd-->
 
 # Diel Suite {#dielsuite}
 
@@ -227,9 +271,118 @@ ADCP
 1. Ensure ADCP has unobstructed view of the surface
 2. Get compass bearing on ADCP head direction after final installation
 
-<!--chapter:end:05-Diel-Suite.Rmd-->
+<!--chapter:end:25-Diel-Suite.Rmd-->
+
+# This is an Example Blank Chapter
+
+copy it and use it as a template if you like
+
+This is how you insert an image:
+`r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
+
+<!--chapter:end:26-Coral-Coring.Rmd-->
+
+# Tasks at Sea {#tasks}
+
+## Daily Tasks for the Team
+
+[Find Excel version here via Google Drive](https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM)
+
+
+**STR**
+
+* Before Ops
+  + assemble, program and stage needed STRs 
+  + confirm 10 36'' cable ties for each STR planned
+  + write serial numbers of planned STR deployments on tomorrow's data sheet
+* After Ops
+  + download strs
+  + enter deployments and retreivals into mooring database
+  + import waypoints into mooring database
+  + clean STRs, put weights and brackets on fantail or in DD bath
+
+**CAU**
+
+* Before Ops
+  + Pack supplies for planned CAU site swaps
+  + write down deploy CAU SNs on tomorrow's data sheet
+
+* After Ops
+  + scrape/record CAU SN's, re-bag and freeze with cruise & site label
+  + dispose of old clips and stakes
+  + after CTD/H2O data is entered, give data sheets to data manager
+
+**Water Sampling and CTD**
+
+* Before Ops
+  + DIC bottles and all supplies in each kit
+  + Niskin, line, messenger, weight staged for each CTD
+
+* After Ops
+  + rinse and stage CTDs
+  + Swap full bottles for empties, dispose of waste
+  + restock all supplies
+  + replace and label any worn ziplocs
+  + enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
+
+**GPS Units (for OCC and benthic/fish GPS)**
+
+* Drop off GPS units with data manager for waypoiont download
+
+**Cameras**
+
+* Before Ops
+  + Ensure cameras are set to UTC time
+  + Ensure cameras have memory cards
+  + charge camera batteries
+  + clean camera housings
+  + bake desiccants and install them
+* After Ops
+  + download and sort photos
+  + download and sort photoquad photos
+  + charge cameras or swap charged batts for used batts
+  + install new dessicants
+
+**Stage all Gear**
+
+* Action packer packed for day of ops
+* Pam float and reel staged
+* If deep STR: Marker Float and drop weight
+* 1 full bag of large cable ties (keep on boat)
+* CTDs and lines
+
+**Other**
+
+* gauge tanks
+
+**Team Lead**
+
+* Plan tomorrow's objectives
+* Plan and communicate tank needs to team members
+
+## Where to Save Data
+
+[Checkout this Excel file on Google Drive for details on where to save data](https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw)
+
+<!--chapter:end:27-Tasks-At-Sea.Rmd-->
+
+# Various Underway resources
+
+**Where to Save Various Data Streams**
+Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit#gid=1675337307) showing the paths of where to save various things
+
+<!--chapter:end:28-Various-Underway-Resources.Rmd-->
+
+# Post Cruise Activities {#postcruise}
+
+## Data QC and Import into Oracle Database
+
+## Instrument Refurbishment
+
+<!--chapter:end:29-Post-Cruise-Activities.Rmd-->
 
 # (PART\*) Instruments {-}
+
 # STR
 
 ```{r, echo=FALSE}
@@ -440,18 +593,18 @@ The OCC team uses the SeaBird SeaFet pH sensor as part of the [Diel Suite](#diel
 
 ## Conditioning the SeaFet in seawater at least 24 hours prior to deployment
 
-At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment.  We call this &quot;conditioning time&quot;.  Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.
+At least 24 hours prior to deployment, the SeaFet must be activated in polled mode (aka low power, aka sleep mode) in a large volume of solution with a similar pH to the pH of the waters in which the unit will be deployed in order to produce accurate data immediately upon deployment.  We call this **conditioning time**.  Conditioning in the wetcap with artificial seawater will not work because ionic exchange will quickly change the pH of the small volume of water in the wetcap, thus not actually conditioning the instrument.
 
 ##How to Set the SeaFet to polled mode**
 
 1. If needed, install new batteries in the SeaFet (12 Ds)
 2. Remove dummy plug from endcap of SeaFet and connect SeaFet to computer with USB cable
 3. Open SeaFetCom software
-4. Swipe magnet over magnetic switch to &quot;activate&quot; batteries (indicator light by magnetic switch will blink green)
-5. Press &quot;connect&quot;
-6. Open settings and confirm operational mode is &quot;polled mode&quot;
-7. Click &quot;upload&quot; to make sure
-8. Click &quot;disconnect&quot;
+4. Swipe magnet over magnetic switch to **activate** batteries (indicator light by magnetic switch will blink green)
+5. Press **connect**
+6. Open settings and confirm operational mode is **polled mode*
+7. Click *upload* to make sure
+8. Click *disconnect*
 
 ## Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)
 
@@ -461,11 +614,11 @@ At least **24 hours** prior to deployment: install and activate internal batteri
 
 1. Remove the dummy plug and connect data logger cable.
 
-2. Open SeaFETCom and select &quot;Connect to SeaFET&quot; to begin communications with instrument.
+2. Open SeaFETCom and select *Connect to SeaFET* to begin communications with instrument.
 
-3. Sync instrument clock with computer clock: Sensor -\&gt; Set Clock, &quot;Sync Time&quot; . Instrument time should be in UTC.
+3. Sync instrument clock with computer clock: Sensor -\&gt; Set Clock, *Sync Time* . Instrument time should be in UTC.
 
-4. To access SeaFET deployment settings, select the &quot;SeaFET Settings&quot; button in the dashboard window or Sensor -\&gt; &quot;SeaFET Settings&quot;.  Use the following settings:
+4. To access SeaFET deployment settings, select the *SeaFET Settings* button in the dashboard window or Sensor -\&gt; *SeaFET Settings*.  Use the following settings:
 
 **General**
 
@@ -503,7 +656,7 @@ At least **24 hours** prior to deployment: install and activate internal batteri
 
 **Maximum Size:** 9999 KB
 
-**Uncheck**&quot;legacy format&quot;
+**Uncheck***legacy format*
 
 **Processing**
 
@@ -517,13 +670,13 @@ Note: For RAMP deployments, the SeaFET will be deployed in **periodic mode** , i
 
 **Activiate the instrument prior to getting on the small boat**
 
-1. Start deployment by selecting the &quot;Start&quot; button in the SeaFETCom dashboard or Sensor -\&gt; &quot;Start&quot;.
+1. Start deployment by selecting the *Start* button in the SeaFETCom dashboard or Sensor -\&gt; *Start*.
 2. Disconnect from SeaFET, remove data logger cable, and replace dummy plug.
 
 **On the small boat**
 
-1. Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32&quot; hex driver or Allen key, remove the three 10-32 x 5/8&quot; socket head cap screws from the wet cap. Remove the wet cap.
-2. Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8&quot; socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.
+1. Immediately prior to deployment, remove wet cap. Remove two stainless steel plugs and store securely. Invert the instrument to pour the storage solution from the wet cap into a sink. Using a 5/32* hex driver or Allen key, remove the three 10-32 x 5/8* socket head cap screws from the wet cap. Remove the wet cap.
+2. Install foul guard. Place instrument on a flat surface with the sensor end cap up. Place the electrode foul guard over the electrode. Insert the three 10-32 x 5/8* socket head cap screws removed from wet cap and tighten completely. Sensor end cap should not be exposed to air for more than a few seconds, so submerge in water if not immediately deploying underwater.
 
 **Retrieving the SeaFet**
 
@@ -533,11 +686,11 @@ Note: For RAMP deployments, the SeaFET will be deployed in **periodic mode** , i
 
 2. Remove dummy plug, attach data logger cable, and connect to SeaFETCOM software.
 
-3. Select &quot;Transfer Files&quot; from the SeaFETCom Dashboard.
+3. Select *Transfer Files* from the SeaFETCom Dashboard.
 
-4. In the &quot;Local Filesystem&quot; pane, press &quot;Browse&quot; to select the local folder on the computer that will receive downloaded files.
+4. In the *Local Filesystem* pane, press *Browse* to select the local folder on the computer that will receive downloaded files.
 
-5. In the &quot;Instrument Filesystem&quot; pane, select the files to be downloaded from the SeaFET and press the &quot;\&lt;-&quot; button to transfer selected files.
+5. In the *Instrument Filesystem* pane, select the files to be downloaded from the SeaFET and press the *\&lt;-* button to transfer selected files.
   + A Seafet deployment creates 2 file types: a log file that contains metadata about the deployment and the data file (may be more than one data file)
 
 6. If the instrument will be used in the near future, place in **polled mode** following deployment steps above. This low-power stand-by mode will maintain a continuous current flow to the sensing element and eliminate the need for a 24-hour warmup. If the instrument will not be used in the near future, deactivate internal batteries by swiping the magnet over the target until the LED flashes red.
@@ -575,9 +728,9 @@ Within SeaFETCom - SeaFET Settings - In the SeaFET General Settings Tab you can 
 
 But looking into the firmware commands it appears the SeaFET can be programmed with a start time as well.
 
-At the SeaFET&#39;s command prompt, enter the following commands as an example: &quot;set --samplwin true&quot; and then &quot;set --samstart yyyy/mm/dd.hh:mm:ss
+At the SeaFET&#39;s command prompt, enter the following commands as an example: *set --samplwin true* and then *set --samstart yyyy/mm/dd.hh:mm:ss
 
-Note these commands can be sent using the &quot;Command Terminal&quot; found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.
+Note these commands can be sent using the *Command Terminal* found under Sensor Menu - Advanced in SeaFETCom, or through TeraTerm direct serial connection.
 
 I believe programming in periodic mode, with a delayed start up time would achieve the same effect.
 
@@ -596,7 +749,7 @@ Hello Noah,
 
 Thank You for your email !
 
-- Is 24hrs adequate for the instrument to &quot;warm up&quot; in polled mode (I believe you&#39;ve called this &quot;conditioning mode&quot; before) prior to deployment or are multiple days necessary?
+- Is 24hrs adequate for the instrument to *warm up* in polled mode (I believe you&#39;ve called this *conditioning mode* before) prior to deployment or are multiple days necessary?
 
 **The time of **** SeaFET ****&#39;s sensors adjusting to the in-situ environment can vary. Really it depends on how different the water is from the storage solution.
 When we perform calibration it can take anywhere for a day, to several days - but we are looking for high level of stability.
@@ -606,7 +759,7 @@ When deploying the  **** SeaFET **** the pH values may take a couple of days for
 
 **I do not see a problem here. For damage to occur to the ISFET it will have to become dry. I would say best practice would be no more than 1 hour. But a couple of hours will not cause damage, just likely additional time to reach stability in the new environment. The external reference can become dry without damage - but some further conditioning time would be expected.**
 
-- Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to &quot;polled mode&quot;
+- Is setting the instrument to periodic mode with a future sample start date considered a low power mode, comparable to *polled mode*
 
 Yes I believe this would achieve the same, however you would need to ensure to switch to polled mode if this is method use during deployment.
 If you have an external controller, polled is likely the better option for use. If you were using periodic mode and an external device collecting the SeaFET&#39;s data - this would rely on the two systems have no change in the their clocks. Polled mode would be better as the external controller would be able to collect data whenever it chooses.
@@ -626,7 +779,7 @@ You&#39;ve brought up some good questions about the SeaFET- I went ahead and con
 
 SeaFET soak time:
 
-Craig is correct- the SeaFET requires a &quot;conditioning time&quot; that allows the sensors to stabilize before achieving full accuracy. I&#39;ve attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:
+Craig is correct- the SeaFET requires a *conditioning time* that allows the sensors to stabilize before achieving full accuracy. I&#39;ve attached a paper that explores the best practices for obtaining quality data from the SeaFET. Please reference this document for quality control procedures. From this paper:
 
 Upon first contact with seawater, pH sensor voltages relative to both reference electrodes exhibit an asymptotic
 drift. This conditioning period arises from several sources:
@@ -704,7 +857,7 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 
 2. Open the PUC carefully with the PUC opener tool
 
-3. Connect the PUC to your PC with the RS232 (serial) cable and a Keyspan USB to serial adapter. NOTE: It may be necessary to plug the USB cable into a &quot;high-power&quot; USB port on your PC. If using the instrument computer PICSC26, this is the USB port that has a lighting bolt symbol over it
+3. Connect the PUC to your PC with the RS232 (serial) cable and a Keyspan USB to serial adapter. NOTE: It may be necessary to plug the USB cable into a *high-power* USB port on your PC. If using the instrument computer PICSC26, this is the USB port that has a lighting bolt symbol over it
 
 4. Turn on the red power on/off switch on the PUC motherboard
 
@@ -727,11 +880,11 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 * Then open the latest firmware from basic stamp from the [PUC Google Drive Folder](https://drive.google.com/drive/folders/1X6fAG4OIDs66Ji5xzYsX8JySqhkSs5k-): PUC firmware upgrade 07Jan18.bs2
 * note: You may need to change the comp port number in the top line of code
 
-7. Start Sample Program, results in the PUC displaying &quot;Entering sample Mode&quot; + Sample Time + Pump Time + current Date/Time
+7. Start Sample Program, results in the PUC displaying *Entering sample Mode* + Sample Time + Pump Time + current Date/Time
 
 8. NOTE: all PUCs do not pump at the same rate.  We aim to have 800mL of water in each 1L bag. The time it takes for a pump to fill a bag to 800mL varies from 27-36 minutes; see the chart below of PUC times in the next and program each PUC accordingly.
 
-9. The final program step is ALWAYS press #4 to get &quot;Entering sampling Mode&quot; prompt. Confirm sample date/time and pump time.
+9. The final program step is ALWAYS press #4 to get *Entering sampling Mode* prompt. Confirm sample date/time and pump time.
 
 10. Pre-fill a Diurnal Suite Datasheet Spreadsheet with relevant information for the deployment
   
@@ -761,8 +914,8 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate.  Print out the [PUC dep
 ## PUC Deployment
 
 1. Ensure PUCs are fastened securely to the milk crate (maximum 4 PUCs per crate)
-2. With tubing connected to &quot;water out&quot; valve tip but NOT YET to the tedlar bag, swipe the magnetic switch (red dot) on PUC endcap to run the pump once to pump ambient seawater through the tubing.
-3. Connect the other end of the tubing to the &quot;water in&quot; valve tip of the tedlar bag
+2. With tubing connected to **water out** valve tip but NOT YET to the tedlar bag, swipe the magnetic switch (red dot) on PUC endcap to run the pump once to pump ambient seawater through the tubing.
+3. Connect the other end of the tubing to the *water in* valve tip of the tedlar bag
 4. Open tedlar bags by turning valve one full turn
 
 ## PUC Recovery
@@ -809,9 +962,9 @@ New style cap---- dash#  2-236     McM  9452K165
 2. Open Nortek software
 3. From the Communication menu, select the correct com port for the instrument&#39;s interface cable (look this up in the device manager)
 4. Communications -\&gt; connect (if it does not connect, the instrument&#39;s batteries may be dead; use the AC power adapter)
-5. &quot;Erase Recorder&quot;
+5. *Erase Recorder*
 6. Set clock to UTC time: On-line -\&gt; set clock
-7. Deploy-\&gt;planning-\&gt; load from file then chose&quot;PUC\_24HR\_1Mhz&quot; con file
+7. Deploy-\&gt;planning-\&gt; load from file then chose*PUC\_24HR\_1Mhz* con file
 8. If you can&#39;t find the file, use these settings:
   1. Frequency: 1 Mhz
   2. Profile interval: 300 seconds
@@ -858,132 +1011,7 @@ Perform simple check of system daily (see to-be-developed checklist)
 
 - [See detailed documentation in this Google Drive Folder Link](https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy)
 
-<!--chapter:end:06-Instrumentation.Rmd-->
-
-# Tasks at Sea {#tasks}
-
-## Daily Tasks for the Team
-
-[Find Excel version here via Google Drive](https://drive.google.com/open?id=1I4Hojo0qjKtUwhRqgc9aLM6_fGtjqZMM)
-
-
-**STR**
-
-* Before Ops
-  + assemble, program and stage needed STRs 
-  + confirm 10 36'' cable ties for each STR planned
-  + write serial numbers of planned STR deployments on tomorrow's data sheet
-* After Ops
-  + download strs
-  + enter deployments and retreivals into mooring database
-  + import waypoints into mooring database
-  + clean STRs, put weights and brackets on fantail or in DD bath
-
-**CAU**
-
-* Before Ops
-  + Pack supplies for planned CAU site swaps
-  + write down deploy CAU SNs on tomorrow's data sheet
-
-* After Ops
-  + scrape/record CAU SN's, re-bag and freeze with cruise & site label
-  + dispose of old clips and stakes
-  + after CTD/H2O data is entered, give data sheets to data manager
-
-**Water Sampling and CTD**
-
-* Before Ops
-  + DIC bottles and all supplies in each kit
-  + Niskin, line, messenger, weight staged for each CTD
-
-* After Ops
-  + rinse and stage CTDs
-  + Swap full bottles for empties, dispose of waste
-  + restock all supplies
-  + replace and label any worn ziplocs
-  + enter CTD and water sample log into CTD/H2O Database (hopefully this is not a necessary step on MARAMP 2020!)
-
-**GPS Units (for OCC and benthic/fish GPS)**
-
-* Drop off GPS units with data manager for waypoiont download
-
-**Cameras**
-
-* Before Ops
-  + Ensure cameras are set to UTC time
-  + Ensure cameras have memory cards
-  + charge camera batteries
-  + clean camera housings
-  + bake desiccants and install them
-* After Ops
-  + download and sort photos
-  + download and sort photoquad photos
-  + charge cameras or swap charged batts for used batts
-  + install new dessicants
-
-**Stage all Gear**
-
-* Action packer packed for day of ops
-* Pam float and reel staged
-* If deep STR: Marker Float and drop weight
-* 1 full bag of large cable ties (keep on boat)
-* CTDs and lines
-
-**Other**
-
-* gauge tanks
-
-**Team Lead**
-
-* Plan tomorrow's objectives
-* Plan and communicate tank needs to team members
-
-## Where to Save Data
-
-[Checkout this Excel file on Google Drive for details on where to save data](https://drive.google.com/open?id=16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw)
-
-<!--chapter:end:09-Tasks-At-Sea.Rmd-->
-
-# Data How To {#data_how_to}
-
-## How to Gain Access to the OCC Database
-
-As of January 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an [ITS support ticket](https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPICITS-181121%3Ffilter%3D-2&page_caps=&user_role=) to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup. 
-
-## How to Archive Data
-
-After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a [google drive folder setup by Annette](https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp).
-
-## How to Connect to the Oracle Database
-
-[Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database](https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit#)
-
-## How to Connect to the OCC Oracle Databse Via Oracle SQL Developer
-
-1. Open Oracle SQL Developer
-2. On the "Welcome Page" tab, under the "Databases Detected" tab, find the "GIS" database and click it.
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_1.jpg"))`
-3. When prompted, enter your Oracle username and password
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_2.jpg"))`
-4. In the "Connections" pane, expand the "GIS" database and navigate down to "Other Users"
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_3.jpg"))`
-5. Expand "Other Users" and navigate down to "GISDAT"
-`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_4.jpg"))`
-6. Within "GISDAT" find OCC tables begining with "OCN" (note as of March 2020, this is soon to be changed to "OCC" prefix when the data team updates the new tables)
-
-
-
-
-
-
-<!--chapter:end:10-Data-How-To.Rmd-->
-
-# Various Underway resources
-
-**Where to Save Various Data Streams**
-Checkout [this google drive file](https://docs.google.com/spreadsheets/d/16l1OQgGEunLoADh_MEGyIfbQL2w0u6aw/edit#gid=1675337307) showing the paths of where to save various things
-
-<!--chapter:end:11-Various-Underway-Resources.Rmd-->
+<!--chapter:end:30-Instruments.Rmd-->
 
 
 # Calcification Accretion Unit (CAU)
@@ -998,9 +1026,17 @@ Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised Ma
 
 `r knitr::include_graphics(rep("images/CAU_assembly.jpg"))`
 
+### Equipment and Supplies
 
+`r knitr::include_graphics(rep("images/AssemblyEquipment1.jpg"))`
+`r knitr::include_graphics(rep("images/AssemblyEquipment2.jpg"))`
 
 ## CAU Laboratory Sample Processing SOP
+
+### Equipment and Supplies
+
+`r knitr::include_graphics(rep("images/CauEquipment1.jpg"))`
+`r knitr::include_graphics(rep("images/CauEquipment2.jpg"))`
 
 
 ### Processing Timeline
@@ -1016,8 +1052,9 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 **ID Tags**
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
-  
-    e.g. PAL01_2012_5319_U; PAL01_2012_5319_L
+
+    e.g. PAL01_2012_5319_U;  
+         PAL01_2012_5319_L
 
 2.	Using a pencil, **pre-label the following with the CAU Plate ID (e.g. PAL01_2012_5319_U):**  
   
@@ -1027,16 +1064,20 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 
 3.	Insert the corresponding Filter paper into the fold of Paper tray B and store in a container. Place Paper tray A in a separate container. Store both containers away from moisture and direct sunlight. See I. Step 8 for pre-weighing instructions. 
 
-4.	Print **Glass Dish Labels** on waterproof paper using the template in Section VII.C.1. Attach each label on one side of the glass dish with tape.
+4.	Print **Glass Dish Labels** on waterproof paper using the template below. Attach each label on one side of the glass dish with tape.
 
-5.	Print the Plate Photo ID tags on waterproof paper using the template in Section VII.C.2.There are 4 tags, one for each surface of the CAU to be photographed:  
+`r knitr::include_graphics(rep("images/Template1.jpg"))`
 
-    Upper Plate, Top Side  
-    Upper Plate, Bottom Side  
-    Lower Plate, Top Side  
-    Lower Plate, Bottom Side   
+5.	Print the Plate Photo ID tags on waterproof paper using the template below.There are 4 tags, one for each surface of the CAU to be photographed:  
+  
+    **Upper Plate, Top Side**  
+    **Upper Plate, Bottom Side**  
+    **Lower Plate, Top Side**  
+    **Lower Plate, Bottom Side**   
 	
     An example of a plate photo ID: *PAL01_2012_5319_U_T*
+
+`r knitr::include_graphics(rep("images/Template2.jpg"))`
 
 6.	Using an analytical balance, **pre-weigh** the following and record the value (up to 3 decimal points) in the ESD Apex CAU Mission App (or the CAU Data Entry tool for ESD-CREP users, see Section VI p. 20):  
 
@@ -1110,11 +1151,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at:
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at:  
 
     T:\Oceanography\CAUs\Analysis
     
-    organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.) 
+    Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.* 
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -1126,9 +1167,10 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg    
 
     **b)	Without Plate Photo ID tag:**  
-    SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg   
+    SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg  
 
     Example:  
+    
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
     PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
@@ -1171,11 +1213,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 9.	In the ESD Apex CAU Mission App (or CAU Data Entry tool for ESD-CREP users), record the 2nd weight to at least 3 decimal places under the column ‘*Drying 2 [48 h] [paper tray + CAU plate] [g]*’.
 
-10.	Compare the current weight from the previous weight:
+10.	Compare the current weight from the previous weight:  
 
-    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
+    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
 		
-    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
+    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
 
 11.	Repeat *III.B Steps 5-10* until the difference in weight is less than 0.1 g.
 
@@ -1194,15 +1236,15 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 5.	When decalcification has slowed (12-24 hours):  
 
-    a.	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
+    a)	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
 
-    b. Grind pieces of calcified materials that may still be present and return in the glass dish.  
+    b) Grind pieces of calcified materials that may still be present and return in the glass dish.  
 
-    c. Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
+    c) Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
 
-    d. Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
+    d) Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
 
-    e. If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
+    e) If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
 
 `r knitr::include_graphics(rep("images/CAU_dissolve.jpg"))`
 
@@ -1237,9 +1279,9 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (*see III.D, Step 2, a-c*) can be used to filter the remaining volume of acid bath and fleshy material:  
 
-    a. Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
+    a) Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
 
-    b. In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
+    b) In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
 
 3.	If filtering has slowed down, use a spatula/teaspoon to gently scrape the surface of the filter paper to allow more solution to filter through. Filtering can take >5 mins depending the amount of fleshy material in the acid bath.
 
@@ -1276,11 +1318,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 10.	Compare the current weight from the previous weight:  
 
-    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
+    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
 
 ** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*  
-		
-    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
+
+    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
 
 11.	Repeat III.E Steps 5-10 until the difference in weight is less than 0.1 g.
 
@@ -1295,7 +1337,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 
 
-### Camera tethering and CAU plate photo-documentation via Nikon Camera Control Pro 2
+## Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)
 
 *Refer to the brand/model user documentation/manual if using a different camera and setup*
 
@@ -1307,7 +1349,7 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 #### Connecting the camera to the computer
 
-1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f\2.8G ED lens) to the computer via USB mini cable
+1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f2.8G ED lens) to the computer via USB mini cable
 
 `r knitr::include_graphics(rep("images/Camera.jpg"))`
 
@@ -1320,22 +1362,22 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 5.	**If using the software for the FIRST TIME:**
 		
-    a. Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following: 
+    a) Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
 
-    Shutter speed: 1/50 sec
-    Aperture: f/8
+    Shutter speed: **1/50 sec**  
+    Aperture: f/8**
 
-`r knitr::include_graphics(rep("images/Camera3.jpg"))`
+`r knitr::include_graphics(rep("images/Camera3.jpg"))`  
 
-    b. Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
+    b) Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
 
-    ISO Sensitivity: ISO 400
+    ISO Sensitivity: **ISO 400**
     White Balance: Auto
     Option: Normal  
 
-`r knitr::include_graphics(rep("images/Camera4.jpg"))`
+`r knitr::include_graphics(rep("images/Camera4.jpg"))`  
 
-    c. Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
+    c) Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
 
     Image Quality: JPEG fine
     JPEG Compression: Optimal quality
@@ -1343,10 +1385,9 @@ For ESD-CREP users, the installation instructions and software product key can b
     Record to: PC
     Card Record Mode: Backup  
 
-`r knitr::include_graphics(rep("images/Camera5.jpg"))`
+`r knitr::include_graphics(rep("images/Camera5.jpg"))`  
 
-
-    d. Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
+    d) Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
 
     Picture Control: Standard
     High ISO NR: On (High) 
@@ -1382,9 +1423,9 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 `r knitr::include_graphics(rep("images/Camera11.jpg"))`
 
-8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location 
+8.	Click the **Browse** button next to the “*Destination folder*”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location  
 
-    ex: Documents\\CAU Analysis\\ASRAMP 2015\\PHOTO ANALYSIS\\SAMOA\\SWAINS\\SWA03\\SWA03_368 
+    ex: Documents\CAU Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS\SWA03\SWA03_368 
 
     where the images will be downloaded as they are taken. Click **OK**
 
@@ -1425,11 +1466,11 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 18.	Backup the images by copying the **Island** parent folder,   
 
-    ex: Documents//CAU Analysis//ASRAMP 2015//HOTO ANALYSIS//SAMOA//SWAINS   
+    ex: Documents/CAU Analysis/ASRAMP 2015/HOTO ANALYSIS/SAMOA/SWAINS   
     
-    to the network drive,   
+    to the network drive,  
 
-    ex: T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS
+    ex: T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS  
     
     and to the external hard drive. If prompted, select “Overwrite”
 
@@ -1437,13 +1478,14 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 20.	Rename all plate photos with the following naming convention:  
 
-    a. **With Plate Photo ID tag:**  
+    a) **With Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - 	lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg  
 
-    b. **Without Plate Photo ID tag:**  
+    b) **Without Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg   
 
     Example:  
+
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
     PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
@@ -1458,9 +1500,9 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 21.	Copy the newly-renamed images to the network folder by copying the **Island** parent folder 
 
-    e.g. Documents//CAU Analysis//ASRAMP 2015//PHOTO ANALYSIS//SAMOA//SWAINS
+    e.g. Documents/CAU Analysis/ASRAMP 2015/PHOTO ANALYSIS/SAMOA/SWAINS
     
-    to the network drive   
+    to the network drive  
 
     e.g. T:\Oceanography\CAUs\Analysis\2018_CAU Analysis\ASRAMP18\PHOTO ANALYSIS\SAMOA\SWAINS  
     
@@ -1468,10 +1510,10 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 
 
-## CAU Data Entry Tool User Documentation
-	 
-	 *for ESD-CREP use only*
-	 *Last modified by David Igeta on 12/15/2015*
+## CAU Data Entry Tool User Documentation  
+
+*for ESD-CREP use only*
+*Last modified by David Igeta on 12/15/2015*
 	 
 	 
 ### Application Overview
@@ -1497,8 +1539,8 @@ This page breaks down the number of CAUs that still need to be weighed by Plate,
 	 
 The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the Data Entry page.
 	 
-`r knitr::include_graphics(rep("images/Data2.jpg"))`
-	 
+`r knitr::include_graphics(rep("images/Data2.jpg"))`  
+
     a)	**Breadcrumb Bar** – use this to navigate through the different levels of the application  
 
     b)	**Finder Drop Down** – use this to select the column you wish to search by  
@@ -1522,8 +1564,8 @@ The Data Entry section is where you will go to enter all the weights that you wi
 	 
 The **Edit Plate** and **Edit Filter** pages are identical; however, we are going to work with the **Edit Plate** page below. Click on the **Edit Plate Weights** button (shown in figure 2) to navigate to the screen below:
 	 
-`r knitr::include_graphics(rep("images/Data3.jpg"))`
-	 
+`r knitr::include_graphics(rep("images/Data3.jpg"))`  
+
     a)	Filter By Island – Drop down list of islands shown in table  
 
     b)	Rows to Display – Select number of rows to display  
@@ -1543,6 +1585,7 @@ The **Edit Plate** and **Edit Filter** pages are identical; however, we are goin
     g)	Save – allows you to submit your changes and displays the number of records that have been updated  
 
     h)	Calculate – Filters any records that have been completed from the table. Once filtered, these CAU plates will be used in the calcification rates calculations. The following criteria must be met before a record is filtered from the Edit Plate Weights and Edit Filter Weights pages:  
+
     *	Edit Plate Weights  
         +	The **Plate_Dry** column says **YES** (This value determines whether a plate is dry)  
         +	The **Paper_Tray_Weight** is NOT empty (Entering ‘0’ will suffice)  
@@ -1600,7 +1643,7 @@ This column can be modified by selecting the drying cycle to **Comments**. The c
 
 **Valid Plate/Filter Codes**
 	 
-There are three main codes associated with these columns:
+There are three main codes associated with these columns:  
 
     *	N = record is not dry  
     *	Y = record is dry and will be included in the calculation if both the upper and lower plates are ‘Y’ or ‘F’  
@@ -1619,18 +1662,17 @@ Each report has the same options to choose from in the **Actions** drop-down men
 	 
 `r knitr::include_graphics(rep("images/Data7.jpg"))`
 
-The Data Summary page is where you will see the following calculations:
+The Data Summary page is where you will see the following calculations:  
 
-    *	Net Weight  
-    *	Final Material Dry Weight  
-    *	Final Fleshy Weight  
-    *	Calcification Rate By Plate    
+*	Net Weight  
+*	Final Material Dry Weight  
+*	Final Fleshy Weight  
+*	Calcification Rate By Plate    
 
 There are three additional report pages:  
     
-    *	Calcification Rate By Unit (shows calculation by grouping the upper and lower plates together)  
-    *	Calcification Rate By Site (shows calculation by grouping the sites together)  
-    *	Calcification Rate By Island (shows calculation by grouping the islands together)  
+*	Calcification Rate By Unit (shows calculation by grouping the upper and lower plates together)  *	Calcification Rate By Site (shows calculation by grouping the sites together)  
+*	Calcification Rate By Island (shows calculation by grouping the islands together)  
 
 **Generating Reports with Calcification Rate By Island**
 	 
@@ -1668,9 +1710,9 @@ In this tutorial, we will be adding plate weights into our application. A simila
 
 3.	Let’s say we wish to record the first drying cycle weight for a plate in Baker: and show 25 results per page:
 
-    a.	**Filter By Island** – Select Baker
-    b.	**Rows to Display** – Select 25
-    c.	**Select Drying Cycle** – Weight Plate Drying 1
+    a)	**Filter By Island** – Select Baker
+    b)	**Rows to Display** – Select 25
+    c)	**Select Drying Cycle** – Weight Plate Drying 1  
 
 4.	Once you have made your changes, click on the **Apply Filters** button to see them take effect
 
@@ -1750,6 +1792,172 @@ If successful, you should see a green dialog box appear in the top-right corner.
 
 
 
+## Daily Task Guide
+
+### Sample Processing Schedule
+
+`r knitr::include_graphics(rep("images/DailyTasks1.jpg"))`
+
+### Sample Processing Daily Tasks
+
+#### WEEK 1
+
+*Monday - Tuesday, Week 1*
+
+1.	Fold, label and weigh paper trays and filter papers.
+2.	Print glass dish labels and plate photo labels.
+3.	Label quart-sized resealable plastic bags.
+4.	Dilute acid to 5% and restock as needed.
+
+*Wednesday, Week 1*
+
+1.	Prepare glass dishes for each CAU plate.
+2.	Attach glass dish labels to each glass dish using regular clear tape.
+
+`r knitr::include_graphics(rep("images/DailyTasks2.jpg"))`
+
+3.	Arrange glass dishes between two carts in alphabetical order (island, site, serial # and plate) and fill the dishes with freshwater/seawater.
+
+`r knitr::include_graphics(rep("images/DailyTasks3.jpg"))`
+
+4.	Arrange oven wire mesh shelves in the fume hood elevated by a drying rack; arrange paper trays on the wire mesh shelves in alphabetical order.
+
+`r knitr::include_graphics(rep("images/DailyTasks4.jpg"))`
+
+5.	Place CAUs in the lab sink and thaw overnight.
+
+`r knitr::include_graphics(rep("images/DailyTasks5.jpg"))`
+
+*Thursday, Week 1*
+
+1.	Disassemble CAUs (orient each plate on the dish with the top surface facing up).
+
+`r knitr::include_graphics(rep("images/DailyTasks6.jpg"))`
+
+2.	Photograph each plate surface on the copy stand (with and without the plate photo ID tags; see SOPs).
+
+`r knitr::include_graphics(rep("images/DailyTasks7.jpg"))`
+
+3.	If using seawater, rinse plate with freshwater and place each plate on their corresponding paper trays in the fume hood. 
+4.	Air dry overnight.
+5.	Rinse glass dishes (do not remove dish labels) and dry on the cart. 
+
+
+*Friday PM, Week 1*
+
+1.	Place wire mesh shelves with plates in the rolling rack. 
+2.	Arrange the shelves between the two drying ovens (pre-set to 75C with damper settings at level 3 to achieve a uniform 60C internal temp).
+
+** *For the initial drying, CAU plates are best dried continuously over the weekend* 
+
+
+#### WEEK 2
+
+*Monday, Week 2*
+
+1.	Pull plates from the oven at 8:00 AM and cool to room temperature in the fume hood for 15-30 minutes.
+2.	Weigh each plate (with the paper tray) and enter into data spreadsheet or the CAU Data Entry tool. 
+3.	Return CAUs to the oven.
+
+
+*Tuesday, Week 2*
+
+1.	Repeat Monday’s tasks.
+2.	Take note of the average difference in weight of all plates. 
+3.	*For ESD-CREP users, if a majority of the upper plates are almost dry (weight difference of 0.2 -0.5), coordinate with NIST representatives to schedule CCA subsampling for the following day when applicable*
+4.	Line up upper plate glass dishes on the bench top in alphabetical order; arrange lower plate glass dishes in the right fume hood. 
+
+`r knitr::include_graphics(rep("images/DailyTasks8.jpg"))`
+
+*Wednesday, Week 2*
+
+1.	Pull plates from the oven and weigh 
+2.	If majority of the **upper plates** are **NOT dry**, return all upper plates to oven.
+3.	If all **upper plates ARE dry**, place each plate (with paper tray) inside its corresponding glass dish on the bench top.
+4.	*For ESD-CREP users, if applicable, call/email NIST representatives to confirm that subsampling can occur today*
+5.	If majority of the **lower plates ARE dry**, place each plate in their respective glass dish in the fume hood, place paper tray under each dish. Return the rest of the non-dry lower plates to the oven.
+6.	Start decalcifiying the dry plates: slowly pour 5% HCl acid in each dish and allow the plate to sit in acid for 12-24 hours.
+7.	Optional: if the plates have a good amount of calcified material, pry the calcified material off and pulverize with a mortar and pestle prior to pouring HCl acid in the dish
+
+
+*Thursday, Week 2*
+
+1.	Pull the remaining plates from the oven and weigh.
+2.	Place the remaining CAUs into their respective dishes and pour 5% HCl acid on each and allow to sit in acid for 12-24 hours.
+3.	For plates that have already been soaked in acid for 12-24 hours, scrape the accreted materials from the PVC plates using a scraper.
+
+`r knitr::include_graphics(rep("images/DailyTasks9.jpg"))`
+
+4.	Place the clean PVC plates on their corresponding paper trays and air dry on a baking tray.
+
+`r knitr::include_graphics(rep("images/DailyTasks10.jpg"))`
+
+5.	For dishes that have large pieces of calcified materials (CCA/coral), pulverize these pieces using a mortar and pestle or a blender.
+
+
+*Friday, Week 2*
+
+1.	Find dishes that still have PVC plates and scrape off accreted materials. 
+2.	Find dishes that still have large pieces of calcified materials and pulverize pieces via mortar and pestle or blender.
+3.	If some dishes still contain calcified materials that have settled, decant acid solution into a pre-labeled (serial number and plate identity, e.g. “650_U” is sufficient) plastic container and pour more 5% HCl acid into the glass dish.
+
+`r knitr::include_graphics(rep("images/DailyTasks11.jpg"))`
+
+4.	Make sure that all dishes have “new” acid in them before the end of the day.
+
+
+#### WEEK 3
+
+*Monday - Friday, Week 3*
+
+1.	Check for solid calcified materials in each dish.
+2.	Repeat tasks from Week 2, Friday.
+3.	Arrange wire mesh shelves in one of the fume hoods/bench top.
+4.	Set aside the dishes that have completely decalcified materials next to the Filtration station.
+
+`r knitr::include_graphics(rep("images/DailyTasks12.jpg"))`
+
+5.	Find the corresponding paper tray+filterpaper and place next to dishes that are ready for filtration.
+6.	Filter. 
+
+`r knitr::include_graphics(rep("images/DailyTasks13.jpg"))`
+
+7.	Place the solid residue+filterpaper on their corresponding paper trays and on to the wire mesh shelves.
+
+`r knitr::include_graphics(rep("images/DailyTasks14.jpg"))`
+
+8.	Ensure that the wire mesh shelves are left in the fume hood/s over the weekend to prevent the filterpapers from absorbing too much moisture.
+
+
+
+#### WEEK 4
+
+*Monday, Week 4*
+
+1.	Place wire mesh shelves with filterpapers+paper tray in the rolling rack 
+2.	Arrange the shelves between the two drying ovens (pre-set to 75C with damper settings at level 3 to achieve a uniform 60C internal temp).
+3.	Label and rinse each PVC plate; discard the paper trays.
+4.	Pat the PVC plates dry, arrange on wire mesh shelves and place in the oven to dry for 24 hours.
+
+*Tuesday, Week 4*
+
+1.	Pull filterpapers from the oven at 8:00AM and cool to room temperature in the fume hood for 15-30mins.
+2.	Weigh each filterpaper (with the paper tray) and enter into data spreadsheet or the CAU Data Entry tool. 
+3.	Return filterpapers to the oven.
+4.	Pull PVC plates from the oven, cool to room temperature for 15-30 mins, weigh and enter reading to data spreadsheet. 
+5.	Bind PVC plates with painter’s tape and store in action packers to be reused.
+
+
+*Wednesday-Friday, Week 4*
+
+1.	Pull filterpapers from the oven at 8:00AM and cool to room temperature for 1 hour. 
+2.	Weigh each filterpaper (with the paper tray).
+3.	Return CAUs to the oven.
+4.	When a filterpaper is considered dry, place the filterpaper+paper tray in its corresponding pre-labeled quart-sized resealable plastic bag.
+
+`r knitr::include_graphics(rep("images/DailyTasks15.jpg"))`
+
+5.	Place all plastic bags in a larger pre-labeled (“ISLAND YYYY”) plastic bag and store in the Dry Archive room.
 
 
 
@@ -1766,16 +1974,83 @@ If successful, you should see a green dialog box appear in the top-right corner.
 
 
 
+<!--chapter:end:35-Calcification-Accretion-Units-CAUs.Rmd-->
 
-<!--chapter:end:12-Calcification-Accretion-Units-CAUs.Rmd-->
+# (PART\*) Data Management {-}
 
-# Post Cruise Activities {#postcruise}
+# Data How To {#data_how_to} 
 
-## Data QC and Import into Oracle Database
+(needs_buildout)
 
-## Instrument Refurbishment
+## How to Gain Access to the OCC Database
 
-<!--chapter:end:13-Post-Cruise-Activities.Rmd-->
+As of April 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an [ITS support ticket](https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true&os_destination=%2Fbrowse%2FPICITS-181121%3Ffilter%3D-2&page_caps=&user_role=) to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup. 
+
+## How to Archive Data
+
+After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a [google drive folder setup by Annette](https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp).
+
+## How to Connect to the Oracle Database
+
+[Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database](https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit#)
+
+## How to Connect to the OCC Oracle Databse Via Oracle SQL Developer
+
+1. Open Oracle SQL Developer
+2. On the "Welcome Page" tab, under the "Databases Detected" tab, find the "GIS" database and click it.
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_1.jpg"))`
+3. When prompted, enter your Oracle username and password
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_2.jpg"))`
+4. In the "Connections" pane, expand the "GIS" database and navigate down to "Other Users"
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_3.jpg"))`
+5. Expand "Other Users" and navigate down to "GISDAT"
+`r knitr::include_graphics(rep("images/SQL_Dev_Screenshot_4.jpg"))`
+6. Within "GISDAT" find OCC tables begining with "OCN" (note as of March 2020, this is soon to be changed to "OCC" prefix when the data team updates the new tables)
+
+
+
+
+
+
+<!--chapter:end:40-Data-Management.Rmd-->
+
+
+# Data Processing and the Occ Package {#data_processing}
+The *occ* package is uploaded to GitHub and can be downloaded directly in R. 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, warning = FALSE, message = FALSE, strip.white = TRUE, cache = TRUE)
+```
+
+1. Open the *devtools* library.
+```{r load_devtools, eval = FALSE}
+library(devtools)
+```
+
+2. To download the *occ* package, use the `install_github` command. The repository name is in the form "username/repo". For the *occ* package, the username is "hannahbarkley" and the repo is "occ". This install only need to occur once; however, the *occ* package will need to be reinstalled if there are updates to the package (which is likely).
+```{r install_occ, eval = FALSE}
+install_github("hannahbarkley/occ")
+```
+
+3. Once installed, load the *occ* package.
+```{r load_occ}
+library(occ)
+```
+
+<!--chapter:end:45-Data-Processing.Rmd-->
+
+# (PART\*) Inventory and Procurement {-}
+
+# Inventory
+(needs_buildout)
+
+## How to access the building 130 system #needsbuildout 
+
+## Procurement
+
+(needs_buildout)
+
+<!--chapter:end:50-Inventory-and-Procurement.Rmd-->
 
 # This is an Example Blank Chapter
 
@@ -1784,5 +2059,5 @@ copy it and use it as a template if you like
 This is how you insert an image:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
-<!--chapter:end:14-Blank_Example_Chapter.Rmd-->
+<!--chapter:end:99-Blank_Example_Chapter.Rmd-->
 

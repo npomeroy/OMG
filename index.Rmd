@@ -10,12 +10,12 @@ output:
   bookdown::gitbook:
     config:
       toc:
+        collapse: section
         before: |
           <li><a href="./">OMG</a></li>
       edit: https://github.com/npomeroy/OMG/blob/master/%s
       download: ["pdf"]
-      collapse: section
-      delete_merged_file: FALSE
+      
   bookdown::pdf_book:
     includes:
       in_header: preamble.tex
@@ -25,26 +25,33 @@ output:
 ---
 # Preface {-}
 
-The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to help inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
+The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 
+
+The OCC Team Topside:
+`r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
+"Prophets of the Doom" Team (i.e. how our president has described climate scientists)  (JNS)
+Did Noah really not hear the *glasses off* call?! (NVP)
 
 At work underwater:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
-The OCC Team Topside:
-`r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
-
 ## How to Edit this Book {-}
 
 
-Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone may suggest edits to the contents of the OMG by forking the OMG repository from [Noah via GitHub](https://github.com/npomeroy/OMG), pushing any changes back to GitHub, after which they may be approved for incorporation into the master copy of the OMG.  
+Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo [Noah via GitHub](https://github.com/npomeroy/OMG). Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
-Once you have forked the repo onto your local machine, the HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
+ HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder "OMG/docs" A .PDF file of the book is also generated every time the book is built, that also ends up in the "OMG/docs" folder. 
 
-1. Fork the repo from [Noah via GitHub](https://github.com/npomeroy/OMG).
-2. Edit any existing chapter by simply editing its .Rmd file in R studio or create a new chapter by creating a new .Rmd file in the root OMG folder. Build the book to see your edits in the form of the built book. 
-3. Commit your changes via GitHub Desktop (or via R if you have setup GitHub to play nicely with R.)
-4. In GitHub, open a Pull Request to have your edits considered for integration into the master branch. 
+**To Build and Access a Local Version of the OMG on Your Machine**
+(prerequisite: you have already cloned the repo to your local machine)
 
-**The Best How to Guide for Authoring Books with R Markdown** is written by Yihui Xie and is found right [here](https://bookdown.org/yihui/bookdown/)
+1. Once you have made changes to any .RMD file, click *Build Book* under the *Build* tab in the upper right window pane of R studio.
+2. If the book does not automatically open, find the Index.html file in the *docs* subfolder of the *OMG* folder and open it with a browser.
+
+**Some useful resources and notes for editing a Bookdown book and using R Markdown:** 
+
+[**The Best How to Guide for Authoring Books with R Markdown**](https://bookdown.org/yihui/bookdown/) by Yihui Xie
+
+You can create a link to any section in the book [by using the guidance here](https://bookdown.org/yihui/bookdown/cross-references.html)
 
 If you need some tips for your R Markdown formatting, [this cheat sheet is great.](https://rmarkdown.rstudio.com/lesson-15.html)

@@ -1,0 +1,10 @@
+# (PART\*) Inventory and Procurement {-}
+
+# Inventory
+(needs_buildout)
+
+## How to access the building 130 system #needsbuildout 
+
+## Procurement
+
+(needs_buildout)
