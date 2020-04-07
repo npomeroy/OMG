@@ -29,9 +29,9 @@ The Ocean and Climate Change Team investigates the impacts of climate change on 
 
 The OCC Team Topside:
 `r knitr::include_graphics(rep("images/OCC_Team_March_2020.jpg"))`
-JNS
+"Prophets of the Doom" Team (i.e. how our president has described climate scientists)  (JNS)
 Did Noah really not hear the *glasses off* call?! (NVP)
-
+THE *BARKLEY* BUNCH! (AAH)
 At work underwater:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
 
@@ -1053,14 +1053,14 @@ Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP
 
 1.	Assign a unique ID to both plates of each Calcification Accretion Unit (CAU) using the **CAU Plate ID** naming convention SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - lower plate)  
 
-    e.g. PAL01_2012_5319_U;  
-         PAL01_2012_5319_L
+    e.g. PAL01_2012_5319_U  
+                PAL01_2012_5319_L
 
 2.	Using a pencil, **pre-label the following with the CAU Plate ID (e.g. PAL01_2012_5319_U):**  
   
     a.	Paper tray A - blank index card 12.7 x 20.32cm (5” x 8”) folded into 12.7 x 12.7cm (5” x 5”) paper tray  
     b.	Paper tray B - same as above  
-    c.	Filterpaper 11cm diameter, #1, >11μm particle retention (e.g. Whatman No.1001-110)  
+    c.	Filterpaper 11cm diameter, #1, >11μm particle retention (e.g. Whatman No.1001-110)
 
 3.	Insert the corresponding Filter paper into the fold of Paper tray B and store in a container. Place Paper tray A in a separate container. Store both containers away from moisture and direct sunlight. See I. Step 8 for pre-weighing instructions. 
 
@@ -1151,11 +1151,9 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive at:  
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict: 
 
-    T:\Oceanography\CAUs\Analysis
-    
-    Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantic.* 
+    T:\Oceanography\CAUs\Analysis)
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -1173,7 +1171,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
     
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
-    PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
+    PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag  
     PAL01_2012_5319_U_B.jpg		    – Upper Plate, Bottom Side  
     PAL01_2012_5319_L_T_ID.jpg		– Lower Plate, Top Side with tag  
     PAL01_2012_5319_L_T.jpg			  – Lower Plate, Top Side  
@@ -1318,11 +1316,10 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 10.	Compare the current weight from the previous weight:  
 
-    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.  
-
-** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*  
-
+    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.     
     b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
+
+** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*   
 
 11.	Repeat III.E Steps 5-10 until the difference in weight is less than 0.1 g.
 
@@ -1341,13 +1338,13 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 *Refer to the brand/model user documentation/manual if using a different camera and setup*
 
-#### Installing the software
+### Installing the software
 
 For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder 
 
     T:\general\ProjectGroup\Ocean Acidification\CAUs\Analysis\CAU Processing SOP, Data sheet, Labels\CAU SOPs 2015\CAUSOP_NikonD7000Settings.pdf
 
-#### Connecting the camera to the computer
+### Connecting the camera to the computer
 
 1.	Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f2.8G ED lens) to the computer via USB mini cable
 
@@ -1362,42 +1359,42 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 5.	**If using the software for the FIRST TIME:**
 		
-    a) Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
+    a. Click on “**Exposure 1**” under the Camera Control tabs and change the settings of the following:  
 
-    Shutter speed: **1/50 sec**  
-    Aperture: f/8**
+       Shutter speed: **1/50 sec**  
+       Aperture: **f/8**
 
-`r knitr::include_graphics(rep("images/Camera3.jpg"))`  
+`r knitr::include_graphics(rep("images/Camera3.jpg"))`
 
-    b) Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
+    b. Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
 
-    ISO Sensitivity: **ISO 400**
-    White Balance: Auto
-    Option: Normal  
+       ISO Sensitivity: **ISO 400**  
+       White Balance: Auto  
+       Option: Normal
 
-`r knitr::include_graphics(rep("images/Camera4.jpg"))`  
+`r knitr::include_graphics(rep("images/Camera4.jpg"))`
 
-    c) Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
+    c. Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
 
-    Image Quality: JPEG fine
-    JPEG Compression: Optimal quality
-    Image size: Large (4928x3264)
-    Record to: PC
-    Card Record Mode: Backup  
+       Image Quality: JPEG fine  
+       JPEG Compression: Optimal quality  
+       Image size: Large (4928x3264)  
+       Record to: PC  
+       Card Record Mode: Backup
 
-`r knitr::include_graphics(rep("images/Camera5.jpg"))`  
+`r knitr::include_graphics(rep("images/Camera5.jpg"))`
 
-    d) Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
+    d. Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
 
-    Picture Control: Standard
-    High ISO NR: On (High) 
+       Picture Control: Standard  
+       High ISO NR: On (High)
 
 ** *Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used*
 
 `r knitr::include_graphics(rep("images/Camera6.jpg"))`
 
 
-#### CAU plate photo-documentation
+### CAU plate photo-documentation
 
 1.	Ensure that the camera’s Mode dial is set to “M” (Manual) 
 
@@ -1488,7 +1485,7 @@ For ESD-CREP users, the installation instructions and software product key can b
 
     PAL01_2012_5319_U_T_ID.jpg		– Upper Plate, Top Side with tag  
     PAL01_2012_5319_U_T.jpg			  – Upper Plate, Top Side  
-    PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag
+    PAL01_2012_5319_U_B_ID.jpg		– Upper Plate, Bottom   Side with tag  
     PAL01_2012_5319_U_B.jpg		    – Upper Plate, Bottom Side  
     PAL01_2012_5319_L_T_ID.jpg		– Lower Plate, Top Side with tag  
     PAL01_2012_5319_L_T.jpg			  – Lower Plate, Top Side  
@@ -1531,7 +1528,7 @@ Interface: The web application is categorized in to four main sections:
 #### Home
 	 
 This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The 
-** **Valid Plate**, **Valid Filter**, and **Filter Subplate** fields are explained in another section* 
+**Valid Plate**, **Valid Filter**, and **Filter Subplate** fields are explained in another section.
 	 
 `r knitr::include_graphics(rep("images/Data1.jpg"))`
 
@@ -1539,23 +1536,23 @@ This page breaks down the number of CAUs that still need to be weighed by Plate,
 	 
 The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the Data Entry page.
 	 
-`r knitr::include_graphics(rep("images/Data2.jpg"))`  
+`r knitr::include_graphics(rep("images/Data2.jpg"))`
 
-    a)	**Breadcrumb Bar** – use this to navigate through the different levels of the application  
+    a.	**Breadcrumb Bar** – use this to navigate through the different levels of the application  
 
-    b)	**Finder Drop Down** – use this to select the column you wish to search by  
+    b.	**Finder Drop Down** – use this to select the column you wish to search by  
     
-    c)	**Search Field** – enter search criteria here  
+    c.	**Search Field** – enter search criteria here  
 
-    d)	**Search Button** – click this button to execute your search criteria or hit ‘Enter’  
+    d.	**Search Button** – click this button to execute your search criteria or hit ‘Enter’  
 
-    e)	**Row Selecto**r – choose the number of rows you wish to display on the page  
+    e.	**Row Selecto**r – choose the number of rows you wish to display on the page  
 
-    f)	**Action** – Allows you to download the table, and perform more advanced functions  
+    f.	**Action** – Allows you to download the table, and perform more advanced functions  
 
-    g)	**Edit Plate Weights** – Navigates to a new page where data for the CAU plates are entered  
+    g.	**Edit Plate Weights** – Navigates to a new page where data for the CAU plates are entered  
 
-    h)	**Edit Filter Weights** – Navigates to a new page where data for the CAU filters are entered  
+    h.	**Edit Filter Weights** – Navigates to a new page where data for the CAU filters are entered  
 
 
 
@@ -1564,51 +1561,51 @@ The Data Entry section is where you will go to enter all the weights that you wi
 	 
 The **Edit Plate** and **Edit Filter** pages are identical; however, we are going to work with the **Edit Plate** page below. Click on the **Edit Plate Weights** button (shown in figure 2) to navigate to the screen below:
 	 
-`r knitr::include_graphics(rep("images/Data3.jpg"))`  
+`r knitr::include_graphics(rep("images/Data3.jpg"))`
 
-    a)	Filter By Island – Drop down list of islands shown in table  
+    a.	Filter By Island – Drop down list of islands shown in table  
 
-    b)	Rows to Display – Select number of rows to display  
+    b.	Rows to Display – Select number of rows to display  
 
-    c)	Select drying cycle  
+    c.	Select drying cycle  
 
-    Select the name of the column you wish to edit. Each item in the drop down menu corresponds to a column in the table. Once you’ve selected the cycle, click Apply Filters to begin inputting data into that column  
+        Select the name of the column you wish to edit. Each item in the drop down menu corresponds to a column in the table. Once you’ve selected the cycle, click Apply Filters to begin inputting data into that column  
 
-    d)	Note how only one column can be edited at a time. This application was designed to be used with software that inputs data directly from a scale which uses a tab delimiter  
+    d.	Note how only one column can be edited at a time. This application was designed to be used with software that inputs data directly from a scale which uses a tab delimiter  
 
-    e)	Apply Filters – must be clicked each time a change is made on items 1 through 3  
+    e.	Apply Filters – must be clicked each time a change is made on items 1 through 3  
 
-    f)	Edit Filter Weights - Navigates to a new page where CAU filter weight data is inputted  
+    f.	Edit Filter Weights - Navigates to a new page where CAU filter weight data is inputted  
     
 `r knitr::include_graphics(rep("images/Data4.jpg"))`
     
-    g)	Save – allows you to submit your changes and displays the number of records that have been updated  
+    g.	Save – allows you to submit your changes and displays the number of records that have been updated  
 
-    h)	Calculate – Filters any records that have been completed from the table. Once filtered, these CAU plates will be used in the calcification rates calculations. The following criteria must be met before a record is filtered from the Edit Plate Weights and Edit Filter Weights pages:  
+    h.	Calculate – Filters any records that have been completed from the table. Once filtered, these CAU plates will be used in the calcification rates calculations. The following criteria must be met before a record is filtered from the Edit Plate Weights and Edit Filter Weights pages:
 
-    *	Edit Plate Weights  
-        +	The **Plate_Dry** column says **YES** (This value determines whether a plate is dry)  
-        +	The **Paper_Tray_Weight** is NOT empty (Entering ‘0’ will suffice)  
-        +	The **CAU_Pvc_Dry_Weight** is NOT empty (Entering ‘0’ will suffice)  
+*	Edit Plate Weights  
++	The **Plate_Dry** column says **YES** (This value determines whether a plate is dry)  
++	The **Paper_Tray_Weight** is NOT empty (Entering ‘0’ will suffice)  
++	The **CAU_Pvc_Dry_Weight** is NOT empty (Entering ‘0’ will suffice)  
 
-    *	Edit Filter Weights  
-        +	The **Filter_Dry** column says **YES** (This value determines whether a filter is dry)  
-        +	The **Filter_Paper_Tray_Dry_Weight** is NOT blank (Entering ‘0’ will suffice)  
+*	Edit Filter Weights  
++	The **Filter_Dry** column says **YES** (This value determines whether a filter is dry)  
++	The **Filter_Paper_Tray_Dry_Weight** is NOT blank (Entering ‘0’ will suffice)  
 
 If you notice that a record is not being filtered from the table by clicking on the Calculate button, ensure the three criteria mentioned above are being met.
 
 Note: CAU plates will NOT be accounted for in the final calculations until they have been filtered from this page using the Calculate button.
 
-Unlike the **Save** button, this button will not display how many records have been filtered from the screen.
+Unlike the **Save** button, this button will not display how many records have been filtered from the screen.  
 
 
 
-	 
+
 **Edit Filter Weights Page**
 	 
 If you click on the **Edit Filter Weights** button (see figure 3), it will take you to a screen identical to the **Edit Plate Weights** page. The difference here is the type of columns it shows and an **Overflow** button.
 	 
-`r knitr::include_graphics(rep("images/Data5.jpg"))`
+`r knitr::include_graphics(rep("images/Data5.jpg"))`  
 
 
 
@@ -1643,12 +1640,12 @@ This column can be modified by selecting the drying cycle to **Comments**. The c
 
 **Valid Plate/Filter Codes**
 	 
-There are three main codes associated with these columns:  
+There are three main codes associated with these columns:
 
-    *	N = record is not dry  
-    *	Y = record is dry and will be included in the calculation if both the upper and lower plates are ‘Y’ or ‘F’  
-    *	F = record was force-dried and will be included in the calculation if the upper and lower plates are ‘Y’ or ‘F’  
-    *	B = record is considered bad and is not included in the end calculations  
+*	N = record is not dry  
+*	Y = record is dry and will be included in the calculation if both the upper and lower plates are ‘Y’ or ‘F’  
+*	F = record was force-dried and will be included in the calculation if the upper and lower plates are ‘Y’ or ‘F’  
+*	B = record is considered bad and is not included in the end calculations  
 
 ** *Note: In order to modify the valid plate/filter columns, you will need update access to the CAU_ANALYSIS table inside Oracle SQL Developer. As long as these two fields have a value of either ‘Y’ or ‘F’, the record will be included in the end calculations*
 

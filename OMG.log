@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  2 APR 2020 10:35
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  7 APR 2020 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,16 +914,16 @@ LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/n' will be
 ]
 File: images/OCC_Team_March_2020.jpg Graphic file (type bmp)
 <images/OCC_Team_March_2020.jpg>
-
-Overfull \hbox (88.05283pt too wide) in paragraph at lines 158--162
-[]\TU/Calibri(0)/m/n/10 The OCC Team Topside: []
- []
-
 File: images/OCC_Diurnal_Suite_Recovery_CJS.jpg Graphic file (type bmp)
 <images/OCC_Diurnal_Suite_Recovery_CJS.jpg>
 
-Overfull \hbox (79.16222pt too wide) in paragraph at lines 163--165
-[]\TU/Calibri(0)/m/n/10 At work underwater: [] 
+Overfull \hbox (88.05283pt too wide) in paragraph at lines 158--165
+[]\TU/Calibri(0)/m/n/10 The OCC Team Topside: []
+ []
+
+
+Overfull \hbox (39.4691pt too wide) in paragraph at lines 158--165
+\TU/Calibri(0)/m/n/10 derwater: [] 
  []
 
 
@@ -1438,7 +1438,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [90]
 ! Undefined control sequence.
 l.2127   T:\Oceanography
-                        \CAUs\Analysis 
+                        \CAUs\Analysis) 
 Here is how much of TeX's memory you used:
  22713 strings out of 494944
  417828 string characters out of 6175978
