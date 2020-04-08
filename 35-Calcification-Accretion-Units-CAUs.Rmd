@@ -136,9 +136,11 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 `r knitr::include_graphics(rep("images/CAU_photograph.jpg"))`
 
-7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict: 
+7.	It is recommended to tether the camera to a computer and save the photos directly to the computer’s local drive (while using the camera’s SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. 
 
-    T:\Oceanography\CAUs\Analysis)
+** May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict: 
+
+    T:\Oceanography\CAUs\Analysis
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
@@ -146,10 +148,10 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 9.	From the designated CAU photoset folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus. After photographing both sides of each plate, each CAU photoset folder should have **8 photos**. The photos should be later on renamed with the following naming convention:  
 
-    **a)	With Plate Photo ID tag:**
+    **a.	With Plate Photo ID tag:**
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg    
 
-    **b)	Without Plate Photo ID tag:**  
+    **b.	Without Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L”  lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg  
 
     Example:  
@@ -198,9 +200,9 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 10.	Compare the current weight from the previous weight:  
 
-    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
+    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the ‘Plate Dry’ column on the far right saying ‘YES’.
 		
-    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
+    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.
 
 11.	Repeat *III.B Steps 5-10* until the difference in weight is less than 0.1 g.
 
@@ -219,15 +221,15 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 5.	When decalcification has slowed (12-24 hours):  
 
-    a)	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
+    a.	Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).  
 
-    b) Grind pieces of calcified materials that may still be present and return in the glass dish.  
+    b. Grind pieces of calcified materials that may still be present and return in the glass dish.  
 
-    c) Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
+    c. Using acid-resistant gloves, sort through the scraped fleshy material in the glass dish and feel for any calcified materials.  
 
-    d) Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
+    d. Some calcified material can be completely covered by a boundary layer of fleshy material. If present, manually tease the fleshy material and grind the calcified material to allow decalcification to continue.  
 
-    e) If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
+    e. If there are more calcified materials in the dish, but no obvious decalcification occurring (no bubble formation), decant the used acid solution and drain the fleshy material into another pre-labeled containers (beakers, glass dish, etc). Add new 5% HCl acid solution (*or desired concentration) in the first glass dish to continue dissolving the remaining calcified materials.   
 
 `r knitr::include_graphics(rep("images/CAU_dissolve.jpg"))`
 
@@ -262,9 +264,9 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 2.	If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (*see III.D, Step 2, a-c*) can be used to filter the remaining volume of acid bath and fleshy material:  
 
-    a) Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
+    a. Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g. *PAL01_2012_5319_U*).  
 
-    b) In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
+    b. In the ESD Apex CAU Mission App, record the weight of the 2nd filter paper + paper tray to at least 3 decimal places in the column '*Addtl Filter & Paper tray B Dry Weight [g]*’.  
 
 3.	If filtering has slowed down, use a spatula/teaspoon to gently scrape the surface of the filter paper to allow more solution to filter through. Filtering can take >5 mins depending the amount of fleshy material in the acid bath.
 
@@ -301,8 +303,8 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 10.	Compare the current weight from the previous weight:  
 
-    a) If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.     
-    b) If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
+    a. If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.     
+    b. If the difference in weight is greater than 0.1 g, return the plates to the oven for another 24 hours.  
 
 ** *In the ESD Apex CAU Mission App, the column to the far right called “Filter Dry” has been formatted to change from ‘NO’ to “YES” if the difference in weight is less than 0.1g.*   
 
@@ -323,7 +325,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 *Refer to the brand/model user documentation/manual if using a different camera and setup*
 
-### Installing the software
+### Installing the Software
 
 For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder 
 
@@ -349,7 +351,7 @@ For ESD-CREP users, the installation instructions and software product key can b
        Shutter speed: **1/50 sec**  
        Aperture: **f/8**
 
-`r knitr::include_graphics(rep("images/Camera3.jpg"))`
+`r knitr::include_graphics(rep("images/Camera3.jpg"))`  
 
     b. Click on “**Exposure 2**” under the Camera Control tabs and change the settings of the following:  
 
@@ -357,7 +359,7 @@ For ESD-CREP users, the installation instructions and software product key can b
        White Balance: Auto  
        Option: Normal
 
-`r knitr::include_graphics(rep("images/Camera4.jpg"))`
+`r knitr::include_graphics(rep("images/Camera4.jpg"))`  
 
     c. Click on “**Storage**” under the Camera Control tabs and change the settings of the 	following:  
 
@@ -367,7 +369,7 @@ For ESD-CREP users, the installation instructions and software product key can b
        Record to: PC  
        Card Record Mode: Backup
 
-`r knitr::include_graphics(rep("images/Camera5.jpg"))`
+`r knitr::include_graphics(rep("images/Camera5.jpg"))`  
 
     d. Click on “**Image Processing**” under the Camera Control tabs and change the settings of the following:  
 
@@ -460,10 +462,10 @@ For ESD-CREP users, the installation instructions and software product key can b
 
 20.	Rename all plate photos with the following naming convention:  
 
-    a) **With Plate Photo ID tag:**  
+    a. **With Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate or “L” - 	lower plate)_PlateSurface (“T” - top plate or “B” - bottom plate)_ID.jpg  
 
-    b) **Without Plate Photo ID tag:**  
+    b. **Without Plate Photo ID tag:**  
     SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - upper plate, “L” - 	lower plate)_PlateSurface (“T” - top plate, “B” - bottom plate).jpg   
 
     Example:  
@@ -521,7 +523,7 @@ This page breaks down the number of CAUs that still need to be weighed by Plate,
 	 
 The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the Data Entry page.
 	 
-`r knitr::include_graphics(rep("images/Data2.jpg"))`
+`r knitr::include_graphics(rep("images/Data2.jpg"))`  
 
     a.	**Breadcrumb Bar** – use this to navigate through the different levels of the application  
 
@@ -546,7 +548,7 @@ The Data Entry section is where you will go to enter all the weights that you wi
 	 
 The **Edit Plate** and **Edit Filter** pages are identical; however, we are going to work with the **Edit Plate** page below. Click on the **Edit Plate Weights** button (shown in figure 2) to navigate to the screen below:
 	 
-`r knitr::include_graphics(rep("images/Data3.jpg"))`
+`r knitr::include_graphics(rep("images/Data3.jpg"))`  
 
     a.	Filter By Island – Drop down list of islands shown in table  
 
@@ -562,7 +564,7 @@ The **Edit Plate** and **Edit Filter** pages are identical; however, we are goin
 
     f.	Edit Filter Weights - Navigates to a new page where CAU filter weight data is inputted  
     
-`r knitr::include_graphics(rep("images/Data4.jpg"))`
+`r knitr::include_graphics(rep("images/Data4.jpg"))`  
     
     g.	Save – allows you to submit your changes and displays the number of records that have been updated  
 
@@ -692,9 +694,9 @@ In this tutorial, we will be adding plate weights into our application. A simila
 
 3.	Let’s say we wish to record the first drying cycle weight for a plate in Baker: and show 25 results per page:
 
-    a)	**Filter By Island** – Select Baker
-    b)	**Rows to Display** – Select 25
-    c)	**Select Drying Cycle** – Weight Plate Drying 1  
+    a.	**Filter By Island** – Select Baker
+    b.	**Rows to Display** – Select 25
+    c.	**Select Drying Cycle** – Weight Plate Drying 1  
 
 4.	Once you have made your changes, click on the **Apply Filters** button to see them take effect
 
@@ -818,7 +820,7 @@ If successful, you should see a green dialog box appear in the top-right corner.
 
 2.	Photograph each plate surface on the copy stand (with and without the plate photo ID tags; see SOPs).
 
-`r knitr::include_graphics(rep("images/DailyTasks7.jpg"))`
+`r knitr::include_graphics(rep("images/Camera9.jpg"))`
 
 3.	If using seawater, rinse plate with freshwater and place each plate on their corresponding paper trays in the fume hood. 
 4.	Air dry overnight.
