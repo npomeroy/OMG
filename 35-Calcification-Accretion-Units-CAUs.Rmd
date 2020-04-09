@@ -140,7 +140,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37% conc.) into 5%
 
 ** May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict: 
 
-    T:\Oceanography\CAUs\Analysis
+    T:\Oceanography\CAUs\Analysis  
 
 8.	Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 
