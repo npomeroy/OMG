@@ -1,0 +1,6 @@
+# Coral Coring
+
+The OCC Team thinks coral cores are an awesome way to hindcast all manner of interesting events in the life of a coral, perhaps most excitingly bleaching events from times and places when no observations were collected. SOP needs_buildout
+
+`r knitr::include_graphics(rep("images/Merritt_Coring_by_Pomeroy.jpg"))`
+Coral Coring at Swains Island

@@ -1,5 +1,0 @@
-# Post Cruise Activities {#postcruise}
-
-## Data QC and Import into Oracle Database
-
-## Instrument Refurbishment
