@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  7 APR 2020 14:23
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018/W32TeX) (preloaded format=xelatex 2018.11.14)  15 APR 2020 15:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1189,18 +1189,13 @@ File: images/d_suite_deploy_small.jpg Graphic file (type bmp)
 <images/d_suite_deploy_small.jpg>
 [37
 
-] [38
-
-]
+] [38]
 Chapter 7.
 File: images/Merritt_Coring_by_Pomeroy.jpg Graphic file (type bmp)
 <images/Merritt_Coring_by_Pomeroy.jpg>
+[39
 
-Overfull \hbox (30.25995pt too wide) in paragraph at lines 711--713
-[]\TU/Calibri(0)/m/n/10 This is how you insert an image: [] 
- []
-
-[39] [40
+] [40
 
 ]
 Chapter 8.
@@ -1224,13 +1219,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [51
 
 ] [52]
-Underfull \hbox (badness 2368) in paragraph at lines 1005--1006
+Underfull \hbox (badness 2368) in paragraph at lines 1012--1013
 []\TU/Calibri(0)/m/n/10 The file extension indicates the file format and should
  not be changed.
  []
 
 
-Underfull \hbox (badness 1087) in paragraph at lines 1005--1006
+Underfull \hbox (badness 1087) in paragraph at lines 1012--1013
 \TU/Calibri(0)/m/n/10 If you change it, the file extension that you specify bec
 omes part of the
  []
@@ -1238,7 +1233,7 @@ omes part of the
 File: images/SBE56_program_step_1.jpg Graphic file (type bmp)
 <images/SBE56_program_step_1.jpg>
 
-Overfull \hbox (235.5396pt too wide) in paragraph at lines 1022--1025
+Overfull \hbox (235.5396pt too wide) in paragraph at lines 1029--1032
 []\TU/Calibri(0)/m/n/10 Open SeatermV2 and select SBE56 from the instruments me
 nu. [] 
  []
@@ -1247,14 +1242,14 @@ nu. []
 File: images/SBE56_connect.jpg Graphic file (type bmp)
 <images/SBE56_connect.jpg>
 
-Overfull \hbox (77.44717pt too wide) in paragraph at lines 1025--1028
+Overfull \hbox (77.44717pt too wide) in paragraph at lines 1032--1035
 \TU/Calibri(0)/m/n/10 via a USB mini cable. [] 
  []
 
 File: images/SBE56_program_step_2.jpg Graphic file (type bmp)
 <images/SBE56_program_step_2.jpg>
 
-Overfull \hbox (72.2148pt too wide) in paragraph at lines 1028--1031
+Overfull \hbox (72.2148pt too wide) in paragraph at lines 1035--1038
 \TU/Calibri(0)/m/n/10 figuration window. [] 
  []
 
@@ -1265,32 +1260,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: images/SBE56_program_step_3.jpg Graphic file (type bmp)
 <images/SBE56_program_step_3.jpg>
 
-Overfull \hbox (70.6573pt too wide) in paragraph at lines 1035--1038
+Overfull \hbox (70.6573pt too wide) in paragraph at lines 1042--1045
 \TU/Calibri(0)/m/n/10 Wich Mean Time.” [] 
  []
 
 File: images/SBE56_program_step_4.jpg Graphic file (type bmp)
 <images/SBE56_program_step_4.jpg>
 
-Underfull \hbox (badness 1502) in paragraph at lines 1046--1049
+Underfull \hbox (badness 1502) in paragraph at lines 1053--1056
 []\TU/Calibri(0)/m/n/10 When you are done editing the configuration of the SBE5
 6, click the “Update
  []
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 1046--1049
+Underfull \hbox (badness 2856) in paragraph at lines 1053--1056
 \TU/Calibri(0)/m/n/10 Configuration” button and confirm the changes you want to
  make when the
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 1046--1049
+Underfull \hbox (badness 1325) in paragraph at lines 1053--1056
 \TU/Calibri(0)/m/n/10 pop-up window asks you to do so. When you have finished, 
 you should see
  []
 
 
-Underfull \hbox (badness 1533) in paragraph at lines 1046--1049
+Underfull \hbox (badness 1533) in paragraph at lines 1053--1056
 \TU/Calibri(0)/m/n/10 left shows the parameters that you intended to program th
 e instrument with.
  []
@@ -1303,7 +1298,7 @@ Chapter 12.
 [57
 
 ] [58]
-Underfull \hbox (badness 10000) in paragraph at lines 1230--1232
+Underfull \hbox (badness 10000) in paragraph at lines 1237--1239
 
  []
 
@@ -1315,11 +1310,11 @@ Chapter 13.
 [61
 
 ] [62] [63] [64]
-Underfull \vbox (badness 10000) detected at line 1478
+Underfull \vbox (badness 10000) detected at line 1485
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1484
+Underfull \vbox (badness 10000) detected at line 1491
  []
 
 [65] [66] [67] [68
@@ -1327,22 +1322,31 @@ Underfull \vbox (badness 10000) detected at line 1484
 ]
 Chapter 14.
 [69] [70]
+Overfull \vbox (20.43088pt too high) has occurred while \output is active []
+
+[71]
 File: images/PUC_bag_pop.png Graphic file (type bmp)
 <images/PUC_bag_pop.png>
 
-Overfull \hbox (297.41805pt too wide) in paragraph at lines 1736--1737
+Overfull \hbox (297.41805pt too wide) in paragraph at lines 1743--1744
 [][] 
  []
 
-[71] [72] [73] [74]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[72] [73] [74]
 Chapter 15.
 [75
 
 ]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/m/n' will be
-(Font)              scaled to size 11.13791pt on input line 1891.
+(Font)              scaled to size 11.13791pt on input line 1898.
 [76]
 Chapter 16.
+
+Package natbib Warning: Citation `ta' on page 77 undefined on input line 1938.
+
 [77
 
 ] [78
@@ -1376,7 +1380,7 @@ File: images/CauEquipment1.jpg Graphic file (type bmp)
 File: images/CauEquipment2.jpg Graphic file (type bmp)
 <images/CauEquipment2.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 1965--1967
+Underfull \hbox (badness 10000) in paragraph at lines 1972--1974
 []
  []
 
@@ -1390,23 +1394,23 @@ Overfull \vbox (243.6005pt too high) has occurred while \output is active []
 File: images/CAU_table.jpg Graphic file (type bmp)
 <images/CAU_table.jpg>
 
-Overfull \hbox (5.72545pt too wide) in paragraph at lines 1988--1989
+Overfull \hbox (5.72545pt too wide) in paragraph at lines 1995--1996
 []\TU/Calibri(0)/m/n/10 Using a pencil, \TU/Calibri(0)/bx/n/10 pre-label the fo
 llowing with the CAU Plate ID (e.g. PAL01_2012_5319_U): 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1994--1996
+Underfull \hbox (badness 10000) in paragraph at lines 2001--2003
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1996--1998
+Underfull \hbox (badness 10000) in paragraph at lines 2003--2005
 
  []
 
 
-Underfull \hbox (badness 2970) in paragraph at lines 1998--1999
+Underfull \hbox (badness 2970) in paragraph at lines 2005--2006
 []\TU/Calibri(0)/m/n/10 Filterpaper 11cm diameter, #1, >11μm particle retention
  (e.g. Whatman
  []
@@ -1418,7 +1422,7 @@ File: images/Template1.jpg Graphic file (type bmp)
 File: images/Template2.jpg Graphic file (type bmp)
 <images/Template2.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 2034--2036
+Underfull \hbox (badness 10000) in paragraph at lines 2041--2043
 
  []
 
@@ -1429,23 +1433,141 @@ File: images/CAU_dried.jpg Graphic file (type bmp)
 <images/CAU_dried.jpg>
 [89]
 LaTeX Font Info:    Font shape `TU/Calibri(0)/bx/it' will be
-(Font)              scaled to size 9.19464pt on input line 2121.
+(Font)              scaled to size 9.19464pt on input line 2128.
 File: images/CAU_photograph.jpg Graphic file (type bmp)
 <images/CAU_photograph.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [90]
+File: images/CAU_image.jpg Graphic file (type bmp)
+<images/CAU_image.jpg>
+[91]
+Underfull \hbox (badness 5460) in paragraph at lines 2165--2167
+\TU/Calibri(0)/m/n/10 SiteID_RecoveryYear_4-digitSerial#_PlateLocation (“U” - u
+pper plate, “L” lower
+ []
+
+[92] [93]
+File: images/CAU_dissolve.jpg Graphic file (type bmp)
+<images/CAU_dissolve.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[94] [95]
+File: images/CAU_drying.jpg Graphic file (type bmp)
+<images/CAU_drying.jpg>
+[96]
+File: images/CAU_filter.jpg Graphic file (type bmp)
+<images/CAU_filter.jpg>
+[97]
+File: images/CAU_weigh.jpg Graphic file (type bmp)
+<images/CAU_weigh.jpg>
+[98]
+Underfull \hbox (badness 10000) in paragraph at lines 2376--2378
+
+ []
+
+File: images/CAU_bag.jpg Graphic file (type bmp)
+<images/CAU_bag.jpg>
+[99]
+Overfull \hbox (390.0pt too wide) in paragraph at lines 2409--2409
+[]\TU/lmtt/m/n/10 T:\general\ProjectGroup\Ocean Acidification\CAUs\Analysis\CAU
+ Processing SOP, Data sheet, Labels\CAU SOPs 2015\CAUSOP_NikonD7000Settings.pdf
+[] 
+ []
+
+File: images/Camera.jpg Graphic file (type bmp)
+<images/Camera.jpg>
+[100]
+File: images/Camera2.jpg Graphic file (type bmp)
+<images/Camera2.jpg>
+File: images/Camera3.jpg Graphic file (type bmp)
+<images/Camera3.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (53.26862pt too wide) has occurred while \output is active
+\TU/Calibri(0)/m/it/10 17.3.  CAMERA TETHERING AND CAU PLATE PHOTO-DOCUMENTATIO
+N (NIKON CAMERA CONTROL PRO 2) \TU/Calibri(0)/m/n/10 101
+ []
+
+[101]
+Overfull \hbox (180.0pt too wide) in paragraph at lines 2460--2460
+[]\TU/lmtt/m/n/10 b. Click on “**Exposure 2**” under the Camera Control tabs an
+d change the settings of the following:[] 
+ []
+
+File: images/Camera4.jpg Graphic file (type bmp)
+<images/Camera4.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102]
+Overfull \hbox (169.5pt too wide) in paragraph at lines 2472--2472
+[]\TU/lmtt/m/n/10 c. Click on “**Storage**” under the Camera Control tabs and c
+hange the settings of the  following:[] 
+ []
+
+File: images/Camera5.jpg Graphic file (type bmp)
+<images/Camera5.jpg>
+
+Underfull \vbox (badness 3375) has occurred while \output is active []
+
+
+Overfull \hbox (53.26862pt too wide) has occurred while \output is active
+\TU/Calibri(0)/m/it/10 17.3.  CAMERA TETHERING AND CAU PLATE PHOTO-DOCUMENTATIO
+N (NIKON CAMERA CONTROL PRO 2) \TU/Calibri(0)/m/n/10 103
+ []
+
+[103]
+Overfull \hbox (211.5pt too wide) in paragraph at lines 2481--2481
+[]\TU/lmtt/m/n/10 d. Click on “**Image Processing**” under the Camera Control t
+abs and change the settings of the following:[] 
+ []
+
+File: images/Camera6.jpg Graphic file (type bmp)
+<images/Camera6.jpg>
+[104]
+File: images/Camera7.jpg Graphic file (type bmp)
+<images/Camera7.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (53.26862pt too wide) has occurred while \output is active
+\TU/Calibri(0)/m/it/10 17.3.  CAMERA TETHERING AND CAU PLATE PHOTO-DOCUMENTATIO
+N (NIKON CAMERA CONTROL PRO 2) \TU/Calibri(0)/m/n/10 105
+ []
+
+[105]
+File: images/Camera8.jpg Graphic file (type bmp)
+<images/Camera8.jpg>
+[106]
+File: images/Camera9.jpg Graphic file (type bmp)
+<images/Camera9.jpg>
+File: images/Camera10.jpg Graphic file (type bmp)
+<images/Camera10.jpg>
+File: images/Camera11.jpg Graphic file (type bmp)
+<images/Camera11.jpg>
+
+Overfull \hbox (53.26862pt too wide) has occurred while \output is active
+\TU/Calibri(0)/m/it/10 17.3.  CAMERA TETHERING AND CAU PLATE PHOTO-DOCUMENTATIO
+N (NIKON CAMERA CONTROL PRO 2) \TU/Calibri(0)/m/n/10 107
+ []
+
+[107]
 ! Undefined control sequence.
-l.2131   T:\Oceanography
-                        \CAUs\Analysis) 
+l.2548   ex: Documents\CAU
+                           Analysis\ASRAMP 2015\PHOTO ANALYSIS\SAMOA\SWAINS\...
+ 
 Here is how much of TeX's memory you used:
- 22717 strings out of 494944
- 417978 string characters out of 6175978
+ 22785 strings out of 494944
+ 419368 string characters out of 6175978
  536864 words of memory out of 5000000
- 26363 multiletter control sequences out of 15000+600000
+ 26414 multiletter control sequences out of 15000+600000
  545137 words of font info for 64 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,8n,117p,1054b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
-
-Output written on OMG.pdf (90 pages).
+ 48i,8n,117p,1054b,493s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on OMG.pdf (107 pages).

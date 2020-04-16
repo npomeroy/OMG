@@ -1,6 +1,6 @@
 # (PART\*) Instruments {-}
 
-# STR
+# STR {#str}
 
 ```{r, echo=FALSE}
 knitr::include_url("https://www.youtube.com/embed/C-7tl6Ddl_U")
@@ -100,8 +100,7 @@ Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for
 
 see [Data Processing with the OCC Package](#data_processing)
 
-# CTD
-
+# CTD {#ctd}
 ## RBR CTD in Profiling Mode
 
 ## SBE19 in Profiling Mode
@@ -180,7 +179,8 @@ time (HHMMSS) = 200930
 6.	Disconnect the Sea-Bird I/O cable connector and screw on the dummy plug.  The CTD can be properly stowed until redeployment.  
 
 
-## SBE19Plus in Moored Mode Mode
+## SBE19Plus in Moored Mode Mode {#moored_ctd}
+
 1.	Connect instrument and check status: Status > Display status and configuration parameters
 2.	Set date and time under General Setup > Set Date and Time. Date and time are in mmddyyyyhhmmss format (i.e. 6/12/2018 06:15:00 is 06122018061500).
 3.	Clear all past data General Setup > Initialize Logging.
@@ -204,7 +204,7 @@ If the system does not respond as shown above:
 5.	Click the Upload button on the Toolbar to upload stored data
  * In the Open dialog box, save the file to the designated location as specified [in this Google Drive document](https://drive.google.com/drive/folders/1WcZclgRCLHNOXykYigSZviiwFEH02lKx)
 
-# SeaFet pH Sensor
+# SeaFet pH Sensor {#seafet}
 
 The OCC team uses the SeaBird SeaFet pH sensor as part of the [Diel Suite](#dielsuite) to capture pH information around the clock over a typical deployment interval of 1 to 2 days.
 
@@ -436,7 +436,7 @@ Fax: [(+1) 425-643-9954](nulltel:%28%2B1%29%20425-643-9954)
 E-mail: [gikeda@seabird.com](nullmailto:gikeda@seabird.com)
 Web: [http://www.seabird.com](http://www.seabird.com/) ![](data:image/*;base64,R0lGODdhAQABAHcAACH5BAEAAAEALAAAAAABAAEAgAAAAAAAAAICTAEAOw==)
 
-# PUC - Portable Underwater Collector {#puc}
+# Portable Underwater Collector (PUC) {#puc}
 
 Part of the [diel suite](#dielsuite), the Programmable Underwater Collector (PUC) is a moored instrument used to collect water samples autonomously at pre-determined times. The OCC team uses the PUC to analyze the diel carbonate cycle at study sites.
 
@@ -613,16 +613,16 @@ New style cap---- dash#  2-236     McM  9452K165
   1. Download data using Aquadopp software; Deployment \&gt; Recorder Data Retrieval. Saves as .prf file.
   2. Process using R package occ &#39;processADCP&#39; function.
 
-# Shipboard Operations
+# Shipboard Operations{#shipboard}
 
 Note: since the Hiialakai was decommissioned in 2019, no plans have been made to re-install the PCO2 or TA system on another vessel
 
-## PCO2 System
+## PCO2 System {#pco2}
 
 - Perform simple check of system daily (see to-be-developed checklist)
 - [See detailed documentation in this Google Drive Folder Link](https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy)
 
-## TA System
+## Total Alkalinity (TA) System {@ta}
 
 Perform simple check of system daily (see to-be-developed checklist)
 

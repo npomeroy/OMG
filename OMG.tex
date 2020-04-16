@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-04-07}
+    \date{2020-04-15}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -229,7 +229,7 @@ Carbonate Budgets
 
 \textbf{A Map of Active and Inactive OCC Sites}
 
-\hypertarget{htmlwidget-be62430d62cc9a777a4d}{}
+\hypertarget{htmlwidget-8798c85ca843a9862b29}{}
 
 \hypertarget{publications}{%
 \chapter{Publications}\label{publications}}
@@ -676,6 +676,13 @@ d.~Complete data sheet including REA Site name or OCC Site Name (if it exists), 
 
 \includegraphics{images/d_suite_deploy_small.jpg}
 
+Conducting a diel suite deployment involves preparing and deploying multiple instruments. Note that the SeaFet should calibrated in seawater 24 hours prior to deployment. Find programming information for each instrument involved with the diel suite in the instrument chapters:
+
+\protect\hyperlink{seafet}{SeaFet}
+\protect\hyperlink{adcp}{Aquadopp ADCP}
+\protect\hyperlink{puc}{Portable Underwater Collector (PUC)}
+\protect\hyperlink{moored_ctd}{SBE19 CTD in Mooring Mode}
+
 \hypertarget{diel-suite-underwater-checklist}{%
 \section{Diel Suite Underwater Checklist}\label{diel-suite-underwater-checklist}}
 
@@ -708,8 +715,8 @@ ADCP
 
 The OCC Team thinks coral cores are an awesome way to hindcast all manner of interesting events in the life of a coral, perhaps most excitingly bleaching events from times and places when no observations were collected. SOP needs\_buildout
 
-This is how you insert an image:
 \includegraphics{images/Merritt_Coring_by_Pomeroy.jpg}
+Coral Coring at Swains Island
 
 \hypertarget{tasks}{%
 \chapter{Tasks at Sea}\label{tasks}}
@@ -1193,8 +1200,8 @@ time (HHMMSS) = 200930
   Disconnect the Sea-Bird I/O cable connector and screw on the dummy plug. The CTD can be properly stowed until redeployment.
 \end{enumerate}
 
-\hypertarget{sbe19plus-in-moored-mode-mode}{%
-\section{SBE19Plus in Moored Mode Mode}\label{sbe19plus-in-moored-mode-mode}}
+\hypertarget{moored_ctd}{%
+\section{SBE19Plus in Moored Mode Mode}\label{moored_ctd}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1259,8 +1266,8 @@ time (HHMMSS) = 200930
   In the Open dialog box, save the file to the designated location as specified \href{https://drive.google.com/drive/folders/1WcZclgRCLHNOXykYigSZviiwFEH02lKx}{in this Google Drive document}
 \end{itemize}
 
-\hypertarget{seafet-ph-sensor}{%
-\chapter{SeaFet pH Sensor}\label{seafet-ph-sensor}}
+\hypertarget{seafet}{%
+\chapter{SeaFet pH Sensor}\label{seafet}}
 
 The OCC team uses the SeaBird SeaFet pH sensor as part of the \protect\hyperlink{dielsuite}{Diel Suite} to capture pH information around the clock over a typical deployment interval of 1 to 2 days.
 
@@ -1577,7 +1584,7 @@ E-mail: \href{nullmailto:gikeda@seabird.com}{gikeda@seabird.com}
 Web: \href{http://www.seabird.com/}{http://www.seabird.com}
 
 \hypertarget{puc}{%
-\chapter{PUC - Portable Underwater Collector}\label{puc}}
+\chapter{Portable Underwater Collector (PUC)}\label{puc}}
 
 Part of the \protect\hyperlink{dielsuite}{diel suite}, the Programmable Underwater Collector (PUC) is a moored instrument used to collect water samples autonomously at pre-determined times. The OCC team uses the PUC to analyze the diel carbonate cycle at study sites.
 
@@ -1911,13 +1918,13 @@ New style cap---- dash\# 2-236 McM 9452K165
   Process using R package occ `processADCP' function.
 \end{enumerate}
 
-\hypertarget{shipboard-operations}{%
-\chapter{Shipboard Operations}\label{shipboard-operations}}
+\hypertarget{shipboard}{%
+\chapter{Shipboard Operations}\label{shipboard}}
 
 Note: since the Hiialakai was decommissioned in 2019, no plans have been made to re-install the PCO2 or TA system on another vessel
 
-\hypertarget{pco2-system}{%
-\section{PCO2 System}\label{pco2-system}}
+\hypertarget{pco2}{%
+\section{PCO2 System}\label{pco2}}
 
 \begin{itemize}
 \tightlist
@@ -1927,8 +1934,8 @@ Note: since the Hiialakai was decommissioned in 2019, no plans have been made to
   \href{https://drive.google.com/drive/folders/1p-Evjb3zrw4Kk460knsl4rI4m2Un_jyy}{See detailed documentation in this Google Drive Folder Link}
 \end{itemize}
 
-\hypertarget{ta-system}{%
-\section{TA System}\label{ta-system}}
+\hypertarget{total-alkalinity-ta-system-ta}{%
+\section{\texorpdfstring{Total Alkalinity (TA) System \{\citet{ta}\}}{Total Alkalinity (TA) System \{@ta\}}}\label{total-alkalinity-ta-system-ta}}
 
 Perform simple check of system daily (see to-be-developed checklist)
 
@@ -2125,10 +2132,21 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{6}
+\tightlist
 \item
-  It is recommended to tether the camera to a computer and save the photos directly to the computer's local drive (while using the camera's SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly. (May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict:
+  It is recommended to tether the camera to a computer and save the photos directly to the computer's local drive (while using the camera's SD card as a backup drive). Designate a folder where the CAU photoset will be stored directly.
+\end{enumerate}
 
-  T:\Oceanography\CAUs\Analysis)
+** May 2019 - ESD General (T:) Drive Organized by Year and Cruise Mission, or Island Code for shore-based missions or those from the Atlantict:
+
+\begin{verbatim}
+T:\Oceanography\CAUs\Analysis  
+\end{verbatim}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{7}
+\tightlist
 \item
   Photograph the top and bottom of each plate, first with the Plate Photo ID tag and then a 2nd image without the tag. (If pieces of calcified material fall off during the photographing process, retain the pieces with the plate to be used during the decalcification process).
 \end{enumerate}
@@ -2141,10 +2159,10 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
 \item
   From the designated CAU photoset folder, confirm that both plate photos (with and without the Plate Photo ID tag) are in focus. After photographing both sides of each plate, each CAU photoset folder should have \textbf{8 photos}. The photos should be later on renamed with the following naming convention:
 
-  \textbf{a) With Plate Photo ID tag:}
+  \textbf{a. With Plate Photo ID tag:}
   SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate or ``L'' - lower plate)\_PlateSurface (``T'' - top plate or ``B'' - bottom plate)\_ID.jpg
 
-  \textbf{b) Without Plate Photo ID tag:}\\
+  \textbf{b. Without Plate Photo ID tag:}\\
   SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate, ``L'' lower plate)\_PlateSurface (``T'' - top plate, ``B'' - bottom plate).jpg
 
   Example:
@@ -2198,7 +2216,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
   Compare the current weight from the previous weight:
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \item
     If the difference in weight is less than 0.1g, the plates are considered dry and no further drying needs to occur. This is automatically calculated by the ESD Apex CAU Mission App and denoted by the `Plate Dry' column on the far right saying `YES'.
   \item
@@ -2227,7 +2245,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
   When decalcification has slowed (12-24 hours):
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \item
     Scrape leftover material from the CAU plates with a razor blade into the glass dish. (See III.C, Step 8-15).
   \item
@@ -2288,7 +2306,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
   If the volume of fleshy material is sufficient to clog the filter paper, a 2nd pre-labeled and pre-weighed filter paper (\emph{see III.D, Step 2, a-c}) can be used to filter the remaining volume of acid bath and fleshy material:
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \item
     Label an additional filter paper and paper tray with its corresponding CAU Plate ID (e.g.~\emph{PAL01\_2012\_5319\_U}).
   \item
@@ -2352,7 +2370,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
   Compare the current weight from the previous weight:
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \tightlist
   \item
     If the difference in weight is less than 0.1g, the plates are considered dry and no further drying/weighing needs to occur.\\
@@ -2382,7 +2400,7 @@ To dilute full-strength HCl acid (1.18 g/mL, 36.5 molar mass, 37\% conc.) into 5
 \emph{Refer to the brand/model user documentation/manual if using a different camera and setup}
 
 \hypertarget{installing-the-software}{%
-\subsection{Installing the software}\label{installing-the-software}}
+\subsection{Installing the Software}\label{installing-the-software}}
 
 For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder
 
@@ -2610,7 +2628,7 @@ d. Click on “**Image Processing**” under the Camera Control tabs and change 
   Rename all plate photos with the following naming convention:
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \item
     \textbf{With Plate Photo ID tag:}\\
     SiteID\_RecoveryYear\_4-digitSerial\#\_PlateLocation (``U'' - upper plate or ``L'' - lower plate)\_PlateSurface (``T'' - top plate or ``B'' - bottom plate)\_ID.jpg
@@ -2879,7 +2897,7 @@ In this tutorial, we will be adding plate weights into our application. A simila
   Let's say we wish to record the first drying cycle weight for a plate in Baker: and show 25 results per page:
 
   \begin{enumerate}
-  \def\labelenumii{\alph{enumii})}
+  \def\labelenumii{\alph{enumii}.}
   \tightlist
   \item
     \textbf{Filter By Island} -- Select Baker
@@ -3097,7 +3115,7 @@ If successful, you should see a green dialog box appear in the top-right corner.
   Photograph each plate surface on the copy stand (with and without the plate photo ID tags; see SOPs).
 \end{enumerate}
 
-\includegraphics{images/DailyTasks7.jpg}
+\includegraphics{images/Camera9.jpg}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
