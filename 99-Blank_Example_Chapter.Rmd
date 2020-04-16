@@ -4,3 +4,5 @@ copy it and use it as a template if you like
 
 This is how you insert an image:
 `r knitr::include_graphics(rep("images/OCC_Diurnal_Suite_Recovery_CJS.jpg"))`
+
+I know you're so enjoying this incredible tutorial and can't wait to watch it again!
