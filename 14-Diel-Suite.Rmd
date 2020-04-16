@@ -5,9 +5,13 @@
 Conducting a diel suite deployment involves preparing and deploying multiple instruments.  Note that the SeaFet should calibrated in seawater 24 hours prior to deployment. Find programming information for each instrument involved with the diel suite in the instrument chapters:
 
 [SeaFet](#seafet)
+
 [Aquadopp ADCP](#adcp)
+
 [Portable Underwater Collector (PUC)](#puc)
+
 [SBE19 CTD in Mooring Mode](#moored_ctd)
+
 
 ## Diel Suite Underwater Checklist
 

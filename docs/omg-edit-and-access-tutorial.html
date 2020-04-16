@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>12 STR | OMG</title>
-  <meta name="description" content="12 STR | OMG" />
+  <title>1 OMG Edit and Access Tutorial | OMG</title>
+  <meta name="description" content="1 OMG Edit and Access Tutorial | OMG" />
   <meta name="generator" content="bookdown 0.15.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="12 STR | OMG" />
+  <meta property="og:title" content="1 OMG Edit and Access Tutorial | OMG" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="12 STR | OMG" />
+  <meta name="twitter:title" content="1 OMG Edit and Access Tutorial | OMG" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="postcruise.html"/>
-<link rel="next" href="ctd.html"/>
+<link rel="prev" href="index.html"/>
+<link rel="next" href="research-questions.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -282,97 +282,35 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="str" class="section level1">
-<h1><span class="header-section-number">12</span> STR</h1>
-<iframe src="https://www.youtube.com/embed/C-7tl6Ddl_U" width="672" height="400px">
+<div id="omg-edit-and-access-tutorial" class="section level1">
+<h1><span class="header-section-number">1</span> OMG Edit and Access Tutorial</h1>
+<p>This video walks through the basics of editing and accessing the OMG as of April 2020. This process is likely to evolve, but it’s worth a watch as much of this process will remain the same.</p>
+<iframe src="https://youtu.be/ZOLD3h8NOys" width="672" height="400px">
 </iframe>
-<p>As of 2020, the OCC team uses two models of temperature sensor, the <a href="str.html#sbe56">SBE56</a> and the RBR Solo v3. All STRs must be programmed prior to deployment and have fresh batteries and dessicant installed. See manual’s for specific programming guidance.</p>
-<div id="rbr-solo-v3-str" class="section level2">
-<h2><span class="header-section-number">12.1</span> RBR Solo V3 STR</h2>
-<p>Find the user manual in “Reference” section of OCC files at sea or at <a href="https://drive.google.com/drive/folders/1U-g1gTLOArcf7o5yXx-76z2HU-ha1qCJ">this google drive link</a></p>
-<p><strong>Physical Preparation for Deployment</strong></p>
-<p><img src="images/STR_party_2019.jpg" /><!-- --></p>
-<ul>
-<li><p>Use brand new Tadiran Lithium Thionyl Chloride 3.6v batteries</p></li>
-<li><p>Wrap instrument housing with yellow “PVC floor marking tape”, leaving the serial number exposed</p></li>
-</ul>
-<p><strong>Programming</strong></p>
+<p>Welcome to the online knowledge base of the OCC Team. This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with <a href="https://bookdown.org/yihui/bookdown/">bookdown</a>,published via <a href="https://pages.github.com/">GitHub Pages</a>. The current live version of the book that you can bookmark is <a href="https://npomeroy.github.io/OMG/">here</a>. All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo <a href="https://github.com/npomeroy/OMG">Noah via GitHub</a>. Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.</p>
+<p>HTML version of the OMG may be accessed offline by simply opening the index.html file in the folder “OMG/docs” A .PDF file of the book is also generated every time the book is built, that also ends up in the “OMG/docs” folder.</p>
+<p><strong>To Build and Access a Local Version of the OMG on Your Machine</strong>
+(prerequisite: you have already cloned the repo to your local machine)</p>
 <ol style="list-style-type: decimal">
-<li><p>Open Ruskin</p></li>
-<li><p>Connect to the instrument with the supplies USB C cable, it should appear in the “Navigator” view after a few seconds</p></li>
-<li><p>Ensure that your computer is connected to the internet so that the program can get the correct time from your computer.</p></li>
-<li><p>Click UTC to set the instrument’s time to UTC</p></li>
-<li><p>Click on the “Information” tab and confirm that the battery has 3.6v</p></li>
-<li><p>After programming each instrument, disconnect the USB cable, install a fresh desiccant and close the instrument in a short period of time so that the desiccant does not absorb ambient moisture in the air</p></li>
-<li><p>Parameters</p></li>
+<li>Once you have made changes to any .RMD file, click <em>Build Book</em> under the <em>Build</em> tab in the upper right window pane of R studio.</li>
+<li>If the book does not automatically open, find the Index.html file in the <em>docs</em> subfolder of the <em>OMG</em> folder and open it with a browser.</li>
 </ol>
-<ol style="list-style-type: lower-alpha">
-<li><p>Sampling Interval: 1 sample every 5 minutes</p></li>
-<li><p>Sampling mode: Continuous</p></li>
-</ol>
-<ul>
-<li><p>“Ruskin_instrument.log” keeps a text file that includes the parameters of each instrument programmed</p></li>
-<li><p>.rsk files are sqlight data files which are open source and non-proprietary</p></li>
-</ul>
-<p><strong>Downloading Data from Solo 3</strong></p>
-<ol style="list-style-type: decimal">
-<li><p>Connect to the instrument</p></li>
-<li><p>Select the dataset and download it</p></li>
-</ol>
-<p><strong>Processing RBR Solo 3 Data Files</strong></p>
-<p>see <a href="data-processing.html#data_processing">Data Processing with the OCC Package</a></p>
-<p><strong>Factory Recalibration of the Solo 3</strong></p>
-<ul>
-<li><p>Call RBR to arrange the re-calibration of each Solo 3, which will cost approx. $120</p></li>
-<li><p>Instrument drift over 3 years should be less than .006 C, thus there is no need to re-calibrate the data set with post-cruise calibration coefficients</p></li>
-<li><p>In Ruskin, by default, the name of a data file is composed of the following information:</p>
-<ul>
-<li>The first six digits represent the logger serial number.</li>
-<li>The next eight digits represent the current year, month, and day.</li>
-<li>The next four digits represent the current time to the minute.</li>
-<li>The file extension indicates the file format and should not be changed. If you change it, the file extension that you specify becomes part of the name, and the required extension is appended. For example, the file named 911936_20090522_1613.rsk contains data for a logger with a serial number of 911936 whose data was downloaded in 2009 on May 22 at 4:13 pm.</li>
-</ul></li>
-</ul>
+<p><strong>Some useful resources and notes for editing a Bookdown book and using R Markdown:</strong></p>
+<p><a href="https://bookdown.org/yihui/bookdown/"><strong>The Best How to Guide for Authoring Books with R Markdown</strong></a> by Yihui Xie</p>
+<p>You can create a link to any section in the book <a href="https://bookdown.org/yihui/bookdown/cross-references.html">by using the guidance here</a></p>
+<p>If you need some tips for your R Markdown formatting, <a href="https://rmarkdown.rstudio.com/lesson-15.html">this cheat sheet is great.</a></p>
+
 </div>
-<div id="sbe56" class="section level2">
-<h2><span class="header-section-number">12.2</span> Seabird Electronics SBE56 STR</h2>
-<p>As of 2020, the OCC team is not buying anymore SBE56 sensors due to history of inadequate endurance we’ve experienced with them. We have determined that units within a certain range of serial number are high risk for low endurance (Ari knows the bad ones!)</p>
-<p>Just like the RBR Solo v3, the SBE56 is programmed to sample every 5 minutes for 30S. The user mnual for the SBE56 can be found <a href="https://drive.google.com/drive/folders/1ujFmH1pJ704ikrsc11Ji2eNeuIBQ5JMa">here</a>.</p>
-<p><strong>Here are the basic steps to program the SBE56:</strong></p>
-<ol style="list-style-type: decimal">
-<li>Open SeatermV2 and select SBE56 from the instruments menu.
-<img src="images/SBE56_program_step_1.jpg" /><!-- --></li>
-<li>Open the housing with the custom endcap remover and connect the SBE 56 to your PC via a USB mini cable.
-<img src="images/SBE56_connect.jpg" /><!-- --></li>
-<li>When a successful connection is made, you will notice a “Device Identified” notification in the bottom left of the screen and you will see the serial number of the unit you have connected to in the upper left of the application window and in the current configuration window.
-<img src="images/SBE56_program_step_2.jpg" /><!-- --></li>
-<li>Edit the configuration options as follows</li>
-<li>sample period = 5 minutes (300 seconds)</li>
-<li>set time to UTC by clicking the “time options” button on the right and select “GreenWich Mean Time.”
-<img src="images/SBE56_program_step_3.jpg" /><!-- --></li>
-<li>check the box for clear memory</li>
-<li>check the boxy for clear events</li>
-<li>check the box for new battery installed (if it is relatively new, which if it is just back from refurbishment, it should be)</li>
-<li>set the date and time for the unit to begin sampling for a time is prior to the day it will be deployed</li>
-<li>When you are done editing the configuration of the SBE56, click the “Update Configuration” button and confirm the changes you want to make when the pop-up window asks you to do so. When you have finished, you should see the notification in the bottom left that says, “finished configuring device - success.” At this point double check that the “current configuration” window on the left shows the parameters that you intended to program the instrument with.
-<img src="images/SBE56_program_step_4.jpg" /><!-- --></li>
-<li>At this point, you can disconnect the SBE56, install a new dessicant in its endcap, examine its o-rings for any hairs and re-seal the housing. It is now ready for taping and installation in the deployment bracket.</li>
-</ol>
-<p><strong>Downloading Data from the SBE56</strong></p>
-<ol style="list-style-type: decimal">
-<li>Connect to the instrument</li>
-</ol>
-<p><strong>Processing SBE56 Data Files</strong></p>
-<p>see <a href="data-processing.html#data_processing">Data Processing with the OCC Package</a></p>
-</div>
-</div>
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-<a href="postcruise.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ctd.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="research-questions.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -403,7 +341,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/npomeroy/OMG/blob/master/30-Instruments.Rmd",
+"link": "https://github.com/npomeroy/OMG/blob/master/index.Rmd",
 "text": "Edit"
 },
 "history": {
