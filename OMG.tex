@@ -129,7 +129,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2020-04-16}
+    \date{2020-04-22}
 
 \usepackage{booktabs}
 \usepackage{amsthm}
@@ -175,6 +175,10 @@ At work underwater:
 \chapter{OMG Edit and Access Tutorial}\label{omg-edit-and-access-tutorial}}
 
 This video walks through the basics of editing and accessing the OMG as of April 2020. This process is likely to evolve, but it's worth a watch as much of this process will remain the same.
+
+\begin{verbatim}
+## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
+\end{verbatim}
 
 Welcome to the online knowledge base of the OCC Team. This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with \href{https://bookdown.org/yihui/bookdown/}{bookdown},published via \href{https://pages.github.com/}{GitHub Pages}. The current live version of the book that you can bookmark is \href{https://npomeroy.github.io/OMG/}{here}. All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo \href{https://github.com/npomeroy/OMG}{Noah via GitHub}. Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
@@ -234,7 +238,7 @@ Carbonate Budgets
 
 \textbf{A Map of Active and Inactive OCC Sites}
 
-\hypertarget{htmlwidget-683b14727cf3559ec630}{}
+\hypertarget{htmlwidget-966a7eda1b2c612e96f1}{}
 
 \hypertarget{publications}{%
 \chapter{Publications}\label{publications}}
@@ -3374,28 +3378,90 @@ If successful, you should see a green dialog box appear in the top-right corner.
 \part*{Data Management}\label{part-data-management}}
 \addcontentsline{toc}{part}{Data Management}
 
-\hypertarget{data_how_to}{%
-\chapter{Data How To}\label{data_how_to}}
-
-(needs\_buildout)
-
-\hypertarget{how-to-gain-access-to-the-occ-database}{%
-\section{How to Gain Access to the OCC Database}\label{how-to-gain-access-to-the-occ-database}}
+\hypertarget{access-the-occ-database}{%
+\chapter{Access the OCC Database}\label{access-the-occ-database}}
 
 As of April 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an \href{https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true\&os_destination=\%2Fbrowse\%2FPICITS-181121\%3Ffilter\%3D-2\&page_caps=\&user_role=}{ITS support ticket} to request an Oracle account in addition to requesting an install of SQL Developer. If you'd like to access data via R, you'll also need to request to have ODBC drivers setup.
 
-\hypertarget{how-to-archive-data}{%
-\section{How to Archive Data}\label{how-to-archive-data}}
-
-After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
-
-\hypertarget{how-to-connect-to-the-oracle-database}{%
-\section{How to Connect to the Oracle Database}\label{how-to-connect-to-the-oracle-database}}
+\hypertarget{connect-to-the-occ-database-with-r}{%
+\section{Connect to the OCC Database With R}\label{connect-to-the-occ-database-with-r}}
 
 \href{https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit\#}{Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database}
 
-\hypertarget{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}{%
-\section{How to Connect to the OCC Oracle Databse Via Oracle SQL Developer}\label{how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer}}
+\hypertarget{connect-to-the-occ-database-with-sql-developer}{%
+\section{Connect to the OCC Database With SQL Developer}\label{connect-to-the-occ-database-with-sql-developer}}
+
+\hypertarget{installing-sql-developer}{%
+\subsection{Installing SQL Developer}\label{installing-sql-developer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  In the folder ``Resources and Software'' is the sqldeveloper zip file: \url{https://drive.google.com/drive/u/1/folders/1b4lNP2Hj1C4vonSv7OskAXqYRfZk-DIA}
+\item
+  Right click the zip file and download.
+\item
+  Create a folder in your local documents folder on your device called ``SQLDeveloper''
+  For example I have mine here:
+
+  C:\Users\Brooke.Olenski\Documents\sqldeveloper
+\item
+  Move the new downloaded zip to that ``SQLDeveloper'' folder
+\item
+  Right click -\textgreater{} 7-zip -\textgreater{} Extract Here
+\item
+  Open the folder that just unzipped called sqldeveloper and scroll down to the application ``sqldeveloper.exe''
+\item
+  Right click ``sqldeveloper.exe'' -\textgreater{} send to -\textgreater{} Desktop
+\end{enumerate}
+
+\textbf{Addtional Notes About SQL Developer (updated April 2020 during data archive training):}
+
+\begin{itemize}
+\item
+  Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I'm not sure if that will be your experience or not (our configurations are likely very different)
+\item
+  From Brooke 4/20/2020 email: Right click on your connection GIS\_GISDAT and select ``reconnect''. Then when it reconnects, open the drop down under GIS\_GISDAT and right click on ``Materialized views'' and click ``refresh''.
+  If There are any issues in still running your queries please let me know. We also updated the query so it is organized in an easier fashion to QC and submit it.
+  Also, only the Hawaii record output was different, all others should be the same as listed in Hannah's document when you do a row count to check your output:
+  \url{https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit\#gid=632841035}
+\end{itemize}
+
+\hypertarget{annetes-guide-to-export-via-sqldeveloper}{%
+\subsection{Annete's Guide to Export Via SQLDeveloper}\label{annetes-guide-to-export-via-sqldeveloper}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Once SQL Developer is open, right-click on ORACLE CONNECTIONS in the tree to the left of the window and choose NEW CONNECTION.
+\item
+  The first screenshot below shows you the options to set up your connection. Replace ``ADESROCHERS'' with the username you were given to connect to the database (most likely first initial and last name).
+\item
+  Once the parameters are filled in click TEST, which will probably run really quickly.
+\item
+  If it worked, the STATUS in the left bottom corner of the connection window should indicate SUCCESS. If so, click CONNECT.
+\item
+  Once that's done, in the WORKSHEET window (the main screen that is totally blank with the tab that has the name of your database connect), copy and paste this statement into the worksheet:
+
+  SELECT * FROM GISDAT.ISLANDS
+\item
+  Click the GREEN ARROW pointing to the right to RUN STATEMENT. It will take a few seconds to run.
+\item
+  If successful, the results of the query you ran will be displayed in the QUERY RESULT window below the worksheet where you ran the statement
+\end{enumerate}
+
+\includegraphics[width=11.08in]{images/SQLDeveloper_Connect_April_2020_1}
+
+\includegraphics{images/SQLDeveloper_Connect_April_2020_2.jpg}
+
+\hypertarget{export-data-for-qc-via-sqldeveloper-sop-by-brooke}{%
+\subsection{Export Data for QC Via SQLDeveloper SOP by Brooke}\label{export-data-for-qc-via-sqldeveloper-sop-by-brooke}}
+
+Here's a google drive link from April 2020 on how to do this:
+\url{https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8}
+
+\hypertarget{noahs-january-2020-procedure-for-connecting-to-the-oracle-database}{%
+\subsection{Noah's January 2020 Procedure for Connecting to the Oracle Database}\label{noahs-january-2020-procedure-for-connecting-to-the-oracle-database}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -3417,6 +3483,11 @@ After data is qc'd it mus be archived. As of January 2020, the best place to loo
 \item
   Within ``GISDAT'' find OCC tables begining with ``OCN'' (note as of March 2020, this is soon to be changed to ``OCC'' prefix when the data team updates the new tables)
 \end{enumerate}
+
+\hypertarget{how-to-archive-data}{%
+\section{How to Archive Data}\label{how-to-archive-data}}
+
+After data is qc'd it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a \href{https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp}{google drive folder setup by Annette}.
 
 \hypertarget{data_processing}{%
 \chapter{Data Processing and the Occ Package}\label{data_processing}}

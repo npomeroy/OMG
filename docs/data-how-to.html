@@ -24,7 +24,7 @@
 <meta name="author" content="NVP" />
 
 
-<meta name="date" content="2020-04-16" />
+<meta name="date" content="2020-04-22" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -256,7 +256,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="19.1" data-path="data-how-to.html"><a href="data-how-to.html#how-to-gain-access-to-the-occ-database"><i class="fa fa-check"></i><b>19.1</b> How to Gain Access to the OCC Database</a></li>
 <li class="chapter" data-level="19.2" data-path="data-how-to.html"><a href="data-how-to.html#how-to-archive-data"><i class="fa fa-check"></i><b>19.2</b> How to Archive Data</a></li>
 <li class="chapter" data-level="19.3" data-path="data-how-to.html"><a href="data-how-to.html#how-to-connect-to-the-oracle-database"><i class="fa fa-check"></i><b>19.3</b> How to Connect to the Oracle Database</a></li>
-<li class="chapter" data-level="19.4" data-path="data-how-to.html"><a href="data-how-to.html#how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer"><i class="fa fa-check"></i><b>19.4</b> How to Connect to the OCC Oracle Databse Via Oracle SQL Developer</a></li>
+<li class="chapter" data-level="19.4" data-path="data-how-to.html"><a href="data-how-to.html#how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer"><i class="fa fa-check"></i><b>19.4</b> How to Connect to the OCC Oracle Databse Via Oracle SQL Developer</a><ul>
+<li class="chapter" data-level="19.4.1" data-path="data-how-to.html"><a href="data-how-to.html#installing-sql-developer"><i class="fa fa-check"></i><b>19.4.1</b> Installing SQL Developer</a></li>
+<li class="chapter" data-level="19.4.2" data-path="data-how-to.html"><a href="data-how-to.html#annetes-instructions-to-connect-to-database-via-sqldeveloper"><i class="fa fa-check"></i><b>19.4.2</b> Annete’s Instructions to Connect to Database Via SQLDeveloper</a></li>
+<li class="chapter" data-level="19.4.3" data-path="data-how-to.html"><a href="data-how-to.html#export-data-for-qc-via-sqldeveloper"><i class="fa fa-check"></i><b>19.4.3</b> Export Data for QC Via SQLDeveloper</a></li>
+<li class="chapter" data-level="19.4.4" data-path="data-how-to.html"><a href="data-how-to.html#connecting-to-the-oracle-database-noahs-january-2020-procedure"><i class="fa fa-check"></i><b>19.4.4</b> Connecting to the Oracle Database (Noah’s January 2020 Procedure)</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="20" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>20</b> Data Processing and the Occ Package</a></li>
 <li class="part"><span><b>Inventory and Procurement</b></span></li>
@@ -299,6 +304,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="how-to-connect-to-the-occ-oracle-databse-via-oracle-sql-developer" class="section level2">
 <h2><span class="header-section-number">19.4</span> How to Connect to the OCC Oracle Databse Via Oracle SQL Developer</h2>
+<div id="installing-sql-developer" class="section level3">
+<h3><span class="header-section-number">19.4.1</span> Installing SQL Developer</h3>
+<ol style="list-style-type: decimal">
+<li><p>In the folder “Resources and Software” is the sqldeveloper zip file: <a href="https://drive.google.com/drive/u/1/folders/1b4lNP2Hj1C4vonSv7OskAXqYRfZk-DIA" class="uri">https://drive.google.com/drive/u/1/folders/1b4lNP2Hj1C4vonSv7OskAXqYRfZk-DIA</a></p></li>
+<li><p>Right click the zip file and download.</p></li>
+<li><p>Create a folder in your local documents folder on your device called “SQLDeveloper”
+For example I have mine here:</p>
+<p>C:.Olenski</p></li>
+<li><p>Move the new downloaded zip to that “SQLDeveloper” folder</p></li>
+<li><p>Right click -&gt; 7-zip -&gt; Extract Here</p></li>
+<li><p>Open the folder that just unzipped called sqldeveloper and scroll down to the application “sqldeveloper.exe”</p></li>
+<li><p>Right click “sqldeveloper.exe” -&gt; send to -&gt; Desktop</p></li>
+</ol>
+<p><strong>Addtional Notes About SQL Developer (updated April 2020 during data archive training):</strong></p>
+<ul>
+<li><p>Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I’m not sure if that will be your experience or not (our configurations are likely very different)</p></li>
+<li><p>From Brooke 4/20/2020 email: Right click on your connection GIS_GISDAT and select “reconnect”. Then when it reconnects, open the drop down under GIS_GISDAT and right click on “Materialized views” and click “refresh”.
+If There are any issues in still running your queries please let me know. We also updated the query so it is organized in an easier fashion to QC and submit it.
+Also, only the Hawaii record output was different, all others should be the same as listed in Hannah’s document when you do a row count to check your output:
+<a href="https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035" class="uri">https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035</a></p></li>
+</ul>
+</div>
+<div id="annetes-instructions-to-connect-to-database-via-sqldeveloper" class="section level3">
+<h3><span class="header-section-number">19.4.2</span> Annete’s Instructions to Connect to Database Via SQLDeveloper</h3>
+<ol style="list-style-type: decimal">
+<li><p>Once SQL Developer is open, right-click on ORACLE CONNECTIONS in the tree to the left of the window and choose NEW CONNECTION.</p></li>
+<li><p>The first screenshot below shows you the options to set up your connection. Replace “ADESROCHERS” with the username you were given to connect to the database (most likely first initial and last name).</p></li>
+<li><p>Once the parameters are filled in click TEST, which will probably run really quickly.</p></li>
+<li><p>If it worked, the STATUS in the left bottom corner of the connection window should indicate SUCCESS. If so, click CONNECT.</p></li>
+<li><p>Once that’s done, in the WORKSHEET window (the main screen that is totally blank with the tab that has the name of your database connect), copy and paste this statement into the worksheet:</p>
+<p>SELECT * FROM GISDAT.ISLANDS</p></li>
+<li><p>Click the GREEN ARROW pointing to the right to RUN STATEMENT. It will take a few seconds to run.</p></li>
+<li><p>If successful, the results of the query you ran will be displayed in the QUERY RESULT window below the worksheet where you ran the statement</p></li>
+</ol>
+<p><img src="images/SQLDeveloper_Connect_April_2020_1.png" width="798" /></p>
+<p><img src="images/SQLDeveloper_Connect_April_2020_2.jpg" /><!-- --></p>
+</div>
+<div id="export-data-for-qc-via-sqldeveloper" class="section level3">
+<h3><span class="header-section-number">19.4.3</span> Export Data for QC Via SQLDeveloper</h3>
+<p>Here’s a google drive link from April 2020 on how to do this:
+<a href="https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8" class="uri">https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8</a></p>
+</div>
+<div id="connecting-to-the-oracle-database-noahs-january-2020-procedure" class="section level3">
+<h3><span class="header-section-number">19.4.4</span> Connecting to the Oracle Database (Noah’s January 2020 Procedure)</h3>
 <ol style="list-style-type: decimal">
 <li>Open Oracle SQL Developer</li>
 <li>On the “Welcome Page” tab, under the “Databases Detected” tab, find the “GIS” database and click it.
@@ -312,6 +361,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>Within “GISDAT” find OCC tables begining with “OCN” (note as of March 2020, this is soon to be changed to “OCC” prefix when the data team updates the new tables)</li>
 </ol>
 
+</div>
 </div>
 </div>
             </section>

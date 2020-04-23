@@ -48,8 +48,11 @@ This video walks through the basics of editing and accessing the OMG as of April
 
 
 ```{r, echo=FALSE}
-knitr::include_url("https://youtu.be/ZOLD3h8NOys")
+knitr::include_url("https://www.youtube.com/watch?v=ZOLD3h8NOys&feature=youtu.be")
 ```
+
+
+
 
 Welcome to the online knowledge base of the OCC Team.  This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea.  As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with [bookdown](https://bookdown.org/yihui/bookdown/),published via [GitHub Pages](https://pages.github.com/). The current live version of the book that you can bookmark is [here](https://npomeroy.github.io/OMG/). All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo [Noah via GitHub](https://github.com/npomeroy/OMG). Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
