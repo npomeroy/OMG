@@ -31,7 +31,16 @@ For example I have mine here:
 
 **Addtional Notes About SQL Developer (updated April 2020 during data archive training):**
 
-* Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I'm not sure if that will be your experience or not (our configurations are likely very different)
+* Is your SQL Developer taking several minutes to load? This is probably due to McAfee scanning it upon opening and bogging it down. To avoid this and make it open quickly, you should put it in the folder that PIFSC ITS has made exempt from McAfee scanning: C:\\sqldeveloper
+
+
+
+Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I'm not sure if that will be your experience or not (our configurations are likely very different)
+
+
+
+
+it ALSO takes a long time to expand the database objects (like GISDAT), sometimes another 5-10 minutes. Once it has expanded, then all usually works ok, but it definitely takes patience for me to get to that point. 
 
 * From Brooke 4/20/2020 email: Right click on your connection GIS_GISDAT and select "reconnect". Then when it reconnects, open the drop down under GIS_GISDAT and right click on "Materialized views" and click "refresh".
 If There are any issues in still running your queries please let me know. We also updated the query so it is organized in an easier fashion to QC and submit it. 
