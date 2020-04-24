@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>11 Access the OCC Database | OMG</title>
-  <meta name="description" content="11 Access the OCC Database | OMG" />
+  <title>19 Access the OCC Database | OMG</title>
+  <meta name="description" content="19 Access the OCC Database | OMG" />
   <meta name="generator" content="bookdown 0.15.1 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="11 Access the OCC Database | OMG" />
+  <meta property="og:title" content="19 Access the OCC Database | OMG" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="11 Access the OCC Database | OMG" />
+  <meta name="twitter:title" content="19 Access the OCC Database | OMG" />
   
   
   
@@ -50,6 +50,18 @@
 
 
 
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+<link href="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet" />
+<script src="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 
 
 <style type="text/css">
@@ -133,115 +145,130 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-edit-and-access-the-omg"><i class="fa fa-check"></i>How to Edit and Access the OMG</a></li>
 </ul></li>
+<li class="chapter" data-level="1" data-path="omg-edit-and-access-tutorial.html"><a href="omg-edit-and-access-tutorial.html"><i class="fa fa-check"></i><b>1</b> OMG Edit and Access Tutorial</a></li>
 <li class="part"><span><b>Research Overview</b></span></li>
-<li class="chapter" data-level="1" data-path="research-questions.html"><a href="research-questions.html"><i class="fa fa-check"></i><b>1</b> Research Questions</a></li>
+<li class="chapter" data-level="2" data-path="research-questions.html"><a href="research-questions.html"><i class="fa fa-check"></i><b>2</b> Research Questions</a></li>
+<li class="chapter" data-level="3" data-path="where-we-work.html"><a href="where-we-work.html"><i class="fa fa-check"></i><b>3</b> Where We Work</a></li>
+<li class="chapter" data-level="4" data-path="publications.html"><a href="publications.html"><i class="fa fa-check"></i><b>4</b> Publications</a></li>
 <li class="part"><span><b>Conducting a Research Cruise</b></span></li>
-<li class="chapter" data-level="2" data-path="cruise-prep.html"><a href="cruise-prep.html"><i class="fa fa-check"></i><b>2</b> Preparing for a Research Cruise</a><ul>
-<li class="chapter" data-level="2.1" data-path="cruise-prep.html"><a href="cruise-prep.html#determine-goals"><i class="fa fa-check"></i><b>2.1</b> Determine Goals</a></li>
-<li class="chapter" data-level="2.2" data-path="cruise-prep.html"><a href="cruise-prep.html#spatial-data-preparation"><i class="fa fa-check"></i><b>2.2</b> Spatial Data Preparation</a></li>
-<li class="chapter" data-level="2.3" data-path="cruise-prep.html"><a href="cruise-prep.html#garmin-78-handheld-gps-preparation"><i class="fa fa-check"></i><b>2.3</b> Garmin 78 Handheld GPS Preparation</a></li>
-<li class="chapter" data-level="2.4" data-path="cruise-prep.html"><a href="cruise-prep.html#datasheet-preparation"><i class="fa fa-check"></i><b>2.4</b> Datasheet Preparation</a></li>
-<li class="chapter" data-level="2.5" data-path="cruise-prep.html"><a href="cruise-prep.html#software-needed-at-sea"><i class="fa fa-check"></i><b>2.5</b> Software Needed at Sea</a></li>
-<li class="chapter" data-level="2.6" data-path="cruise-prep.html"><a href="cruise-prep.html#training"><i class="fa fa-check"></i><b>2.6</b> Training</a></li>
-<li class="chapter" data-level="2.7" data-path="cruise-prep.html"><a href="cruise-prep.html#staffing-needs_buildout"><i class="fa fa-check"></i><b>2.7</b> Staffing (needs_buildout)</a></li>
-<li class="chapter" data-level="2.8" data-path="cruise-prep.html"><a href="cruise-prep.html#individual-staff-preparation-needs_buildout"><i class="fa fa-check"></i><b>2.8</b> Individual Staff Preparation (needs_buildout)</a></li>
-<li class="chapter" data-level="2.9" data-path="cruise-prep.html"><a href="cruise-prep.html#preparing-the-ship-needs_buildout"><i class="fa fa-check"></i><b>2.9</b> Preparing the Ship (needs_buildout)</a><ul>
-<li class="chapter" data-level="2.9.1" data-path="cruise-prep.html"><a href="cruise-prep.html#loading-the-ship"><i class="fa fa-check"></i><b>2.9.1</b> Loading the Ship</a></li>
-<li class="chapter" data-level="2.9.2" data-path="cruise-prep.html"><a href="cruise-prep.html#drylab-setup"><i class="fa fa-check"></i><b>2.9.2</b> Drylab Setup</a></li>
+<li class="chapter" data-level="5" data-path="cruise-prep.html"><a href="cruise-prep.html"><i class="fa fa-check"></i><b>5</b> Preparing for a Research Cruise</a><ul>
+<li class="chapter" data-level="5.1" data-path="cruise-prep.html"><a href="cruise-prep.html#determine-goals"><i class="fa fa-check"></i><b>5.1</b> Determine Goals</a></li>
+<li class="chapter" data-level="5.2" data-path="cruise-prep.html"><a href="cruise-prep.html#spatial-data-preparation"><i class="fa fa-check"></i><b>5.2</b> Spatial Data Preparation</a></li>
+<li class="chapter" data-level="5.3" data-path="cruise-prep.html"><a href="cruise-prep.html#garmin-78-handheld-gps-preparation"><i class="fa fa-check"></i><b>5.3</b> Garmin 78 Handheld GPS Preparation</a></li>
+<li class="chapter" data-level="5.4" data-path="cruise-prep.html"><a href="cruise-prep.html#datasheet-preparation"><i class="fa fa-check"></i><b>5.4</b> Datasheet Preparation</a></li>
+<li class="chapter" data-level="5.5" data-path="cruise-prep.html"><a href="cruise-prep.html#software-needed-at-sea"><i class="fa fa-check"></i><b>5.5</b> Software Needed at Sea</a></li>
+<li class="chapter" data-level="5.6" data-path="cruise-prep.html"><a href="cruise-prep.html#training"><i class="fa fa-check"></i><b>5.6</b> Training</a></li>
+<li class="chapter" data-level="5.7" data-path="cruise-prep.html"><a href="cruise-prep.html#staffing-needs_buildout"><i class="fa fa-check"></i><b>5.7</b> Staffing (needs_buildout)</a></li>
+<li class="chapter" data-level="5.8" data-path="cruise-prep.html"><a href="cruise-prep.html#individual-staff-preparation-needs_buildout"><i class="fa fa-check"></i><b>5.8</b> Individual Staff Preparation (needs_buildout)</a></li>
+<li class="chapter" data-level="5.9" data-path="cruise-prep.html"><a href="cruise-prep.html#preparing-the-ship-needs_buildout"><i class="fa fa-check"></i><b>5.9</b> Preparing the Ship (needs_buildout)</a><ul>
+<li class="chapter" data-level="5.9.1" data-path="cruise-prep.html"><a href="cruise-prep.html#loading-the-ship"><i class="fa fa-check"></i><b>5.9.1</b> Loading the Ship</a></li>
+<li class="chapter" data-level="5.9.2" data-path="cruise-prep.html"><a href="cruise-prep.html#drylab-setup"><i class="fa fa-check"></i><b>5.9.2</b> Drylab Setup</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="water.html"><a href="water.html"><i class="fa fa-check"></i><b>3</b> CTD and DIC Water Sampling Field Guide</a><ul>
-<li class="chapter" data-level="3.1" data-path="water.html"><a href="water.html#waypoint-and-metadata-collection"><i class="fa fa-check"></i><b>3.1</b> Waypoint and metadata collection</a></li>
-<li class="chapter" data-level="3.2" data-path="water.html"><a href="water.html#ctd-cast"><i class="fa fa-check"></i><b>3.2</b> CTD CAST</a></li>
-<li class="chapter" data-level="3.3" data-path="water.html"><a href="water.html#water-sample-collection"><i class="fa fa-check"></i><b>3.3</b> Water Sample Collection</a></li>
-<li class="chapter" data-level="3.4" data-path="water.html"><a href="water.html#water-sample-processing"><i class="fa fa-check"></i><b>3.4</b> Water sample Processing</a></li>
-<li class="chapter" data-level="3.5" data-path="water.html"><a href="water.html#mercuric-chloride-emergency-procedures"><i class="fa fa-check"></i><b>3.5</b> Mercuric Chloride Emergency Procedures</a><ul>
-<li class="chapter" data-level="3.5.1" data-path="water.html"><a href="water.html#mercuric-chloride-safety-data-sheet-sds"><i class="fa fa-check"></i><b>3.5.1</b> Mercuric Chloride Safety Data Sheet (SDS)</a></li>
+<li class="chapter" data-level="6" data-path="water.html"><a href="water.html"><i class="fa fa-check"></i><b>6</b> CTD and DIC Water Sampling Field Guide</a><ul>
+<li class="chapter" data-level="6.1" data-path="water.html"><a href="water.html#waypoint-and-metadata-collection"><i class="fa fa-check"></i><b>6.1</b> Waypoint and metadata collection</a></li>
+<li class="chapter" data-level="6.2" data-path="water.html"><a href="water.html#ctd-cast"><i class="fa fa-check"></i><b>6.2</b> CTD CAST</a></li>
+<li class="chapter" data-level="6.3" data-path="water.html"><a href="water.html#water-sample-collection"><i class="fa fa-check"></i><b>6.3</b> Water Sample Collection</a></li>
+<li class="chapter" data-level="6.4" data-path="water.html"><a href="water.html#water-sample-processing"><i class="fa fa-check"></i><b>6.4</b> Water sample Processing</a></li>
+<li class="chapter" data-level="6.5" data-path="water.html"><a href="water.html#mercuric-chloride-emergency-procedures"><i class="fa fa-check"></i><b>6.5</b> Mercuric Chloride Emergency Procedures</a><ul>
+<li class="chapter" data-level="6.5.1" data-path="water.html"><a href="water.html#mercuric-chloride-safety-data-sheet-sds"><i class="fa fa-check"></i><b>6.5.1</b> Mercuric Chloride Safety Data Sheet (SDS)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="dielsuite.html"><a href="dielsuite.html"><i class="fa fa-check"></i><b>4</b> Diel Suite</a><ul>
-<li class="chapter" data-level="4.1" data-path="dielsuite.html"><a href="dielsuite.html#diel-suite-underwater-checklist"><i class="fa fa-check"></i><b>4.1</b> Diel Suite Underwater Checklist</a></li>
+<li class="chapter" data-level="7" data-path="dielsuite.html"><a href="dielsuite.html"><i class="fa fa-check"></i><b>7</b> Diel Suite</a><ul>
+<li class="chapter" data-level="7.1" data-path="dielsuite.html"><a href="dielsuite.html#diel-suite-underwater-checklist"><i class="fa fa-check"></i><b>7.1</b> Diel Suite Underwater Checklist</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="coral-coring.html"><a href="coral-coring.html"><i class="fa fa-check"></i><b>5</b> Coral Coring</a></li>
-<li class="chapter" data-level="6" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>6</b> Tasks at Sea</a><ul>
-<li class="chapter" data-level="6.1" data-path="tasks.html"><a href="tasks.html#daily-tasks-for-the-team"><i class="fa fa-check"></i><b>6.1</b> Daily Tasks for the Team</a></li>
-<li class="chapter" data-level="6.2" data-path="tasks.html"><a href="tasks.html#where-to-save-data"><i class="fa fa-check"></i><b>6.2</b> Where to Save Data</a></li>
+<li class="chapter" data-level="8" data-path="coral-coring.html"><a href="coral-coring.html"><i class="fa fa-check"></i><b>8</b> Coral Coring</a></li>
+<li class="chapter" data-level="9" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>9</b> Tasks at Sea</a><ul>
+<li class="chapter" data-level="9.1" data-path="tasks.html"><a href="tasks.html#daily-tasks-for-the-team"><i class="fa fa-check"></i><b>9.1</b> Daily Tasks for the Team</a></li>
+<li class="chapter" data-level="9.2" data-path="tasks.html"><a href="tasks.html#where-to-save-data"><i class="fa fa-check"></i><b>9.2</b> Where to Save Data</a></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="various-underway-resources.html"><a href="various-underway-resources.html"><i class="fa fa-check"></i><b>7</b> Various Underway resources</a></li>
-<li class="chapter" data-level="8" data-path="postcruise.html"><a href="postcruise.html"><i class="fa fa-check"></i><b>8</b> Post Cruise Activities</a><ul>
-<li class="chapter" data-level="8.1" data-path="postcruise.html"><a href="postcruise.html#data-qc-and-import-into-oracle-database"><i class="fa fa-check"></i><b>8.1</b> Data QC and Import into Oracle Database</a></li>
-<li class="chapter" data-level="8.2" data-path="postcruise.html"><a href="postcruise.html#instrument-refurbishment"><i class="fa fa-check"></i><b>8.2</b> Instrument Refurbishment</a></li>
+<li class="chapter" data-level="10" data-path="various-underway-resources.html"><a href="various-underway-resources.html"><i class="fa fa-check"></i><b>10</b> Various Underway resources</a></li>
+<li class="chapter" data-level="11" data-path="postcruise.html"><a href="postcruise.html"><i class="fa fa-check"></i><b>11</b> Post Cruise Activities</a><ul>
+<li class="chapter" data-level="11.1" data-path="postcruise.html"><a href="postcruise.html#data-qc-and-import-into-oracle-database"><i class="fa fa-check"></i><b>11.1</b> Data QC and Import into Oracle Database</a></li>
+<li class="chapter" data-level="11.2" data-path="postcruise.html"><a href="postcruise.html#instrument-refurbishment"><i class="fa fa-check"></i><b>11.2</b> Instrument Refurbishment</a></li>
 </ul></li>
 <li class="part"><span><b>Instruments</b></span></li>
-<li class="chapter" data-level="9" data-path="str.html"><a href="str.html"><i class="fa fa-check"></i><b>9</b> STR</a><ul>
-<li class="chapter" data-level="9.1" data-path="str.html"><a href="str.html#rbr-solo-v3-str"><i class="fa fa-check"></i><b>9.1</b> RBR Solo V3 STR</a></li>
-<li class="chapter" data-level="9.2" data-path="str.html"><a href="str.html#sbe56"><i class="fa fa-check"></i><b>9.2</b> Seabird Electronics SBE56 STR</a></li>
-<li class="chapter" data-level="9.3" data-path="str.html"><a href="str.html#rbr-ctd-in-profiling-mode"><i class="fa fa-check"></i><b>9.3</b> RBR CTD in Profiling Mode</a></li>
-<li class="chapter" data-level="9.4" data-path="str.html"><a href="str.html#sbe19-in-profiling-mode"><i class="fa fa-check"></i><b>9.4</b> SBE19 in Profiling Mode</a></li>
-<li class="chapter" data-level="9.5" data-path="str.html"><a href="str.html#sbe19plus-in-profiling-mode"><i class="fa fa-check"></i><b>9.5</b> SBE19Plus in Profiling Mode</a></li>
-<li class="chapter" data-level="9.6" data-path="str.html"><a href="str.html#moored_ctd"><i class="fa fa-check"></i><b>9.6</b> SBE19Plus in Moored Mode Mode</a></li>
-<li class="chapter" data-level="9.7" data-path="str.html"><a href="str.html#downloading-the-sbe19plus"><i class="fa fa-check"></i><b>9.7</b> Downloading the SBE19Plus</a></li>
-<li class="chapter" data-level="9.8" data-path="str.html"><a href="str.html#conditioning-the-seafet-in-seawater-at-least-24-hours-prior-to-deployment"><i class="fa fa-check"></i><b>9.8</b> Conditioning the SeaFet in seawater at least 24 hours prior to deployment</a></li>
-<li class="chapter" data-level="9.9" data-path="str.html"><a href="str.html#programming-the-seafet-for-deployment-after-it-has-already-been-warming-up-in-polled-aka-low-power-sleep-mode-for-at-least-24hrs"><i class="fa fa-check"></i><b>9.9</b> Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)</a></li>
-<li><a href="str.html#downloading-data-from-the-seafet-properly-store-the-seafet-email-exchanges-about-seafet-for-reference-general-notes-preparation-the-day-before-deployment-programming-pucs-with-firmware-version-2018-jan-7-puc-rates-and-fill-times-as-of-june-2018-puc-deployment-puc-recovery-notes-from-chris-langdon-about-pucs-programming-the-aquadopp-deploying-the-aquadopp-retrieve-the-aquadopp-pco2-system-pco2-total-alkalinity-ta-system-ta"><span class="toc-section-number">9.10</span> Downloading Data from the SeaFet**
-## Properly Store the SeaFet
-## Email Exchanges about Seafet for reference
-## General Notes
-## Preparation the Day Before Deployment
-### Programming PUCS with firmware version 2018-JAN-7
-## PUC Rates and Fill Times (As of June 2018)
-## PUC Deployment
-## PUC Recovery
-### Notes from Chris Langdon about PUCs
-## Programming the Aquadopp
-## Deploying the Aquadopp
-## Retrieve the Aquadopp
-## PCO2 System {#pco2}
-## Total Alkalinity (TA) System {<span class="citation">@ta</span>}</a></li>
+<li class="chapter" data-level="12" data-path="str.html"><a href="str.html"><i class="fa fa-check"></i><b>12</b> STR</a><ul>
+<li class="chapter" data-level="12.1" data-path="str.html"><a href="str.html#rbr-solo-v3-str"><i class="fa fa-check"></i><b>12.1</b> RBR Solo V3 STR</a></li>
+<li class="chapter" data-level="12.2" data-path="str.html"><a href="str.html#sbe56"><i class="fa fa-check"></i><b>12.2</b> Seabird Electronics SBE56 STR</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html"><i class="fa fa-check"></i><b>10</b> Calcification Accretion Unit (CAU)</a><ul>
-<li class="chapter" data-level="10.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-assembly-schematic"><i class="fa fa-check"></i><b>10.1</b> CAU Assembly Schematic</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies"><i class="fa fa-check"></i><b>10.1.1</b> Equipment and Supplies</a></li>
+<li class="chapter" data-level="13" data-path="ctd.html"><a href="ctd.html"><i class="fa fa-check"></i><b>13</b> CTD</a><ul>
+<li class="chapter" data-level="13.1" data-path="ctd.html"><a href="ctd.html#rbr-ctd-in-profiling-mode"><i class="fa fa-check"></i><b>13.1</b> RBR CTD in Profiling Mode</a></li>
+<li class="chapter" data-level="13.2" data-path="ctd.html"><a href="ctd.html#sbe19-in-profiling-mode"><i class="fa fa-check"></i><b>13.2</b> SBE19 in Profiling Mode</a></li>
+<li class="chapter" data-level="13.3" data-path="ctd.html"><a href="ctd.html#sbe19plus-in-profiling-mode"><i class="fa fa-check"></i><b>13.3</b> SBE19Plus in Profiling Mode</a></li>
+<li class="chapter" data-level="13.4" data-path="ctd.html"><a href="ctd.html#moored_ctd"><i class="fa fa-check"></i><b>13.4</b> SBE19Plus in Moored Mode Mode</a></li>
+<li class="chapter" data-level="13.5" data-path="ctd.html"><a href="ctd.html#downloading-the-sbe19plus"><i class="fa fa-check"></i><b>13.5</b> Downloading the SBE19Plus</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-laboratory-sample-processing-sop"><i class="fa fa-check"></i><b>10.2</b> CAU Laboratory Sample Processing SOP</a><ul>
-<li class="chapter" data-level="10.2.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies-1"><i class="fa fa-check"></i><b>10.2.1</b> Equipment and Supplies</a></li>
-<li class="chapter" data-level="10.2.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#processing-timeline"><i class="fa fa-check"></i><b>10.2.2</b> Processing Timeline</a></li>
-<li class="chapter" data-level="10.2.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#preparation-work"><i class="fa fa-check"></i><b>10.2.3</b> Preparation Work</a></li>
-<li class="chapter" data-level="10.2.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-processing-steps"><i class="fa fa-check"></i><b>10.2.4</b> CAU Processing Steps</a></li>
+<li class="chapter" data-level="14" data-path="seafet.html"><a href="seafet.html"><i class="fa fa-check"></i><b>14</b> SeaFet pH Sensor</a><ul>
+<li class="chapter" data-level="14.1" data-path="seafet.html"><a href="seafet.html#conditioning-the-seafet-in-seawater-at-least-24-hours-prior-to-deployment"><i class="fa fa-check"></i><b>14.1</b> Conditioning the SeaFet in seawater at least 24 hours prior to deployment</a></li>
+<li class="chapter" data-level="14.2" data-path="seafet.html"><a href="seafet.html#programming-the-seafet-for-deployment-after-it-has-already-been-warming-up-in-polled-aka-low-power-sleep-mode-for-at-least-24hrs"><i class="fa fa-check"></i><b>14.2</b> Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)</a></li>
+<li class="chapter" data-level="14.3" data-path="seafet.html"><a href="seafet.html#downloading-data-from-the-seafet"><i class="fa fa-check"></i><b>14.3</b> Downloading Data from the SeaFet**</a></li>
+<li class="chapter" data-level="14.4" data-path="seafet.html"><a href="seafet.html#properly-store-the-seafet"><i class="fa fa-check"></i><b>14.4</b> Properly Store the SeaFet</a></li>
+<li class="chapter" data-level="14.5" data-path="seafet.html"><a href="seafet.html#email-exchanges-about-seafet-for-reference"><i class="fa fa-check"></i><b>14.5</b> Email Exchanges about Seafet for reference</a></li>
 </ul></li>
-<li class="chapter" data-level="10.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2"><i class="fa fa-check"></i><b>10.3</b> Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)</a><ul>
-<li class="chapter" data-level="10.3.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#installing-the-software"><i class="fa fa-check"></i><b>10.3.1</b> Installing the Software</a></li>
-<li class="chapter" data-level="10.3.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#connecting-the-camera-to-the-computer"><i class="fa fa-check"></i><b>10.3.2</b> Connecting the camera to the computer</a></li>
-<li class="chapter" data-level="10.3.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-plate-photo-documentation"><i class="fa fa-check"></i><b>10.3.3</b> CAU plate photo-documentation</a></li>
+<li class="chapter" data-level="15" data-path="puc.html"><a href="puc.html"><i class="fa fa-check"></i><b>15</b> Portable Underwater Collector (PUC)</a><ul>
+<li class="chapter" data-level="15.1" data-path="puc.html"><a href="puc.html#general-notes"><i class="fa fa-check"></i><b>15.1</b> General Notes</a></li>
+<li class="chapter" data-level="15.2" data-path="puc.html"><a href="puc.html#preparation-the-day-before-deployment"><i class="fa fa-check"></i><b>15.2</b> Preparation the Day Before Deployment</a><ul>
+<li class="chapter" data-level="15.2.1" data-path="puc.html"><a href="puc.html#programming-pucs-with-firmware-version-2018-jan-7"><i class="fa fa-check"></i><b>15.2.1</b> Programming PUCS with firmware version 2018-JAN-7</a></li>
 </ul></li>
-<li class="chapter" data-level="10.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-data-entry-tool-user-documentation"><i class="fa fa-check"></i><b>10.4</b> CAU Data Entry Tool User Documentation</a><ul>
-<li class="chapter" data-level="10.4.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#application-overview"><i class="fa fa-check"></i><b>10.4.1</b> Application Overview</a></li>
-<li class="chapter" data-level="10.4.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#data-entry-tutorial"><i class="fa fa-check"></i><b>10.4.2</b> Data Entry Tutorial</a></li>
-<li class="chapter" data-level="10.4.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#filter-overflow-tutorial"><i class="fa fa-check"></i><b>10.4.3</b> Filter Overflow Tutorial</a></li>
+<li class="chapter" data-level="15.3" data-path="puc.html"><a href="puc.html#puc-rates-and-fill-times-as-of-june-2018"><i class="fa fa-check"></i><b>15.3</b> PUC Rates and Fill Times (As of June 2018)</a></li>
+<li class="chapter" data-level="15.4" data-path="puc.html"><a href="puc.html#puc-deployment"><i class="fa fa-check"></i><b>15.4</b> PUC Deployment</a></li>
+<li class="chapter" data-level="15.5" data-path="puc.html"><a href="puc.html#puc-recovery"><i class="fa fa-check"></i><b>15.5</b> PUC Recovery</a><ul>
+<li class="chapter" data-level="15.5.1" data-path="puc.html"><a href="puc.html#notes-from-chris-langdon-about-pucs"><i class="fa fa-check"></i><b>15.5.1</b> Notes from Chris Langdon about PUCs</a></li>
 </ul></li>
-<li class="chapter" data-level="10.5" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#daily-task-guide"><i class="fa fa-check"></i><b>10.5</b> Daily Task Guide</a><ul>
-<li class="chapter" data-level="10.5.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-schedule"><i class="fa fa-check"></i><b>10.5.1</b> Sample Processing Schedule</a></li>
-<li class="chapter" data-level="10.5.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-daily-tasks"><i class="fa fa-check"></i><b>10.5.2</b> Sample Processing Daily Tasks</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html"><i class="fa fa-check"></i><b>16</b> Aquadopp: Nortek ADCP</a><ul>
+<li class="chapter" data-level="16.1" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#programming-the-aquadopp"><i class="fa fa-check"></i><b>16.1</b> Programming the Aquadopp</a></li>
+<li class="chapter" data-level="16.2" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#deploying-the-aquadopp"><i class="fa fa-check"></i><b>16.2</b> Deploying the Aquadopp</a></li>
+<li class="chapter" data-level="16.3" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#retrieve-the-aquadopp"><i class="fa fa-check"></i><b>16.3</b> Retrieve the Aquadopp</a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="shipboard.html"><a href="shipboard.html"><i class="fa fa-check"></i><b>17</b> Shipboard Operations</a><ul>
+<li class="chapter" data-level="17.1" data-path="shipboard.html"><a href="shipboard.html#pco2"><i class="fa fa-check"></i><b>17.1</b> PCO2 System</a></li>
+<li class="chapter" data-level="17.2" data-path="shipboard.html"><a href="shipboard.html#total-alkalinity-ta-system-ta"><i class="fa fa-check"></i><b>17.2</b> Total Alkalinity (TA) System {<span class="citation">@ta</span>}</a></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html"><i class="fa fa-check"></i><b>18</b> Calcification Accretion Unit (CAU)</a><ul>
+<li class="chapter" data-level="18.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-assembly-schematic"><i class="fa fa-check"></i><b>18.1</b> CAU Assembly Schematic</a><ul>
+<li class="chapter" data-level="18.1.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies"><i class="fa fa-check"></i><b>18.1.1</b> Equipment and Supplies</a></li>
+</ul></li>
+<li class="chapter" data-level="18.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-laboratory-sample-processing-sop"><i class="fa fa-check"></i><b>18.2</b> CAU Laboratory Sample Processing SOP</a><ul>
+<li class="chapter" data-level="18.2.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies-1"><i class="fa fa-check"></i><b>18.2.1</b> Equipment and Supplies</a></li>
+<li class="chapter" data-level="18.2.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#processing-timeline"><i class="fa fa-check"></i><b>18.2.2</b> Processing Timeline</a></li>
+<li class="chapter" data-level="18.2.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#preparation-work"><i class="fa fa-check"></i><b>18.2.3</b> Preparation Work</a></li>
+<li class="chapter" data-level="18.2.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-processing-steps"><i class="fa fa-check"></i><b>18.2.4</b> CAU Processing Steps</a></li>
+</ul></li>
+<li class="chapter" data-level="18.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2"><i class="fa fa-check"></i><b>18.3</b> Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)</a><ul>
+<li class="chapter" data-level="18.3.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#installing-the-software"><i class="fa fa-check"></i><b>18.3.1</b> Installing the Software</a></li>
+<li class="chapter" data-level="18.3.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#connecting-the-camera-to-the-computer"><i class="fa fa-check"></i><b>18.3.2</b> Connecting the camera to the computer</a></li>
+<li class="chapter" data-level="18.3.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-plate-photo-documentation"><i class="fa fa-check"></i><b>18.3.3</b> CAU plate photo-documentation</a></li>
+</ul></li>
+<li class="chapter" data-level="18.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-data-entry-tool-user-documentation"><i class="fa fa-check"></i><b>18.4</b> CAU Data Entry Tool User Documentation</a><ul>
+<li class="chapter" data-level="18.4.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#application-overview"><i class="fa fa-check"></i><b>18.4.1</b> Application Overview</a></li>
+<li class="chapter" data-level="18.4.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#data-entry-tutorial"><i class="fa fa-check"></i><b>18.4.2</b> Data Entry Tutorial</a></li>
+<li class="chapter" data-level="18.4.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#filter-overflow-tutorial"><i class="fa fa-check"></i><b>18.4.3</b> Filter Overflow Tutorial</a></li>
+</ul></li>
+<li class="chapter" data-level="18.5" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#daily-task-guide"><i class="fa fa-check"></i><b>18.5</b> Daily Task Guide</a><ul>
+<li class="chapter" data-level="18.5.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-schedule"><i class="fa fa-check"></i><b>18.5.1</b> Sample Processing Schedule</a></li>
+<li class="chapter" data-level="18.5.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-daily-tasks"><i class="fa fa-check"></i><b>18.5.2</b> Sample Processing Daily Tasks</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Data Management</b></span></li>
-<li class="chapter" data-level="11" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html"><i class="fa fa-check"></i><b>11</b> Access the OCC Database</a><ul>
-<li class="chapter" data-level="11.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-r"><i class="fa fa-check"></i><b>11.1</b> Connect to the OCC Database With R</a></li>
-<li class="chapter" data-level="11.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-sql-developer"><i class="fa fa-check"></i><b>11.2</b> Connect to the OCC Database With SQL Developer</a><ul>
-<li class="chapter" data-level="11.2.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#installing-sql-developer"><i class="fa fa-check"></i><b>11.2.1</b> Installing SQL Developer</a></li>
-<li class="chapter" data-level="11.2.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#annetes-guide-to-export-via-sqldeveloper"><i class="fa fa-check"></i><b>11.2.2</b> Annete’s Guide to Export Via SQLDeveloper</a></li>
-<li class="chapter" data-level="11.2.3" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#export-data-for-qc-via-sqldeveloper-sop-by-brooke"><i class="fa fa-check"></i><b>11.2.3</b> Export Data for QC Via SQLDeveloper SOP by Brooke</a></li>
-<li class="chapter" data-level="11.2.4" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#noahs-january-2020-procedure-for-connecting-to-the-oracle-database"><i class="fa fa-check"></i><b>11.2.4</b> Noah’s January 2020 Procedure for Connecting to the Oracle Database</a></li>
+<li class="chapter" data-level="19" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html"><i class="fa fa-check"></i><b>19</b> Access the OCC Database</a><ul>
+<li class="chapter" data-level="19.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-r"><i class="fa fa-check"></i><b>19.1</b> Connect to the OCC Database With R</a></li>
+<li class="chapter" data-level="19.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-sql-developer"><i class="fa fa-check"></i><b>19.2</b> Connect to the OCC Database With SQL Developer</a><ul>
+<li class="chapter" data-level="19.2.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#installing-sql-developer"><i class="fa fa-check"></i><b>19.2.1</b> Installing SQL Developer</a></li>
+<li class="chapter" data-level="19.2.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#annetes-guide-to-export-via-sqldeveloper"><i class="fa fa-check"></i><b>19.2.2</b> Annete’s Guide to Export Via SQLDeveloper</a></li>
+<li class="chapter" data-level="19.2.3" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#export-data-for-qc-via-sqldeveloper-sop-by-brooke"><i class="fa fa-check"></i><b>19.2.3</b> Export Data for QC Via SQLDeveloper SOP by Brooke</a></li>
+<li class="chapter" data-level="19.2.4" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#noahs-january-2020-procedure-for-connecting-to-the-oracle-database"><i class="fa fa-check"></i><b>19.2.4</b> Noah’s January 2020 Procedure for Connecting to the Oracle Database</a></li>
 </ul></li>
-<li class="chapter" data-level="11.3" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#how-to-archive-data"><i class="fa fa-check"></i><b>11.3</b> How to Archive Data</a></li>
+<li class="chapter" data-level="19.3" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#how-to-archive-data"><i class="fa fa-check"></i><b>19.3</b> How to Archive Data</a></li>
 </ul></li>
-<li class="chapter" data-level="12" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>12</b> Data Processing and the Occ Package</a></li>
+<li class="chapter" data-level="20" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>20</b> Data Processing and the Occ Package</a></li>
 <li class="part"><span><b>Inventory and Procurement</b></span></li>
-<li class="chapter" data-level="13" data-path="inventory.html"><a href="inventory.html"><i class="fa fa-check"></i><b>13</b> Inventory</a><ul>
-<li class="chapter" data-level="13.1" data-path="inventory.html"><a href="inventory.html#how-to-access-the-building-130-system-needsbuildout"><i class="fa fa-check"></i><b>13.1</b> How to access the building 130 system #needsbuildout</a></li>
-<li class="chapter" data-level="13.2" data-path="inventory.html"><a href="inventory.html#procurement"><i class="fa fa-check"></i><b>13.2</b> Procurement</a></li>
+<li class="chapter" data-level="21" data-path="inventory.html"><a href="inventory.html"><i class="fa fa-check"></i><b>21</b> Inventory</a><ul>
+<li class="chapter" data-level="21.1" data-path="inventory.html"><a href="inventory.html#how-to-access-the-building-130-system-needsbuildout"><i class="fa fa-check"></i><b>21.1</b> How to access the building 130 system #needsbuildout</a></li>
+<li class="chapter" data-level="21.2" data-path="inventory.html"><a href="inventory.html#procurement"><i class="fa fa-check"></i><b>21.2</b> Procurement</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="this-is-an-example-blank-chapter.html"><a href="this-is-an-example-blank-chapter.html"><i class="fa fa-check"></i><b>14</b> This is an Example Blank Chapter</a></li>
+<li class="chapter" data-level="22" data-path="this-is-an-example-blank-chapter.html"><a href="this-is-an-example-blank-chapter.html"><i class="fa fa-check"></i><b>22</b> This is an Example Blank Chapter</a></li>
 </ul>
 
       </nav>
@@ -260,22 +287,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="access-the-occ-database" class="section level1">
-<h1><span class="header-section-number">11</span> Access the OCC Database</h1>
+<h1><span class="header-section-number">19</span> Access the OCC Database</h1>
 <p>As of April 2020, the OCC team is in the process of working with the data management team to migrate all OCC Team data and metadata to an Oracle database. In order to access this database, a new user must submit an <a href="https://www.st.nmfs.noaa.gov/jira/login.jsp?permissionViolation=true&amp;os_destination=%2Fbrowse%2FPICITS-181121%3Ffilter%3D-2&amp;page_caps=&amp;user_role=">ITS support ticket</a> to request an Oracle account in addition to requesting an install of SQL Developer. If you’d like to access data via R, you’ll also need to request to have ODBC drivers setup.</p>
 <div id="connect-to-the-occ-database-with-r" class="section level2">
-<h2><span class="header-section-number">11.1</span> Connect to the OCC Database With R</h2>
+<h2><span class="header-section-number">19.1</span> Connect to the OCC Database With R</h2>
 <p><a href="https://docs.google.com/document/d/19hVuyRj78kB3NHR4xF-mWZeOZCwYMDNSLSwQc08Af7s/edit#">Checkout this live SOP on Google Drive for how to get connected to OCC Data in the oracle database</a></p>
 </div>
 <div id="connect-to-the-occ-database-with-sql-developer" class="section level2">
-<h2><span class="header-section-number">11.2</span> Connect to the OCC Database With SQL Developer</h2>
+<h2><span class="header-section-number">19.2</span> Connect to the OCC Database With SQL Developer</h2>
 <div id="installing-sql-developer" class="section level3">
-<h3><span class="header-section-number">11.2.1</span> Installing SQL Developer</h3>
+<h3><span class="header-section-number">19.2.1</span> Installing SQL Developer</h3>
 <ol style="list-style-type: decimal">
 <li><p>In the folder “Resources and Software” is the sqldeveloper zip file: <a href="https://drive.google.com/drive/u/1/folders/1b4lNP2Hj1C4vonSv7OskAXqYRfZk-DIA" class="uri">https://drive.google.com/drive/u/1/folders/1b4lNP2Hj1C4vonSv7OskAXqYRfZk-DIA</a></p></li>
 <li><p>Right click the zip file and download.</p></li>
-<li><p>Create a folder in your local documents folder on your device called “SQLDeveloper”
-For example I have mine here:</p>
-<p>C:.Olenski</p></li>
+<li><p>Create a folder in your root c drive called “SQLDeveloper”, this should be the path: <strong>C:\sqldeveloper</strong> If you do not put it in this exact folder, McAfee will bog down the application when you try to open it, making it take up to 45 minutes to open. PIFSC ITS has made this exact folder path exempt from McAfee scanning since it was slowing the program down so much.</p></li>
 <li><p>Move the new downloaded zip to that “SQLDeveloper” folder</p></li>
 <li><p>Right click -&gt; 7-zip -&gt; Extract Here</p></li>
 <li><p>Open the folder that just unzipped called sqldeveloper and scroll down to the application “sqldeveloper.exe”</p></li>
@@ -283,19 +308,15 @@ For example I have mine here:</p>
 </ol>
 <p><strong>Addtional Notes About SQL Developer (updated April 2020 during data archive training):</strong></p>
 <ul>
-<li>Is your SQL Developer taking several minutes to load? This is probably due to McAfee scanning it upon opening and bogging it down. To avoid this and make it open quickly, you should put it in the folder that PIFSC ITS has made exempt from McAfee scanning: C:\sqldeveloper</li>
-</ul>
-<p>Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I’m not sure if that will be your experience or not (our configurations are likely very different)</p>
-<p>it ALSO takes a long time to expand the database objects (like GISDAT), sometimes another 5-10 minutes. Once it has expanded, then all usually works ok, but it definitely takes patience for me to get to that point.</p>
-<ul>
-<li>From Brooke 4/20/2020 email: Right click on your connection GIS_GISDAT and select “reconnect”. Then when it reconnects, open the drop down under GIS_GISDAT and right click on “Materialized views” and click “refresh”.
+<li><p>it ALSO takes a long time to expand the database objects (like GISDAT), sometimes another 5-10 minutes. Once it has expanded, then all usually works ok, but it definitely takes patience for me to get to that point.</p></li>
+<li><p>From Brooke 4/20/2020 email: Right click on your connection GIS_GISDAT and select “reconnect”. Then when it reconnects, open the drop down under GIS_GISDAT and right click on “Materialized views” and click “refresh”.
 If There are any issues in still running your queries please let me know. We also updated the query so it is organized in an easier fashion to QC and submit it.
 Also, only the Hawaii record output was different, all others should be the same as listed in Hannah’s document when you do a row count to check your output:
-<a href="https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035" class="uri">https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035</a></li>
+<a href="https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035" class="uri">https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCXjTY/edit#gid=632841035</a></p></li>
 </ul>
 </div>
 <div id="annetes-guide-to-export-via-sqldeveloper" class="section level3">
-<h3><span class="header-section-number">11.2.2</span> Annete’s Guide to Export Via SQLDeveloper</h3>
+<h3><span class="header-section-number">19.2.2</span> Annete’s Guide to Export Via SQLDeveloper</h3>
 <ol style="list-style-type: decimal">
 <li><p>Once SQL Developer is open, right-click on ORACLE CONNECTIONS in the tree to the left of the window and choose NEW CONNECTION.</p></li>
 <li><p>The first screenshot below shows you the options to set up your connection. Replace “ADESROCHERS” with the username you were given to connect to the database (most likely first initial and last name).</p></li>
@@ -310,12 +331,12 @@ Also, only the Hawaii record output was different, all others should be the same
 <p><img src="images/SQLDeveloper_Connect_April_2020_2.jpg" /><!-- --></p>
 </div>
 <div id="export-data-for-qc-via-sqldeveloper-sop-by-brooke" class="section level3">
-<h3><span class="header-section-number">11.2.3</span> Export Data for QC Via SQLDeveloper SOP by Brooke</h3>
+<h3><span class="header-section-number">19.2.3</span> Export Data for QC Via SQLDeveloper SOP by Brooke</h3>
 <p>Here’s a google drive link from April 2020 on how to do this:
-<a href="https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8" class="uri">https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8</a></p>
+<a href="https://drive.google.com/file/d/18_TeM2nur5v1jkZO7mniI27BwDXbM-AC/view?usp=sharing" class="uri">https://drive.google.com/file/d/18_TeM2nur5v1jkZO7mniI27BwDXbM-AC/view?usp=sharing</a></p>
 </div>
 <div id="noahs-january-2020-procedure-for-connecting-to-the-oracle-database" class="section level3">
-<h3><span class="header-section-number">11.2.4</span> Noah’s January 2020 Procedure for Connecting to the Oracle Database</h3>
+<h3><span class="header-section-number">19.2.4</span> Noah’s January 2020 Procedure for Connecting to the Oracle Database</h3>
 <ol style="list-style-type: decimal">
 <li>Open Oracle SQL Developer</li>
 <li>On the “Welcome Page” tab, under the “Databases Detected” tab, find the “GIS” database and click it.
@@ -331,7 +352,7 @@ Also, only the Hawaii record output was different, all others should be the same
 </div>
 </div>
 <div id="how-to-archive-data" class="section level2">
-<h2><span class="header-section-number">11.3</span> How to Archive Data</h2>
+<h2><span class="header-section-number">19.3</span> How to Archive Data</h2>
 <p>After data is qc’d it mus be archived. As of January 2020, the best place to look for all information and guidance related to archiving data is in a <a href="https://drive.google.com/drive/folders/1Oq76hN6eOhhJOevwZiO0nX4Gtf0tiJrp">google drive folder setup by Annette</a>.</p>
 
 </div>

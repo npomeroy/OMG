@@ -16,10 +16,7 @@ As of April 2020, the OCC team is in the process of working with the data manage
 
 2. Right click the zip file and download.
 
-3. Create a folder in your local documents folder on your device called “SQLDeveloper”
-For example I have mine here:
-
-     C:\Users\Brooke.Olenski\Documents\sqldeveloper
+3. Create a folder in your root c drive called “SQLDeveloper”, this should be the path: **C:\\sqldeveloper** If you do not put it in this exact folder, McAfee will bog down the application when you try to open it, making it take up to 45 minutes to open. PIFSC ITS has made this exact folder path exempt from McAfee scanning since it was slowing the program down so much.
 
 4. Move the new downloaded zip to that “SQLDeveloper” folder
 
@@ -31,16 +28,7 @@ For example I have mine here:
 
 **Addtional Notes About SQL Developer (updated April 2020 during data archive training):**
 
-* Is your SQL Developer taking several minutes to load? This is probably due to McAfee scanning it upon opening and bogging it down. To avoid this and make it open quickly, you should put it in the folder that PIFSC ITS has made exempt from McAfee scanning: C:\\sqldeveloper
-
-
-
-Please allow ample time to do the download and install. Once installed, log in to VPN and then start up SQL developer so you can connect to the database beforehand. On some computers (mine!) it can take a long time for SQL Dev to open, to connect to the database, and to browse the tables within the database. I'm not sure if that will be your experience or not (our configurations are likely very different)
-
-
-
-
-it ALSO takes a long time to expand the database objects (like GISDAT), sometimes another 5-10 minutes. Once it has expanded, then all usually works ok, but it definitely takes patience for me to get to that point. 
+* it ALSO takes a long time to expand the database objects (like GISDAT), sometimes another 5-10 minutes. Once it has expanded, then all usually works ok, but it definitely takes patience for me to get to that point. 
 
 * From Brooke 4/20/2020 email: Right click on your connection GIS_GISDAT and select "reconnect". Then when it reconnects, open the drop down under GIS_GISDAT and right click on "Materialized views" and click "refresh".
 If There are any issues in still running your queries please let me know. We also updated the query so it is organized in an easier fashion to QC and submit it. 
@@ -67,8 +55,7 @@ https://docs.google.com/spreadsheets/d/1VvOFz4jl0X74XIs1ZjYFauApcjDf7C73NCn-yCCX
 ### Export Data for QC Via SQLDeveloper SOP by Brooke
 
 Here's a google drive link from April 2020 on how to do this:
-https://drive.google.com/drive/u/1/folders/1QxNAybnQApw_rs1DbCpy5LbgxTPhm5f8
-
+https://drive.google.com/file/d/18_TeM2nur5v1jkZO7mniI27BwDXbM-AC/view?usp=sharing
 
 ### Noah's January 2020 Procedure for Connecting to the Oracle Database
 
