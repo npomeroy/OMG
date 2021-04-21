@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
 <head>
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>18 Calcification Accretion Unit (CAU) | OMG</title>
   <meta name="description" content="18 Calcification Accretion Unit (CAU) | OMG" />
-  <meta name="generator" content="bookdown 0.15.1 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="18 Calcification Accretion Unit (CAU) | OMG" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="NVP" />
 
 
-<meta name="date" content="2020-04-23" />
+<meta name="date" content="2021-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,6 +33,7 @@
   
 <link rel="prev" href="shipboard.html"/>
 <link rel="next" href="access-the-occ-database.html"/>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,40 +51,42 @@
 
 
 
-<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
-<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/proj4-2.6.2/proj4.min.js"></script>
 <script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
 <link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
-<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-binding-2.0.4.1/leaflet.js"></script>
 <script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
-<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.4.1/leaflet-providers-plugin.js"></script>
 <link href="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet" />
 <script src="libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
 
 
 <style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(title);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -92,9 +95,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {  }
+  {   }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
@@ -142,7 +145,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">OMG</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a>
+<ul>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html#how-to-edit-and-access-the-omg"><i class="fa fa-check"></i>How to Edit and Access the OMG</a></li>
 </ul></li>
 <li class="chapter" data-level="1" data-path="omg-edit-and-access-tutorial.html"><a href="omg-edit-and-access-tutorial.html"><i class="fa fa-check"></i><b>1</b> OMG Edit and Access Tutorial</a></li>
@@ -151,7 +155,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3" data-path="where-we-work.html"><a href="where-we-work.html"><i class="fa fa-check"></i><b>3</b> Where We Work</a></li>
 <li class="chapter" data-level="4" data-path="publications.html"><a href="publications.html"><i class="fa fa-check"></i><b>4</b> Publications</a></li>
 <li class="part"><span><b>Conducting a Research Cruise</b></span></li>
-<li class="chapter" data-level="5" data-path="cruise-prep.html"><a href="cruise-prep.html"><i class="fa fa-check"></i><b>5</b> Preparing for a Research Cruise</a><ul>
+<li class="chapter" data-level="5" data-path="cruise-prep.html"><a href="cruise-prep.html"><i class="fa fa-check"></i><b>5</b> Preparing for a Research Cruise</a>
+<ul>
 <li class="chapter" data-level="5.1" data-path="cruise-prep.html"><a href="cruise-prep.html#determine-goals"><i class="fa fa-check"></i><b>5.1</b> Determine Goals</a></li>
 <li class="chapter" data-level="5.2" data-path="cruise-prep.html"><a href="cruise-prep.html#spatial-data-preparation"><i class="fa fa-check"></i><b>5.2</b> Spatial Data Preparation</a></li>
 <li class="chapter" data-level="5.3" data-path="cruise-prep.html"><a href="cruise-prep.html#garmin-78-handheld-gps-preparation"><i class="fa fa-check"></i><b>5.3</b> Garmin 78 Handheld GPS Preparation</a></li>
@@ -160,101 +165,124 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.6" data-path="cruise-prep.html"><a href="cruise-prep.html#training"><i class="fa fa-check"></i><b>5.6</b> Training</a></li>
 <li class="chapter" data-level="5.7" data-path="cruise-prep.html"><a href="cruise-prep.html#staffing-needs_buildout"><i class="fa fa-check"></i><b>5.7</b> Staffing (needs_buildout)</a></li>
 <li class="chapter" data-level="5.8" data-path="cruise-prep.html"><a href="cruise-prep.html#individual-staff-preparation-needs_buildout"><i class="fa fa-check"></i><b>5.8</b> Individual Staff Preparation (needs_buildout)</a></li>
-<li class="chapter" data-level="5.9" data-path="cruise-prep.html"><a href="cruise-prep.html#preparing-the-ship-needs_buildout"><i class="fa fa-check"></i><b>5.9</b> Preparing the Ship (needs_buildout)</a><ul>
+<li class="chapter" data-level="5.9" data-path="cruise-prep.html"><a href="cruise-prep.html#preparing-the-ship-needs_buildout"><i class="fa fa-check"></i><b>5.9</b> Preparing the Ship (needs_buildout)</a>
+<ul>
 <li class="chapter" data-level="5.9.1" data-path="cruise-prep.html"><a href="cruise-prep.html#loading-the-ship"><i class="fa fa-check"></i><b>5.9.1</b> Loading the Ship</a></li>
 <li class="chapter" data-level="5.9.2" data-path="cruise-prep.html"><a href="cruise-prep.html#drylab-setup"><i class="fa fa-check"></i><b>5.9.2</b> Drylab Setup</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="6" data-path="water.html"><a href="water.html"><i class="fa fa-check"></i><b>6</b> CTD and DIC Water Sampling Field Guide</a><ul>
+<li class="chapter" data-level="6" data-path="water.html"><a href="water.html"><i class="fa fa-check"></i><b>6</b> CTD and DIC Water Sampling Field Guide</a>
+<ul>
 <li class="chapter" data-level="6.1" data-path="water.html"><a href="water.html#waypoint-and-metadata-collection"><i class="fa fa-check"></i><b>6.1</b> Waypoint and metadata collection</a></li>
 <li class="chapter" data-level="6.2" data-path="water.html"><a href="water.html#ctd-cast"><i class="fa fa-check"></i><b>6.2</b> CTD CAST</a></li>
 <li class="chapter" data-level="6.3" data-path="water.html"><a href="water.html#water-sample-collection"><i class="fa fa-check"></i><b>6.3</b> Water Sample Collection</a></li>
 <li class="chapter" data-level="6.4" data-path="water.html"><a href="water.html#water-sample-processing"><i class="fa fa-check"></i><b>6.4</b> Water sample Processing</a></li>
-<li class="chapter" data-level="6.5" data-path="water.html"><a href="water.html#mercuric-chloride-emergency-procedures"><i class="fa fa-check"></i><b>6.5</b> Mercuric Chloride Emergency Procedures</a><ul>
+<li class="chapter" data-level="6.5" data-path="water.html"><a href="water.html#mercuric-chloride-emergency-procedures"><i class="fa fa-check"></i><b>6.5</b> Mercuric Chloride Emergency Procedures</a>
+<ul>
 <li class="chapter" data-level="6.5.1" data-path="water.html"><a href="water.html#mercuric-chloride-safety-data-sheet-sds"><i class="fa fa-check"></i><b>6.5.1</b> Mercuric Chloride Safety Data Sheet (SDS)</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="dielsuite.html"><a href="dielsuite.html"><i class="fa fa-check"></i><b>7</b> Diel Suite</a><ul>
-<li class="chapter" data-level="7.1" data-path="dielsuite.html"><a href="dielsuite.html#diel-suite-underwater-checklist"><i class="fa fa-check"></i><b>7.1</b> Diel Suite Underwater Checklist</a></li>
+<li class="chapter" data-level="7" data-path="dielsuite.html"><a href="dielsuite.html"><i class="fa fa-check"></i><b>7</b> Diel Suite</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="dielsuite.html"><a href="dielsuite.html#purpose"><i class="fa fa-check"></i><b>7.1</b> Purpose</a></li>
+<li class="chapter" data-level="7.2" data-path="dielsuite.html"><a href="dielsuite.html#diel-suite-underwater-checklist"><i class="fa fa-check"></i><b>7.2</b> Diel Suite Underwater Checklist</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="coral-coring.html"><a href="coral-coring.html"><i class="fa fa-check"></i><b>8</b> Coral Coring</a></li>
-<li class="chapter" data-level="9" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>9</b> Tasks at Sea</a><ul>
+<li class="chapter" data-level="9" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>9</b> Tasks at Sea</a>
+<ul>
 <li class="chapter" data-level="9.1" data-path="tasks.html"><a href="tasks.html#daily-tasks-for-the-team"><i class="fa fa-check"></i><b>9.1</b> Daily Tasks for the Team</a></li>
 <li class="chapter" data-level="9.2" data-path="tasks.html"><a href="tasks.html#where-to-save-data"><i class="fa fa-check"></i><b>9.2</b> Where to Save Data</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="various-underway-resources.html"><a href="various-underway-resources.html"><i class="fa fa-check"></i><b>10</b> Various Underway resources</a></li>
-<li class="chapter" data-level="11" data-path="postcruise.html"><a href="postcruise.html"><i class="fa fa-check"></i><b>11</b> Post Cruise Activities</a><ul>
+<li class="chapter" data-level="11" data-path="postcruise.html"><a href="postcruise.html"><i class="fa fa-check"></i><b>11</b> Post Cruise Activities</a>
+<ul>
 <li class="chapter" data-level="11.1" data-path="postcruise.html"><a href="postcruise.html#data-qc-and-import-into-oracle-database"><i class="fa fa-check"></i><b>11.1</b> Data QC and Import into Oracle Database</a></li>
 <li class="chapter" data-level="11.2" data-path="postcruise.html"><a href="postcruise.html#instrument-refurbishment"><i class="fa fa-check"></i><b>11.2</b> Instrument Refurbishment</a></li>
 </ul></li>
 <li class="part"><span><b>Instruments</b></span></li>
-<li class="chapter" data-level="12" data-path="str.html"><a href="str.html"><i class="fa fa-check"></i><b>12</b> STR</a><ul>
+<li class="chapter" data-level="12" data-path="str.html"><a href="str.html"><i class="fa fa-check"></i><b>12</b> STR</a>
+<ul>
 <li class="chapter" data-level="12.1" data-path="str.html"><a href="str.html#rbr-solo-v3-str"><i class="fa fa-check"></i><b>12.1</b> RBR Solo V3 STR</a></li>
 <li class="chapter" data-level="12.2" data-path="str.html"><a href="str.html#sbe56"><i class="fa fa-check"></i><b>12.2</b> Seabird Electronics SBE56 STR</a></li>
 </ul></li>
-<li class="chapter" data-level="13" data-path="ctd.html"><a href="ctd.html"><i class="fa fa-check"></i><b>13</b> CTD</a><ul>
+<li class="chapter" data-level="13" data-path="ctd.html"><a href="ctd.html"><i class="fa fa-check"></i><b>13</b> CTD</a>
+<ul>
 <li class="chapter" data-level="13.1" data-path="ctd.html"><a href="ctd.html#rbr-ctd-in-profiling-mode"><i class="fa fa-check"></i><b>13.1</b> RBR CTD in Profiling Mode</a></li>
 <li class="chapter" data-level="13.2" data-path="ctd.html"><a href="ctd.html#sbe19-in-profiling-mode"><i class="fa fa-check"></i><b>13.2</b> SBE19 in Profiling Mode</a></li>
 <li class="chapter" data-level="13.3" data-path="ctd.html"><a href="ctd.html#sbe19plus-in-profiling-mode"><i class="fa fa-check"></i><b>13.3</b> SBE19Plus in Profiling Mode</a></li>
 <li class="chapter" data-level="13.4" data-path="ctd.html"><a href="ctd.html#moored_ctd"><i class="fa fa-check"></i><b>13.4</b> SBE19Plus in Moored Mode Mode</a></li>
 <li class="chapter" data-level="13.5" data-path="ctd.html"><a href="ctd.html#downloading-the-sbe19plus"><i class="fa fa-check"></i><b>13.5</b> Downloading the SBE19Plus</a></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="seafet.html"><a href="seafet.html"><i class="fa fa-check"></i><b>14</b> SeaFet pH Sensor</a><ul>
+<li class="chapter" data-level="14" data-path="seafet.html"><a href="seafet.html"><i class="fa fa-check"></i><b>14</b> SeaFet pH Sensor</a>
+<ul>
 <li class="chapter" data-level="14.1" data-path="seafet.html"><a href="seafet.html#conditioning-the-seafet-in-seawater-at-least-24-hours-prior-to-deployment"><i class="fa fa-check"></i><b>14.1</b> Conditioning the SeaFet in seawater at least 24 hours prior to deployment</a></li>
 <li class="chapter" data-level="14.2" data-path="seafet.html"><a href="seafet.html#programming-the-seafet-for-deployment-after-it-has-already-been-warming-up-in-polled-aka-low-power-sleep-mode-for-at-least-24hrs"><i class="fa fa-check"></i><b>14.2</b> Programming the SeaFet for Deployment (After it has already been warming up in polled, aka low power sleep mode for at least 24hrs)</a></li>
 <li class="chapter" data-level="14.3" data-path="seafet.html"><a href="seafet.html#downloading-data-from-the-seafet"><i class="fa fa-check"></i><b>14.3</b> Downloading Data from the SeaFet**</a></li>
 <li class="chapter" data-level="14.4" data-path="seafet.html"><a href="seafet.html#properly-store-the-seafet"><i class="fa fa-check"></i><b>14.4</b> Properly Store the SeaFet</a></li>
 <li class="chapter" data-level="14.5" data-path="seafet.html"><a href="seafet.html#email-exchanges-about-seafet-for-reference"><i class="fa fa-check"></i><b>14.5</b> Email Exchanges about Seafet for reference</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="puc.html"><a href="puc.html"><i class="fa fa-check"></i><b>15</b> Portable Underwater Collector (PUC)</a><ul>
+<li class="chapter" data-level="15" data-path="puc.html"><a href="puc.html"><i class="fa fa-check"></i><b>15</b> Portable Underwater Collector (PUC)</a>
+<ul>
 <li class="chapter" data-level="15.1" data-path="puc.html"><a href="puc.html#general-notes"><i class="fa fa-check"></i><b>15.1</b> General Notes</a></li>
-<li class="chapter" data-level="15.2" data-path="puc.html"><a href="puc.html#preparation-the-day-before-deployment"><i class="fa fa-check"></i><b>15.2</b> Preparation the Day Before Deployment</a><ul>
+<li class="chapter" data-level="15.2" data-path="puc.html"><a href="puc.html#preparation-the-day-before-deployment"><i class="fa fa-check"></i><b>15.2</b> Preparation the Day Before Deployment</a>
+<ul>
 <li class="chapter" data-level="15.2.1" data-path="puc.html"><a href="puc.html#programming-pucs-with-firmware-version-2018-jan-7"><i class="fa fa-check"></i><b>15.2.1</b> Programming PUCS with firmware version 2018-JAN-7</a></li>
 </ul></li>
 <li class="chapter" data-level="15.3" data-path="puc.html"><a href="puc.html#puc-rates-and-fill-times-as-of-june-2018"><i class="fa fa-check"></i><b>15.3</b> PUC Rates and Fill Times (As of June 2018)</a></li>
 <li class="chapter" data-level="15.4" data-path="puc.html"><a href="puc.html#puc-deployment"><i class="fa fa-check"></i><b>15.4</b> PUC Deployment</a></li>
-<li class="chapter" data-level="15.5" data-path="puc.html"><a href="puc.html#puc-recovery"><i class="fa fa-check"></i><b>15.5</b> PUC Recovery</a><ul>
+<li class="chapter" data-level="15.5" data-path="puc.html"><a href="puc.html#puc-recovery"><i class="fa fa-check"></i><b>15.5</b> PUC Recovery</a>
+<ul>
 <li class="chapter" data-level="15.5.1" data-path="puc.html"><a href="puc.html#notes-from-chris-langdon-about-pucs"><i class="fa fa-check"></i><b>15.5.1</b> Notes from Chris Langdon about PUCs</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="16" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html"><i class="fa fa-check"></i><b>16</b> Aquadopp: Nortek ADCP</a><ul>
+<li class="chapter" data-level="16" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html"><i class="fa fa-check"></i><b>16</b> Aquadopp: Nortek ADCP</a>
+<ul>
 <li class="chapter" data-level="16.1" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#programming-the-aquadopp"><i class="fa fa-check"></i><b>16.1</b> Programming the Aquadopp</a></li>
 <li class="chapter" data-level="16.2" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#deploying-the-aquadopp"><i class="fa fa-check"></i><b>16.2</b> Deploying the Aquadopp</a></li>
 <li class="chapter" data-level="16.3" data-path="aquadopp-nortek-adcp.html"><a href="aquadopp-nortek-adcp.html#retrieve-the-aquadopp"><i class="fa fa-check"></i><b>16.3</b> Retrieve the Aquadopp</a></li>
 </ul></li>
-<li class="chapter" data-level="17" data-path="shipboard.html"><a href="shipboard.html"><i class="fa fa-check"></i><b>17</b> Shipboard Operations</a><ul>
+<li class="chapter" data-level="17" data-path="shipboard.html"><a href="shipboard.html"><i class="fa fa-check"></i><b>17</b> Shipboard Operations</a>
+<ul>
 <li class="chapter" data-level="17.1" data-path="shipboard.html"><a href="shipboard.html#pco2"><i class="fa fa-check"></i><b>17.1</b> PCO2 System</a></li>
 <li class="chapter" data-level="17.2" data-path="shipboard.html"><a href="shipboard.html#total-alkalinity-ta-system-ta"><i class="fa fa-check"></i><b>17.2</b> Total Alkalinity (TA) System {<span class="citation">@ta</span>}</a></li>
 </ul></li>
-<li class="chapter" data-level="18" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html"><i class="fa fa-check"></i><b>18</b> Calcification Accretion Unit (CAU)</a><ul>
-<li class="chapter" data-level="18.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-assembly-schematic"><i class="fa fa-check"></i><b>18.1</b> CAU Assembly Schematic</a><ul>
+<li class="chapter" data-level="18" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html"><i class="fa fa-check"></i><b>18</b> Calcification Accretion Unit (CAU)</a>
+<ul>
+<li class="chapter" data-level="18.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-assembly-schematic"><i class="fa fa-check"></i><b>18.1</b> CAU Assembly Schematic</a>
+<ul>
 <li class="chapter" data-level="18.1.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies"><i class="fa fa-check"></i><b>18.1.1</b> Equipment and Supplies</a></li>
 </ul></li>
-<li class="chapter" data-level="18.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-laboratory-sample-processing-sop"><i class="fa fa-check"></i><b>18.2</b> CAU Laboratory Sample Processing SOP</a><ul>
+<li class="chapter" data-level="18.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-laboratory-sample-processing-sop"><i class="fa fa-check"></i><b>18.2</b> CAU Laboratory Sample Processing SOP</a>
+<ul>
 <li class="chapter" data-level="18.2.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#equipment-and-supplies-1"><i class="fa fa-check"></i><b>18.2.1</b> Equipment and Supplies</a></li>
 <li class="chapter" data-level="18.2.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#processing-timeline"><i class="fa fa-check"></i><b>18.2.2</b> Processing Timeline</a></li>
 <li class="chapter" data-level="18.2.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#preparation-work"><i class="fa fa-check"></i><b>18.2.3</b> Preparation Work</a></li>
 <li class="chapter" data-level="18.2.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-processing-steps"><i class="fa fa-check"></i><b>18.2.4</b> CAU Processing Steps</a></li>
 </ul></li>
-<li class="chapter" data-level="18.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2"><i class="fa fa-check"></i><b>18.3</b> Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)</a><ul>
+<li class="chapter" data-level="18.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2"><i class="fa fa-check"></i><b>18.3</b> Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)</a>
+<ul>
 <li class="chapter" data-level="18.3.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#installing-the-software"><i class="fa fa-check"></i><b>18.3.1</b> Installing the Software</a></li>
 <li class="chapter" data-level="18.3.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#connecting-the-camera-to-the-computer"><i class="fa fa-check"></i><b>18.3.2</b> Connecting the camera to the computer</a></li>
 <li class="chapter" data-level="18.3.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-plate-photo-documentation"><i class="fa fa-check"></i><b>18.3.3</b> CAU plate photo-documentation</a></li>
 </ul></li>
-<li class="chapter" data-level="18.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-data-entry-tool-user-documentation"><i class="fa fa-check"></i><b>18.4</b> CAU Data Entry Tool User Documentation</a><ul>
+<li class="chapter" data-level="18.4" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#cau-data-entry-tool-user-documentation"><i class="fa fa-check"></i><b>18.4</b> CAU Data Entry Tool User Documentation</a>
+<ul>
 <li class="chapter" data-level="18.4.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#application-overview"><i class="fa fa-check"></i><b>18.4.1</b> Application Overview</a></li>
 <li class="chapter" data-level="18.4.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#data-entry-tutorial"><i class="fa fa-check"></i><b>18.4.2</b> Data Entry Tutorial</a></li>
 <li class="chapter" data-level="18.4.3" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#filter-overflow-tutorial"><i class="fa fa-check"></i><b>18.4.3</b> Filter Overflow Tutorial</a></li>
 </ul></li>
-<li class="chapter" data-level="18.5" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#daily-task-guide"><i class="fa fa-check"></i><b>18.5</b> Daily Task Guide</a><ul>
+<li class="chapter" data-level="18.5" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#daily-task-guide"><i class="fa fa-check"></i><b>18.5</b> Daily Task Guide</a>
+<ul>
 <li class="chapter" data-level="18.5.1" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-schedule"><i class="fa fa-check"></i><b>18.5.1</b> Sample Processing Schedule</a></li>
 <li class="chapter" data-level="18.5.2" data-path="calcification-accretion-unit-cau.html"><a href="calcification-accretion-unit-cau.html#sample-processing-daily-tasks"><i class="fa fa-check"></i><b>18.5.2</b> Sample Processing Daily Tasks</a></li>
 </ul></li>
 </ul></li>
 <li class="part"><span><b>Data Management</b></span></li>
-<li class="chapter" data-level="19" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html"><i class="fa fa-check"></i><b>19</b> Access the OCC Database</a><ul>
+<li class="chapter" data-level="19" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html"><i class="fa fa-check"></i><b>19</b> Access the OCC Database</a>
+<ul>
 <li class="chapter" data-level="19.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-r"><i class="fa fa-check"></i><b>19.1</b> Connect to the OCC Database With R</a></li>
-<li class="chapter" data-level="19.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-sql-developer"><i class="fa fa-check"></i><b>19.2</b> Connect to the OCC Database With SQL Developer</a><ul>
+<li class="chapter" data-level="19.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#connect-to-the-occ-database-with-sql-developer"><i class="fa fa-check"></i><b>19.2</b> Connect to the OCC Database With SQL Developer</a>
+<ul>
 <li class="chapter" data-level="19.2.1" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#installing-sql-developer"><i class="fa fa-check"></i><b>19.2.1</b> Installing SQL Developer</a></li>
 <li class="chapter" data-level="19.2.2" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#annetes-guide-to-export-via-sqldeveloper"><i class="fa fa-check"></i><b>19.2.2</b> Annete’s Guide to Export Via SQLDeveloper</a></li>
 <li class="chapter" data-level="19.2.3" data-path="access-the-occ-database.html"><a href="access-the-occ-database.html#export-data-for-qc-via-sqldeveloper-sop-by-brooke"><i class="fa fa-check"></i><b>19.2.3</b> Export Data for QC Via SQLDeveloper SOP by Brooke</a></li>
@@ -264,7 +292,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="20" data-path="data-processing.html"><a href="data-processing.html"><i class="fa fa-check"></i><b>20</b> Data Processing and the Occ Package</a></li>
 <li class="part"><span><b>Inventory and Procurement</b></span></li>
-<li class="chapter" data-level="21" data-path="inventory.html"><a href="inventory.html"><i class="fa fa-check"></i><b>21</b> Inventory</a><ul>
+<li class="chapter" data-level="21" data-path="inventory.html"><a href="inventory.html"><i class="fa fa-check"></i><b>21</b> Inventory</a>
+<ul>
 <li class="chapter" data-level="21.1" data-path="inventory.html"><a href="inventory.html#how-to-access-the-building-130-system-needsbuildout"><i class="fa fa-check"></i><b>21.1</b> How to access the building 130 system #needsbuildout</a></li>
 <li class="chapter" data-level="21.2" data-path="inventory.html"><a href="inventory.html#procurement"><i class="fa fa-check"></i><b>21.2</b> Procurement</a></li>
 </ul></li>
@@ -286,32 +315,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="calcification-accretion-unit-cau" class="section level1">
+<div id="calcification-accretion-unit-cau" class="section level1" number="18">
 <h1><span class="header-section-number">18</span> Calcification Accretion Unit (CAU)</h1>
 <p>Authors: Misa PL, Richards CR, Halperin AH, Little AL, and Weible RM (revised March 2020)</p>
 <p><img src="images/CAU.jpg" /><!-- --></p>
-<div id="cau-assembly-schematic" class="section level2">
+<div id="cau-assembly-schematic" class="section level2" number="18.1">
 <h2><span class="header-section-number">18.1</span> CAU Assembly Schematic</h2>
 <p><img src="images/CAU_assembly.jpg" /><!-- --></p>
-<div id="equipment-and-supplies" class="section level3">
+<div id="equipment-and-supplies" class="section level3" number="18.1.1">
 <h3><span class="header-section-number">18.1.1</span> Equipment and Supplies</h3>
-<p><img src="images/AssemblyEquipment1.jpg" /><!-- -->
-<img src="images/AssemblyEquipment2.jpg" /><!-- --></p>
+<p><img src="images/AssemblyEquipment1.JPG" /><!-- -->
+<img src="images/AssemblyEquipment2.JPG" /><!-- --></p>
 </div>
 </div>
-<div id="cau-laboratory-sample-processing-sop" class="section level2">
+<div id="cau-laboratory-sample-processing-sop" class="section level2" number="18.2">
 <h2><span class="header-section-number">18.2</span> CAU Laboratory Sample Processing SOP</h2>
-<div id="equipment-and-supplies-1" class="section level3">
+<div id="equipment-and-supplies-1" class="section level3" number="18.2.1">
 <h3><span class="header-section-number">18.2.1</span> Equipment and Supplies</h3>
 <p><img src="images/CauEquipment1.jpg" /><!-- -->
 <img src="images/CauEquipment2.jpg" /><!-- --></p>
 </div>
-<div id="processing-timeline" class="section level3">
+<div id="processing-timeline" class="section level3" number="18.2.2">
 <h3><span class="header-section-number">18.2.2</span> Processing Timeline</h3>
 <p>Approximately 25 units or 50 CAU plates can be processed as a batch (at ESD-CREP, this is equivalent to CAUs collected from about 1 island). The processing of each batch is typically completed in 4 weeks. Below is an example of a typical processing timeline</p>
 <p><img src="images/CAU_table.jpg" /><!-- --></p>
 </div>
-<div id="preparation-work" class="section level3">
+<div id="preparation-work" class="section level3" number="18.2.3">
 <h3><span class="header-section-number">18.2.3</span> Preparation Work</h3>
 <p><strong>ID Tags</strong></p>
 <ol style="list-style-type: decimal">
@@ -370,10 +399,10 @@ Damper: level 3 (mid-high)  </code></pre>
 “Do as you oughta, add acid to water!” - Dr. Anne Cohen, WHOI</p>
 <p>** Acid solutions with a higher (&gt;5% HCl concentration) may be prepared and used if desired for processing CAUs from heavily calcified regions (American Samoa, PRIAs), however concentrations <strong>greater than or equal to 15% HCl require special PPE including fume hood utilization.</strong></p>
 </div>
-<div id="cau-processing-steps" class="section level3">
+<div id="cau-processing-steps" class="section level3" number="18.2.4">
 <h3><span class="header-section-number">18.2.4</span> CAU Processing Steps</h3>
 <p><em>see Section IV, p.11 for sample processing timeline and Section VII.A, p.36 for sample daily task guide</em></p>
-<div id="dissassembling-and-photo-documentation" class="section level4">
+<div id="dissassembling-and-photo-documentation" class="section level4" number="18.2.4.1">
 <h4><span class="header-section-number">18.2.4.1</span> Dissassembling and Photo-documentation</h4>
 <ol style="list-style-type: decimal">
 <li><p>Thaw a batch of CAUs (typically 20-30 units) in the sink for at least 12 hours. Do not thaw over water.</p></li>
@@ -422,7 +451,7 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <p>** <em>Drying at room temperature before placing in the oven can help reduce the time the plates remain in the oven.</em></p>
 <p>** <em>Wash and rinse the glass dishes but keep the labels on. The same glass dishes will be used during the HCl acid decalcification process.</em></p>
 </div>
-<div id="determining-the-weight-of-the-cau-plate" class="section level4">
+<div id="determining-the-weight-of-the-cau-plate" class="section level4" number="18.2.4.2">
 <h4><span class="header-section-number">18.2.4.2</span> Determining the weight of the CAU plate</h4>
 <ol style="list-style-type: decimal">
 <li><p>After a minimum air-drying period of 24 hours, place the <strong>plate assembly (plate, dislodged pieces of calcified material and Paper Tray A)</strong> in the oven labeled “<strong>Non-HCl</strong>” to dry at 60°C for 24 hours.</p>
@@ -443,7 +472,7 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <li><p>Repeat <em>III.B Steps 5-10</em> until the difference in weight is less than 0.1 g.</p></li>
 </ol>
 </div>
-<div id="decalcification-of-caco3-in-hydrochloric-acid" class="section level4">
+<div id="decalcification-of-caco3-in-hydrochloric-acid" class="section level4" number="18.2.4.3">
 <h4><span class="header-section-number">18.2.4.3</span> Decalcification of CaCO3 in Hydrochloric Acid</h4>
 <p><strong>Be sure to wear proper PPE when handling acid contaminated objects (steps 1-9) including gloves, safety glasses, and lab coat.</strong></p>
 <ol style="list-style-type: decimal">
@@ -477,7 +506,7 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <li><p>Collect the clean and weighed CAU PVCs and store for redeployment/archiving.</p></li>
 </ol>
 </div>
-<div id="vacuum-filtration-of-fleshy-material" class="section level4">
+<div id="vacuum-filtration-of-fleshy-material" class="section level4" number="18.2.4.4">
 <h4><span class="header-section-number">18.2.4.4</span> Vacuum filtration of fleshy material</h4>
 <p><strong>Be sure to wear proper PPE when handling acid contaminated objects (steps 1-4) including gloves, safety glasses, and lab coat.</strong></p>
 <ol style="list-style-type: decimal">
@@ -494,7 +523,7 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <li>When filtration is completed, place the filter paper on its corresponding Paper Tray B and onto a drying rack. The drying rack should be left in a fume hood to air dry at room temperature (minimum of 24 hours). The filter paper can continue to air dry at room temperature, indefinitely, until they are dried in the oven.</li>
 </ol>
 </div>
-<div id="determining-the-weight-of-the-fleshy-material" class="section level4">
+<div id="determining-the-weight-of-the-fleshy-material" class="section level4" number="18.2.4.5">
 <h4><span class="header-section-number">18.2.4.5</span> Determining the weight of the fleshy material</h4>
 <p><strong>Be sure to wear proper PPE (gloves) when handling acid contaminated filters in this section.</strong></p>
 <ol style="list-style-type: decimal">
@@ -530,15 +559,15 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 </div>
 </div>
 </div>
-<div id="camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2" class="section level2">
+<div id="camera-tethering-and-cau-plate-photo-documentation-nikon-camera-control-pro-2" class="section level2" number="18.3">
 <h2><span class="header-section-number">18.3</span> Camera Tethering and CAU Plate Photo-Documentation (Nikon Camera Control Pro 2)</h2>
 <p><em>Refer to the brand/model user documentation/manual if using a different camera and setup</em></p>
-<div id="installing-the-software" class="section level3">
+<div id="installing-the-software" class="section level3" number="18.3.1">
 <h3><span class="header-section-number">18.3.1</span> Installing the Software</h3>
 <p>For ESD-CREP users, the installation instructions and software product key can be accessed in the network folder</p>
 <pre><code>T:\general\ProjectGroup\Ocean Acidification\CAUs\Analysis\CAU Processing SOP, Data sheet, Labels\CAU SOPs 2015\CAUSOP_NikonD7000Settings.pdf</code></pre>
 </div>
-<div id="connecting-the-camera-to-the-computer" class="section level3">
+<div id="connecting-the-camera-to-the-computer" class="section level3" number="18.3.2">
 <h3><span class="header-section-number">18.3.2</span> Connecting the camera to the computer</h3>
 <ol style="list-style-type: decimal">
 <li>Connect Nikon DSLR camera (Nikon D7000 with AF-S Micro NIKKOR 60mm f2.8G ED lens) to the computer via USB mini cable</li>
@@ -580,7 +609,7 @@ Aperture: <strong>f/8</strong></p></li>
 <p>** <em>Note: the above settings need to be set each time the software is reinstalled and the above settings will need to be modified if a new camera model/lens are used</em></p>
 <p><img src="images/Camera6.jpg" /><!-- --></p>
 </div>
-<div id="cau-plate-photo-documentation" class="section level3">
+<div id="cau-plate-photo-documentation" class="section level3" number="18.3.3">
 <h3><span class="header-section-number">18.3.3</span> CAU plate photo-documentation</h3>
 <ol style="list-style-type: decimal">
 <li>Ensure that the camera’s Mode dial is set to “M” (Manual)</li>
@@ -606,7 +635,7 @@ Aperture: <strong>f/8</strong></p></li>
 <p><img src="images/Camera11.jpg" /><!-- --></p>
 <ol start="8" style="list-style-type: decimal">
 <li><p>Click the <strong>Browse</strong> button next to the “<em>Destination folder</em>”. For ESD-CREP users, navigate to the appropriate CAU site and unit folder location</p>
-<p>ex: DocumentsAnalysis2015ANALYSIS0303_368</p>
+<p>ex: DocumentsAnalysisANALYSIS_368</p>
 <p>where the images will be downloaded as they are taken. Click <strong>OK</strong></p></li>
 </ol>
 <p><img src="images/Camera12.jpg" /><!-- --></p>
@@ -639,7 +668,7 @@ Aperture: <strong>f/8</strong></p></li>
 <li><p>Backup the images by copying the <strong>Island</strong> parent folder,</p>
 <p>ex: Documents/CAU Analysis/ASRAMP 2015/HOTO ANALYSIS/SAMOA/SWAINS</p>
 <p>to the network drive,</p>
-<p>ex: T:\2018_CAU Analysis18ANALYSIS</p>
+<p>ex: T:\2018_CAU AnalysisANALYSIS</p>
 <p>and to the external hard drive. If prompted, select “Overwrite”</p></li>
 <li><p>Turn off the camera and disconnect it from the mini USB cable. On the Camera Control Pro main window, select Exit from the File menu</p></li>
 <li><p>Rename all plate photos with the following naming convention:</p>
@@ -664,16 +693,16 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <li><p>Copy the newly-renamed images to the network folder by copying the <strong>Island</strong> parent folder</p>
 <p>e.g. Documents/CAU Analysis/ASRAMP 2015/PHOTO ANALYSIS/SAMOA/SWAINS</p>
 <p>to the network drive</p>
-<p>e.g. T:\2018_CAU Analysis18ANALYSIS</p>
+<p>e.g. T:\2018_CAU AnalysisANALYSIS</p>
 <p>and to the external hard drive. If prompted, select “Overwrite”</p></li>
 </ol>
 </div>
 </div>
-<div id="cau-data-entry-tool-user-documentation" class="section level2">
+<div id="cau-data-entry-tool-user-documentation" class="section level2" number="18.4">
 <h2><span class="header-section-number">18.4</span> CAU Data Entry Tool User Documentation</h2>
 <p><em>for ESD-CREP use only</em>
 <em>Last modified by David Igeta on 12/15/2015</em></p>
-<div id="application-overview" class="section level3">
+<div id="application-overview" class="section level3" number="18.4.1">
 <h3><span class="header-section-number">18.4.1</span> Application Overview</h3>
 <p>Summary: This web application was created using Oracle Application Express (APEX) 5.0 in order facilitate the process of recording the Calcification Accretion Unit (CAU) weights into a database. In order to request access to the application, please contact ITS or the Data Management department for assistance.</p>
 <p>Interface: The web application is categorized in to four main sections:</p>
@@ -683,13 +712,13 @@ PAL01_2012_5319_L_B.jpg – Lower Plate, Bottom Side</p></li>
 <li><strong>Data Summary</strong></li>
 <li><strong>Audit</strong></li>
 </ul>
-<div id="home" class="section level4">
+<div id="home" class="section level4" number="18.4.1.1">
 <h4><span class="header-section-number">18.4.1.1</span> Home</h4>
 <p>This page breaks down the number of CAUs that still need to be weighed by Plate, Site, and Island. The
 <strong>Valid Plate</strong>, <strong>Valid Filter</strong>, and <strong>Filter Subplate</strong> fields are explained in another section.</p>
 <p><img src="images/Data1.jpg" /><!-- --></p>
 </div>
-<div id="data-entry" class="section level4">
+<div id="data-entry" class="section level4" number="18.4.1.2">
 <h4><span class="header-section-number">18.4.1.2</span> Data Entry</h4>
 <p>The Data Entry section is where you will go to enter all the weights that you will find. This table shows all the data that has been entered. Editing the plate weights and filter weights are actually recorded in separate pages by clicking on items 6 and 7. Below is an image of what you’ll see when you navigate to the Data Entry page.</p>
 <p><img src="images/Data2.jpg" /><!-- --></p>
@@ -771,7 +800,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 </ul>
 <p>** <em>Note: In order to modify the valid plate/filter columns, you will need update access to the CAU_ANALYSIS table inside Oracle SQL Developer. As long as these two fields have a value of either ‘Y’ or ‘F’, the record will be included in the end calculations</em></p>
 </div>
-<div id="data-summary" class="section level4">
+<div id="data-summary" class="section level4" number="18.4.1.3">
 <h4><span class="header-section-number">18.4.1.3</span> Data summary</h4>
 <p>This section allows you to view the calcification rates by unit, site, or island. You can also export the information to either an HTML or CSV file by clicking the Download option shown below. Tools built-in to the interactive reports can be used to filter the data and create tables for graphical analysis.</p>
 <p>Each report has the same options to choose from in the <strong>Actions</strong> drop-down menu. If you need more information about what a particular feature does, click on the <strong>Help</strong> option.</p>
@@ -798,7 +827,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 <p><img src="images/Data8.jpg" /><!-- --></p>
 <p><img src="images/Data9.jpg" /><!-- --></p>
 </div>
-<div id="audit" class="section level4">
+<div id="audit" class="section level4" number="18.4.1.4">
 <h4><span class="header-section-number">18.4.1.4</span> Audit</h4>
 <p>This page is a read-only summary of what is shown in the <strong>Data Entry Summary</strong> page with a few additional columns.</p>
 <p>For each column that can be edited by a user, there are two additional columns that correspond to it: <strong>Last Mod By</strong> (shows who last modified column) and <strong>Last Mod DTM</strong> (date, time, month, a record was modified).</p>
@@ -806,7 +835,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 <p><img src="images/Data10.jpg" /><!-- --></p>
 </div>
 </div>
-<div id="data-entry-tutorial" class="section level3">
+<div id="data-entry-tutorial" class="section level3" number="18.4.2">
 <h3><span class="header-section-number">18.4.2</span> Data Entry Tutorial</h3>
 <p>In this tutorial, we will be adding plate weights into our application. A similar process would apply to the filter weights.</p>
 <ol style="list-style-type: decimal">
@@ -840,7 +869,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 </ol>
 <p><img src="images/Data15.jpg" /><!-- --></p>
 </div>
-<div id="filter-overflow-tutorial" class="section level3">
+<div id="filter-overflow-tutorial" class="section level3" number="18.4.3">
 <h3><span class="header-section-number">18.4.3</span> Filter Overflow Tutorial</h3>
 <p>Summary: There will be times when an additional filter is needed in the event a single filter is not large enough to contain the accumulated calcification. In this case, another plate record or “subplate” must be created in order to keep track of the drying cycle weights for each filter.</p>
 <ul>
@@ -881,15 +910,15 @@ h.  Calculate – Filters any records that have been completed from the table. O
 <p><img src="images/Data25.jpg" /><!-- --></p>
 </div>
 </div>
-<div id="daily-task-guide" class="section level2">
+<div id="daily-task-guide" class="section level2" number="18.5">
 <h2><span class="header-section-number">18.5</span> Daily Task Guide</h2>
-<div id="sample-processing-schedule" class="section level3">
+<div id="sample-processing-schedule" class="section level3" number="18.5.1">
 <h3><span class="header-section-number">18.5.1</span> Sample Processing Schedule</h3>
 <p><img src="images/DailyTasks1.jpg" /><!-- --></p>
 </div>
-<div id="sample-processing-daily-tasks" class="section level3">
+<div id="sample-processing-daily-tasks" class="section level3" number="18.5.2">
 <h3><span class="header-section-number">18.5.2</span> Sample Processing Daily Tasks</h3>
-<div id="week-1" class="section level4">
+<div id="week-1" class="section level4" number="18.5.2.1">
 <h4><span class="header-section-number">18.5.2.1</span> WEEK 1</h4>
 <p><em>Monday - Tuesday, Week 1</em></p>
 <ol style="list-style-type: decimal">
@@ -937,7 +966,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 </ol>
 <p>** <em>For the initial drying, CAU plates are best dried continuously over the weekend</em></p>
 </div>
-<div id="week-2" class="section level4">
+<div id="week-2" class="section level4" number="18.5.2.2">
 <h4><span class="header-section-number">18.5.2.2</span> WEEK 2</h4>
 <p><em>Monday, Week 2</em></p>
 <ol style="list-style-type: decimal">
@@ -988,7 +1017,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 <li>Make sure that all dishes have “new” acid in them before the end of the day.</li>
 </ol>
 </div>
-<div id="week-3" class="section level4">
+<div id="week-3" class="section level4" number="18.5.2.3">
 <h4><span class="header-section-number">18.5.2.3</span> WEEK 3</h4>
 <p><em>Monday - Friday, Week 3</em></p>
 <ol style="list-style-type: decimal">
@@ -1011,7 +1040,7 @@ h.  Calculate – Filters any records that have been completed from the table. O
 <li>Ensure that the wire mesh shelves are left in the fume hood/s over the weekend to prevent the filterpapers from absorbing too much moisture.</li>
 </ol>
 </div>
-<div id="week-4" class="section level4">
+<div id="week-4" class="section level4" number="18.5.2.4">
 <h4><span class="header-section-number">18.5.2.4</span> WEEK 4</h4>
 <p><em>Monday, Week 4</em></p>
 <ol style="list-style-type: decimal">

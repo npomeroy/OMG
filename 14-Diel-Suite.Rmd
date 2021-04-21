@@ -2,6 +2,12 @@
 
 `r knitr::include_graphics(rep("images/d_suite_deploy_small.jpg"))`
 
+## Purpose
+
+ The Diel Suite is a grouping of instrumentation, which used together, allows for the quantification of 24-hour variability in seawater carbonate chemistry present at the reef.  The development of this instrument suite was motivated by a desire to measure the highly variable carbonate system parameters within a reef ecosystem over a 24 hour period.  Manually collected water samples and other field monitoring efforts based onboard a NOAA research ship are limited to daylight hour operations, thus night-time processes occurring on the reef are not sampled.  Thus the Diel Suite was developed. It consists of a collection of instruments that make autonomous measurements and collect seawater samples at pre-programmed intervals.  Although the suite is deployed by SCUBA divers onto the reef, it is left to autonomously measure in-situ salinity, temperature, depth, dissolved oxygen, pH, current direction and magnitude, and make seawater collections for laboratory analyses of dissolved inorganic carbon (DIC) and total alkalinity (TA). For a typical 24 hour sampling, the diel suite consists of: 1 SBE-19plus with a co-located SBE-43 oxygen sensor, 1 Nortek Acoustic Doppler Current Profiler (ADCP), 1 Satlantic SeaFET Ocean pH sensor, and 7 Programmable Underwater Collectors (PUC), where each PUC collects 1 discrete water sample at a 4 hour interval from 1200 on day 1 to 1200 on day 2. Deployment of the Diel Suite supports ongoing carbonate chemistry research by increasing temporal sampling over the ever changing diel DIC/TA signal, as well as identifying the residence time of the seawater and providing a high pH time series at the reef.
+
+##Instrumentation of the Diel Suite
+
 Conducting a diel suite deployment involves preparing and deploying multiple instruments.  Note that the SeaFet should calibrated in seawater 24 hours prior to deployment. Find programming information for each instrument involved with the diel suite in the instrument chapters:
 
 [SeaFet](#seafet)

@@ -23,6 +23,26 @@ output:
     citation_package: natbib
     keep_tex: yes
 ---
+
+```{r, echo=FALSE}
+
+#loading packages requried to build the OMG book in Bookdown
+list_of_packages <- c("bookdown", "leaflet", "leaflet.extras")
+
+#check and install missing packages
+new_packages <- list_of_packages[!(list_of_packages %in% installed.packages()[,"Package"])]
+if(length(new_packages)) install.packages(new_packages)
+
+#load packages
+lapply(list_of_packages, require, character.only = TRUE)
+
+
+
+```
+
+
+
+
 # Preface {-}
 
 The Ocean and Climate Change Team investigates the impacts of climate change on coral reefs of the US Pacific Islands to inform resilience based management of these important ecosystems.  While working in synchrony with other teams investigating reef ecology, the OCC Team focuses on studying carbonate chemistry, carbonate budgets and ocean warming . 

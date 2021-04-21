@@ -1,35 +1,46 @@
-\documentclass[]{book}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-\else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\usepackage{hyperref}
-\hypersetup{unicode=true,
-            pdftitle={OMG},
-            pdfauthor={NVP},
-            pdfborder={0 0 0},
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\usepackage{natbib}
-\bibliographystyle{plainnat}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={OMG},
+  pdfauthor={NVP},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
 \usepackage{color}
 \usepackage{fancyvrb}
 \newcommand{\VerbBar}{|}
@@ -70,12 +81,17 @@
 \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 \usepackage{graphicx}
-% grffile has become a legacy package: https://ctan.org/pkg/grffile
-\IfFileExists{grffile.sty}{%
-\usepackage{grffile}
-}{}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -84,53 +100,14 @@
 % margins by default, and it is still possible to overwrite the defaults
 % using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
-\fi
-
-%%% Use protect on footnotes to avoid problems with footnotes in titles
-\let\rmarkdownfootnote\footnote%
-\def\footnote{\protect\rmarkdownfootnote}
-
-%%% Change title format to be more compact
-\usepackage{titling}
-
-% Create subtitle command for use in maketitle
-\providecommand{\subtitle}[1]{
-  \posttitle{
-    \begin{center}\large#1\end{center}
-    }
-}
-
-\setlength{\droptitle}{-2em}
-
-  \title{OMG}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-  \subtitle{The OCC Knowledge Base}
-  \author{NVP}
-    \preauthor{\centering\large\emph}
-  \postauthor{\par}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{2020-04-23}
-
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -141,6 +118,22 @@
 \makeatother
 \usepackage{fontspec}
 \setmainfont{Calibri}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\title{OMG}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{The OCC Knowledge Base}
+\author{NVP}
+\date{2021-04-21}
 
 \begin{document}
 \maketitle
@@ -149,6 +142,41 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\begin{verbatim}
+## Loading required package: bookdown
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'bookdown' was built under R version 4.0.5
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: leaflet
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'leaflet' was built under R version 4.0.5
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: leaflet.extras
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'leaflet.extras' was built under R version 4.0.5
+\end{verbatim}
+
+\begin{verbatim}
+## [[1]]
+## [1] TRUE
+## 
+## [[2]]
+## [1] TRUE
+## 
+## [[3]]
+## [1] TRUE
+\end{verbatim}
+
 \hypertarget{preface}{%
 \chapter*{Preface}\label{preface}}
 \addcontentsline{toc}{chapter}{Preface}
@@ -175,10 +203,6 @@ At work underwater:
 \chapter{OMG Edit and Access Tutorial}\label{omg-edit-and-access-tutorial}}
 
 This video walks through the basics of editing and accessing the OMG as of April 2020. This process is likely to evolve, but it's worth a watch as much of this process will remain the same.
-
-\begin{verbatim}
-## PhantomJS not found. You can install it with webshot::install_phantomjs(). If it is installed, please make sure the phantomjs executable can be found via the PATH variable.
-\end{verbatim}
 
 Welcome to the online knowledge base of the OCC Team. This started as the OCC Mission Guide, a reference manual to help consolidate best practices for conducting OCC team operations at sea. As of 2020, it has evolved into an online living book, written in R Markdown and compiled into book with \href{https://bookdown.org/yihui/bookdown/}{bookdown},published via \href{https://pages.github.com/}{GitHub Pages}. The current live version of the book that you can bookmark is \href{https://npomeroy.github.io/OMG/}{here}. All OCC team members are encouraged to not only use it as a resource but help it grow by adding and editing content as OCC projects, methods and missions continue to change and grow. Anyone on the team that is a collaborator on the repo may clone it to their local machine and make edits and commits without needing to fork the repo \href{https://github.com/npomeroy/OMG}{Noah via GitHub}. Our current workflow uses GitHub desktop to make commits and pull other collaborators changes from the online repo.
 
@@ -237,8 +261,6 @@ Carbonate Budgets
 \chapter{Where We Work}\label{where-we-work}}
 
 \textbf{A Map of Active and Inactive OCC Sites}
-
-\hypertarget{htmlwidget-3a3248f26ec68d98a4b5}{}
 
 \hypertarget{publications}{%
 \chapter{Publications}\label{publications}}
@@ -310,244 +332,34 @@ Determine the team's goals in the region the research cruise is scheduled to vis
 \hypertarget{software-needed-at-sea}{%
 \section{Software Needed at Sea}\label{software-needed-at-sea}}
 
-\begin{longtable}[]{@{}llllll@{}}
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.17}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.07}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.08}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.22}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.09}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.36}}@{}}
 \toprule
-\begin{minipage}[b]{0.14\columnwidth}\raggedright
-Software\strut
-\end{minipage} & \begin{minipage}[b]{0.06\columnwidth}\raggedright
-Team Lead Only\strut
-\end{minipage} & \begin{minipage}[b]{0.07\columnwidth}\raggedright
-Manufacturer\strut
-\end{minipage} & \begin{minipage}[b]{0.18\columnwidth}\raggedright
-Needed For\strut
-\end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\raggedright
-Instrument\strut
-\end{minipage} & \begin{minipage}[b]{0.30\columnwidth}\raggedright
-Download Location\strut
-\end{minipage}\tabularnewline
+Software & Team Lead Only & Manufacturer & Needed For & Instrument & Download Location \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-ARCMap\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-x\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-ESRI\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-planning operations and generating maps\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-NA\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-see Tomoko\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Google Earth\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Google\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-planning operations\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-NA\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Keyspan USA Software\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Keyspan\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-serial to USB adapter cable\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-GPS\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://www.tripplite.com/support/USA19HS}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Microsoft Access 2010\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Microsoft\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-mooring and CTD databases\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-NA\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-request from ITS\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Excel\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Microsoft\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-spreadsheets\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-NA\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-you must have this already\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-DNR Garmin\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Minnesota DNR\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-download of GPS Waypoints\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-GPS\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.dnr.state.mn.us/mis/gis/tools/arcview/extensions/DNRGarmin/DNRGarmin.html}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-DNR GPS\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Minnesota DNR\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-upload of GPS planning points from Google Earth\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-GPS\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.dnr.state.mn.us/mis/gis/DNRGPS/DNRGPS.html}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Aquadopp Software - AquaPro v1.37.08\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Nortek\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-Aquadopp ADCP\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.nortek-as.com/en/support/software}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-SoundTrap Host Software Version 2.0.9.x\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-x\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Ocean Instruments\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-Sound Trap\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.oceaninstruments.co.nz/downloads/}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Basic Stamp Editor\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Paralax Inc.\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-PUC\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://www.parallax.com/downloads/basic-stamp-editor-software-windows}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Python 2.51\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Python\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-scripts that are part of mooring and CTD databases\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-NA\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://www.python.org/download/releases/2.5.1/}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-SeaFETCOM 2\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-Satlantic\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-SeaFet\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://satlantic.com/seafetcom}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Seaterm 1.59\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-SeaBird\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-SBE39, SBE19, SBE19+\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.seabird.com/software/software}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Seaterm V2\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-SeaBird\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-instrument interface\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-sbe19+ V2, SBE56\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{http://www.seabird.com/software/software}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-SBE Data Processing\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-SeaBird\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-CTD cast processing\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-SBE CTDs\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://www.seabird.com/software-updates}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-R and R Studio for STR processing\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-R Studio\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-data processing\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-all\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://www.rstudio.com/products/rstudio/download/}\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.14\columnwidth}\raggedright
-Ruskin\strut
-\end{minipage} & \begin{minipage}[t]{0.06\columnwidth}\raggedright
-\strut
-\end{minipage} & \begin{minipage}[t]{0.07\columnwidth}\raggedright
-RBR\strut
-\end{minipage} & \begin{minipage}[t]{0.18\columnwidth}\raggedright
-STR, PAR, DO\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-RBR Solo\strut
-\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright
-\url{https://rbr-global.com/products/software}\strut
-\end{minipage}\tabularnewline
+ARCMap & x & ESRI & planning operations and generating maps & NA & see Tomoko \\
+Google Earth & & Google & planning operations & NA & \\
+Keyspan USA Software & & Keyspan & serial to USB adapter cable & GPS & \url{https://www.tripplite.com/support/USA19HS} \\
+Microsoft Access 2010 & & Microsoft & mooring and CTD databases & NA & request from ITS \\
+Excel & & Microsoft & spreadsheets & NA & you must have this already \\
+DNR Garmin & & Minnesota DNR & download of GPS Waypoints & GPS & \url{http://www.dnr.state.mn.us/mis/gis/tools/arcview/extensions/DNRGarmin/DNRGarmin.html} \\
+DNR GPS & & Minnesota DNR & upload of GPS planning points from Google Earth & GPS & \url{http://www.dnr.state.mn.us/mis/gis/DNRGPS/DNRGPS.html} \\
+Aquadopp Software - AquaPro v1.37.08 & & Nortek & instrument interface & Aquadopp ADCP & \url{http://www.nortek-as.com/en/support/software} \\
+SoundTrap Host Software Version 2.0.9.x & x & Ocean Instruments & instrument interface & Sound Trap & \url{http://www.oceaninstruments.co.nz/downloads/} \\
+Basic Stamp Editor & & Paralax Inc. & instrument interface & PUC & \url{https://www.parallax.com/downloads/basic-stamp-editor-software-windows} \\
+Python 2.51 & & Python & scripts that are part of mooring and CTD databases & NA & \url{https://www.python.org/download/releases/2.5.1/} \\
+SeaFETCOM 2 & & Satlantic & instrument interface & SeaFet & \url{http://satlantic.com/seafetcom} \\
+Seaterm 1.59 & & SeaBird & instrument interface & SBE39, SBE19, SBE19+ & \url{http://www.seabird.com/software/software} \\
+Seaterm V2 & & SeaBird & instrument interface & sbe19+ V2, SBE56 & \url{http://www.seabird.com/software/software} \\
+SBE Data Processing & & SeaBird & CTD cast processing & SBE CTDs & \url{https://www.seabird.com/software-updates} \\
+R and R Studio for STR processing & & R Studio & data processing & all & \url{https://www.rstudio.com/products/rstudio/download/} \\
+Ruskin & & RBR & STR, PAR, DO & RBR Solo & \url{https://rbr-global.com/products/software} \\
 \bottomrule
 \end{longtable}
 
@@ -685,6 +497,13 @@ d.~Complete data sheet including REA Site name or OCC Site Name (if it exists), 
 
 \includegraphics{images/d_suite_deploy_small.jpg}
 
+\hypertarget{purpose}{%
+\section{Purpose}\label{purpose}}
+
+The Diel Suite is a grouping of instrumentation, which used together, allows for the quantification of 24-hour variability in seawater carbonate chemistry present at the reef. The development of this instrument suite was motivated by a desire to measure the highly variable carbonate system parameters within a reef ecosystem over a 24 hour period. Manually collected water samples and other field monitoring efforts based onboard a NOAA research ship are limited to daylight hour operations, thus night-time processes occurring on the reef are not sampled. Thus the Diel Suite was developed. It consists of a collection of instruments that make autonomous measurements and collect seawater samples at pre-programmed intervals. Although the suite is deployed by SCUBA divers onto the reef, it is left to autonomously measure in-situ salinity, temperature, depth, dissolved oxygen, pH, current direction and magnitude, and make seawater collections for laboratory analyses of dissolved inorganic carbon (DIC) and total alkalinity (TA). For a typical 24 hour sampling, the diel suite consists of: 1 SBE-19plus with a co-located SBE-43 oxygen sensor, 1 Nortek Acoustic Doppler Current Profiler (ADCP), 1 Satlantic SeaFET Ocean pH sensor, and 7 Programmable Underwater Collectors (PUC), where each PUC collects 1 discrete water sample at a 4 hour interval from 1200 on day 1 to 1200 on day 2. Deployment of the Diel Suite supports ongoing carbonate chemistry research by increasing temporal sampling over the ever changing diel DIC/TA signal, as well as identifying the residence time of the seawater and providing a high pH time series at the reef.
+
+\#\#Instrumentation of the Diel Suite
+
 Conducting a diel suite deployment involves preparing and deploying multiple instruments. Note that the SeaFet should calibrated in seawater 24 hours prior to deployment. Find programming information for each instrument involved with the diel suite in the instrument chapters:
 
 \protect\hyperlink{seafet}{SeaFet}
@@ -750,7 +569,7 @@ Coral Coring at Swains Island
   \item
     assemble, program and stage needed STRs
   \item
-    confirm 10 36'' cable ties for each STR planned
+    confirm 10 36'\,' cable ties for each STR planned
   \item
     write serial numbers of planned STR deployments on tomorrow's data sheet
   \end{itemize}
@@ -1490,7 +1309,7 @@ Darrell
 
 \begin{longtable}[]{@{}l@{}}
 \toprule
-February 9, 2018 Email from Darrel at Seabird Tech Support:\tabularnewline
+February 9, 2018 Email from Darrel at Seabird Tech Support: \\
 \midrule
 \endhead
 \bottomrule
@@ -1498,6 +1317,8 @@ February 9, 2018 Email from Darrel at Seabird Tech Support:\tabularnewline
 
 \begin{longtable}[]{@{}l@{}}
 \toprule
+ \\
+\midrule
 \endhead
 \bottomrule
 \end{longtable}
@@ -1735,18 +1556,18 @@ Mount PUCs to crates with cable tieas, 3 PUCs per crate. Print out the \href{htt
 
 \begin{longtable}[]{@{}lll@{}}
 \toprule
-\textbf{PUC SN} & \textbf{Time to 800mL (minutes)} & \textbf{March 2018 Tested Rate (mL/min)}\tabularnewline
+\textbf{PUC SN} & \textbf{Time to 800mL (minutes)} & \textbf{March 2018 Tested Rate (mL/min)} \\
 \midrule
 \endhead
-1 & 39 & 20.6\tabularnewline
-2 & 30 & 26.4\tabularnewline
-3 & 31 & 25.5\tabularnewline
-4 & 32 & 24.7\tabularnewline
-5 & 33 & 23.9\tabularnewline
-6 & 39 & 20.6\tabularnewline
-7 & 32 & 25.2\tabularnewline
-8 & 29 & 27.4\tabularnewline
-9 & 37 & 21.8\tabularnewline
+1 & 39 & 20.6 \\
+2 & 30 & 26.4 \\
+3 & 31 & 25.5 \\
+4 & 32 & 24.7 \\
+5 & 33 & 23.9 \\
+6 & 39 & 20.6 \\
+7 & 32 & 25.2 \\
+8 & 29 & 27.4 \\
+9 & 37 & 21.8 \\
 \bottomrule
 \end{longtable}
 
@@ -1826,6 +1647,7 @@ Old style cap ---- dash\# 2-153. McM. 9452K174
 New style cap---- dash\# 2-236 McM 9452K165
 
 \begin{itemize}
+\tightlist
 \item
 \item
   1/6/2018 email about new firmware: It gives you 30 sec to hit a key about the pump starts running. I also reduced the pump run time to 10 seconds. You can now specify the month, day, hour and minute that the PUC will sample so you can set it up days in advance. You will need the Basic Stamp editor application downloaded from Paralax.
@@ -3500,7 +3322,7 @@ The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(devtools)}
+\FunctionTok{library}\NormalTok{(devtools)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3514,7 +3336,7 @@ The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{install_github}\NormalTok{(}\StringTok{"hannahbarkley/occ"}\NormalTok{)}
+\FunctionTok{install\_github}\NormalTok{(}\StringTok{"hannahbarkley/occ"}\NormalTok{)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3528,7 +3350,7 @@ The \emph{occ} package is uploaded to GitHub and can be downloaded directly in R
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(occ)}
+\FunctionTok{library}\NormalTok{(occ)}
 \end{Highlighting}
 \end{Shaded}
 
@@ -3558,6 +3380,5 @@ This is how you insert an image:
 \includegraphics{images/OCC_Diurnal_Suite_Recovery_CJS.jpg}
 
 I know you're so enjoying this incredible tutorial and can't wait to watch it again!
-
 
 \end{document}

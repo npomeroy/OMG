@@ -84,7 +84,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     if (config.search !== false) info.push('f: Toggle search input ' +
       '(use <up>/<down>/Enter in the search input to navigate through search matches; ' +
       'press Esc to cancel search)');
-    gitbook.toolbar.createButton({
+    if (config.info !== false) gitbook.toolbar.createButton({
       icon: 'fa fa-info',
       label: 'Information about the toolbar',
       position: 'left',
@@ -147,7 +147,7 @@ gitbook.require(["gitbook", "lodash", "jQuery"], function(gitbook, _, $) {
     if (typeof pos !== 'undefined') summary.scrollTop(pos);
 
     // highlight the TOC item that has same text as the heading in view as scrolling
-    if (toc && toc.scroll_highlight !== false) (function() {
+    if (toc && toc.scroll_highlight !== false && li.length > 0) (function() {
       // scroll the current TOC item into viewport
       var ht = $(window).height(), rect = li[0].getBoundingClientRect();
       if (rect.top >= ht || rect.top <= 0 || rect.bottom <= 0) {
