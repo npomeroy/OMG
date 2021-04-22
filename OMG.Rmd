@@ -27,7 +27,7 @@ output:
 ```{r, echo=FALSE}
 
 #loading packages requried to build the OMG book in Bookdown
-list_of_packages <- c("bookdown", "leaflet", "leaflet.extras")
+list_of_packages <- c("bookdown", "leaflet", "leaflet.extras", "tinytex")
 
 #check and install missing packages
 new_packages <- list_of_packages[!(list_of_packages %in% installed.packages()[,"Package"])]
